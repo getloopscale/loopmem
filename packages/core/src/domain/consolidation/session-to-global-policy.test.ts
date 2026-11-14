@@ -102,3 +102,16 @@ describe('SessionToGlobalConsolidationPolicy — session→global promotion deci
    expect(await policy.consolidate([{ ...candidate('unknown', 0), distinctSourceCount: null, confirmationCount: 100 }], CTX)).toEqual([]);
    expect(await policy.consolidate([{ ...candidate('expired', 2), expiresAt: new Date('2026-07-01') }], CTX)).toEqual([]);
  });
+
+it('reports each candidate it leaves in the session with the reason and the numbers', () => {
+  const policy = new SessionToGlobalConsolidationPolicy(3);
+  const skipped = policy.explainSkipped(
+    [candidate('durable', 3), candidate('one-off', 1), { ...candidate('unknown', 0), distinctSourceCount: null }, { ...candidate('expired', 5), expiresAt: new Date('2026-07-01') }],
+    CTX,
+  );
+  expect(skipped).toEqual([
+    { memoryId: 'one-off', reason: 'below_threshold', distinctSourceCount: 1, threshold: 3 },
+    { memoryId: 'unknown', reason: 'below_threshold', distinctSourceCount: 0, threshold: 3 },
+    { memoryId: 'expired', reason: 'expired', distinctSourceCount: 5, threshold: 3 },
+  ]);
+});

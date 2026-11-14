@@ -19,6 +19,7 @@ import type {
   ConflictResolutionPolicy,
   ConflictResolutionResult,
   ConsolidationCandidate,
+  ConsolidationContext,
 } from '../../domain/dip/conflict-resolution-policy.js';
 import { recordRoutingDecision, type RoutingAuditStore } from '../../domain/dip/routing-audit-store.js';
 import { emitEvent } from '../../domain/memory-event.js';
@@ -95,6 +96,39 @@ function clusterCandidates(
   return clusters;
 }
 
+/** Attributes of one `consolidation_promotion_skipped` event: the candidates left alone for one reason. */
+export interface PromotionSkipSummary {
+  readonly scope_tier: string;
+  readonly reason: string;
+  readonly count: number;
+  readonly threshold: number;
+  readonly max_distinct_source_count: number;
+}
+
+/**
+ * What a promotion policy left in the session, grouped by reason (#255). Empty for a policy that
+ * does not explain its skips.
+ */
+export function promotionSkipSummaries(
+  conflictPolicy: ConflictResolutionPolicy,
+  candidates: readonly ConsolidationCandidate[],
+  context: ConsolidationContext,
+): readonly PromotionSkipSummary[] {
+  const skipped = conflictPolicy.explainSkipped?.(candidates, context) ?? [];
+  const byReason = new Map<string, PromotionSkipSummary>();
+  for (const skip of skipped) {
+    const seen = byReason.get(skip.reason);
+    byReason.set(skip.reason, {
+      scope_tier: context.scope.kind,
+      reason: skip.reason,
+      count: (seen?.count ?? 0) + 1,
+      threshold: skip.threshold,
+      max_distinct_source_count: Math.max(seen?.max_distinct_source_count ?? 0, skip.distinctSourceCount),
+    });
+  }
+  return [...byReason.values()];
+}
+
 /**
  * The full reflect consolidation phase: recall candidates, bound + judge, persist
  * supersessions, and audit an M9 promotion. Behaviour-identical to the former
@@ -129,6 +163,11 @@ export async function runConsolidationPhase(args: {
     cap,
     isM9Promotion,
   });
+  if (isM9Promotion) {
+    for (const summary of promotionSkipSummaries(conflictPolicy, candidates, { scope, observationDate: new Date() })) {
+      emitEvent(tracer, 'consolidation_promotion_skipped', { ...summary });
+    }
+  }
   if (consolidationResults.length === 0) {
     return;
   }

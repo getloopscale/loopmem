@@ -12,6 +12,7 @@ import type {
   ConflictResolutionResult,
   ConsolidationCandidate,
   ConsolidationContext,
+  ConsolidationSkip,
 } from '../dip/conflict-resolution-policy.js';
 
 /** The `kind`/`policyName` of the M9 promotion policy — shared so the reflect-orchestrator's
@@ -35,11 +36,8 @@ export class SessionToGlobalConsolidationPolicy implements ConflictResolutionPol
     // session-scoped; rejectedMemoryIds stays empty because promotion is additive.
     const results: ConflictResolutionResult[] = [];
     for (const c of candidates) {
+      if (this.skipReason(c, _context) !== null) continue;
       const count = c.distinctSourceCount ?? 0;
-      if (c.expiresAt != null && c.expiresAt.getTime() <= _context.observationDate.getTime()) continue;
-      if (count < this.threshold) {
-        continue;
-      }
       results.push({
         keptMemoryId: c.memoryId,
         rejectedMemoryIds: [],
@@ -49,5 +47,20 @@ export class SessionToGlobalConsolidationPolicy implements ConflictResolutionPol
       });
     }
     return Promise.resolve(results);
+  }
+
+  /** Every candidate that stays in the session, with why: expired, or too few distinct origins. */
+  explainSkipped(candidates: readonly ConsolidationCandidate[], context: ConsolidationContext): readonly ConsolidationSkip[] {
+    const skipped: ConsolidationSkip[] = [];
+    for (const c of candidates) {
+      const reason = this.skipReason(c, context);
+      if (reason !== null) skipped.push({ memoryId: c.memoryId, reason, distinctSourceCount: c.distinctSourceCount ?? 0, threshold: this.threshold });
+    }
+    return skipped;
+  }
+
+  private skipReason(c: ConsolidationCandidate, context: ConsolidationContext): 'expired' | 'below_threshold' | null {
+    if (c.expiresAt != null && c.expiresAt.getTime() <= context.observationDate.getTime()) return 'expired';
+    return (c.distinctSourceCount ?? 0) < this.threshold ? 'below_threshold' : null;
   }
 }
