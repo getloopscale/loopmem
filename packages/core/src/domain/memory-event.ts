@@ -260,6 +260,10 @@ export const MEMORY_EVENTS = [
   // boundary. Attributes `{scope_tier, promoted_count}`. Princípio 3 — every promotion
   // (a governed placement decision) is observable. @see CLAUDE.md § IMPORTANTE Princípio 3
   'consolidation_promoted',
+  // #255: candidates the promotion policy looked at and left in the session, one event per
+  // reason (`below_threshold`, `expired`). Attributes `{scope_tier, reason, count, threshold,
+  // max_distinct_source_count}`. A decision not to promote is as visible as a promotion.
+  'consolidation_promotion_skipped',
   // M10 (scope-aware recall reweight, T3.1) — the opt-in scopeAwareReweight stage
   // re-ordered the threshold-survivor pool by scope-of-origin (session recency-boost,
   // global stability-boost) before top-K. Attributes `{scope_tier, reweighted_count}`.

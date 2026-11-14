@@ -87,6 +87,17 @@ export interface ConflictResolutionResult {
  * siblings. Multiple results = LLM partitioned the cluster into sub-themes
  * (each kept independently).
  */
+/**
+ * One candidate a policy looked at and left as it was, with the reason and the numbers behind it.
+ * `reason` is a short stable token (`below_threshold`, `expired`).
+ */
+export interface ConsolidationSkip {
+  readonly memoryId: string;
+  readonly reason: string;
+  readonly distinctSourceCount: number;
+  readonly threshold: number;
+}
+
 export interface ConflictResolutionPolicy {
   readonly kind: string;
 
@@ -94,4 +105,13 @@ export interface ConflictResolutionPolicy {
     candidates: readonly ConsolidationCandidate[],
     context: ConsolidationContext,
   ): Promise<readonly ConflictResolutionResult[]>;
+
+  /**
+   * Optional: the candidates `consolidate` would leave untouched, so a decision not to act is as
+   * visible as an action (#255). Pure, like `consolidate`.
+   */
+  explainSkipped?(
+    candidates: readonly ConsolidationCandidate[],
+    context: ConsolidationContext,
+  ): readonly ConsolidationSkip[];
 }

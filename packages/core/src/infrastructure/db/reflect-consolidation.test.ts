@@ -17,7 +17,9 @@ import type {
 } from '../../domain/dip/conflict-resolution-policy.js';
 import type { Scope } from '../../domain/scope.js';
 
-import { consolidateInBoundedClusters } from './reflect-consolidation.js';
+import { SessionToGlobalConsolidationPolicy } from '../../domain/consolidation/session-to-global-policy.js';
+
+import { consolidateInBoundedClusters, promotionSkipSummaries } from './reflect-consolidation.js';
 
 interface BoundedCandidate extends ConsolidationCandidate {
   readonly embedding?: readonly number[];
@@ -155,5 +157,28 @@ describe('consolidateInBoundedClusters (M24 T3.1)', () => {
     const noEmb = build25().map(({ embedding: _e, ...rest }) => rest);
     const callSizes = await callSizesFor(noEmb, { scope: SCOPE, isM9Promotion: false });
     expect(callSizes).toEqual([25]);
+  });
+});
+
+describe('promotionSkipSummaries (#255)', () => {
+  const at = new Date('2026-07-22T00:00:00Z');
+  const row = (memoryId: string, distinctSourceCount: number, expiresAt?: Date): ConsolidationCandidate =>
+    ({ memoryId, text: memoryId, createdAt: at, distinctSourceCount, ...(expiresAt === undefined ? {} : { expiresAt }) });
+
+  test('groups the candidates a promotion policy left in the session by reason', () => {
+    const summaries = promotionSkipSummaries(
+      new SessionToGlobalConsolidationPolicy(2),
+      [row('a', 1), row('b', 0), row('c', 2), row('d', 4, new Date('2026-07-01T00:00:00Z'))],
+      { scope: { kind: 'session', sessionId: 's1', userId: 'u1' }, observationDate: at },
+    );
+    expect(summaries).toEqual([
+      { scope_tier: 'session', reason: 'below_threshold', count: 2, threshold: 2, max_distinct_source_count: 1 },
+      { scope_tier: 'session', reason: 'expired', count: 1, threshold: 2, max_distinct_source_count: 4 },
+    ]);
+  });
+
+  test('is empty for a policy that does not explain what it skipped', () => {
+    const { policy } = countingPolicy();
+    expect(promotionSkipSummaries(policy, [row('a', 1)], { scope: SCOPE, observationDate: at })).toEqual([]);
   });
 });
