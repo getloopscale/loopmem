@@ -283,6 +283,9 @@ export const MEMORY_EVENTS = [
   'extraction_evidence_downgraded',
   // A fact written about `user` got back the person its own relation names (#257).
   'extraction_subject_restored',
+  // A fact named the speaker with a translated word and got the token `user` back (#258).
+  // Attributes `{restored}`.
+  'extraction_speaker_token_restored',
   // A write carried only reference material, so nothing was extracted (ADR-0039).
   'extraction_reference_only',
   // A fact labeled temporary whose source names no day or moment was stored with no expiry.

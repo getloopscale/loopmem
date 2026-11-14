@@ -156,7 +156,7 @@ describe('runExtractionPipeline (8-phase write)', () => {
       { attributedTo: 'user', strictExtraction: true },
     );
     expect(calls).toBe(2);
-    expect(result.map((item) => item.text)).toContain('The user adopted a golden retriever named Max.');
+    expect(result.map((item) => item.text)).toContain('user adopted a golden retriever named Max.');
   });
 
   test('persists one fact extracted from a 1-message conversation', async () => {
@@ -193,7 +193,7 @@ describe('runExtractionPipeline (8-phase write)', () => {
       { vectorStore: store, embedder: makeEmbedder(), llm },
     );
     expect(result).toHaveLength(1);
-    expect(result[0]?.text).toBe('O usuário prefere café no estilo aeropress.');
+    expect(result[0]?.text).toBe('user prefere café no estilo aeropress.');
   });
 
   test('EC-9: empty extraction returns [] without persist call', async () => {

@@ -46,6 +46,7 @@ import { applyOntologyToEntities, boundedAutoCategory, buildPayload, embedBatchW
 import type { ExtractionDeps, Payload } from './pipeline-helpers.js';
 import { AdditiveExtractionSchema, generateAdditiveExtractionPrompt, type AdditiveExtractionResponse } from './prompt.js';
 import { splitReference } from './reference-material.js';
+import { restoreSpeakerToken } from './speaker-token.js';
 import { recoverStatedFacts } from './stated-check.js';
 import { restoreNamedSubject } from './subject-restore.js';
 import { judgeSupersessions } from './supersession.js';
@@ -382,6 +383,9 @@ async function extractAndPersist(
       // degrade to raw entities (fail-soft); coercion is best-effort enrichment.
     }
   }
+
+  // The speaker written in the message's language ("o usuário") goes back to the token (#258).
+  extracted = [...restoreSpeakerToken(extracted, messages.map((message) => message.content).join('\n'), tracer)];
 
   // A third-person fact sometimes comes back with `user` in place of the person its own
   // relation names, which would record that person's attribute as the user's (#257).
