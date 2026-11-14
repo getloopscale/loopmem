@@ -27,11 +27,9 @@ import { PgvectorStore } from './pgvector-store.js';
  *
  * - `postgres` — Postgres connection string (required). Also the runtime
  *   discriminator vs {@link LocalMemoryConfig} (which has no `postgres` field).
- * - `openai` — OpenAI API key. When provided it is set on
- *   `process.env.OPENAI_API_KEY` before the adapters are constructed (they read
- *   the key lazily from env). When omitted, the ambient `OPENAI_API_KEY` is
- *   used. NOTE: one key per process — the OpenAI client is a module-global lazy
- *   singleton; for multiple keys use the full-config `createLocalMemory` path.
+ * - `openai` — OpenAI API key. When provided it is handed to the embedder and the LLM
+ *   client of this memory; the process environment is not touched, and two memories
+ *   may use two keys. When omitted, the ambient `OPENAI_API_KEY` is used.
  * - `migrate` — run `runMigrations` on boot. Defaults to `true`; pass `false`
  *   when migrations are applied out-of-band.
  *
@@ -144,8 +142,8 @@ function wrapDisposeWithPoolEnd(
  * Resolve the zero-config preset into a working {@link DisposableMemory}.
  *
  * Order (EC-4 first): validate `postgres` fail-fast BEFORE opening a pool →
- * set `OPENAI_API_KEY` from `openai` only when truthy (EC-5, never clobber an
- * ambient key with an empty string) → open the pool → lazily import the OpenAI
+ * hand `openai` to the adapters only when truthy (EC-5: an empty string means the
+ * ambient key) → open the pool → lazily import the OpenAI
  * adapters + `pg` (dynamic import keeps `openai` OUT of the default barrel's
  * static graph, mirroring the cache-store precedent in `factory.ts`) → delegate
  * to {@link assemblePresetMemory} (migrate defaults to `true`).
@@ -156,17 +154,16 @@ export async function resolvePreset(config: CreateMemoryPresetConfig): Promise<D
       'createMemory preset requires a non-empty `postgres` connection string',
     );
   }
-  if (config.openai) {
-    process.env['OPENAI_API_KEY'] = config.openai;
-  }
+  // An explicit key goes to the clients. The process environment is the host's, not ours (#218).
+  const clientOptions = config.openai ? { apiKey: config.openai } : {};
   const { OpenAIEmbedder } = await import('../embedders/openai.js');
   const { OpenAILLM } = await import('../llms/openai.js');
   const pg = (await import('pg')).default;
   const pool = new pg.Pool({ connectionString: config.postgres });
   return assemblePresetMemory({
     pool,
-    embedder: new OpenAIEmbedder(),
-    llm: new OpenAILLM(),
+    embedder: new OpenAIEmbedder(clientOptions),
+    llm: new OpenAILLM(clientOptions),
     migrate: config.migrate ?? true,
   });
 }

@@ -132,4 +132,23 @@ describe('T1.5 — OTel span middleware', () => {
     expect(res.status).toBe(201);
     await provider.shutdown();
   });
+
+  test('http.route is the route template, not the path with its ids (#217)', async () => {
+    const { tracer, exporter, provider } = setupTracer();
+    const app = createServer({ memory: stubMemory(), tracer });
+    await app.request('/v1/scopes/user/abc-123/memories');
+    await app.request('/v1/scopes/user/zzz-999/memories');
+    await provider.forceFlush();
+    const routes = exporter.getFinishedSpans().filter((span) => span.name === 'rest.v1.scopes.list').map((span) => span.attributes['http.route']);
+    expect(routes).toEqual(['/v1/scopes/:type/:id/memories', '/v1/scopes/:type/:id/memories']);
+  });
+
+  test('http.route of a request no route matches carries no part of the path', async () => {
+    const { tracer, exporter, provider } = setupTracer();
+    const app = createServer({ memory: stubMemory(), tracer });
+    await app.request('/v1/nothing/here-42');
+    await provider.forceFlush();
+    const routes = exporter.getFinishedSpans().map((span) => String(span.attributes['http.route']));
+    expect(routes.some((route) => route.includes('here-42'))).toBe(false);
+  });
 });

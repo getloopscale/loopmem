@@ -14,7 +14,8 @@
  */
 import type { Tracer } from '@opentelemetry/api';
 import { SpanStatusCode, trace } from '@opentelemetry/api';
-import type { MiddlewareHandler } from 'hono';
+import type { Context, MiddlewareHandler } from 'hono';
+import { matchedRoutes } from 'hono/route';
 
 function deriveSpanName(method: string, path: string): string {
   // Matches the 6 routes mounted in app.ts. Order matters: more specific
@@ -27,6 +28,16 @@ function deriveSpanName(method: string, path: string): string {
   if (method === 'GET' && path.startsWith('/v1/health')) return 'rest.v1.health';
   if (method === 'GET' && path.startsWith('/v1/scopes/')) return 'rest.v1.scopes.list';
   return `rest.v1.${method.toLowerCase()}`;
+}
+
+/**
+ * The template of the route that handled the request (`/v1/scopes/:type/:id/memories`), never
+ * the concrete path: an id in the attribute makes one value per request, which a trace backend
+ * cannot aggregate (#217). A request no route handled is reported as `unmatched`.
+ */
+function routeTemplate(c: Context): string {
+  const handled = matchedRoutes(c).filter((route) => !route.path.includes('*'));
+  return handled[handled.length - 1]?.path ?? 'unmatched';
 }
 
 export function otelMiddleware(tracer?: Tracer): MiddlewareHandler {
@@ -47,7 +58,7 @@ export function otelMiddleware(tracer?: Tracer): MiddlewareHandler {
       try {
         span.setAttribute('http.status_code', status);
         span.setAttribute('http.method', c.req.method);
-        span.setAttribute('http.route', c.req.path);
+        span.setAttribute('http.route', routeTemplate(c));
         if (status >= 500) {
           span.setStatus({ code: SpanStatusCode.ERROR });
         } else {
@@ -63,7 +74,7 @@ export function otelMiddleware(tracer?: Tracer): MiddlewareHandler {
         span.recordException(err as Error);
         span.setStatus({ code: SpanStatusCode.ERROR });
         span.setAttribute('http.method', c.req.method);
-        span.setAttribute('http.route', c.req.path);
+        span.setAttribute('http.route', routeTemplate(c));
       } catch {
         // EC-22 fail-quiet.
       }
