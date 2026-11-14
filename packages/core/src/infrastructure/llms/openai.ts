@@ -55,6 +55,13 @@ function client(): OpenAI {
   return _openai;
 }
 
+/** A client for an explicit key, or null to use the shared one that reads the environment. */
+function ownClient(apiKey: string | undefined, owner: string): OpenAI | null {
+  if (apiKey === undefined) return null;
+  if (apiKey.trim() === '') throw new RangeError(`${owner} apiKey must not be empty; omit it to read OPENAI_API_KEY`);
+  return new OpenAI({ apiKey });
+}
+
 const DEFAULT_CHAT_MODEL = 'gpt-4o-mini';
 
 /**
@@ -94,10 +101,16 @@ export interface OpenAILLMOptions {
    * default applies, which is 1 on the OpenAI API.
    */
   readonly temperature?: number;
+  /**
+   * API key for this instance. Without it the client reads `OPENAI_API_KEY` from the environment.
+   * The key is handed to the client and is never written to the process environment (#218).
+   */
+  readonly apiKey?: string;
 }
 
 export class OpenAILLM implements LLM {
   readonly #temperature: number;
+  readonly #own: OpenAI | null;
 
   constructor(options: OpenAILLMOptions = {}) {
     const temperature = options.temperature ?? 0;
@@ -105,6 +118,7 @@ export class OpenAILLM implements LLM {
       throw new RangeError(`OpenAILLM temperature must be a number in [0, 2], got ${String(options.temperature)}`);
     }
     this.#temperature = temperature;
+    this.#own = ownClient(options.apiKey, 'OpenAILLM');
   }
 
   async generateResponse(
@@ -113,7 +127,7 @@ export class OpenAILLM implements LLM {
     _tools?: readonly unknown[],
   ): Promise<unknown> {
     void _tools;
-    const resp = await client().chat.completions.create({
+    const resp = await (this.#own ?? client()).chat.completions.create({
       model: resolveChatModel(),
       messages: toOpenAIMessages(messages),
       temperature: this.#temperature,
@@ -134,7 +148,7 @@ export class OpenAILLM implements LLM {
   }
 
   async generateChat(messages: readonly Message[]): Promise<LLMResponse> {
-    const resp = await client().chat.completions.create({
+    const resp = await (this.#own ?? client()).chat.completions.create({
       model: resolveChatModel(),
       messages: toOpenAIMessages(messages),
       temperature: this.#temperature,

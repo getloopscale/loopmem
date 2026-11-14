@@ -44,6 +44,13 @@ function client(): OpenAI {
   return _openai;
 }
 
+/** A client for an explicit key, or null to use the shared one that reads the environment. */
+function ownClient(apiKey: string | undefined, owner: string): OpenAI | null {
+  if (apiKey === undefined) return null;
+  if (apiKey.trim() === '') throw new RangeError(`${owner} apiKey must not be empty; omit it to read OPENAI_API_KEY`);
+  return new OpenAI({ apiKey });
+}
+
 const EMBED_MODEL = 'text-embedding-3-small';
 
 /**
@@ -60,9 +67,24 @@ export function clampEmbedInput(text: string): string {
   return text.length > EMBED_INPUT_MAX_CHARS ? text.slice(0, EMBED_INPUT_MAX_CHARS) : text;
 }
 
+/** Constructor options for {@link OpenAIEmbedder}. */
+export interface OpenAIEmbedderOptions {
+  /**
+   * API key for this instance. Without it the client reads `OPENAI_API_KEY` from the environment.
+   * The key is handed to the client and is never written to the process environment (#218).
+   */
+  readonly apiKey?: string;
+}
+
 export class OpenAIEmbedder implements Embedder {
+  readonly #own: OpenAI | null;
+
+  constructor(options: OpenAIEmbedderOptions = {}) {
+    this.#own = ownClient(options.apiKey, 'OpenAIEmbedder');
+  }
+
   async embed(text: string): Promise<readonly number[]> {
-    const resp = await client().embeddings.create({
+    const resp = await (this.#own ?? client()).embeddings.create({
       model: EMBED_MODEL,
       input: clampEmbedInput(text),
     });
@@ -73,7 +95,7 @@ export class OpenAIEmbedder implements Embedder {
     texts: readonly string[],
   ): Promise<readonly (readonly number[])[]> {
     if (texts.length === 0) return [];
-    const resp = await client().embeddings.create({
+    const resp = await (this.#own ?? client()).embeddings.create({
       model: EMBED_MODEL,
       input: texts.map(clampEmbedInput),
     });

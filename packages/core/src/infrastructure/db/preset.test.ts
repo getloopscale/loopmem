@@ -122,9 +122,18 @@ describe('T1.2 — resolvePreset (env-set, validation)', () => {
     else process.env['OPENAI_API_KEY'] = prevKey;
   });
 
-  it('test_resolvePreset_sets_openai_env_when_key_provided', async () => {
+  it('passes the key to the clients and leaves the process environment alone (#218)', async () => {
+    delete process.env['OPENAI_API_KEY'];
     await resolvePreset({ postgres: 'postgres://x/db', openai: 'sk-passed', migrate: false });
-    expect(process.env['OPENAI_API_KEY']).toBe('sk-passed');
+    expect(process.env['OPENAI_API_KEY']).toBeUndefined();
+    expect(OpenAIEmbedderMock).toHaveBeenLastCalledWith({ apiKey: 'sk-passed' });
+    expect(OpenAILLMMock).toHaveBeenLastCalledWith({ apiKey: 'sk-passed' });
+  });
+
+  it('builds the clients without a key when none is given, so they read the ambient one', async () => {
+    await resolvePreset({ postgres: 'postgres://x/db', migrate: false });
+    expect(OpenAIEmbedderMock).toHaveBeenLastCalledWith({});
+    expect(OpenAILLMMock).toHaveBeenLastCalledWith({});
   });
 
   it('test_resolvePreset_empty_openai_keeps_ambient_key', async () => {
