@@ -135,3 +135,43 @@ Limits of this result:
   Measured and rejected for now: 21 wrong endings of 160 with a small model.
 - One judge call over the whole list. Measured on development data and rejected.
 - Leave both values and let the reader decide by date. Measured and rejected (H195, H196).
+
+## Amendment (2026-11-14): measured limits of the judge
+
+Later sets, written for the cases the approval set did not have, show two kinds of pair the judge
+gets wrong (#252). All figures are Observed with `gpt-4o-mini`, three runs, on sets kept in
+`packages/eval/src/stages/update-decision/` and `update-history/`.
+
+- The same attribute of another person. "The user's insurer is A" followed by "the user's aunt's
+  insurer is B": the judge ends the first fact in 37 to 50 of 96 runs across three independent sets.
+- Two values in tension that can both hold. The judge ends the first in 46 to 87 of 96 runs.
+- Updates and corrections are still found: 95 to 100% in every set.
+
+End to end, on 16 histories of 36 dated messages (176 questions, `topK` 5, one reader):
+
+| Question | Ending on write | `supersedeOnWrite: false` |
+|---|---|---|
+| The user's current value (192) | 170 | 90 |
+| A relative's value of the same attribute (144) | 61 | 123 |
+| A relative's current value (48) | 46 | 24 |
+| A fact that never changes (144) | 134 | 132 |
+
+Ending on write stays the default. It gives the reader the current value far more often than
+leaving every value with its date, and a reader given the whole history does no better (162 of
+192). Its cost is the second row: the relative's fact was in the recall result in 72 of 144 runs.
+
+What was tried and not adopted, each against criteria fixed before the run:
+
+- A second call that describes the pair, as a veto. Wrong endings fell from 93 to 9 of 288; updates
+  found fell to 91.3%, under the 95% floor.
+- A second call that reads whose fact each note is, as a veto. Wrong endings fell from 47 to 4 of
+  192; updates found fell to 93.0%, under the same floor.
+- The extractor stating whose fact it is, in the extraction call. On development sets the label was
+  missing or wrong too often to gate anything, and wrong endings did not fall.
+- A larger model on the same judge prompt (development sets, one run): `gpt-4.1` still ended 31 of
+  96 pairs about another person, against 47 for `gpt-4o-mini`. Model size alone does not remove it.
+
+What a caller can do today: an ended fact is never deleted, so `recall({ asOf })` before the ending
+still returns it, and the `history` of the memory names the fact that ended it.
+`createLocalMemory({ supersedeOnWrite: false })` keeps every value current, at the cost shown in
+the first row of the table.
