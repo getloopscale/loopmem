@@ -1,0 +1,1288 @@
+{
+ "users": [
+  {
+   "id": "nf2-ottilie",
+   "facts": [
+    {
+     "key": "commute",
+     "text": "Ottilie rides the ferry to work every morning.",
+     "observedAt": "2024-05-12",
+     "role": "distinct"
+    },
+    {
+     "key": "weekend hobby",
+     "text": "On weekends, Ottilie goes birdwatching in the marshes.",
+     "observedAt": "2024-05-13",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "In the evenings Ottilie studies Finnish with a tutor.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Ottilie has played the bassoon since her school days.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    },
+    {
+     "key": "home town",
+     "text": "The town where Ottilie grew up is Whitby.",
+     "observedAt": "2024-05-16",
+     "role": "distinct"
+    },
+    {
+     "key": "allergy",
+     "text": "Ottilie is allergic to walnuts.",
+     "observedAt": "2024-05-17",
+     "role": "distinct"
+    },
+    {
+     "key": "phone",
+     "text": "For calls and photos, Ottilie uses a Fairphone.",
+     "observedAt": "2024-05-18",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Ottilie collects antique thimbles from flea markets.",
+     "observedAt": "2024-05-19",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Ottilie works as a cartographer for the county.",
+     "observedAt": "2024-05-20",
+     "role": "distinct"
+    },
+    {
+     "key": "volunteer work",
+     "text": "Every month Ottilie volunteers at a lighthouse museum.",
+     "observedAt": "2024-05-21",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "How does Ottilie get to work?",
+     "pattern": "ferry"
+    },
+    {
+     "query": "What is Ottilie's weekend hobby?",
+     "pattern": "birdwatching"
+    },
+    {
+     "query": "Which language is Ottilie learning?",
+     "pattern": "finnish"
+    },
+    {
+     "query": "Which instrument does Ottilie play?",
+     "pattern": "bassoon"
+    },
+    {
+     "query": "What is Ottilie's home town?",
+     "pattern": "whitby"
+    },
+    {
+     "query": "What is Ottilie allergic to?",
+     "pattern": "walnuts"
+    },
+    {
+     "query": "Which phone does Ottilie use?",
+     "pattern": "fairphone"
+    },
+    {
+     "query": "What does Ottilie collect?",
+     "pattern": "thimbles"
+    },
+    {
+     "query": "What is Ottilie's job?",
+     "pattern": "cartographer"
+    },
+    {
+     "query": "Where does Ottilie volunteer?",
+     "pattern": "lighthouse"
+    }
+   ]
+  },
+  {
+   "id": "nf2-barnaby",
+   "facts": [
+    {
+     "key": "sport",
+     "text": "Barnaby plays squash at his local club.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "At home, Barnaby keeps a tortoise named Clementine.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    },
+    {
+     "key": "phone",
+     "text": "Barnaby's phone is an old Nokia with buttons.",
+     "observedAt": "2024-05-16",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "Of all the seasons, Barnaby loves autumn most.",
+     "observedAt": "2024-05-17",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "Barnaby has always been afraid of wasps.",
+     "observedAt": "2024-05-18",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "In a folk band, Barnaby plays the accordion.",
+     "observedAt": "2024-05-19",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Barnaby earns his living as a locksmith.",
+     "observedAt": "2024-05-20",
+     "role": "distinct"
+    },
+    {
+     "key": "vehicle",
+     "text": "Barnaby drives a green Land Rover.",
+     "observedAt": "2024-05-21",
+     "role": "distinct"
+    },
+    {
+     "key": "volunteer work",
+     "text": "On Saturdays Barnaby volunteers with the mountain rescue team.",
+     "observedAt": "2024-05-22",
+     "role": "distinct"
+    },
+    {
+     "key": "commute",
+     "text": "Barnaby gets to his workshop by tram.",
+     "observedAt": "2024-05-23",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Which sport does Barnaby play?",
+     "pattern": "squash"
+    },
+    {
+     "query": "What kind of pet does Barnaby have?",
+     "pattern": "tortoise"
+    },
+    {
+     "query": "Which phone does Barnaby have?",
+     "pattern": "nokia"
+    },
+    {
+     "query": "What is Barnaby's favourite season?",
+     "pattern": "autumn"
+    },
+    {
+     "query": "What is Barnaby afraid of?",
+     "pattern": "wasps"
+    },
+    {
+     "query": "Which instrument does Barnaby play?",
+     "pattern": "accordion"
+    },
+    {
+     "query": "What does Barnaby do for a living?",
+     "pattern": "locksmith"
+    },
+    {
+     "query": "What vehicle does Barnaby drive?",
+     "pattern": "land rover"
+    },
+    {
+     "query": "Where does Barnaby volunteer?",
+     "pattern": "mountain rescue"
+    },
+    {
+     "query": "How does Barnaby commute to his workshop?",
+     "pattern": "tram"
+    }
+   ]
+  },
+  {
+   "id": "nf2-leocádia",
+   "facts": [
+    {
+     "key": "vehicle",
+     "text": "Leocádia dirige uma Kombi azul restaurada.",
+     "observedAt": "2024-05-13",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Desde menina, Leocádia toca cavaquinho nas rodas de samba.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "weekend hobby",
+     "text": "Nos fins de semana, Leocádia faz cerâmica em um ateliê.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "Leocádia tem uma calopsita chamada Pipoca.",
+     "observedAt": "2024-05-16",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Em casa, Leocádia coleciona cartões-postais antigos.",
+     "observedAt": "2024-05-17",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Leocádia trabalha como fonoaudióloga em uma clínica.",
+     "observedAt": "2024-05-18",
+     "role": "distinct"
+    },
+    {
+     "key": "garden",
+     "text": "No quintal, Leocádia cultiva jabuticabeiras.",
+     "observedAt": "2024-05-19",
+     "role": "distinct"
+    },
+    {
+     "key": "allergy",
+     "text": "Leocádia é alérgica a camarão.",
+     "observedAt": "2024-05-20",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "Leocádia está aprendendo japonês em um curso noturno.",
+     "observedAt": "2024-05-21",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "A estação preferida de Leocádia é o inverno.",
+     "observedAt": "2024-05-22",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Qual veículo a Leocádia dirige?",
+     "pattern": "kombi"
+    },
+    {
+     "query": "Qual instrumento a Leocádia toca?",
+     "pattern": "cavaquinho"
+    },
+    {
+     "query": "Qual é o passatempo da Leocádia nos fins de semana?",
+     "pattern": "cerâmica"
+    },
+    {
+     "query": "Que animal de estimação a Leocádia tem?",
+     "pattern": "calopsita"
+    },
+    {
+     "query": "O que a Leocádia coleciona?",
+     "pattern": "postais"
+    },
+    {
+     "query": "Qual é a profissão da Leocádia?",
+     "pattern": "fonoaudióloga"
+    },
+    {
+     "query": "O que a Leocádia cultiva no quintal?",
+     "pattern": "jabuticabeiras"
+    },
+    {
+     "query": "A que a Leocádia é alérgica?",
+     "pattern": "camarão"
+    },
+    {
+     "query": "Que idioma a Leocádia está aprendendo?",
+     "pattern": "japonês"
+    },
+    {
+     "query": "Qual é a estação preferida da Leocádia?",
+     "pattern": "inverno"
+    }
+   ]
+  },
+  {
+   "id": "nf2-evaristo",
+   "facts": [
+    {
+     "key": "commute",
+     "text": "Evaristo vai para o trabalho de balsa.",
+     "observedAt": "2024-05-06",
+     "role": "distinct"
+    },
+    {
+     "key": "sport",
+     "text": "Duas vezes por semana, Evaristo pratica remo na lagoa.",
+     "observedAt": "2024-05-07",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "A bebida preferida de Evaristo é chimarrão.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "home town",
+     "text": "Evaristo nasceu e cresceu em Paraty.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "Em casa, Evaristo cria um jabuti chamado Tobias.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "No café da manhã, Evaristo sempre come tapioca.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Evaristo coleciona discos de vinil de chorinho.",
+     "observedAt": "2024-05-12",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Evaristo toca sanfona nas festas da família.",
+     "observedAt": "2024-05-13",
+     "role": "distinct"
+    },
+    {
+     "key": "garden",
+     "text": "No jardim de Evaristo crescem muitas orquídeas.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "Evaristo gosta mesmo é da primavera.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Como o Evaristo vai para o trabalho?",
+     "pattern": "balsa"
+    },
+    {
+     "query": "Que esporte o Evaristo pratica?",
+     "pattern": "remo"
+    },
+    {
+     "query": "Qual é a bebida preferida do Evaristo?",
+     "pattern": "chimarrão"
+    },
+    {
+     "query": "Qual é a cidade natal do Evaristo?",
+     "pattern": "paraty"
+    },
+    {
+     "query": "Que animal de estimação o Evaristo tem?",
+     "pattern": "jabuti"
+    },
+    {
+     "query": "O que o Evaristo come no café da manhã?",
+     "pattern": "tapioca"
+    },
+    {
+     "query": "O que o Evaristo coleciona?",
+     "pattern": "vinil"
+    },
+    {
+     "query": "Qual instrumento o Evaristo toca?",
+     "pattern": "sanfona"
+    },
+    {
+     "query": "O que cresce no jardim do Evaristo?",
+     "pattern": "orquídeas"
+    },
+    {
+     "query": "Qual é a estação preferida do Evaristo?",
+     "pattern": "primavera"
+    }
+   ]
+  },
+  {
+   "id": "nf2-remedios",
+   "facts": [
+    {
+     "key": "language being learned",
+     "text": "Remedios está aprendiendo coreano por las tardes.",
+     "observedAt": "2024-05-02",
+     "role": "distinct"
+    },
+    {
+     "key": "allergy",
+     "text": "Remedios es alérgica a los cacahuetes.",
+     "observedAt": "2024-05-03",
+     "role": "distinct"
+    },
+    {
+     "key": "weekend hobby",
+     "text": "Los fines de semana, Remedios practica senderismo en la sierra.",
+     "observedAt": "2024-05-04",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Remedios toca el violonchelo en una orquesta local.",
+     "observedAt": "2024-05-05",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Remedios trabaja como farmacéutica en su barrio.",
+     "observedAt": "2024-05-06",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "Cada mañana, Remedios desayuna churros con chocolate.",
+     "observedAt": "2024-05-07",
+     "role": "distinct"
+    },
+    {
+     "key": "commute",
+     "text": "Para ir a la oficina, Remedios toma el teleférico.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "vehicle",
+     "text": "Remedios conduce una furgoneta amarilla.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "La estación favorita de Remedios es el otoño.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "phone",
+     "text": "El teléfono de Remedios es un Motorola plegable.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "¿Qué idioma está aprendiendo Remedios?",
+     "pattern": "coreano"
+    },
+    {
+     "query": "¿A qué es alérgica Remedios?",
+     "pattern": "cacahuetes"
+    },
+    {
+     "query": "¿Cuál es la afición de Remedios los fines de semana?",
+     "pattern": "senderismo"
+    },
+    {
+     "query": "¿Qué instrumento toca Remedios?",
+     "pattern": "violonchelo"
+    },
+    {
+     "query": "¿En qué trabaja Remedios?",
+     "pattern": "farmacéutica"
+    },
+    {
+     "query": "¿Qué desayuna Remedios cada mañana?",
+     "pattern": "churros"
+    },
+    {
+     "query": "¿Cómo va Remedios a la oficina?",
+     "pattern": "teleférico"
+    },
+    {
+     "query": "¿Qué vehículo conduce Remedios?",
+     "pattern": "furgoneta"
+    },
+    {
+     "query": "¿Cuál es la estación favorita de Remedios?",
+     "pattern": "otoño"
+    },
+    {
+     "query": "¿Qué teléfono tiene Remedios?",
+     "pattern": "motorola"
+    }
+   ]
+  },
+  {
+   "id": "nf2-baldomero",
+   "facts": [
+    {
+     "key": "sport",
+     "text": "Baldomero juega a la pelota vasca los domingos.",
+     "observedAt": "2024-05-01",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "En las fiestas del pueblo, Baldomero toca la gaita.",
+     "observedAt": "2024-05-02",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "A Baldomero le dan miedo las tormentas.",
+     "observedAt": "2024-05-03",
+     "role": "distinct"
+    },
+    {
+     "key": "home town",
+     "text": "Baldomero nació y creció en Cuenca.",
+     "observedAt": "2024-05-04",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Baldomero se gana la vida como relojero.",
+     "observedAt": "2024-05-05",
+     "role": "distinct"
+    },
+    {
+     "key": "commute",
+     "text": "Baldomero va a su taller en patinete.",
+     "observedAt": "2024-05-06",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "En casa, Baldomero cuida de un hurón llamado Canelo.",
+     "observedAt": "2024-05-07",
+     "role": "distinct"
+    },
+    {
+     "key": "vehicle",
+     "text": "Baldomero conduce una vieja camioneta roja.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "Por las noches Baldomero estudia griego con una aplicación.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Baldomero colecciona sellos de correos antiguos.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "¿Qué deporte practica Baldomero?",
+     "pattern": "pelota vasca"
+    },
+    {
+     "query": "¿Qué instrumento toca Baldomero?",
+     "pattern": "gaita"
+    },
+    {
+     "query": "¿A qué le tiene miedo Baldomero?",
+     "pattern": "tormentas"
+    },
+    {
+     "query": "¿Cuál es la ciudad natal de Baldomero?",
+     "pattern": "cuenca"
+    },
+    {
+     "query": "¿A qué se dedica Baldomero?",
+     "pattern": "relojero"
+    },
+    {
+     "query": "¿Cómo va Baldomero a su taller?",
+     "pattern": "patinete"
+    },
+    {
+     "query": "¿Qué mascota tiene Baldomero?",
+     "pattern": "hurón"
+    },
+    {
+     "query": "¿Qué vehículo conduce Baldomero?",
+     "pattern": "camioneta"
+    },
+    {
+     "query": "¿Qué idioma está aprendiendo Baldomero?",
+     "pattern": "griego"
+    },
+    {
+     "query": "¿Qué colecciona Baldomero?",
+     "pattern": "sellos"
+    }
+   ]
+  },
+  {
+   "id": "nf2-fiammetta",
+   "facts": [
+    {
+     "key": "vehicle",
+     "text": "Fiammetta guida una Vespa color crema.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Fiammetta lavora come restauratrice di affreschi.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "A colazione, Fiammetta mangia sempre fette biscottate con miele.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "Fiammetta ha un coniglio di nome Zenzero.",
+     "observedAt": "2024-05-12",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "La bevanda preferita di Fiammetta è il chinotto.",
+     "observedAt": "2024-05-13",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "Tra le stagioni, Fiammetta preferisce l'estate.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "Fiammetta ha paura dei pipistrelli.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    },
+    {
+     "key": "sport",
+     "text": "Il giovedì sera Fiammetta pratica scherma in palestra.",
+     "observedAt": "2024-05-16",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "Fiammetta sta imparando il portoghese per viaggiare.",
+     "observedAt": "2024-05-17",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Fiammetta colleziona segnalibri da ogni libreria.",
+     "observedAt": "2024-05-18",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Che veicolo guida Fiammetta?",
+     "pattern": "vespa"
+    },
+    {
+     "query": "Che lavoro fa Fiammetta?",
+     "pattern": "restauratrice"
+    },
+    {
+     "query": "Che cosa mangia Fiammetta a colazione?",
+     "pattern": "fette biscottate"
+    },
+    {
+     "query": "Che animale domestico ha Fiammetta?",
+     "pattern": "coniglio"
+    },
+    {
+     "query": "Qual è la bevanda preferita di Fiammetta?",
+     "pattern": "chinotto"
+    },
+    {
+     "query": "Qual è la stagione preferita di Fiammetta?",
+     "pattern": "estate"
+    },
+    {
+     "query": "Di che cosa ha paura Fiammetta?",
+     "pattern": "pipistrelli"
+    },
+    {
+     "query": "Che sport pratica Fiammetta?",
+     "pattern": "scherma"
+    },
+    {
+     "query": "Quale lingua sta imparando Fiammetta?",
+     "pattern": "portoghese"
+    },
+    {
+     "query": "Che cosa colleziona Fiammetta?",
+     "pattern": "segnalibri"
+    }
+   ]
+  },
+  {
+   "id": "nf2-ermanno",
+   "facts": [
+    {
+     "key": "weekend hobby",
+     "text": "Nel fine settimana, Ermanno va a pescare sul lago.",
+     "observedAt": "2024-05-03",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "Ermanno fa colazione con un cornetto alla marmellata.",
+     "observedAt": "2024-05-04",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Ermanno colleziona orologi da taschino.",
+     "observedAt": "2024-05-05",
+     "role": "distinct"
+    },
+    {
+     "key": "vehicle",
+     "text": "Ermanno guida un vecchio furgone verde.",
+     "observedAt": "2024-05-06",
+     "role": "distinct"
+    },
+    {
+     "key": "volunteer work",
+     "text": "Ogni sabato Ermanno fa il volontario in un canile.",
+     "observedAt": "2024-05-07",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Nella banda del paese, Ermanno suona il clarinetto.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "La stagione preferita di Ermanno è l'autunno.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "A Ermanno piace soprattutto bere la cedrata.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "Ermanno ha un pappagallo di nome Ulisse.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "Ermanno ha sempre avuto paura dei temporali.",
+     "observedAt": "2024-05-12",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Qual è il passatempo di Ermanno nel fine settimana?",
+     "pattern": "pescare"
+    },
+    {
+     "query": "Che cosa mangia Ermanno a colazione?",
+     "pattern": "cornetto"
+    },
+    {
+     "query": "Che cosa colleziona Ermanno?",
+     "pattern": "orologi"
+    },
+    {
+     "query": "Che veicolo guida Ermanno?",
+     "pattern": "furgone"
+    },
+    {
+     "query": "Dove fa volontariato Ermanno?",
+     "pattern": "canile"
+    },
+    {
+     "query": "Quale strumento suona Ermanno?",
+     "pattern": "clarinetto"
+    },
+    {
+     "query": "Qual è la stagione preferita di Ermanno?",
+     "pattern": "autunno"
+    },
+    {
+     "query": "Qual è la bevanda preferita di Ermanno?",
+     "pattern": "cedrata"
+    },
+    {
+     "query": "Che animale domestico ha Ermanno?",
+     "pattern": "pappagallo"
+    },
+    {
+     "query": "Di che cosa ha paura Ermanno?",
+     "pattern": "temporali"
+    }
+   ]
+  },
+  {
+   "id": "nf2-mathurin",
+   "facts": [
+    {
+     "key": "allergy",
+     "text": "Mathurin est allergique aux noisettes.",
+     "observedAt": "2024-05-02",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "La boisson préférée de Mathurin est le cidre.",
+     "observedAt": "2024-05-03",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Depuis l'enfance, Mathurin joue de la cornemuse.",
+     "observedAt": "2024-05-04",
+     "role": "distinct"
+    },
+    {
+     "key": "vehicle",
+     "text": "Mathurin conduit une vieille camionnette Citroën.",
+     "observedAt": "2024-05-05",
+     "role": "distinct"
+    },
+    {
+     "key": "garden",
+     "text": "Dans son jardin, Mathurin fait pousser des artichauts.",
+     "observedAt": "2024-05-06",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite season",
+     "text": "Mathurin préfère le printemps à toutes les saisons.",
+     "observedAt": "2024-05-07",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "Le soir, Mathurin apprend le breton avec sa voisine.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Mathurin travaille comme ébéniste dans son atelier.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "weekend hobby",
+     "text": "Le week-end, Mathurin fait de la voile en mer.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "Au petit-déjeuner, Mathurin mange des crêpes au sarrasin.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "À quoi Mathurin est-il allergique ?",
+     "pattern": "noisettes"
+    },
+    {
+     "query": "Quelle est la boisson préférée de Mathurin ?",
+     "pattern": "cidre"
+    },
+    {
+     "query": "De quel instrument Mathurin joue-t-il ?",
+     "pattern": "cornemuse"
+    },
+    {
+     "query": "Quel véhicule Mathurin conduit-il ?",
+     "pattern": "camionnette"
+    },
+    {
+     "query": "Que fait pousser Mathurin dans son jardin ?",
+     "pattern": "artichauts"
+    },
+    {
+     "query": "Quelle est la saison préférée de Mathurin ?",
+     "pattern": "printemps"
+    },
+    {
+     "query": "Quelle langue Mathurin apprend-il ?",
+     "pattern": "breton"
+    },
+    {
+     "query": "Quel est le métier de Mathurin ?",
+     "pattern": "ébéniste"
+    },
+    {
+     "query": "Quel est le loisir de Mathurin le week-end ?",
+     "pattern": "voile"
+    },
+    {
+     "query": "Que mange Mathurin au petit-déjeuner ?",
+     "pattern": "crêpes"
+    }
+   ]
+  },
+  {
+   "id": "nf2-bérénice",
+   "facts": [
+    {
+     "key": "favourite season",
+     "text": "La saison préférée de Bérénice est l'hiver.",
+     "observedAt": "2024-05-13",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Bérénice joue de la harpe depuis le collège.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "Bérénice a très peur des araignées.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    },
+    {
+     "key": "pet",
+     "text": "Chez elle, Bérénice a un furet nommé Réglisse.",
+     "observedAt": "2024-05-16",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "Bérénice adore boire de la verveine chaude.",
+     "observedAt": "2024-05-17",
+     "role": "distinct"
+    },
+    {
+     "key": "job",
+     "text": "Bérénice exerce le métier de sage-femme.",
+     "observedAt": "2024-05-18",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Bérénice collectionne les boîtes à musique anciennes.",
+     "observedAt": "2024-05-19",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "Le matin, Bérénice prend toujours des tartines au miel.",
+     "observedAt": "2024-05-20",
+     "role": "distinct"
+    },
+    {
+     "key": "sport",
+     "text": "Bérénice pratique l'escrime deux fois par semaine.",
+     "observedAt": "2024-05-21",
+     "role": "distinct"
+    },
+    {
+     "key": "volunteer work",
+     "text": "Le dimanche, Bérénice est bénévole dans une bibliothèque de quartier.",
+     "observedAt": "2024-05-22",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Quelle est la saison préférée de Bérénice ?",
+     "pattern": "hiver"
+    },
+    {
+     "query": "De quel instrument Bérénice joue-t-elle ?",
+     "pattern": "harpe"
+    },
+    {
+     "query": "De quoi Bérénice a-t-elle peur ?",
+     "pattern": "araignées"
+    },
+    {
+     "query": "Quel animal de compagnie Bérénice a-t-elle ?",
+     "pattern": "furet"
+    },
+    {
+     "query": "Quelle est la boisson préférée de Bérénice ?",
+     "pattern": "verveine"
+    },
+    {
+     "query": "Quel est le métier de Bérénice ?",
+     "pattern": "sage-femme"
+    },
+    {
+     "query": "Que collectionne Bérénice ?",
+     "pattern": "boîtes à musique"
+    },
+    {
+     "query": "Que prend Bérénice au petit-déjeuner ?",
+     "pattern": "tartines"
+    },
+    {
+     "query": "Quel sport Bérénice pratique-t-elle ?",
+     "pattern": "escrime"
+    },
+    {
+     "query": "Où Bérénice fait-elle du bénévolat ?",
+     "pattern": "bibliothèque"
+    }
+   ]
+  },
+  {
+   "id": "nf2-wilhelmine",
+   "facts": [
+    {
+     "key": "pet",
+     "text": "Wilhelmine hat einen Dackel namens Bruno.",
+     "observedAt": "2024-05-02",
+     "role": "distinct"
+    },
+    {
+     "key": "volunteer work",
+     "text": "Jeden Samstag hilft Wilhelmine ehrenamtlich bei der Bahnhofsmission.",
+     "observedAt": "2024-05-03",
+     "role": "distinct"
+    },
+    {
+     "key": "allergy",
+     "text": "Wilhelmine ist allergisch gegen Erdbeeren.",
+     "observedAt": "2024-05-04",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "Abends lernt Wilhelmine Schwedisch an der Volkshochschule.",
+     "observedAt": "2024-05-05",
+     "role": "distinct"
+    },
+    {
+     "key": "breakfast habit",
+     "text": "Zum Frühstück isst Wilhelmine immer Haferbrei mit Zimt.",
+     "observedAt": "2024-05-06",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Wilhelmine sammelt Schneekugeln aus aller Welt.",
+     "observedAt": "2024-05-07",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "Vor Gewittern hat Wilhelmine große Angst.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "Am liebsten trinkt Wilhelmine Holunderschorle.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "commute",
+     "text": "Wilhelmine fährt mit der Straßenbahn zur Arbeit.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "weekend hobby",
+     "text": "Am Wochenende geht Wilhelmine gern töpfern.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Welches Haustier hat Wilhelmine?",
+     "pattern": "dackel"
+    },
+    {
+     "query": "Wo arbeitet Wilhelmine ehrenamtlich?",
+     "pattern": "bahnhofsmission"
+    },
+    {
+     "query": "Wogegen ist Wilhelmine allergisch?",
+     "pattern": "erdbeeren"
+    },
+    {
+     "query": "Welche Sprache lernt Wilhelmine?",
+     "pattern": "schwedisch"
+    },
+    {
+     "query": "Was isst Wilhelmine zum Frühstück?",
+     "pattern": "haferbrei"
+    },
+    {
+     "query": "Was sammelt Wilhelmine?",
+     "pattern": "schneekugeln"
+    },
+    {
+     "query": "Wovor hat Wilhelmine Angst?",
+     "pattern": "gewittern"
+    },
+    {
+     "query": "Was trinkt Wilhelmine am liebsten?",
+     "pattern": "holunderschorle"
+    },
+    {
+     "query": "Wie kommt Wilhelmine zur Arbeit?",
+     "pattern": "straßenbahn"
+    },
+    {
+     "query": "Was ist das Wochenendhobby von Wilhelmine?",
+     "pattern": "töpfern"
+    }
+   ]
+  },
+  {
+   "id": "nf2-gotthard",
+   "facts": [
+    {
+     "key": "favourite season",
+     "text": "Am meisten mag Gotthard den Herbst.",
+     "observedAt": "2024-05-08",
+     "role": "distinct"
+    },
+    {
+     "key": "commute",
+     "text": "Gotthard pendelt jeden Tag mit der Fähre.",
+     "observedAt": "2024-05-09",
+     "role": "distinct"
+    },
+    {
+     "key": "favourite drink",
+     "text": "Gotthard trinkt am liebsten Malzbier.",
+     "observedAt": "2024-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "volunteer work",
+     "text": "In seiner Freizeit engagiert sich Gotthard bei der Feuerwehr.",
+     "observedAt": "2024-05-11",
+     "role": "distinct"
+    },
+    {
+     "key": "vehicle",
+     "text": "Gotthard fährt einen alten Unimog.",
+     "observedAt": "2024-05-12",
+     "role": "distinct"
+    },
+    {
+     "key": "instrument",
+     "text": "Im Musikverein spielt Gotthard die Posaune.",
+     "observedAt": "2024-05-13",
+     "role": "distinct"
+    },
+    {
+     "key": "fear",
+     "text": "Gotthard fürchtet sich vor Schlangen.",
+     "observedAt": "2024-05-14",
+     "role": "distinct"
+    },
+    {
+     "key": "language being learned",
+     "text": "Seit Jahren lernt Gotthard Polnisch.",
+     "observedAt": "2024-05-15",
+     "role": "distinct"
+    },
+    {
+     "key": "home town",
+     "text": "Aufgewachsen ist Gotthard in Quedlinburg.",
+     "observedAt": "2024-05-16",
+     "role": "distinct"
+    },
+    {
+     "key": "collection",
+     "text": "Gotthard sammelt Bierdeckel aus alten Gasthäusern.",
+     "observedAt": "2024-05-17",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Welche Jahreszeit mag Gotthard am liebsten?",
+     "pattern": "herbst"
+    },
+    {
+     "query": "Wie pendelt Gotthard zur Arbeit?",
+     "pattern": "fähre"
+    },
+    {
+     "query": "Was trinkt Gotthard am liebsten?",
+     "pattern": "malzbier"
+    },
+    {
+     "query": "Wo engagiert sich Gotthard ehrenamtlich?",
+     "pattern": "feuerwehr"
+    },
+    {
+     "query": "Welches Fahrzeug fährt Gotthard?",
+     "pattern": "unimog"
+    },
+    {
+     "query": "Welches Instrument spielt Gotthard?",
+     "pattern": "posaune"
+    },
+    {
+     "query": "Wovor fürchtet sich Gotthard?",
+     "pattern": "schlangen"
+    },
+    {
+     "query": "Welche Sprache lernt Gotthard?",
+     "pattern": "polnisch"
+    },
+    {
+     "query": "Aus welcher Stadt stammt Gotthard?",
+     "pattern": "quedlinburg"
+    },
+    {
+     "query": "Was sammelt Gotthard?",
+     "pattern": "bierdeckel"
+    }
+   ]
+  }
+ ]
+}
