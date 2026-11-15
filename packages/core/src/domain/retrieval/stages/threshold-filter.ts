@@ -41,6 +41,25 @@ export type DroppedCandidate = Omit<
  * re-filter is byte-consistent with the initial filter (EC-1 + DRY).
  */
 /**
+ * Records, as `below_top_k`, every candidate that passed the threshold, was not returned and was
+ * not already recorded under another reason: the candidates the top-K cut left out (Princípio 3).
+ */
+export function recordBelowTopK(
+  drops: DroppedCandidate[],
+  ranked: readonly ScoredRow[],
+  candidates: ReadonlyMap<string, Candidate>,
+  keptIds: ReadonlySet<string>,
+  threshold: number,
+): void {
+  const recorded = new Set(drops.map((drop) => drop.memoryId));
+  for (const row of ranked) {
+    const candidate = candidates.get(row.id);
+    if (keptIds.has(row.id) || recorded.has(row.id) || candidate === undefined) continue;
+    recordDrop(drops, row.id, candidate, threshold, row.score, 'below_top_k');
+  }
+}
+
+/**
  * Records one dropped candidate with its component breakdown (DRY — the threshold
  * gates AND the post-threshold recency-collapse stage all funnel drops through here).
  */
