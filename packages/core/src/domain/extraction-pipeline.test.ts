@@ -25,7 +25,7 @@ import type { HistoryBatchRecord } from './dip/history-manager.js';
 import type { LLM } from './dip/llm.js';
 import type { InsertOutcome, VectorStore, VectorStoreResult } from './dip/vector-store.js';
 import { runExtractionPipeline } from './extraction/pipeline.js';
-import { LANGUAGE_IDENTIFICATION_PROMPT } from './extraction/language-identification.js';
+import { FIRST_WORD_NAME_PROMPT, LANGUAGE_IDENTIFICATION_PROMPT } from './extraction/language-identification.js';
 import { InMemoryMessageLog } from '../infrastructure/db/in-memory-message-log.js';
 import { InMemoryVectorStore } from '../infrastructure/db/in-memory-store.js';
 import { BUILTIN_ONTOLOGIES } from './ontology.js';
@@ -106,7 +106,7 @@ const makeLlm = (response: unknown): LLM => ({
 });
 
 const isIdentification = (messages: readonly { content: string }[]): boolean =>
-  messages[0]?.content === LANGUAGE_IDENTIFICATION_PROMPT;
+  messages[0]?.content === LANGUAGE_IDENTIFICATION_PROMPT || messages[0]?.content === FIRST_WORD_NAME_PROMPT;
 
 /** The LLM calls other than the input-language identification that precedes extraction. */
 const extractionCalls = (llm: LLM) =>
@@ -141,7 +141,8 @@ describe('runExtractionPipeline (8-phase write)', () => {
     const store = new StubVectorStore();
     let calls = 0;
     const llm: LLM = {
-      generateResponse: async () => {
+      generateResponse: async (messages) => {
+        if (isIdentification(messages)) return { language: 'en' };
         calls += 1;
         return calls === 1
           ? 'not json at all'
