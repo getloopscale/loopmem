@@ -81,6 +81,8 @@ describe('entity boost query plan', () => {
     const plan = rows.map((r) => r['QUERY PLAN']).join('\n');
 
     expect(plan).toMatch(/Index Scan|Index Only Scan|Bitmap/);
-    expect(plan).not.toMatch(/Seq Scan/);
+    // Only the table this lookup is about. The plan also reads `memories`, and which scan the
+    // planner picks there depends on the statistics of the moment (#316).
+    expect(plan).not.toMatch(/Seq Scan on memory_entities/);
   });
 });
