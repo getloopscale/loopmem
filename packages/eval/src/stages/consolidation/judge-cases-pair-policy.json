@@ -1,0 +1,1102 @@
+{
+ "users": [
+  {
+   "id": "rf-ambrose",
+   "facts": [
+    {
+     "key": "bank-new",
+     "text": "Ambrose banks with Corvane Savings.",
+     "observedAt": "2022-09-02",
+     "role": "new",
+     "update": "bank",
+     "loggedOutOfOrder": true
+    },
+    {
+     "key": "bank-old",
+     "text": "Ambrose banks with Thistledown Mutual.",
+     "observedAt": "2022-03-14",
+     "role": "old",
+     "update": "bank"
+    },
+    {
+     "key": "health-insurer-old",
+     "text": "Ambrose has his health insurance with Pellwick Assurance.",
+     "observedAt": "2022-11-10",
+     "role": "old",
+     "update": "health-insurer"
+    },
+    {
+     "key": "health-insurer-new",
+     "text": "Ambrose has his health insurance with Marrowby Care.",
+     "observedAt": "2023-06-21",
+     "role": "new",
+     "update": "health-insurer"
+    },
+    {
+     "key": "manager-at-work-old",
+     "text": "Ambrose reports to his manager Odalys Brenk at work.",
+     "observedAt": "2023-02-06",
+     "role": "old",
+     "update": "manager-at-work"
+    },
+    {
+     "key": "manager-at-work-new",
+     "text": "Ambrose reports to his manager Ferrin Quist at work.",
+     "observedAt": "2023-10-18",
+     "role": "new",
+     "update": "manager-at-work"
+    },
+    {
+     "key": "race-first",
+     "text": "Ambrose ran the Harrowgate 10K race in 2022.",
+     "observedAt": "2022-05-22",
+     "role": "distinct"
+    },
+    {
+     "key": "race-second",
+     "text": "Ambrose ran the Sedgemoor half marathon in 2023.",
+     "observedAt": "2023-04-16",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-first",
+     "text": "Ambrose travelled to Portugal for a surfing holiday.",
+     "observedAt": "2022-07-08",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-second",
+     "text": "Ambrose travelled to Iceland to see the northern lights.",
+     "observedAt": "2023-12-03",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-first",
+     "text": "Ambrose keeps a dog named Biscuit at home.",
+     "observedAt": "2022-04-02",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-second",
+     "text": "Ambrose keeps a parrot named Juniper at home.",
+     "observedAt": "2022-04-19",
+     "role": "distinct"
+    },
+    {
+     "key": "language-first",
+     "text": "Ambrose speaks Welsh fluently with his grandparents.",
+     "observedAt": "2022-08-11",
+     "role": "distinct"
+    },
+    {
+     "key": "language-second",
+     "text": "Ambrose speaks Dutch with his colleagues abroad.",
+     "observedAt": "2023-03-27",
+     "role": "distinct"
+    },
+    {
+     "key": "relative-bank",
+     "text": "Ambrose's cousin Tilda banks with Fennimore Trust.",
+     "observedAt": "2022-10-05",
+     "role": "distinct"
+    },
+    {
+     "key": "birth-city",
+     "text": "Ambrose was born in the city of Wexcombe.",
+     "observedAt": "2022-01-17",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Which bank does Ambrose use?",
+     "pattern": "Corvane",
+     "stalePattern": "Thistledown"
+    },
+    {
+     "query": "Which bank did Ambrose use?",
+     "pattern": "Corvane",
+     "stalePattern": "Thistledown",
+     "asOf": "2022-10-02"
+    },
+    {
+     "query": "Who is Ambrose's health insurer?",
+     "pattern": "Marrowby",
+     "stalePattern": "Pellwick"
+    },
+    {
+     "query": "Who was Ambrose's health insurer?",
+     "pattern": "Marrowby",
+     "stalePattern": "Pellwick",
+     "asOf": "2023-07-21"
+    },
+    {
+     "query": "Who is Ambrose's manager at work?",
+     "pattern": "Ferrin Quist",
+     "stalePattern": "Odalys Brenk"
+    },
+    {
+     "query": "Who was Ambrose's manager at work?",
+     "pattern": "Ferrin Quist",
+     "stalePattern": "Odalys Brenk",
+     "asOf": "2023-11-18"
+    },
+    {
+     "query": "Which race did Ambrose run in 2022?",
+     "pattern": "Harrowgate"
+    },
+    {
+     "query": "Which race did Ambrose run in 2023?",
+     "pattern": "Sedgemoor"
+    },
+    {
+     "query": "Which country did Ambrose visit for a surfing holiday?",
+     "pattern": "Portugal"
+    },
+    {
+     "query": "Which country did Ambrose visit to see the northern lights?",
+     "pattern": "Iceland"
+    },
+    {
+     "query": "What is the name of Ambrose's dog?",
+     "pattern": "Biscuit"
+    },
+    {
+     "query": "What is the name of Ambrose's parrot?",
+     "pattern": "Juniper"
+    },
+    {
+     "query": "Which language does Ambrose speak with his grandparents?",
+     "pattern": "Welsh"
+    },
+    {
+     "query": "Which language does Ambrose speak with colleagues abroad?",
+     "pattern": "Dutch"
+    },
+    {
+     "query": "Which bank does Ambrose's cousin Tilda use?",
+     "pattern": "Fennimore"
+    },
+    {
+     "query": "In which city was Ambrose born?",
+     "pattern": "Wexcombe"
+    }
+   ]
+  },
+  {
+   "id": "rf-cordelia",
+   "facts": [
+    {
+     "key": "internet-provider-new",
+     "text": "Cordelia gets her home internet from Skylark Broadband.",
+     "observedAt": "2022-12-05",
+     "role": "new",
+     "update": "internet-provider",
+     "loggedOutOfOrder": true
+    },
+    {
+     "key": "internet-provider-old",
+     "text": "Cordelia gets her home internet from Brackenfield Fibre.",
+     "observedAt": "2022-04-11",
+     "role": "old",
+     "update": "internet-provider"
+    },
+    {
+     "key": "bank-old",
+     "text": "Cordelia banks with Ostrander Federal.",
+     "observedAt": "2023-01-19",
+     "role": "old",
+     "update": "bank"
+    },
+    {
+     "key": "bank-new",
+     "text": "Cordelia banks with Quillhaven Credit Union.",
+     "observedAt": "2023-08-03",
+     "role": "new",
+     "update": "bank"
+    },
+    {
+     "key": "employer-old",
+     "text": "Cordelia works for Larkspur Dynamics as an accountant.",
+     "observedAt": "2023-05-15",
+     "role": "old",
+     "update": "employer"
+    },
+    {
+     "key": "employer-new",
+     "text": "Cordelia works for Vantrell Logistics as an accountant.",
+     "observedAt": "2024-02-12",
+     "role": "new",
+     "update": "employer"
+    },
+    {
+     "key": "race-first",
+     "text": "Cordelia ran the Dunmere 5K fun run in 2023.",
+     "observedAt": "2023-06-11",
+     "role": "distinct"
+    },
+    {
+     "key": "race-second",
+     "text": "Cordelia ran the full Ashgrove marathon in 2024.",
+     "observedAt": "2024-04-21",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-first",
+     "text": "Cordelia flew to Japan for a cooking course.",
+     "observedAt": "2022-09-14",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-second",
+     "text": "Cordelia flew to Morocco for her sister's wedding.",
+     "observedAt": "2023-10-07",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-first",
+     "text": "Cordelia has a cat named Pickwick.",
+     "observedAt": "2022-06-23",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-second",
+     "text": "Cordelia has a rabbit named Clover.",
+     "observedAt": "2022-07-02",
+     "role": "distinct"
+    },
+    {
+     "key": "language-first",
+     "text": "Cordelia speaks Italian at home with her mother.",
+     "observedAt": "2022-03-08",
+     "role": "distinct"
+    },
+    {
+     "key": "language-second",
+     "text": "Cordelia speaks Korean in her weekly evening class.",
+     "observedAt": "2023-11-29",
+     "role": "distinct"
+    },
+    {
+     "key": "relative-employer",
+     "text": "Cordelia's brother Magnus works for Hollowell Press.",
+     "observedAt": "2023-07-18",
+     "role": "distinct"
+    },
+    {
+     "key": "birth-city",
+     "text": "Cordelia was born in the city of Tarnstead.",
+     "observedAt": "2022-02-25",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Who is Cordelia's internet provider?",
+     "pattern": "Skylark",
+     "stalePattern": "Brackenfield"
+    },
+    {
+     "query": "Who was Cordelia's internet provider?",
+     "pattern": "Skylark",
+     "stalePattern": "Brackenfield",
+     "asOf": "2023-01-05"
+    },
+    {
+     "query": "Which bank does Cordelia use?",
+     "pattern": "Quillhaven",
+     "stalePattern": "Ostrander"
+    },
+    {
+     "query": "Which bank did Cordelia use?",
+     "pattern": "Quillhaven",
+     "stalePattern": "Ostrander",
+     "asOf": "2023-09-03"
+    },
+    {
+     "query": "Who is Cordelia's employer?",
+     "pattern": "Vantrell",
+     "stalePattern": "Larkspur"
+    },
+    {
+     "query": "Who was Cordelia's employer?",
+     "pattern": "Vantrell",
+     "stalePattern": "Larkspur",
+     "asOf": "2024-03-12"
+    },
+    {
+     "query": "Which race did Cordelia run in 2023?",
+     "pattern": "Dunmere"
+    },
+    {
+     "query": "Which race did Cordelia run in 2024?",
+     "pattern": "Ashgrove"
+    },
+    {
+     "query": "Which country did Cordelia visit for a cooking course?",
+     "pattern": "Japan"
+    },
+    {
+     "query": "Which country did Cordelia visit for her sister's wedding?",
+     "pattern": "Morocco"
+    },
+    {
+     "query": "What is the name of Cordelia's cat?",
+     "pattern": "Pickwick"
+    },
+    {
+     "query": "What is the name of Cordelia's rabbit?",
+     "pattern": "Clover"
+    },
+    {
+     "query": "Which language does Cordelia speak at home with her mother?",
+     "pattern": "Italian"
+    },
+    {
+     "query": "Which language does Cordelia speak in her evening class?",
+     "pattern": "Korean"
+    },
+    {
+     "query": "Who does Cordelia's brother Magnus work for?",
+     "pattern": "Hollowell"
+    },
+    {
+     "query": "In which city was Cordelia born?",
+     "pattern": "Tarnstead"
+    }
+   ]
+  },
+  {
+   "id": "rf-leander",
+   "facts": [
+    {
+     "key": "internet-provider-old",
+     "text": "Leander gets his home internet from Garnet Wave.",
+     "observedAt": "2022-02-08",
+     "role": "old",
+     "update": "internet-provider"
+    },
+    {
+     "key": "internet-provider-new",
+     "text": "Leander gets his home internet from Bluefinch Networks.",
+     "observedAt": "2022-08-30",
+     "role": "new",
+     "update": "internet-provider"
+    },
+    {
+     "key": "favourite-coffee-shop-new",
+     "text": "Leander's favourite coffee shop is Driftwood Ember.",
+     "observedAt": "2023-09-27",
+     "role": "new",
+     "update": "favourite-coffee-shop",
+     "loggedOutOfOrder": true
+    },
+    {
+     "key": "favourite-coffee-shop-old",
+     "text": "Leander's favourite coffee shop is Tamarind Lane.",
+     "observedAt": "2023-03-09",
+     "role": "old",
+     "update": "favourite-coffee-shop"
+    },
+    {
+     "key": "phone-model-old",
+     "text": "Leander's phone is a Nordlys K40.",
+     "observedAt": "2023-07-01",
+     "role": "old",
+     "update": "phone-model"
+    },
+    {
+     "key": "phone-model-new",
+     "text": "Leander's phone is a Vireo Halo 7.",
+     "observedAt": "2024-01-15",
+     "role": "new",
+     "update": "phone-model"
+    },
+    {
+     "key": "race-first",
+     "text": "Leander ran the Pinecrest 10K in 2022.",
+     "observedAt": "2022-10-09",
+     "role": "distinct"
+    },
+    {
+     "key": "race-second",
+     "text": "Leander ran the Marlowe Bay half marathon in 2024.",
+     "observedAt": "2024-05-12",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-first",
+     "text": "Leander went to Peru to hike in the mountains.",
+     "observedAt": "2022-06-18",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-second",
+     "text": "Leander went to Norway for a week of fishing.",
+     "observedAt": "2023-08-21",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-first",
+     "text": "Leander owns a tortoise named Gulliver.",
+     "observedAt": "2022-03-30",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-second",
+     "text": "Leander owns a greyhound named Saffron.",
+     "observedAt": "2022-04-13",
+     "role": "distinct"
+    },
+    {
+     "key": "language-first",
+     "text": "Leander speaks Greek with his father's family.",
+     "observedAt": "2022-05-04",
+     "role": "distinct"
+    },
+    {
+     "key": "language-second",
+     "text": "Leander speaks Swahili from his years of volunteering.",
+     "observedAt": "2023-02-16",
+     "role": "distinct"
+    },
+    {
+     "key": "relative-internet-provider",
+     "text": "Leander's aunt Rosalind gets her home internet from Peregrine Link.",
+     "observedAt": "2022-11-22",
+     "role": "distinct"
+    },
+    {
+     "key": "birth-city",
+     "text": "Leander was born in the city of Elmsworth.",
+     "observedAt": "2022-01-26",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Who is Leander's internet provider?",
+     "pattern": "Bluefinch",
+     "stalePattern": "Garnet Wave"
+    },
+    {
+     "query": "Who was Leander's internet provider?",
+     "pattern": "Bluefinch",
+     "stalePattern": "Garnet Wave",
+     "asOf": "2022-09-30"
+    },
+    {
+     "query": "What is Leander's favourite coffee shop?",
+     "pattern": "Driftwood Ember",
+     "stalePattern": "Tamarind Lane"
+    },
+    {
+     "query": "What was Leander's favourite coffee shop?",
+     "pattern": "Driftwood Ember",
+     "stalePattern": "Tamarind Lane",
+     "asOf": "2023-10-27"
+    },
+    {
+     "query": "Which phone model does Leander have?",
+     "pattern": "Vireo Halo",
+     "stalePattern": "Nordlys"
+    },
+    {
+     "query": "Which phone model did Leander have?",
+     "pattern": "Vireo Halo",
+     "stalePattern": "Nordlys",
+     "asOf": "2024-02-15"
+    },
+    {
+     "query": "Which race did Leander run in 2022?",
+     "pattern": "Pinecrest"
+    },
+    {
+     "query": "Which race did Leander run in 2024?",
+     "pattern": "Marlowe Bay"
+    },
+    {
+     "query": "Which country did Leander visit to hike in the mountains?",
+     "pattern": "Peru"
+    },
+    {
+     "query": "Which country did Leander visit for a week of fishing?",
+     "pattern": "Norway"
+    },
+    {
+     "query": "What is the name of Leander's tortoise?",
+     "pattern": "Gulliver"
+    },
+    {
+     "query": "What is the name of Leander's greyhound?",
+     "pattern": "Saffron"
+    },
+    {
+     "query": "Which language does Leander speak with his father's family?",
+     "pattern": "Greek"
+    },
+    {
+     "query": "Which language did Leander pick up while volunteering?",
+     "pattern": "Swahili"
+    },
+    {
+     "query": "Which internet provider does Leander's aunt Rosalind use?",
+     "pattern": "Peregrine"
+    },
+    {
+     "query": "In which city was Leander born?",
+     "pattern": "Elmsworth"
+    }
+   ]
+  },
+  {
+   "id": "rf-anselmo",
+   "facts": [
+    {
+     "key": "home-city-old",
+     "text": "Anselmo mora na cidade de Monte Sereno.",
+     "observedAt": "2022-03-03",
+     "role": "old",
+     "update": "home-city"
+    },
+    {
+     "key": "home-city-new",
+     "text": "Anselmo mora na cidade de Porto Jandaia.",
+     "observedAt": "2022-10-20",
+     "role": "new",
+     "update": "home-city"
+    },
+    {
+     "key": "gym-old",
+     "text": "Anselmo treina na academia Vigor Tropical.",
+     "observedAt": "2023-01-12",
+     "role": "old",
+     "update": "gym"
+    },
+    {
+     "key": "gym-new",
+     "text": "Anselmo treina na academia Pulso Forte.",
+     "observedAt": "2023-07-25",
+     "role": "new",
+     "update": "gym"
+    },
+    {
+     "key": "internet-provider-new",
+     "text": "Anselmo tem internet em casa pela operadora Fibranorte.",
+     "observedAt": "2023-11-14",
+     "role": "new",
+     "update": "internet-provider",
+     "loggedOutOfOrder": true
+    },
+    {
+     "key": "internet-provider-old",
+     "text": "Anselmo tem internet em casa pela operadora Ligamar.",
+     "observedAt": "2023-04-05",
+     "role": "old",
+     "update": "internet-provider"
+    },
+    {
+     "key": "race-first",
+     "text": "Anselmo correu a Corrida das Mangueiras de 10 km em 2022.",
+     "observedAt": "2022-06-05",
+     "role": "distinct"
+    },
+    {
+     "key": "race-second",
+     "text": "Anselmo correu a Meia Maratona do Farol em 2023.",
+     "observedAt": "2023-09-17",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-first",
+     "text": "Anselmo viajou para o Chile para esquiar.",
+     "observedAt": "2022-08-02",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-second",
+     "text": "Anselmo viajou para a Irlanda para visitar um amigo.",
+     "observedAt": "2024-03-19",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-first",
+     "text": "Anselmo tem um cachorro chamado Farofa.",
+     "observedAt": "2022-04-27",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-second",
+     "text": "Anselmo tem um papagaio chamado Pirata.",
+     "observedAt": "2022-05-10",
+     "role": "distinct"
+    },
+    {
+     "key": "language-first",
+     "text": "Anselmo fala espanhol com os clientes do trabalho.",
+     "observedAt": "2022-11-08",
+     "role": "distinct"
+    },
+    {
+     "key": "language-second",
+     "text": "Anselmo fala italiano com a avó materna.",
+     "observedAt": "2023-02-21",
+     "role": "distinct"
+    },
+    {
+     "key": "relative-gym",
+     "text": "A irmã de Anselmo, Dalva, treina na academia Garra Total.",
+     "observedAt": "2023-05-30",
+     "role": "distinct"
+    },
+    {
+     "key": "birth-city",
+     "text": "Anselmo nasceu na cidade de Riacho Dourado.",
+     "observedAt": "2022-02-14",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Em que cidade Anselmo mora?",
+     "pattern": "Porto Jandaia",
+     "stalePattern": "Monte Sereno"
+    },
+    {
+     "query": "Em que cidade Anselmo morava?",
+     "pattern": "Porto Jandaia",
+     "stalePattern": "Monte Sereno",
+     "asOf": "2022-11-20"
+    },
+    {
+     "query": "Em qual academia Anselmo treina?",
+     "pattern": "Pulso Forte",
+     "stalePattern": "Vigor Tropical"
+    },
+    {
+     "query": "Em qual academia Anselmo treinava?",
+     "pattern": "Pulso Forte",
+     "stalePattern": "Vigor Tropical",
+     "asOf": "2023-08-25"
+    },
+    {
+     "query": "Qual é a operadora de internet de Anselmo?",
+     "pattern": "Fibranorte",
+     "stalePattern": "Ligamar"
+    },
+    {
+     "query": "Qual era a operadora de internet de Anselmo?",
+     "pattern": "Fibranorte",
+     "stalePattern": "Ligamar",
+     "asOf": "2023-12-14"
+    },
+    {
+     "query": "Qual prova Anselmo correu em 2022?",
+     "pattern": "Mangueiras"
+    },
+    {
+     "query": "Qual prova Anselmo correu em 2023?",
+     "pattern": "Farol"
+    },
+    {
+     "query": "Para qual país Anselmo viajou para esquiar?",
+     "pattern": "Chile"
+    },
+    {
+     "query": "Para qual país Anselmo viajou para visitar um amigo?",
+     "pattern": "Irlanda"
+    },
+    {
+     "query": "Como se chama o cachorro de Anselmo?",
+     "pattern": "Farofa"
+    },
+    {
+     "query": "Como se chama o papagaio de Anselmo?",
+     "pattern": "Pirata"
+    },
+    {
+     "query": "Que idioma Anselmo fala com os clientes do trabalho?",
+     "pattern": "espanhol"
+    },
+    {
+     "query": "Que idioma Anselmo fala com a avó materna?",
+     "pattern": "italiano"
+    },
+    {
+     "query": "Em qual academia Dalva, a irmã de Anselmo, treina?",
+     "pattern": "Garra Total"
+    },
+    {
+     "query": "Em que cidade Anselmo nasceu?",
+     "pattern": "Riacho Dourado"
+    }
+   ]
+  },
+  {
+   "id": "rf-jacinta",
+   "facts": [
+    {
+     "key": "health-insurer-new",
+     "text": "Jacinta tem plano de saúde da operadora Zelomed.",
+     "observedAt": "2022-12-01",
+     "role": "new",
+     "update": "health-insurer",
+     "loggedOutOfOrder": true
+    },
+    {
+     "key": "health-insurer-old",
+     "text": "Jacinta tem plano de saúde da operadora Amparo Vida.",
+     "observedAt": "2022-05-09",
+     "role": "old",
+     "update": "health-insurer"
+    },
+    {
+     "key": "employer-old",
+     "text": "Jacinta trabalha na empresa Tecelagem Bonfim.",
+     "observedAt": "2023-02-14",
+     "role": "old",
+     "update": "employer"
+    },
+    {
+     "key": "employer-new",
+     "text": "Jacinta trabalha na empresa Conservas Timbira.",
+     "observedAt": "2023-09-06",
+     "role": "new",
+     "update": "employer"
+    },
+    {
+     "key": "gym-old",
+     "text": "Jacinta treina na academia Movimento Livre.",
+     "observedAt": "2023-06-19",
+     "role": "old",
+     "update": "gym"
+    },
+    {
+     "key": "gym-new",
+     "text": "Jacinta treina na academia Ritmo Solar.",
+     "observedAt": "2024-01-22",
+     "role": "new",
+     "update": "gym"
+    },
+    {
+     "key": "race-first",
+     "text": "Jacinta correu a Volta da Lagoa de 5 km em 2023.",
+     "observedAt": "2023-04-23",
+     "role": "distinct"
+    },
+    {
+     "key": "race-second",
+     "text": "Jacinta correu a Maratona das Dunas em 2024.",
+     "observedAt": "2024-06-02",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-first",
+     "text": "Jacinta viajou para o Uruguai nas férias de julho.",
+     "observedAt": "2022-07-15",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-second",
+     "text": "Jacinta viajou para o Egito na lua de mel.",
+     "observedAt": "2023-11-04",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-first",
+     "text": "Jacinta tem uma gata chamada Pipoca.",
+     "observedAt": "2022-03-22",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-second",
+     "text": "Jacinta tem um coelho chamado Biruta.",
+     "observedAt": "2022-04-06",
+     "role": "distinct"
+    },
+    {
+     "key": "language-first",
+     "text": "Jacinta fala mandarim nas reuniões com fornecedores.",
+     "observedAt": "2023-03-13",
+     "role": "distinct"
+    },
+    {
+     "key": "language-second",
+     "text": "Jacinta fala italiano com o marido em casa.",
+     "observedAt": "2023-12-11",
+     "role": "distinct"
+    },
+    {
+     "key": "relative-employer",
+     "text": "O tio de Jacinta, Evaristo, trabalha na empresa Olaria Cambui.",
+     "observedAt": "2023-08-01",
+     "role": "distinct"
+    },
+    {
+     "key": "birth-city",
+     "text": "Jacinta nasceu na cidade de Vargem Clara.",
+     "observedAt": "2022-02-03",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Qual é o plano de saúde de Jacinta?",
+     "pattern": "Zelomed",
+     "stalePattern": "Amparo Vida"
+    },
+    {
+     "query": "Qual era o plano de saúde de Jacinta?",
+     "pattern": "Zelomed",
+     "stalePattern": "Amparo Vida",
+     "asOf": "2023-01-01"
+    },
+    {
+     "query": "Em qual empresa Jacinta trabalha?",
+     "pattern": "Timbira",
+     "stalePattern": "Bonfim"
+    },
+    {
+     "query": "Em qual empresa Jacinta trabalhava?",
+     "pattern": "Timbira",
+     "stalePattern": "Bonfim",
+     "asOf": "2023-10-06"
+    },
+    {
+     "query": "Em qual academia Jacinta treina?",
+     "pattern": "Ritmo Solar",
+     "stalePattern": "Movimento Livre"
+    },
+    {
+     "query": "Em qual academia Jacinta treinava?",
+     "pattern": "Ritmo Solar",
+     "stalePattern": "Movimento Livre",
+     "asOf": "2024-02-22"
+    },
+    {
+     "query": "Qual prova Jacinta correu em 2023?",
+     "pattern": "Lagoa"
+    },
+    {
+     "query": "Qual prova Jacinta correu em 2024?",
+     "pattern": "Dunas"
+    },
+    {
+     "query": "Para qual país Jacinta viajou nas férias de julho?",
+     "pattern": "Uruguai"
+    },
+    {
+     "query": "Para qual país Jacinta viajou na lua de mel?",
+     "pattern": "Egito"
+    },
+    {
+     "query": "Como se chama a gata de Jacinta?",
+     "pattern": "Pipoca"
+    },
+    {
+     "query": "Como se chama o coelho de Jacinta?",
+     "pattern": "Biruta"
+    },
+    {
+     "query": "Que idioma Jacinta fala nas reuniões com fornecedores?",
+     "pattern": "mandarim"
+    },
+    {
+     "query": "Que idioma Jacinta fala com o marido em casa?",
+     "pattern": "italiano"
+    },
+    {
+     "query": "Em qual empresa Evaristo, o tio de Jacinta, trabalha?",
+     "pattern": "Cambui"
+    },
+    {
+     "query": "Em que cidade Jacinta nasceu?",
+     "pattern": "Vargem Clara"
+    }
+   ]
+  },
+  {
+   "id": "rf-olimpio",
+   "facts": [
+    {
+     "key": "health-insurer-new",
+     "text": "Olímpio tem plano de saúde da operadora Novacura.",
+     "observedAt": "2023-01-09",
+     "role": "new",
+     "update": "health-insurer",
+     "loggedOutOfOrder": true
+    },
+    {
+     "key": "health-insurer-old",
+     "text": "Olímpio tem plano de saúde da operadora Bemviver.",
+     "observedAt": "2022-06-16",
+     "role": "old",
+     "update": "health-insurer"
+    },
+    {
+     "key": "gym-old",
+     "text": "Olímpio treina na academia Arena Bravo.",
+     "observedAt": "2023-03-20",
+     "role": "old",
+     "update": "gym"
+    },
+    {
+     "key": "gym-new",
+     "text": "Olímpio treina na academia Templo do Ferro.",
+     "observedAt": "2023-10-02",
+     "role": "new",
+     "update": "gym"
+    },
+    {
+     "key": "bank-old",
+     "text": "Olímpio tem conta no banco Cruzeiro Central.",
+     "observedAt": "2023-08-08",
+     "role": "old",
+     "update": "bank"
+    },
+    {
+     "key": "bank-new",
+     "text": "Olímpio tem conta no banco Aroeira Digital.",
+     "observedAt": "2024-03-11",
+     "role": "new",
+     "update": "bank"
+    },
+    {
+     "key": "race-first",
+     "text": "Olímpio correu a Corrida do Cacau de 8 km em 2022.",
+     "observedAt": "2022-09-25",
+     "role": "distinct"
+    },
+    {
+     "key": "race-second",
+     "text": "Olímpio correu a Meia Maratona da Serra em 2024.",
+     "observedAt": "2024-05-19",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-first",
+     "text": "Olímpio viajou para a Argentina para assistir a um jogo.",
+     "observedAt": "2022-11-12",
+     "role": "distinct"
+    },
+    {
+     "key": "trip-second",
+     "text": "Olímpio viajou para Portugal para conhecer os primos.",
+     "observedAt": "2023-06-28",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-first",
+     "text": "Olímpio tem um cachorro chamado Pingo.",
+     "observedAt": "2022-03-16",
+     "role": "distinct"
+    },
+    {
+     "key": "pet-second",
+     "text": "Olímpio tem um jabuti chamado Tobias.",
+     "observedAt": "2022-04-01",
+     "role": "distinct"
+    },
+    {
+     "key": "language-first",
+     "text": "Olímpio fala guarani com os vizinhos da fronteira.",
+     "observedAt": "2022-07-29",
+     "role": "distinct"
+    },
+    {
+     "key": "language-second",
+     "text": "Olímpio fala russo por causa da faculdade.",
+     "observedAt": "2023-05-05",
+     "role": "distinct"
+    },
+    {
+     "key": "relative-bank",
+     "text": "A prima de Olímpio, Leonor, tem conta no banco Veredas.",
+     "observedAt": "2023-12-20",
+     "role": "distinct"
+    },
+    {
+     "key": "birth-city",
+     "text": "Olímpio nasceu na cidade de Morro Alto.",
+     "observedAt": "2022-01-31",
+     "role": "distinct"
+    }
+   ],
+   "questions": [
+    {
+     "query": "Qual é o plano de saúde de Olímpio?",
+     "pattern": "Novacura",
+     "stalePattern": "Bemviver"
+    },
+    {
+     "query": "Qual era o plano de saúde de Olímpio?",
+     "pattern": "Novacura",
+     "stalePattern": "Bemviver",
+     "asOf": "2023-02-09"
+    },
+    {
+     "query": "Em qual academia Olímpio treina?",
+     "pattern": "Templo do Ferro",
+     "stalePattern": "Arena Bravo"
+    },
+    {
+     "query": "Em qual academia Olímpio treinava?",
+     "pattern": "Templo do Ferro",
+     "stalePattern": "Arena Bravo",
+     "asOf": "2023-11-02"
+    },
+    {
+     "query": "Em qual banco Olímpio tem conta?",
+     "pattern": "Aroeira",
+     "stalePattern": "Cruzeiro Central"
+    },
+    {
+     "query": "Em qual banco Olímpio tinha conta?",
+     "pattern": "Aroeira",
+     "stalePattern": "Cruzeiro Central",
+     "asOf": "2024-04-11"
+    },
+    {
+     "query": "Qual prova Olímpio correu em 2022?",
+     "pattern": "Cacau"
+    },
+    {
+     "query": "Qual prova Olímpio correu em 2024?",
+     "pattern": "Serra"
+    },
+    {
+     "query": "Para qual país Olímpio viajou para assistir a um jogo?",
+     "pattern": "Argentina"
+    },
+    {
+     "query": "Para qual país Olímpio viajou para conhecer os primos?",
+     "pattern": "Portugal"
+    },
+    {
+     "query": "Como se chama o cachorro de Olímpio?",
+     "pattern": "Pingo"
+    },
+    {
+     "query": "Como se chama o jabuti de Olímpio?",
+     "pattern": "Tobias"
+    },
+    {
+     "query": "Que idioma Olímpio fala com os vizinhos da fronteira?",
+     "pattern": "guarani"
+    },
+    {
+     "query": "Que idioma Olímpio fala por causa da faculdade?",
+     "pattern": "russo"
+    },
+    {
+     "query": "Em qual banco Leonor, a prima de Olímpio, tem conta?",
+     "pattern": "Veredas"
+    },
+    {
+     "query": "Em que cidade Olímpio nasceu?",
+     "pattern": "Morro Alto"
+    }
+   ]
+  }
+ ]
+}
