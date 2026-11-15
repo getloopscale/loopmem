@@ -49,6 +49,10 @@ export default defineConfig({
       'packages/core/src/**/*.test.ts',
       'packages/mcp/src/**/*.test.ts',
       'packages/cli/src/**/__tests__/**/*.test.ts',
+      // Tests that sit next to their module. They were outside every glob of this suite, and
+      // one of them had been failing unseen.
+      'packages/cli/src/**/*.test.ts',
+      'packages/agent-core/src/**/*.test.ts',
       'packages/agent-core/src/**/__tests__/**/*.test.ts',
       'tests/unit/**/*.test.ts',
       // ESTE arquivo esta em tests/integration/ mas NAO e integracao: sao
