@@ -77,6 +77,14 @@ describe('restoreNamedSubject', () => {
     expect(restoreNamedSubject(facts, people, relations, undefined).map((r) => r.text)).toEqual(facts.map((f) => f.text));
   });
 
+  it('leaves the fact alone when the only link to the person is that they said something to the user', () => {
+    const people = [{ name: 'user', type: 'PERSON' }, { name: 'médica', type: 'PERSON' }];
+    const relations = [{ source: 'médica', relationship: 'disse que', destination: 'user' }];
+    const facts = [{ id: '1', text: 'user precisa reduzir o sal' }];
+
+    expect(restoreNamedSubject(facts, people, relations, undefined).map((r) => r.text)).toEqual(['user precisa reduzir o sal']);
+  });
+
   it('reports each restored subject', () => {
     const events: Recorded[] = [];
     const relations = [{ source: 'Perrine', relationship: 'travaille comme', destination: 'apicultrice' }];
