@@ -297,6 +297,10 @@ export const MEMORY_EVENTS = [
   'extraction_stated_check_recovered',
   // That second look failed or returned a malformed response; nothing was recovered.
   'extraction_stated_check_failed',
+  // The second look at an empty extraction found a lasting decision the author is still weighing (#306).
+  'extraction_weighing_check_recovered',
+  // That second look failed or returned a malformed response; nothing was recovered.
+  'extraction_weighing_check_failed',
   // A physical delete took the summaries derived from the memory with it (migration 0039).
   'forget_reached_derived',
   // A fact written about `user` got the name of the author the caller gave for its message (#244).

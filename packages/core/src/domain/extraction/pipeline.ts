@@ -51,6 +51,7 @@ import { recoverStatedFacts } from './stated-check.js';
 import { restoreNamedSubject } from './subject-restore.js';
 import { judgeSupersessions } from './supersession.js';
 import { DEFAULT_CATEGORY_TAXONOMY, classifyCategorySource } from './taxonomy.js';
+import { recoverWeighedMatters } from './weighing-check.js';
 
 function isExtractionParseError(error: unknown): boolean {
   return error instanceof SyntaxError
@@ -285,7 +286,15 @@ async function extractAndPersist(
     llmEntities = parsed.entities;
     // An empty extraction gets one narrow second look: a question or a request can state a fact
     // about its author, and the extractor returns nothing for most of them (#282).
-    if (extracted.length === 0) extracted = [...(await recoverStatedFacts(deps.llm, messages, tracer))];
+    if (extracted.length === 0) {
+      // The two questions are asked together. A stated fact is what the person said is true; only
+      // when there is none does an undecided matter stand for the message (#306).
+      const [statedFacts, weighed] = await Promise.all([
+        recoverStatedFacts(deps.llm, messages, tracer),
+        recoverWeighedMatters(deps.llm, messages, tracer),
+      ]);
+      extracted = statedFacts.length > 0 ? [...statedFacts] : [...weighed];
+    }
     emitEvent(tracer, 'extraction_completed', { facts: extracted.length });
 
     // EG-4 fixes-cycle-1 (D3): fail-soft post-extraction language guard + correction.
