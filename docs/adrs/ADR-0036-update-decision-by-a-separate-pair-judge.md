@@ -230,3 +230,28 @@ What this does not fix, and its cost:
   judge decides alone, as before.
 - One or two more model calls on a write where the judge says "replaces" and the names differ.
 
+## Amendment (2026-11-15, second): the name reading also fires for two different relatives
+
+The amendment above left one case out. Two relatives with the same attribute ("my uncle
+Halvard's dentist is Dr. A", then "my aunt Thora's dentist is Dr. B") each name their own person
+and their own value: two names the other note lacks on each side, the same number, so the name
+reading did not fire and the judge decided alone.
+
+The name reading now also fires when each note has two or more names the other lacks. The owner
+reading is asked as before, and the pair is kept when the owners differ.
+
+Measured against the previous amendment as base, criteria fixed before the fresh set existed,
+one batch, three runs, `gpt-4o-mini`. Observed, wrong endings in the two families that stay, of
+192 runs, and updates found, of 384:
+
+| Set | Wrong endings, base | Wrong endings, now | Updates found, base | Updates found, now |
+|---|---|---|---|---|
+| Fresh (`pairs-owner-confirmation-three.json`) | 1 | 0 | 375 | 376 |
+| Second confirmation set, seen | 0 | 0 | 379 | 375 |
+| First confirmation set, seen | 15 | 0 | 373 | 370 |
+
+How to read it. The criteria passed, and the fresh set says the change does no harm, but it had
+one wrong ending to fix, so it does not show the benefit. The benefit is measured on the first
+confirmation set, 15 to 0 (fewer in 8 pairs, more in none, p = 0.008), and that set is also the
+one the rule was estimated on. Updates found stay above 96% on all three.
+

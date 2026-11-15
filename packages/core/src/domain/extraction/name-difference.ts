@@ -5,7 +5,8 @@
  * and things except for the value that changed: one name gone, one name in its place. A note
  * about the same attribute of someone else looks different: it names that person and their value,
  * so each note has names the other lacks, and not the same number of them ("user's insurer is
- * Vida Plena" against "user's aunt Ottoline's insurer is Unimais").
+ * Vida Plena" against "user's aunt Ottoline's insurer is Unimais"), or two on each side when
+ * both notes are about relatives.
  *
  * This is one of two signals. Read alone it also fires on a value written with two names ("Ines
  * at Apex Motors" replaced by "Seu Nicanor"), so the caller acts only when a second, independent
@@ -29,11 +30,15 @@ export function namesIn(text: string): ReadonlySet<string> {
   return names;
 }
 
-/** True when each note has names the other lacks, and not the same number of them. */
+/**
+ * True when each note has names the other lacks, and either not the same number of them or two
+ * or more on each side. The second case is two different people with the same attribute: each
+ * note names its own person and its own value.
+ */
 export function nameSetsDiffer(first: string, second: string): boolean {
   const a = namesIn(first);
   const b = namesIn(second);
   const onlyFirst = [...a].filter((name) => !b.has(name)).length;
   const onlySecond = [...b].filter((name) => !a.has(name)).length;
-  return onlyFirst >= 1 && onlySecond >= 1 && onlyFirst !== onlySecond;
+  return onlyFirst >= 1 && onlySecond >= 1 && (onlyFirst !== onlySecond || (onlyFirst >= 2 && onlySecond >= 2));
 }

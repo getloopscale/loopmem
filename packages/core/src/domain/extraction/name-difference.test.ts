@@ -29,6 +29,10 @@ describe('nameSetsDiffer', () => {
     expect(nameSetsDiffer('Raj at Kerbside Autos is the mechanic for Baltazar', "user's car mechanic is Seu Nicanor")).toBe(true);
   });
 
+  it('is true when each note has two or more names the other lacks', () => {
+    expect(nameSetsDiffer("user's uncle Halvard's dentist is Dr. Abernathy", "user's aunt Thora's dentist is Dra. Calista")).toBe(true);
+  });
+
   it('is false when one value was swapped for another', () => {
     expect(nameSetsDiffer("user's insurer is Vida Plena", "user's insurer is Unimais")).toBe(false);
     expect(nameSetsDiffer("user's aunt Ottoline's insurer is Vida Plena", "user's aunt Ottoline is insured with Unimais")).toBe(false);
