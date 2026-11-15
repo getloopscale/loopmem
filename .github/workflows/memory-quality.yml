@@ -7,8 +7,8 @@
 #
 # Chat calls go through packages/eval/tools/cost-guard-proxy.py, which refuses every request once the
 # cap below is reached. Embedding calls go straight to the API (the embedder requires HTTPS); they are
-# a few hundred short texts per run. Measured locally: about 0.09 USD for the write run and 0.08 USD
-# for the reflect run.
+# a few hundred short texts per run. Measured: 0.17 USD in CI for the two runs on the pair-policy set,
+# and 0.24 USD locally for the write runs on the late-arrival and period sets.
 #
 # Triggers: nightly (a scheduled run starts on the default branch, so it checks out develop), on
 # demand, and on a pull request that changes the gate itself. Not on every push, to keep the recurring
@@ -37,7 +37,7 @@ jobs:
   quality:
     name: write and reflect quality (pgvector + OpenAI real)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
 
     services:
       postgres:
@@ -120,6 +120,22 @@ jobs:
           CONSOLIDATION_JUDGE_DB: themem_quality_reflect
           CONSOLIDATION_JUDGE_OUT: ${{ env.REPORTS }}/reflect-pair-policy.json
         run: npx tsx --tsconfig tsconfig.json src/stages/consolidation/judge-run.ts
+
+      - name: Write path on judge-cases-late-arrival.json
+        working-directory: packages/eval
+        env:
+          CONSOLIDATION_JUDGE_CASES: judge-cases-late-arrival.json
+          CONSOLIDATION_WRITE_DB: themem_quality_late_arrival
+          CONSOLIDATION_WRITE_OUT: ${{ env.REPORTS }}/write-late-arrival.json
+        run: npx tsx --tsconfig tsconfig.json src/stages/consolidation/write-run.ts
+
+      - name: Write path on judge-cases-period.json
+        working-directory: packages/eval
+        env:
+          CONSOLIDATION_JUDGE_CASES: judge-cases-period.json
+          CONSOLIDATION_WRITE_DB: themem_quality_period
+          CONSOLIDATION_WRITE_OUT: ${{ env.REPORTS }}/write-period.json
+        run: npx tsx --tsconfig tsconfig.json src/stages/consolidation/write-run.ts
 
       - name: Cost of the run
         if: always()

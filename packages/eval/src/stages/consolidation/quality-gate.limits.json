@@ -1,28 +1,96 @@
 {
-  "comment": "Limits of the last accepted decision on each case set, with a margin of one for the variation of a single run. judge-cases-pair-policy.json, gpt-4o-mini, 3 runs each on 2026-11-15: the write path left no old value in the current questions and lost no distinct fact; reflect with the pair-judged policy resolved 12 of 12 updates logged in order and 6 of 6 logged out of order, ended no distinct fact and lost no answer (#237).",
+  "comment": "Limits of the last accepted decision on each case set, with a margin of one for the variation of a single run. judge-cases-pair-policy.json, gpt-4o-mini, 3 runs each on 2026-11-15: the write path left no old value in the current questions and lost no distinct fact; reflect with the pair-judged policy resolved 12 of 12 updates logged in order and 6 of 6 logged out of order, ended no distinct fact and lost no answer (#237). judge-cases-late-arrival.json and judge-cases-period.json: answered questions in the accepted arm of the last decision on supersession on write (H203, 3 runs): 142, 144 and 144 of 144, and 56, 56 and 58 of 60.",
   "checks": [
     {
       "name": "write path, judge-cases-pair-policy.json",
       "report": "write-pair-policy.json",
       "metrics": [
-        { "path": "summary.questions.current.total", "min": 18 },
-        { "path": "summary.questions.current.stale", "max": 1 },
-        { "path": "summary.questions.asOfAfterChange.stale", "max": 1 },
-        { "path": "summary.questions.distinct.answer", "min": 59 },
-        { "path": "summary.distinctMissing.length", "max": 1 }
+        {
+          "path": "summary.questions.current.total",
+          "min": 18
+        },
+        {
+          "path": "summary.questions.current.stale",
+          "max": 1
+        },
+        {
+          "path": "summary.questions.asOfAfterChange.stale",
+          "max": 1
+        },
+        {
+          "path": "summary.questions.distinct.answer",
+          "min": 59
+        },
+        {
+          "path": "summary.distinctMissing.length",
+          "max": 1
+        }
       ]
     },
     {
       "name": "reflect with the pair-judged policy, judge-cases-pair-policy.json",
       "report": "reflect-pair-policy.json",
       "metrics": [
-        { "path": "summary.updatesInOrder.resolved", "min": 11 },
-        { "path": "summary.updatesInOrder.wrongDirection", "max": 0 },
-        { "path": "summary.updatesOutOfOrder.resolved", "min": 5 },
-        { "path": "summary.updatesOutOfOrder.wrongDirection", "max": 0 },
-        { "path": "summary.distinctInvalidated.count", "max": 1 },
-        { "path": "summary.answerLostByReflect.length", "max": 1 },
-        { "path": "summary.questions.current.staleAfter", "max": 1 }
+        {
+          "path": "summary.updatesInOrder.resolved",
+          "min": 11
+        },
+        {
+          "path": "summary.updatesInOrder.wrongDirection",
+          "max": 0
+        },
+        {
+          "path": "summary.updatesOutOfOrder.resolved",
+          "min": 5
+        },
+        {
+          "path": "summary.updatesOutOfOrder.wrongDirection",
+          "max": 0
+        },
+        {
+          "path": "summary.distinctInvalidated.count",
+          "max": 1
+        },
+        {
+          "path": "summary.answerLostByReflect.length",
+          "max": 1
+        },
+        {
+          "path": "summary.questions.current.staleAfter",
+          "max": 1
+        }
+      ]
+    },
+    {
+      "name": "write path, judge-cases-late-arrival.json",
+      "report": "write-late-arrival.json",
+      "metrics": [
+        {
+          "label": "answered questions (of 144)",
+          "sum": [
+            "summary.questions.distinct.answer",
+            "summary.questions.current.answer",
+            "summary.questions.asOfBeforeChange.answer",
+            "summary.questions.asOfAfterChange.answer"
+          ],
+          "min": 141
+        }
+      ]
+    },
+    {
+      "name": "write path, judge-cases-period.json",
+      "report": "write-period.json",
+      "metrics": [
+        {
+          "label": "answered questions (of 60)",
+          "sum": [
+            "summary.questions.distinct.answer",
+            "summary.questions.current.answer",
+            "summary.questions.asOfBeforeChange.answer",
+            "summary.questions.asOfAfterChange.answer"
+          ],
+          "min": 53
+        }
       ]
     }
   ]
