@@ -64,6 +64,23 @@ describe('recoverWeighedMatters', () => {
     expect(vi.mocked(llm.generateResponse).mock.calls.map((call) => call[0][1]?.content).sort()).toEqual(['four', 'three', 'two']);
   });
 
+  it('does not ask about a message that only asks something', async () => {
+    const llm = llmReturning({ weighing: [{ about: 'está pensando em mandar currículo', quote: 'mandar currículo' }] });
+    const questions: Message[] = [
+      { role: 'user', content: 'Vale a pena mandar currículo para a Tamsin Logistics?' },
+      { role: 'user', content: 'Is it a good employer? Or do people leave quickly?' },
+      { role: 'user', content: '転職したほうがいいですか？' },
+    ];
+    expect(await recoverWeighedMatters(llm, questions, undefined)).toEqual([]);
+    expect(llm.generateResponse).not.toHaveBeenCalled();
+  });
+
+  it('still asks about a message that states something next to its question', async () => {
+    const llm = llmReturning({ weighing: [{ about: 'is thinking of moving abroad', quote: "I can't decide whether to move abroad" }] });
+    const mixed: Message = { role: 'user', content: "I can't decide whether to move abroad. What would you weigh?" };
+    expect(await recoverWeighedMatters(llm, [mixed], undefined)).toHaveLength(1);
+  });
+
   it('reports a failed or malformed call and recovers nothing, without throwing', async () => {
     const events: Recorded[] = [];
     const failing: LLM = { generateResponse: vi.fn(async () => { throw new TypeError('down'); }), generateChat: vi.fn(async () => ({ role: 'assistant' as const, content: '' })) };
