@@ -175,3 +175,58 @@ What a caller can do today: an ended fact is never deleted, so `recall({ asOf })
 still returns it, and the `history` of the memory names the fact that ended it.
 `createLocalMemory({ supersedeOnWrite: false })` keeps every value current, at the cost shown in
 the first row of the table.
+
+## Amendment (2026-11-15): a pair of facts of two individuals is kept when two readings agree
+
+The first limit above, the same attribute of another person, now has a fix that passed.
+
+After the judge says "replaces", the pair is kept, and nothing ends, when two independent readings
+agree that the notes are facts of different individuals:
+
+- The names differ. Each note has proper names the other lacks, and not the same number of them
+  ("user's insurer is Vida Plena" against "user's aunt Ottoline's insurer is Unimais"). Read from
+  the stored texts, with no model call (`name-difference.ts`).
+- The owners differ. Each note, read on its own by the model, is split into value, attribute and
+  owner, and the two owners are compared in code (`fact-owner.ts`). This call is made only for the
+  pairs where the names differ.
+
+An owner that cannot be read counts as no agreement, and the note ends as before. A kept pair
+emits `update_declined` with `reason: different_owner`.
+
+Why two readings. Each one alone was measured and failed the floor of 95% of updates found, in
+different places: the owner reading takes a mechanic or a doctor named at the start of a note for
+the owner (93.0%), and the name reading fires on a value written with two names. Requiring both
+removes most of each one's mistakes.
+
+Measured on a fresh set (`pairs-owner-confirmation-two.json`, 192 pairs, names and attributes used
+in no other set, written one pair at a time by agents with no access to the repository, read blind
+by another), criteria fixed before the set existed and with the thresholds of the two earlier
+attempts, base and change in one batch, three runs, `gpt-4o-mini`. Observed:
+
+| Family (96 runs each) | Base ended | Now ended | Expected |
+|---|---|---|---|
+| Fact of another person | 23 | 0 | stays |
+| Two relatives | 0 | 0 | stays |
+| Update | 93 | 94 | ends |
+| Update of a relative | 95 | 89 | ends |
+| Correction | 95 | 94 | ends |
+| Switch | 96 | 96 | ends |
+
+- Wrong endings in the two families that stay: 23 of 192 before, none now; fewer in 8 pairs, more
+  in none (p = 0.008).
+- Updates found: 373 of 384 (97.1%), against 379 for the base.
+- Sets already seen, as a guard: the first confirmation set, 372 of 384 updates found and wrong
+  endings from 51 to 18 of 192; the held-out attribute set, 264 of 264 and 88 to 64 of 384; the
+  first pair set, 189 of 189 and 10 to 10 of 480.
+- `memory-semantics`, three runs per side: no forbidden fact on either side.
+
+What this does not fix, and its cost:
+
+- Two values in tension that can both hold are still ended (50 and 51 of 96 on the held-out set).
+- Two different relatives with the same attribute are not told apart by the names (9 of 96 wrong
+  endings on the first confirmation set, 12 for the base).
+- Updates of a relative's fact fall from 95 to 89 of 96 on the fresh set.
+- The name reading depends on capital letters. In a script without them it never fires, and the
+  judge decides alone, as before.
+- One or two more model calls on a write where the judge says "replaces" and the names differ.
+

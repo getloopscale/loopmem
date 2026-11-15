@@ -141,6 +141,11 @@ export const MEMORY_EVENTS = [
   // (embed: the messages were logged without embeddings, findable by their words only; ADR-0031).
   'message_log_failed',
   'memory_superseded',
+  // The judge said "replaces" and two readings agree that the notes are facts of different
+  // individuals; both stay (#252). Attributes `{reason, count}`.
+  'update_declined',
+  // Whose fact a note is could not be read; its pairs are decided as before.
+  'fact_owner_failed',
   'supersession_rejected',
   'supersession_skipped',
   'supersession_failed',

@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "correction-en-01",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-08-10",
+  "dateB": "2021-08-27",
+  "textA": "Dr. Onofre handles things as my family lawyer.",
+  "textB": "I made a mistake earlier about my family lawyer; it is Dr. Lourival."
+ },
+ {
+  "id": "correction-en-02",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-09-14",
+  "dateB": "2020-09-20",
+  "textA": "I bank with Banco Serrano.",
+  "textB": "I made a mistake about my bank earlier; it is Caixa Planalto."
+ },
+ {
+  "id": "correction-en-03",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2023-11-03",
+  "dateB": "2023-11-20",
+  "textA": "Net Ipê is the internet provider I have.",
+  "textB": "I misreported my internet provider before; the correct one is Fibra Guará."
+ },
+ {
+  "id": "correction-en-04",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2024-04-14",
+  "dateB": "2024-04-27",
+  "textA": "Ironbark Fitness is the gym where I train.",
+  "textB": "I was wrong about my gym in what I wrote before: it's The Loft Gym."
+ },
+ {
+  "id": "correction-en-05",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-06-23",
+  "dateB": "2020-07-12",
+  "textA": "Dr. Castellanos looks after my teeth as my dentist.",
+  "textB": "I misstated my dentist before; the right name is Dr. Whitcombe."
+ },
+ {
+  "id": "correction-en-06",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-06-01",
+  "dateB": "2019-06-05",
+  "textA": "Seu Aristides is my piano teacher.",
+  "textB": "I was wrong earlier about my piano teacher; it is Seu Filomeno."
+ },
+ {
+  "id": "correction-en-07",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-04-20",
+  "dateB": "2021-05-08",
+  "textA": "Dra. Marcolina is the family lawyer I use.",
+  "textB": "Correction: I misstated my family lawyer before, the right name is Mr. Castellane."
+ },
+ {
+  "id": "correction-en-08",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2022-01-15",
+  "dateB": "2022-01-21",
+  "textA": "My bank is Harbourline Bank.",
+  "textB": "What I wrote earlier about my bank was a mistake; it is Kestrel Savings."
+ },
+ {
+  "id": "correction-en-09",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2023-09-09",
+  "dateB": "2023-09-25",
+  "textA": "My internet comes from Lanternfish Broadband, my provider.",
+  "textB": "Sorry, my earlier note on my internet provider was mistaken; it's Corvid Telecom."
+ },
+ {
+  "id": "correction-en-10",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-06-25",
+  "dateB": "2021-07-06",
+  "textA": "I go to Ironbark Fitness for my workouts, it's my gym.",
+  "textB": "My mistake, the gym I told you was mine is wrong; mine is Academia Tucano."
+ },
+ {
+  "id": "correction-en-11",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-11-04",
+  "dateB": "2021-11-22",
+  "textA": "I go to Dra. Iolanda, she's my dentist.",
+  "textB": "Earlier I named the wrong dentist for myself; my dentist is Dra. Benedita."
+ },
+ {
+  "id": "correction-en-12",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2024-04-27",
+  "dateB": "2024-05-03",
+  "textA": "I take piano lessons from Ms. Lindqvist, my teacher.",
+  "textB": "Correction: I named the wrong piano teacher before; mine is Dona Eulália."
+ },
+ {
+  "id": "correction-en-13",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-06-26",
+  "dateB": "2019-06-29",
+  "textA": "My family lawyer is Dr. Onofre.",
+  "textB": "I gave you the wrong name for my family lawyer earlier; it's Mr. Castellane."
+ },
+ {
+  "id": "correction-en-14",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-06-04",
+  "dateB": "2019-06-14",
+  "textA": "I have my account at Banco Serrano, my bank.",
+  "textB": "I got my bank wrong before; it's actually Meridian Credit."
+ },
+ {
+  "id": "correction-en-15",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2024-04-03",
+  "dateB": "2024-04-05",
+  "textA": "Lanternfish Broadband is my internet provider.",
+  "textB": "What I told you about my internet provider was wrong, it's actually Net Ipê."
+ },
+ {
+  "id": "correction-en-16",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-05-13",
+  "dateB": "2021-05-27",
+  "textA": "I work out at Granite Works, my gym.",
+  "textB": "My earlier message about my gym was wrong; it is Academia Sabiá."
+ },
+ {
+  "id": "correction-pt-01",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2024-06-21",
+  "dateB": "2024-07-02",
+  "textA": "Quem me atende como advogada da família é a Dra. Marcolina.",
+  "textB": "Estava errado o que escrevi sobre meu advogado da família; ele é o Dr. Onofre."
+ },
+ {
+  "id": "correction-pt-02",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2022-05-08",
+  "dateB": "2022-05-27",
+  "textA": "Minha conta fica no banco Kestrel Savings.",
+  "textB": "Eu tinha escrito o banco errado; o meu é o Harbourline Bank."
+ },
+ {
+  "id": "correction-pt-03",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2020-06-19",
+  "dateB": "2020-07-07",
+  "textA": "Uso a Corvid Telecom como provedor de internet.",
+  "textB": "Foi engano meu o que escrevi antes: meu provedor de internet é a Lanternfish Broadband."
+ },
+ {
+  "id": "correction-pt-04",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-06-02",
+  "dateB": "2023-06-09",
+  "textA": "Treino na Academia Tucano, que é a minha academia.",
+  "textB": "Errei ao informar minha academia antes; ela é a The Loft Gym."
+ },
+ {
+  "id": "correction-pt-05",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-04-23",
+  "dateB": "2023-05-10",
+  "textA": "Meu dentista é o Dr. Halloran.",
+  "textB": "O que escrevi antes sobre meu dentista estava errado: ele é o Dr. Whitcombe."
+ },
+ {
+  "id": "correction-pt-06",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-07-21",
+  "dateB": "2021-08-02",
+  "textA": "Tenho aulas de piano com o Seu Filomeno, meu professor.",
+  "textB": "Corrigindo o que eu disse antes por engano: minha professora de piano é a Dona Eulália."
+ },
+ {
+  "id": "correction-pt-07",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2024-03-13",
+  "dateB": "2024-03-16",
+  "textA": "Meu advogado da família é o Dr. Lourival.",
+  "textB": "Me enganei no que escrevi antes: o advogado da minha família é o Mr. Castellane."
+ },
+ {
+  "id": "correction-pt-08",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-10-09",
+  "dateB": "2023-10-22",
+  "textA": "Tenho conta no Harbourline Bank, é o meu banco.",
+  "textB": "O que eu disse antes sobre o meu banco estava errado; é o Banco Serrano."
+ },
+ {
+  "id": "correction-pt-09",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2019-05-14",
+  "dateB": "2019-05-29",
+  "textA": "A Net Ipê é o meu provedor de internet.",
+  "textB": "Escrevi errado antes: meu provedor de internet é a Rede Jacarandá."
+ },
+ {
+  "id": "correction-pt-10",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2022-07-22",
+  "dateB": "2022-07-31",
+  "textA": "Frequento o Estúdio Maré Alta, minha academia.",
+  "textB": "Escrevi errado o nome da minha academia antes, a correta é Academia Tucano."
+ },
+ {
+  "id": "correction-pt-11",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-05-22",
+  "dateB": "2023-06-06",
+  "textA": "O Dr. Castellanos é o meu dentista.",
+  "textB": "Foi engano meu o que falei do meu dentista; ele é o Dr. Anacleto."
+ },
+ {
+  "id": "correction-pt-12",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-02-26",
+  "dateB": "2023-03-03",
+  "textA": "Quem me dá aula de piano é a Ms. Okafor, minha professora.",
+  "textB": "Informei errado o meu professor de piano antes: é o Seu Aristides."
+ },
+ {
+  "id": "correction-pt-13",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2024-03-11",
+  "dateB": "2024-03-13",
+  "textA": "O Mr. Castellane é o meu advogado da família.",
+  "textB": "Me enganei ao informar meu advogado da família; na verdade é o Dr. Lourival."
+ },
+ {
+  "id": "correction-pt-14",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2020-11-21",
+  "dateB": "2020-11-25",
+  "textA": "Tenho conta no banco Caixa Planalto.",
+  "textB": "Informei errado antes; meu banco é o Kestrel Savings."
+ },
+ {
+  "id": "correction-pt-15",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2022-12-22",
+  "dateB": "2022-12-28",
+  "textA": "Meu provedor de internet é a Corvid Telecom.",
+  "textB": "Errei quando falei do meu provedor de internet: o certo é Rede Jacarandá."
+ },
+ {
+  "id": "correction-pt-16",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-06-15",
+  "dateB": "2023-07-01",
+  "textA": "Minha academia é a Granite Works.",
+  "textB": "Dei a informação errada antes: minha academia é a Academia Tucano."
+ },
+ {
+  "id": "other-person-en-01",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-12-27",
+  "dateB": "2021-08-01",
+  "textA": "My nephew Bertrand banks with Caixa Planalto.",
+  "textB": "Harbourline Bank is where I keep my account, it's my bank."
+ },
+ {
+  "id": "other-person-en-02",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2021-09-19",
+  "dateB": "2022-02-11",
+  "textA": "My internet provider is Rede Jacarandá.",
+  "textB": "Net Ipê is the internet provider my grandfather Florisbela has."
+ },
+ {
+  "id": "other-person-en-03",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-03-29",
+  "dateB": "2024-02-06",
+  "textA": "My godmother Casimir's gym is Academia Tucano.",
+  "textB": "I'm a member at The Loft Gym, that's my gym."
+ },
+ {
+  "id": "other-person-en-04",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-04-05",
+  "dateB": "2023-10-28",
+  "textA": "Dra. Iolanda looks after my teeth as my dentist.",
+  "textB": "My stepsister Edeltraud sees Dra. Benedita, her dentist."
+ },
+ {
+  "id": "other-person-en-05",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2024-05-16",
+  "dateB": "2024-09-16",
+  "textA": "My father-in-law Valdomiro's piano teacher is Seu Aristides.",
+  "textB": "Mr. Pemberton is my piano teacher."
+ },
+ {
+  "id": "other-person-en-06",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-04-17",
+  "dateB": "2021-04-19",
+  "textA": "I have Dra. Marcolina as my family lawyer.",
+  "textB": "My aunt Henrietta's family lawyer is Dr. Lourival."
+ },
+ {
+  "id": "other-person-en-07",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2024-05-14",
+  "dateB": "2025-04-01",
+  "textA": "My nephew Ezequias has his account at Banco Aurora.",
+  "textB": "I bank with Caixa Planalto."
+ },
+ {
+  "id": "other-person-en-08",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2019-09-03",
+  "dateB": "2019-11-18",
+  "textA": "Lanternfish Broadband is the internet provider I use.",
+  "textB": "My grandfather Clementine's internet provider is Rede Jacarandá."
+ },
+ {
+  "id": "other-person-en-09",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2022-03-16",
+  "dateB": "2022-03-23",
+  "textA": "My godmother Rosalvo works out at Estúdio Maré Alta, her gym.",
+  "textB": "Ironbark Fitness is the gym I go to."
+ },
+ {
+  "id": "other-person-en-10",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-01-06",
+  "dateB": "2020-10-02",
+  "textA": "I see Dr. Halloran for my teeth; he's my dentist.",
+  "textB": "The dentist my stepsister Leopoldina goes to is Dr. Whitcombe."
+ },
+ {
+  "id": "other-person-en-11",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2022-11-28",
+  "dateB": "2023-02-12",
+  "textA": "Ms. Okafor is the piano teacher of my father-in-law Anselm.",
+  "textB": "I study piano with Seu Aristides, my teacher."
+ },
+ {
+  "id": "other-person-en-12",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2024-01-21",
+  "dateB": "2024-12-08",
+  "textA": "My family lawyer is Dr. Onofre.",
+  "textB": "Ms. Abernethy is the family lawyer of my aunt Quitéria."
+ },
+ {
+  "id": "other-person-en-13",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2021-07-12",
+  "dateB": "2021-10-31",
+  "textA": "Banco Aurora is my nephew Bertrand's bank.",
+  "textB": "My own account is with Caixa Planalto, my bank."
+ },
+ {
+  "id": "other-person-en-14",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-12-17",
+  "dateB": "2024-08-08",
+  "textA": "I get my internet from Rede Jacarandá.",
+  "textB": "My grandfather Florisbela's internet provider is Net Ipê."
+ },
+ {
+  "id": "other-person-en-15",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-12-14",
+  "dateB": "2025-01-11",
+  "textA": "My godmother Casimir is a member of Granite Works, her gym.",
+  "textB": "Academia Sabiá is my gym."
+ },
+ {
+  "id": "other-person-en-16",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-07-02",
+  "dateB": "2021-02-15",
+  "textA": "Dr. Whitcombe is my dentist.",
+  "textB": "My stepsister Edeltraud's dentist is Dra. Iolanda."
+ },
+ {
+  "id": "other-person-pt-01",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-05-11",
+  "dateB": "2020-05-07",
+  "textA": "O banco do meu sobrinho Bertrand é a Caixa Planalto.",
+  "textB": "Tenho minha conta no Banco Aurora."
+ },
+ {
+  "id": "other-person-pt-02",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-09-26",
+  "dateB": "2021-10-08",
+  "textA": "A Bluefinch Net é o provedor de internet que eu tenho.",
+  "textB": "Meu avô Florisbela usa a Fibra Guará como provedor de internet dele."
+ },
+ {
+  "id": "other-person-pt-03",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-11-20",
+  "dateB": "2020-10-28",
+  "textA": "A academia da minha madrinha Casimir é a Granite Works.",
+  "textB": "Eu malho na The Loft Gym, minha academia."
+ },
+ {
+  "id": "other-person-pt-04",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-01-11",
+  "dateB": "2020-01-13",
+  "textA": "Meu dentista se chama Dr. Halloran.",
+  "textB": "O dentista da minha meia-irmã Edeltraud é o Dr. Whitcombe."
+ },
+ {
+  "id": "other-person-pt-05",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2021-03-03",
+  "dateB": "2021-07-18",
+  "textA": "O professor de piano do meu sogro Valdomiro é o Seu Filomeno.",
+  "textB": "Estudo piano com a Ms. Okafor, minha professora."
+ },
+ {
+  "id": "other-person-pt-06",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2023-12-19",
+  "dateB": "2024-10-02",
+  "textA": "O Mr. Castellane é o meu advogado da família.",
+  "textB": "O advogado da família da minha tia Henrietta é o Dr. Lourival."
+ },
+ {
+  "id": "other-person-pt-07",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-02-12",
+  "dateB": "2020-09-10",
+  "textA": "Meu sobrinho Ezequias usa o banco Kestrel Savings.",
+  "textB": "Meridian Credit é o banco onde tenho minha conta."
+ },
+ {
+  "id": "other-person-pt-08",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-12-07",
+  "dateB": "2021-04-15",
+  "textA": "Meu provedor de internet é a Corvid Telecom.",
+  "textB": "O provedor de internet do meu avô Clementine é a Net Ipê."
+ },
+ {
+  "id": "other-person-pt-09",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-05-18",
+  "dateB": "2021-01-11",
+  "textA": "Minha madrinha Rosalvo malha na academia The Loft Gym.",
+  "textB": "A academia que eu frequento é o Estúdio Maré Alta."
+ },
+ {
+  "id": "other-person-pt-10",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-03-19",
+  "dateB": "2020-03-20",
+  "textA": "O Dr. Halloran é o meu dentista.",
+  "textB": "Minha meia-irmã Leopoldina vai à dentista Dra. Iolanda."
+ },
+ {
+  "id": "other-person-pt-11",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-11-05",
+  "dateB": "2020-10-28",
+  "textA": "Meu sogro Anselm tem aulas de piano com a professora Ms. Okafor.",
+  "textB": "Seu Filomeno é o meu professor de piano."
+ },
+ {
+  "id": "other-person-pt-12",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-10-19",
+  "dateB": "2021-04-17",
+  "textA": "Minha advogada da família é a Ms. Hartwell.",
+  "textB": "Minha tia Quitéria tem o Mr. Castellane como advogado da família."
+ },
+ {
+  "id": "other-person-pt-13",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2023-03-24",
+  "dateB": "2024-02-28",
+  "textA": "Meu sobrinho Bertrand tem conta no Banco Aurora.",
+  "textB": "O banco que eu uso é o Banco Serrano."
+ },
+ {
+  "id": "other-person-pt-14",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2022-03-27",
+  "dateB": "2022-05-29",
+  "textA": "Em matéria de internet, meu provedor é a Bluefinch Net.",
+  "textB": "A internet do meu avô Florisbela é da Rede Jacarandá, o provedor dele."
+ },
+ {
+  "id": "other-person-pt-15",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2021-03-04",
+  "dateB": "2021-08-16",
+  "textA": "A academia da minha madrinha Casimir é a Academia Sabiá.",
+  "textB": "Eu treino na academia Estúdio Maré Alta."
+ },
+ {
+  "id": "other-person-pt-16",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-05-25",
+  "dateB": "2020-06-21",
+  "textA": "Eu me trato com o Dr. Whitcombe, que é meu dentista.",
+  "textB": "O dentista da minha meia-irmã Edeltraud é o Dr. Halloran."
+ },
+ {
+  "id": "switch-en-01",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-03-21",
+  "dateB": "2021-04-21",
+  "textA": "I keep a cockatiel as a pet.",
+  "textB": "I gave up keeping a cockatiel and got a ferret as my pet instead."
+ },
+ {
+  "id": "switch-en-02",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-10-10",
+  "dateB": "2025-09-16",
+  "textA": "I volunteer at the river clean-up.",
+  "textB": "I quit the river clean-up and volunteer at the soup kitchen instead."
+ },
+ {
+  "id": "switch-en-03",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2020-10-14",
+  "dateB": "2021-12-23",
+  "textA": "For sport, I practise archery.",
+  "textB": "I gave up archery and play handball in its place."
+ },
+ {
+  "id": "switch-en-04",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2024-04-14",
+  "dateB": "2025-04-03",
+  "textA": "The language I'm learning is Icelandic.",
+  "textB": "I gave up Icelandic and started learning Basque in its place."
+ },
+ {
+  "id": "switch-en-05",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2020-08-25",
+  "dateB": "2022-10-26",
+  "textA": "I keep an axolotl as a pet.",
+  "textB": "I gave up the axolotl and keep a ferret in its place."
+ },
+ {
+  "id": "switch-en-06",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-01-10",
+  "dateB": "2020-03-03",
+  "textA": "My volunteering is at the river clean-up.",
+  "textB": "I quit the river clean-up and volunteer at the literacy centre in its place."
+ },
+ {
+  "id": "switch-en-07",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-02-27",
+  "dateB": "2024-03-27",
+  "textA": "I practise curling as my sport.",
+  "textB": "I quit curling and took up rowing in its place."
+ },
+ {
+  "id": "switch-en-08",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-11-01",
+  "dateB": "2026-04-13",
+  "textA": "Swahili is the language I'm learning.",
+  "textB": "I abandoned Swahili and am learning Korean in its place."
+ },
+ {
+  "id": "switch-en-09",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2022-07-23",
+  "dateB": "2023-09-20",
+  "textA": "I have an axolotl as a pet.",
+  "textB": "I stopped keeping an axolotl; a chinchilla is my pet in its place."
+ },
+ {
+  "id": "switch-en-10",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2024-03-13",
+  "dateB": "2024-10-06",
+  "textA": "I do volunteer work at the literacy centre.",
+  "textB": "I walked away from the literacy centre and volunteer at the river clean-up instead."
+ },
+ {
+  "id": "switch-en-11",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-07-03",
+  "dateB": "2019-07-24",
+  "textA": "The sport I practise is curling.",
+  "textB": "I dropped curling and took up archery in its place."
+ },
+ {
+  "id": "switch-en-12",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-01-10",
+  "dateB": "2024-10-24",
+  "textA": "The language I'm learning is Korean.",
+  "textB": "I dropped Korean and I'm learning Icelandic in its place."
+ },
+ {
+  "id": "switch-en-13",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-09-02",
+  "dateB": "2021-07-13",
+  "textA": "My pet is a hedgehog.",
+  "textB": "I stopped keeping a hedgehog and have an axolotl as a pet in its place."
+ },
+ {
+  "id": "switch-en-14",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-08-04",
+  "dateB": "2024-09-11",
+  "textA": "I volunteer at the literacy centre.",
+  "textB": "I gave up volunteering at the literacy centre and started at the toy library in its place."
+ },
+ {
+  "id": "switch-en-15",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-07-24",
+  "dateB": "2024-10-10",
+  "textA": "The sport I practise is fencing.",
+  "textB": "I've stopped fencing and picked up squash in its place."
+ },
+ {
+  "id": "switch-en-16",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2022-12-06",
+  "dateB": "2023-06-12",
+  "textA": "I am studying Finnish, that's the language I'm learning.",
+  "textB": "I gave up on Finnish and started learning Swahili instead."
+ },
+ {
+  "id": "switch-pt-01",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-11-27",
+  "dateB": "2021-12-13",
+  "textA": "Tenho um furão como bicho de estimação.",
+  "textB": "Não crio mais o furão; no lugar dele crio uma lagartixa."
+ },
+ {
+  "id": "switch-pt-02",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2022-08-06",
+  "dateB": "2024-12-09",
+  "textA": "Sou voluntário em um mutirão de limpeza do rio.",
+  "textB": "Larguei o mutirão de limpeza do rio; em vez dele, sou voluntário em um abrigo de animais."
+ },
+ {
+  "id": "switch-pt-03",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-09-08",
+  "dateB": "2024-03-06",
+  "textA": "O esporte que eu pratico é squash.",
+  "textB": "Parei com o squash e comecei a praticar remo no lugar."
+ },
+ {
+  "id": "switch-pt-04",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2022-03-12",
+  "dateB": "2022-08-01",
+  "textA": "O idioma que estou aprendendo é islandês.",
+  "textB": "Desisti do islandês e comecei a aprender tagalo no lugar dele."
+ },
+ {
+  "id": "switch-pt-05",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-03-03",
+  "dateB": "2023-06-11",
+  "textA": "Crio uma chinchila como bicho de estimação.",
+  "textB": "Desisti da chinchila e crio um furão no lugar dela."
+ },
+ {
+  "id": "switch-pt-06",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2022-01-12",
+  "dateB": "2022-03-07",
+  "textA": "Faço trabalho voluntário em um mutirão de limpeza do rio.",
+  "textB": "Desisti do mutirão de limpeza do rio e fui ser voluntária em um centro de alfabetização."
+ },
+ {
+  "id": "switch-pt-07",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-02-26",
+  "dateB": "2021-07-25",
+  "textA": "Pratico arco e flecha como esporte.",
+  "textB": "Abandonei o arco e flecha e comecei a praticar remo no lugar."
+ },
+ {
+  "id": "switch-pt-08",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-04-21",
+  "dateB": "2023-01-12",
+  "textA": "Ando estudando tagalo, é o idioma que estou aprendendo.",
+  "textB": "Parei de estudar tagalo e comecei a aprender islandês no lugar."
+ },
+ {
+  "id": "switch-pt-09",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-01-29",
+  "dateB": "2019-12-06",
+  "textA": "Crio uma lagartixa como bicho de estimação.",
+  "textB": "Desisti de criar lagartixa e peguei um furão como bicho de estimação no lugar."
+ },
+ {
+  "id": "switch-pt-10",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-07-20",
+  "dateB": "2022-04-02",
+  "textA": "Faço trabalho voluntário em um centro de alfabetização.",
+  "textB": "Parei com o centro de alfabetização e comecei como voluntário em um mutirão de limpeza do rio."
+ },
+ {
+  "id": "switch-pt-11",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-09-11",
+  "dateB": "2026-02-21",
+  "textA": "O esporte que eu pratico é curling.",
+  "textB": "Abandonei o curling e comecei a praticar arco e flecha no lugar."
+ },
+ {
+  "id": "switch-pt-12",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-02-23",
+  "dateB": "2019-08-02",
+  "textA": "Estou aprendendo o idioma suaíli.",
+  "textB": "Larguei o suaíli e estou aprendendo coreano no lugar dele."
+ },
+ {
+  "id": "switch-pt-13",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-08-07",
+  "dateB": "2021-03-21",
+  "textA": "O bicho de estimação que eu crio é um furão.",
+  "textB": "Desisti de criar o furão e fiquei com uma calopsita no lugar dele."
+ },
+ {
+  "id": "switch-pt-14",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2020-12-07",
+  "dateB": "2022-02-11",
+  "textA": "Meu trabalho voluntário é em uma horta comunitária.",
+  "textB": "Deixei de ser voluntária na horta comunitária e fui para uma brinquedoteca no lugar dela."
+ },
+ {
+  "id": "switch-pt-15",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2022-07-21",
+  "dateB": "2024-06-02",
+  "textA": "Eu pratico arco e flecha, é o meu esporte.",
+  "textB": "Deixei o arco e flecha de lado e comecei a praticar esgrima no lugar dele."
+ },
+ {
+  "id": "switch-pt-16",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-01-05",
+  "dateB": "2023-04-05",
+  "textA": "O idioma que estou aprendendo é islandês.",
+  "textB": "Desisti do islandês e comecei a aprender suaíli no lugar dele."
+ },
+ {
+  "id": "two-relatives-en-01",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2022-07-26",
+  "dateB": "2023-05-06",
+  "textA": "Rede Jacarandá provides the internet for my grandfather Clementine.",
+  "textB": "My father-in-law Quitéria uses Bluefinch Net as his internet provider."
+ },
+ {
+  "id": "two-relatives-en-02",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-10-22",
+  "dateB": "2021-08-03",
+  "textA": "My stepsister Henrietta works out at Ironbark Fitness, her gym.",
+  "textB": "Estúdio Maré Alta is the gym my grandfather Rosalvo goes to."
+ },
+ {
+  "id": "two-relatives-en-03",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-12-01",
+  "dateB": "2020-06-03",
+  "textA": "Dr. Whitcombe is the dentist my nephew Florisbela sees.",
+  "textB": "My stepsister Rosalvo's dentist is Dra. Iolanda."
+ },
+ {
+  "id": "two-relatives-en-04",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2022-04-17",
+  "dateB": "2023-01-10",
+  "textA": "Dona Eulália teaches piano to my stepsister Rosalvo.",
+  "textB": "My father-in-law Edeltraud takes piano lessons with Seu Filomeno, his teacher."
+ },
+ {
+  "id": "two-relatives-en-05",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-01-12",
+  "dateB": "2020-04-04",
+  "textA": "My aunt Florisbela relies on Mr. Castellane as her family lawyer.",
+  "textB": "Dr. Onofre is my grandfather Rosalvo's family lawyer."
+ },
+ {
+  "id": "two-relatives-en-06",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-07-13",
+  "dateB": "2020-06-25",
+  "textA": "Banco Serrano is where my aunt Bertrand banks.",
+  "textB": "My stepsister Valdomiro holds her account at Banco Aurora."
+ },
+ {
+  "id": "two-relatives-en-07",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2021-03-31",
+  "dateB": "2021-05-20",
+  "textA": "My nephew Leopoldina's internet provider is Bluefinch Net.",
+  "textB": "Fibra Guará is the internet provider of my stepsister Rosalvo."
+ },
+ {
+  "id": "two-relatives-en-08",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2022-12-06",
+  "dateB": "2022-12-21",
+  "textA": "Ironbark Fitness is my aunt Leopoldina's gym.",
+  "textB": "My grandfather Rosalvo exercises at Academia Tucano, his gym."
+ },
+ {
+  "id": "two-relatives-en-09",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-10-21",
+  "dateB": "2020-09-03",
+  "textA": "Dr. Anacleto is my grandfather Florisbela's dentist.",
+  "textB": "My godmother Henrietta goes to Dr. Castellanos, her dentist."
+ },
+ {
+  "id": "two-relatives-en-10",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-03-01",
+  "dateB": "2019-06-12",
+  "textA": "Seu Filomeno gives piano lessons to my nephew Rosalvo.",
+  "textB": "My grandfather Florisbela has Mr. Pemberton as his piano teacher."
+ },
+ {
+  "id": "two-relatives-en-11",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-01-05",
+  "dateB": "2020-06-15",
+  "textA": "Dra. Marcolina is the family lawyer of my godmother Ezequias.",
+  "textB": "My father-in-law Rosalvo has Dr. Lourival as his family lawyer."
+ },
+ {
+  "id": "two-relatives-en-12",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2024-06-18",
+  "dateB": "2025-03-18",
+  "textA": "My nephew Casimir banks with Kestrel Savings.",
+  "textB": "Banco Serrano is the bank my godmother Valdomiro uses."
+ },
+ {
+  "id": "two-relatives-en-13",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-06-10",
+  "dateB": "2020-05-15",
+  "textA": "My grandfather Anselm gets his internet from Rede Jacarandá.",
+  "textB": "Net Ipê is the internet provider of my stepsister Valdomiro."
+ },
+ {
+  "id": "two-relatives-en-14",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2021-03-31",
+  "dateB": "2022-04-15",
+  "textA": "The gym my grandfather Henrietta goes to is Ironbark Fitness.",
+  "textB": "My stepsister Anselm has a membership at Granite Works, her gym."
+ },
+ {
+  "id": "two-relatives-en-15",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-11-18",
+  "dateB": "2021-07-05",
+  "textA": "My grandfather Henrietta's dentist is Dr. Anacleto.",
+  "textB": "Dr. Halloran is the dentist of my nephew Anselm."
+ },
+ {
+  "id": "two-relatives-en-16",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2022-11-02",
+  "dateB": "2023-03-16",
+  "textA": "My stepsister Clementine learns piano from Dona Eulália, her teacher.",
+  "textB": "My father-in-law Bertrand's piano teacher is Ms. Lindqvist."
+ },
+ {
+  "id": "two-relatives-pt-01",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2019-01-18",
+  "dateB": "2020-02-13",
+  "textA": "Meu sobrinho Edeltraud usa a Fibra Guará como provedor de internet.",
+  "textB": "O provedor de internet da minha madrinha Ezequias é a Bluefinch Net."
+ },
+ {
+  "id": "two-relatives-pt-02",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-09-29",
+  "dateB": "2021-10-22",
+  "textA": "Meu sobrinho Florisbela treina na The Loft Gym, a academia dele.",
+  "textB": "Ironbark Fitness é a academia do meu avô Leopoldina."
+ },
+ {
+  "id": "two-relatives-pt-03",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-07-29",
+  "dateB": "2022-01-08",
+  "textA": "A dentista do meu avô Bertrand é a Dra. Iolanda.",
+  "textB": "Meu sobrinho Leopoldina se consulta com o dentista Dr. Halloran."
+ },
+ {
+  "id": "two-relatives-pt-04",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-05-03",
+  "dateB": "2022-04-09",
+  "textA": "Meu sogro Henrietta estuda piano com o Seu Filomeno, professor dele.",
+  "textB": "O Mr. Pemberton é o professor de piano da minha meia-irmã Clementine."
+ },
+ {
+  "id": "two-relatives-pt-05",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2024-04-26",
+  "dateB": "2024-11-08",
+  "textA": "Meu sobrinho Florisbela tem o Mr. Castellane como advogado da família dele.",
+  "textB": "Dr. Lourival é o advogado da família do meu avô Rosalvo."
+ },
+ {
+  "id": "two-relatives-pt-06",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2019-04-08",
+  "dateB": "2019-12-13",
+  "textA": "Kestrel Savings é o banco da minha madrinha Bertrand.",
+  "textB": "Minha tia Casimir é correntista da Caixa Planalto, o banco dela."
+ },
+ {
+  "id": "two-relatives-pt-07",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-01-04",
+  "dateB": "2020-02-01",
+  "textA": "Bluefinch Net é o provedor de internet da minha madrinha Bertrand.",
+  "textB": "Meu sobrinho Casimir usa a Rede Jacarandá como provedor de internet."
+ },
+ {
+  "id": "two-relatives-pt-08",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2022-09-29",
+  "dateB": "2022-12-07",
+  "textA": "Meu avô Henrietta treina na academia Granite Works.",
+  "textB": "A academia do meu sogro Ezequias é a Academia Sabiá."
+ },
+ {
+  "id": "two-relatives-pt-09",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2024-05-01",
+  "dateB": "2025-01-26",
+  "textA": "Dr. Anacleto é o dentista da minha madrinha Valdomiro.",
+  "textB": "Minha meia-irmã Ezequias trata os dentes com o Dr. Castellanos, dentista dela."
+ },
+ {
+  "id": "two-relatives-pt-10",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2022-09-02",
+  "dateB": "2022-12-08",
+  "textA": "O Seu Filomeno dá aula de piano para a minha tia Florisbela.",
+  "textB": "A professora de piano da minha madrinha Valdomiro é a Ms. Okafor."
+ },
+ {
+  "id": "two-relatives-pt-11",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-09-20",
+  "dateB": "2020-12-04",
+  "textA": "O Mr. Castellane é o advogado da família do meu avô Clementine.",
+  "textB": "Minha tia Casimir tem a Ms. Abernethy como advogada da família."
+ },
+ {
+  "id": "two-relatives-pt-12",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-07-11",
+  "dateB": "2022-05-01",
+  "textA": "Meu avô Leopoldina tem conta no Banco Aurora.",
+  "textB": "O banco do meu sogro Valdomiro é o Harbourline Bank."
+ },
+ {
+  "id": "two-relatives-pt-13",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-02-07",
+  "dateB": "2021-04-01",
+  "textA": "Fibra Guará é o provedor de internet do meu avô Valdomiro.",
+  "textB": "Meu sogro Quitéria tem a Corvid Telecom como provedor de internet."
+ },
+ {
+  "id": "two-relatives-pt-14",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-05-31",
+  "dateB": "2021-11-27",
+  "textA": "Academia Tucano é onde minha meia-irmã Bertrand treina.",
+  "textB": "Meu sogro Rosalvo frequenta a academia The Loft Gym."
+ },
+ {
+  "id": "two-relatives-pt-15",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2022-05-15",
+  "dateB": "2023-05-10",
+  "textA": "A Dra. Benedita cuida dos dentes do meu avô Edeltraud, como dentista dele.",
+  "textB": "Meu sogro Anselm tem o Dr. Anacleto como dentista."
+ },
+ {
+  "id": "two-relatives-pt-16",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-12-01",
+  "dateB": "2021-06-04",
+  "textA": "Meu sobrinho Casimir tem aula de piano com a Dona Eulália, professora dele.",
+  "textB": "O professor de piano do meu avô Bertrand é o Seu Aristides."
+ },
+ {
+  "id": "update-en-01",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-05-08",
+  "dateB": "2025-08-21",
+  "textA": "Dra. Benedita is my dentist.",
+  "textB": "The dentist I see is Dra. Iolanda."
+ },
+ {
+  "id": "update-en-02",
+  "label": "update",
+  "language": "en",
+  "dateA": "2019-07-31",
+  "dateB": "2021-12-22",
+  "textA": "Seu Filomeno is my piano teacher.",
+  "textB": "I take my piano lessons with Ms. Okafor, my teacher."
+ },
+ {
+  "id": "update-en-03",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-05-18",
+  "dateB": "2023-04-28",
+  "textA": "The family lawyer I rely on is Mr. Castellane.",
+  "textB": "Dra. Marcolina is my family lawyer."
+ },
+ {
+  "id": "update-en-04",
+  "label": "update",
+  "language": "en",
+  "dateA": "2021-04-05",
+  "dateB": "2021-11-03",
+  "textA": "Meridian Credit is the bank I use.",
+  "textB": "I hold my account at Banco Aurora, my bank."
+ },
+ {
+  "id": "update-en-05",
+  "label": "update",
+  "language": "en",
+  "dateA": "2024-04-24",
+  "dateB": "2025-11-05",
+  "textA": "Fibra Guará is my internet provider.",
+  "textB": "My internet provider is Lanternfish Broadband."
+ },
+ {
+  "id": "update-en-06",
+  "label": "update",
+  "language": "en",
+  "dateA": "2021-08-29",
+  "dateB": "2023-06-20",
+  "textA": "I train at Estúdio Maré Alta, my gym.",
+  "textB": "Granite Works is the gym I go to."
+ },
+ {
+  "id": "update-en-07",
+  "label": "update",
+  "language": "en",
+  "dateA": "2020-03-25",
+  "dateB": "2022-05-10",
+  "textA": "My dentist is Dr. Castellanos.",
+  "textB": "Dr. Anacleto is the dentist I go to."
+ },
+ {
+  "id": "update-en-08",
+  "label": "update",
+  "language": "en",
+  "dateA": "2020-03-11",
+  "dateB": "2020-08-24",
+  "textA": "I have piano lessons with Ms. Okafor, my teacher.",
+  "textB": "Ms. Lindqvist is the person who teaches me piano."
+ },
+ {
+  "id": "update-en-09",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-06-06",
+  "dateB": "2023-08-28",
+  "textA": "Ms. Hartwell is my family lawyer.",
+  "textB": "My family lawyer is Dra. Marcolina."
+ },
+ {
+  "id": "update-en-10",
+  "label": "update",
+  "language": "en",
+  "dateA": "2020-08-06",
+  "dateB": "2022-02-04",
+  "textA": "I do my banking at Harbourline Bank.",
+  "textB": "Kestrel Savings is my bank."
+ },
+ {
+  "id": "update-en-11",
+  "label": "update",
+  "language": "en",
+  "dateA": "2021-01-07",
+  "dateB": "2021-01-21",
+  "textA": "I get my internet from Lanternfish Broadband.",
+  "textB": "Net Ipê is my internet provider."
+ },
+ {
+  "id": "update-en-12",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-06-25",
+  "dateB": "2023-02-13",
+  "textA": "My gym is Academia Sabiá.",
+  "textB": "I work out at Academia Tucano, that's my gym."
+ },
+ {
+  "id": "update-en-13",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-07-05",
+  "dateB": "2024-02-29",
+  "textA": "For dental care I see Dra. Iolanda, my dentist.",
+  "textB": "My dentist is Dr. Whitcombe."
+ },
+ {
+  "id": "update-en-14",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-10-22",
+  "dateB": "2025-07-28",
+  "textA": "I study piano with my teacher, Seu Aristides.",
+  "textB": "Dona Eulália is my piano teacher."
+ },
+ {
+  "id": "update-en-15",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-06-20",
+  "dateB": "2024-12-18",
+  "textA": "My family lawyer is Ms. Hartwell.",
+  "textB": "Dr. Lourival serves as my family lawyer."
+ },
+ {
+  "id": "update-en-16",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-11-04",
+  "dateB": "2025-08-30",
+  "textA": "My account is with Caixa Planalto, my bank.",
+  "textB": "I do my banking at Kestrel Savings."
+ },
+ {
+  "id": "update-of-relative-en-01",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2022-04-27",
+  "dateB": "2024-02-03",
+  "textA": "My aunt Leopoldina learns piano from Dona Eulália, her teacher.",
+  "textB": "Seu Aristides is the piano teacher of my aunt Leopoldina."
+ },
+ {
+  "id": "update-of-relative-en-02",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2020-10-20",
+  "dateB": "2021-08-17",
+  "textA": "Ms. Hartwell is the family lawyer of my nephew Anselm.",
+  "textB": "My nephew Anselm has Dr. Lourival as his family lawyer."
+ },
+ {
+  "id": "update-of-relative-en-03",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-02-22",
+  "dateB": "2025-04-29",
+  "textA": "Harbourline Bank is where my grandfather Quitéria banks.",
+  "textB": "My grandfather Quitéria keeps his accounts at Banco Aurora."
+ },
+ {
+  "id": "update-of-relative-en-04",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-05-02",
+  "dateB": "2024-10-05",
+  "textA": "Corvid Telecom provides the internet for my godmother Bertrand.",
+  "textB": "My godmother Bertrand has Fibra Guará as her internet provider."
+ },
+ {
+  "id": "update-of-relative-en-05",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-08-21",
+  "dateB": "2023-06-26",
+  "textA": "My stepsister Florisbela's gym is The Loft Gym.",
+  "textB": "Academia Sabiá is where my stepsister Florisbela works out, her gym."
+ },
+ {
+  "id": "update-of-relative-en-06",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2020-04-25",
+  "dateB": "2021-11-14",
+  "textA": "My father-in-law Casimir sees Dr. Castellanos as his dentist.",
+  "textB": "The dentist of my father-in-law Casimir is Dra. Iolanda."
+ },
+ {
+  "id": "update-of-relative-en-07",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2020-10-07",
+  "dateB": "2021-10-28",
+  "textA": "Seu Filomeno teaches piano to my aunt Edeltraud.",
+  "textB": "My aunt Edeltraud takes piano lessons with Seu Aristides."
+ },
+ {
+  "id": "update-of-relative-en-08",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-09-29",
+  "dateB": "2022-11-10",
+  "textA": "My nephew Valdomiro's family lawyer is Mr. Castellane.",
+  "textB": "Dr. Lourival is the family lawyer of my nephew Valdomiro."
+ },
+ {
+  "id": "update-of-relative-en-09",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2022-08-06",
+  "dateB": "2024-10-19",
+  "textA": "Banco Serrano is the bank of my grandfather Henrietta.",
+  "textB": "My grandfather Henrietta keeps his money at Meridian Credit, his bank."
+ },
+ {
+  "id": "update-of-relative-en-10",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-09-02",
+  "dateB": "2024-03-26",
+  "textA": "My godmother Ezequias has Corvid Telecom as her internet provider.",
+  "textB": "The internet provider of my godmother Ezequias is Net Ipê."
+ },
+ {
+  "id": "update-of-relative-en-11",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2019-03-28",
+  "dateB": "2019-08-06",
+  "textA": "Academia Sabiá is the gym of my stepsister Clementine.",
+  "textB": "My stepsister Clementine trains at Granite Works, her gym."
+ },
+ {
+  "id": "update-of-relative-en-12",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-12-16",
+  "dateB": "2022-05-09",
+  "textA": "My father-in-law Rosalvo goes to Dr. Castellanos, his dentist.",
+  "textB": "Dra. Iolanda is the dentist of my father-in-law Rosalvo."
+ },
+ {
+  "id": "update-of-relative-en-13",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-09-22",
+  "dateB": "2025-08-14",
+  "textA": "My aunt Leopoldina's piano teacher is Mr. Pemberton.",
+  "textB": "Ms. Okafor is my aunt Leopoldina's piano teacher."
+ },
+ {
+  "id": "update-of-relative-en-14",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-09-20",
+  "dateB": "2023-09-01",
+  "textA": "My nephew Anselm's family lawyer is Dr. Onofre.",
+  "textB": "Mr. Castellane is the family lawyer my nephew Anselm has."
+ },
+ {
+  "id": "update-of-relative-en-15",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2022-12-04",
+  "dateB": "2025-04-12",
+  "textA": "My grandfather Quitéria has his account at Banco Serrano.",
+  "textB": "Kestrel Savings is the bank my grandfather Quitéria uses."
+ },
+ {
+  "id": "update-of-relative-en-16",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-11-15",
+  "dateB": "2023-01-22",
+  "textA": "Bluefinch Net is my godmother Bertrand's internet provider.",
+  "textB": "My godmother Bertrand gets her internet from Lanternfish Broadband."
+ },
+ {
+  "id": "update-of-relative-pt-01",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2022-04-10",
+  "dateB": "2023-09-23",
+  "textA": "A professora de piano da minha tia Leopoldina é a Dona Eulália.",
+  "textB": "Minha tia Leopoldina estuda piano com a Ms. Okafor, professora dela."
+ },
+ {
+  "id": "update-of-relative-pt-02",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-10-07",
+  "dateB": "2025-09-05",
+  "textA": "Ms. Hartwell é a advogada da família do meu sobrinho Anselm.",
+  "textB": "A advogada da família do meu sobrinho Anselm se chama Ms. Abernethy."
+ },
+ {
+  "id": "update-of-relative-pt-03",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2021-11-01",
+  "dateB": "2023-03-07",
+  "textA": "O banco do meu avô Quitéria é o Kestrel Savings.",
+  "textB": "Meu avô Quitéria tem conta no banco Meridian Credit."
+ },
+ {
+  "id": "update-of-relative-pt-04",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-09-06",
+  "dateB": "2024-07-05",
+  "textA": "A internet da minha madrinha Bertrand é da Rede Jacarandá.",
+  "textB": "Minha madrinha Bertrand tem contrato de internet com a Lanternfish Broadband."
+ },
+ {
+  "id": "update-of-relative-pt-05",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2020-02-23",
+  "dateB": "2020-11-25",
+  "textA": "A academia da minha meia-irmã Florisbela é a Ironbark Fitness.",
+  "textB": "Minha meia-irmã Florisbela treina na academia Granite Works."
+ },
+ {
+  "id": "update-of-relative-pt-06",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2022-10-05",
+  "dateB": "2023-10-07",
+  "textA": "A dentista do meu sogro Casimir é a Dra. Benedita.",
+  "textB": "Meu sogro Casimir se consulta com a Dra. Iolanda, a dentista dele."
+ },
+ {
+  "id": "update-of-relative-pt-07",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2024-05-11",
+  "dateB": "2025-02-08",
+  "textA": "A Ms. Lindqvist é a professora de piano da minha tia Edeltraud.",
+  "textB": "Minha tia Edeltraud estuda piano com a professora Dona Eulália."
+ },
+ {
+  "id": "update-of-relative-pt-08",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2020-08-02",
+  "dateB": "2020-10-16",
+  "textA": "Meu sobrinho Valdomiro tem a Ms. Abernethy como advogada da família dele.",
+  "textB": "Dra. Marcolina é a advogada da família do meu sobrinho Valdomiro."
+ },
+ {
+  "id": "update-of-relative-pt-09",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2020-06-29",
+  "dateB": "2021-08-24",
+  "textA": "Meu avô Henrietta é cliente do banco Caixa Planalto.",
+  "textB": "O banco do meu avô Henrietta é o Harbourline Bank."
+ },
+ {
+  "id": "update-of-relative-pt-10",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-12-20",
+  "dateB": "2026-05-20",
+  "textA": "Minha madrinha Ezequias assina a internet da Rede Jacarandá.",
+  "textB": "O provedor de internet da minha madrinha Ezequias é a Corvid Telecom."
+ },
+ {
+  "id": "update-of-relative-pt-11",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2022-07-22",
+  "dateB": "2024-08-29",
+  "textA": "Minha meia-irmã Clementine frequenta a academia Granite Works.",
+  "textB": "Ironbark Fitness é a academia da minha meia-irmã Clementine."
+ },
+ {
+  "id": "update-of-relative-pt-12",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2019-07-17",
+  "dateB": "2020-04-16",
+  "textA": "Meu sogro Rosalvo se trata com a dentista Dra. Iolanda.",
+  "textB": "O dentista do meu sogro Rosalvo é o Dr. Whitcombe."
+ },
+ {
+  "id": "update-of-relative-pt-13",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2022-01-17",
+  "dateB": "2023-03-21",
+  "textA": "A minha tia Leopoldina tem o Seu Filomeno como professor de piano.",
+  "textB": "O professor de piano da minha tia Leopoldina é o Mr. Pemberton."
+ },
+ {
+  "id": "update-of-relative-pt-14",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2021-12-26",
+  "dateB": "2023-11-23",
+  "textA": "O advogado da família do meu sobrinho Anselm é o Mr. Castellane.",
+  "textB": "Meu sobrinho Anselm conta com a Dra. Marcolina como advogada da família dele."
+ },
+ {
+  "id": "update-of-relative-pt-15",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2021-04-25",
+  "dateB": "2021-10-25",
+  "textA": "Meu avô Quitéria tem conta no Harbourline Bank, o banco dele.",
+  "textB": "Banco Aurora é o banco do meu avô Quitéria."
+ },
+ {
+  "id": "update-of-relative-pt-16",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2021-07-14",
+  "dateB": "2022-06-01",
+  "textA": "Rede Jacarandá é o provedor de internet que atende a minha madrinha Bertrand.",
+  "textB": "Quem fornece internet para minha madrinha Bertrand é a Lanternfish Broadband."
+ },
+ {
+  "id": "update-pt-01",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-10-19",
+  "dateB": "2020-06-02",
+  "textA": "Minha dentista é a Dra. Iolanda.",
+  "textB": "Cuido dos dentes com o Dr. Whitcombe, meu dentista."
+ },
+ {
+  "id": "update-pt-02",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-04-15",
+  "dateB": "2022-07-05",
+  "textA": "Meu professor de piano é o Mr. Pemberton.",
+  "textB": "Faço aula de piano com o Seu Aristides, meu professor."
+ },
+ {
+  "id": "update-pt-03",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2024-06-06",
+  "dateB": "2026-06-30",
+  "textA": "Dr. Lourival é o meu advogado da família.",
+  "textB": "Minha advogada da família é a Ms. Abernethy."
+ },
+ {
+  "id": "update-pt-04",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2021-05-25",
+  "dateB": "2021-10-17",
+  "textA": "O Banco Aurora é o meu banco.",
+  "textB": "Sou cliente da Caixa Planalto, meu banco."
+ },
+ {
+  "id": "update-pt-05",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-03-18",
+  "dateB": "2024-02-25",
+  "textA": "Minha internet é da Rede Jacarandá, esse é o meu provedor.",
+  "textB": "O provedor de internet que eu assino é a Net Ipê."
+ },
+ {
+  "id": "update-pt-06",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-07-02",
+  "dateB": "2024-05-29",
+  "textA": "Estúdio Maré Alta é a academia onde eu treino.",
+  "textB": "Sou aluno da Ironbark Fitness, a minha academia."
+ },
+ {
+  "id": "update-pt-07",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-10-15",
+  "dateB": "2021-10-12",
+  "textA": "Vou ao Dr. Halloran, que é o meu dentista.",
+  "textB": "Dra. Iolanda é a minha dentista."
+ },
+ {
+  "id": "update-pt-08",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2024-04-10",
+  "dateB": "2025-04-19",
+  "textA": "Tenho o Mr. Pemberton como professor de piano.",
+  "textB": "Minha professora de piano é a Dona Eulália."
+ },
+ {
+  "id": "update-pt-09",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-06-27",
+  "dateB": "2023-12-11",
+  "textA": "A Dra. Marcolina é a advogada da minha família.",
+  "textB": "Quem atua como meu advogado da família é o Mr. Castellane."
+ },
+ {
+  "id": "update-pt-10",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-11-19",
+  "dateB": "2025-11-05",
+  "textA": "O meu banco é o Kestrel Savings.",
+  "textB": "Sou cliente do Banco Aurora, que é o meu banco."
+ },
+ {
+  "id": "update-pt-11",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-02-04",
+  "dateB": "2020-07-29",
+  "textA": "Uso a Bluefinch Net como meu provedor de internet.",
+  "textB": "Fibra Guará é o meu provedor de internet."
+ },
+ {
+  "id": "update-pt-12",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-05-30",
+  "dateB": "2020-12-21",
+  "textA": "Treino na Academia Sabiá, que é a minha academia.",
+  "textB": "A minha academia é a The Loft Gym."
+ },
+ {
+  "id": "update-pt-13",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2021-10-15",
+  "dateB": "2023-01-22",
+  "textA": "Minha dentista é a Dra. Benedita.",
+  "textB": "Eu me trato com o Dr. Castellanos, ele é o meu dentista."
+ },
+ {
+  "id": "update-pt-14",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-02-26",
+  "dateB": "2020-11-28",
+  "textA": "Meu professor de piano é o Mr. Pemberton.",
+  "textB": "Faço aula de piano com o Seu Aristides, meu professor."
+ },
+ {
+  "id": "update-pt-15",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-07-16",
+  "dateB": "2020-10-29",
+  "textA": "Quem atua como meu advogado da família é o Mr. Castellane.",
+  "textB": "A Dra. Marcolina é a minha advogada da família."
+ },
+ {
+  "id": "update-pt-16",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2024-03-05",
+  "dateB": "2026-02-22",
+  "textA": "Sou correntista do Harbourline Bank, o meu banco.",
+  "textB": "Meu banco é o Banco Serrano."
+ }
+]

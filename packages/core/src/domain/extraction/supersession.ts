@@ -2,7 +2,8 @@
  * Supersession on write (ADR-0029), decided by the update judge (ADR-0036).
  *
  * Each new fact is compared with each existing memory shown for the write, one pair per judge
- * call. When the judge says the later note replaces the earlier one, the earlier of the two ends
+ * call. When the judge says the later note replaces the earlier one, and the pair is not two
+ * facts of different individuals (#252), the earlier of the two ends
  * at the instant the later one began (#253): an existing memory that is older than the new fact is
  * ended by it, and a new fact that arrives after a newer value of the same thing is stored as
  * already ended. A replaced memory is never deleted: the store sets its `t_invalid`, so
@@ -17,6 +18,8 @@ import { emitEvent } from '../memory-event.js';
 import type { MemoryItem } from '../memory-item.js';
 import type { Filters } from '../scope.js';
 
+import { ownerOf, sameOwner } from './fact-owner.js';
+import { nameSetsDiffer } from './name-difference.js';
 import { differentPeriods } from './period-anchor.js';
 import { judgeUpdate } from './update-judge.js';
 
@@ -116,7 +119,22 @@ export async function judgeSupersessions(
     const arriving = { text: memory.text, saidAt: at };
     return newIsEarlier ? judgeUpdate(llm, arriving, existing, tracer) : judgeUpdate(llm, existing, arriving, tracer);
   });
-  const replaced = pairs.filter((_, index) => verdicts[index] === 'replaces');
+  const judgedReplaced = pairs.filter((_, index) => verdicts[index] === 'replaces');
+  // The judge also says "replaces" for the same kind of fact about someone else (#252). Two
+  // readings that fail in different places have to agree before a pair it would end is kept:
+  // the two notes name different people or things beyond a swapped value, and each note, read on
+  // its own, is the fact of a different individual. The second reading is asked only where the
+  // first one fires. An owner that could not be read counts as no agreement, and the note ends.
+  const suspect = judgedReplaced.filter(({ memory, candidate }) => nameSetsDiffer(memory.text, candidate.text));
+  const texts = [...new Set(suspect.flatMap(({ memory, candidate }) => [memory.text, candidate.text]))];
+  const owners = new Map((await inBatches(texts, JUDGE_CONCURRENCY, (text) => ownerOf(llm, text, tracer))).map((owner, index) => [texts[index] as string, owner]));
+  const declined = new Set(suspect.filter(({ memory, candidate }) => {
+    const mine = owners.get(memory.text) ?? null;
+    const theirs = owners.get(candidate.text) ?? null;
+    return mine !== null && theirs !== null && !sameOwner(mine, theirs);
+  }));
+  if (declined.size > 0) emitEvent(tracer, 'update_declined', { reason: 'different_owner', count: declined.size });
+  const replaced = judgedReplaced.filter((pair) => !declined.has(pair));
   emitEvent(tracer, 'update_judged', { pairs: pairs.length, replaced: replaced.length });
 
   for (const memory of memories) {
