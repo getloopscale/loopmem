@@ -188,6 +188,15 @@ export async function linkEntities(
         );
       }
     }
+    // A fact can name an entity the scope already has while this call returned none for it;
+    // without this, the fact and the entity stay apart and recall cannot use the link (#243).
+    if (memoryEntityStore.linkNamedExisting !== undefined) {
+      let added = 0;
+      for (const item of items) {
+        added += await memoryEntityStore.linkNamedExisting({ memoryId: item.id, text: item.text, workspaceId: filters.workspace_id ?? 'default', filters });
+      }
+      if (added > 0) emitEvent(tracer, 'entity_linked_by_name', { links: added });
+    }
     emitEvent(tracer, 'entity_linked', { memory_count: items.length });
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
