@@ -9,7 +9,8 @@
  * is lost on the next day; a state of the day that does not expire stays as if it still held.
  *
  * Environment: OPENAI_API_KEY, OPENAI_BASE_URL (optional, e.g. a cost proxy),
- * OPENAI_CHAT_MODEL (default gpt-4o-mini), SHORT_LIVED_EXPIRY_OUTPUT (report path).
+ * OPENAI_CHAT_MODEL (default gpt-4o-mini), SHORT_LIVED_EXPIRY_OUTPUT (report path),
+ * SHORT_LIVED_EXPIRY_CASES (file name in this directory, default cases.json).
  */
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -19,14 +20,18 @@ import { createLocalMemory, InMemoryVectorStore, MemoryStoreError } from '@useth
 import { OpenAILLM } from '@usetheo/memory/llms/openai';
 import { z } from 'zod';
 
-const FAMILIES = ['state-with-day-marker', 'state-without-marker', 'habit', 'ongoing-for-weeks'] as const;
+const FAMILIES = [
+  'state-with-day-marker', 'state-without-marker', 'habit', 'ongoing-for-weeks',
+  // Second set (`cases-undecided.json`): what someone told the person to do, and undecided statements.
+  'reported-advice', 'dated-obligation', 'undecided-plan', 'undecided-about-today', 'undecided-about-the-moment',
+] as const;
 const CaseSchema = z.object({ id: z.string().min(1), language: z.enum(['en', 'pt']), family: z.enum(FAMILIES), text: z.string().min(1) }).strict();
 type Case = z.infer<typeof CaseSchema>;
 
 const REPETITIONS = 3;
 const CONCURRENCY = 6;
 const here = dirname(fileURLToPath(import.meta.url));
-const cases = z.array(CaseSchema).parse(JSON.parse(readFileSync(resolve(here, 'cases.json'), 'utf8')));
+const cases = z.array(CaseSchema).parse(JSON.parse(readFileSync(resolve(here, process.env['SHORT_LIVED_EXPIRY_CASES'] ?? 'cases.json'), 'utf8')));
 if (process.env['OPENAI_API_KEY'] === undefined) throw new Error('OPENAI_API_KEY must be set for the live evaluation');
 
 interface Row {
