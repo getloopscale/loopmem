@@ -122,10 +122,20 @@ describe('timeOfFact — how long a passing state holds', () => {
     expect(result.expiresAt).toBeUndefined();
   });
 
-  it('ends a passing statement whose direction the extractor did not say', () => {
-    const result = timeOfFact(draft('user feels like wearing the red scarf', 'I feel like wearing the red scarf, no idea why.', 'tentative'), SAID, 'en', undefined);
+  it('ends an undecided statement that its source ties to the day', () => {
+    const events: Recorded[] = [];
+    const result = timeOfFact(draft('user might skip the gym', 'I might skip the gym today, not sure yet.', 'tentative'), SAID, 'en', recordingTracer(events));
 
     expect(result.expiresAt).toEqual(END_OF_DAY);
+    expect(events).toEqual([{ event: 'short_lived_expiry_set', attributes: { durability: 'tentative' } }]);
+  });
+
+  it('keeps an undecided statement with no word for the day, and says so (#304)', () => {
+    const events: Recorded[] = [];
+    const result = timeOfFact(draft('user should sleep more', 'My mother said I should sleep more.', 'tentative'), SAID, 'en', recordingTracer(events));
+
+    expect(result.expiresAt).toBeUndefined();
+    expect(events).toEqual([{ event: 'short_lived_kept_without_expiry', attributes: { durability: 'tentative' } }]);
   });
 
   it('keeps a dated statement whose direction the extractor did not say', () => {
