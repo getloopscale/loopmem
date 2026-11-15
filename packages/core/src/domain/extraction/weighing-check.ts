@@ -45,6 +45,16 @@ function plain(text: string): string {
   return text.toLowerCase().replace(/\s+/gu, ' ').trim();
 }
 
+/**
+ * True when every sentence of the message is a question. Such a message states nothing: read
+ * for an undecided matter, "is it worth sending a résumé to X?" came back as "is thinking of
+ * sending a résumé to X", which the person did not say.
+ */
+function onlyAsks(content: string): boolean {
+  const sentences = content.split(/(?<=[.!?？؟。！])\s*/u).map((sentence) => sentence.trim()).filter((sentence) => sentence.length > 0);
+  return sentences.length > 0 && sentences.every((sentence) => /[?？؟]$/u.test(sentence));
+}
+
 async function weighedIn(llm: LLM, message: Message): Promise<readonly { about: string; quote: string }[]> {
   const raw = await llm.generateResponse(
     [
@@ -60,12 +70,13 @@ async function weighedIn(llm: LLM, message: Message): Promise<readonly { about: 
 
 /**
  * Asks, for each of the latest messages written by a user, whether its author is weighing a
- * lasting decision. An answer is kept only when its quote is found in the message. A failed or
+ * lasting decision. A message that only asks something is not read. An answer is kept only when
+ * its quote is found in the message. A failed or
  * malformed call recovers nothing and is counted in `extraction_weighing_check_failed`; it never
  * fails the write.
  */
 export async function recoverWeighedMatters(llm: LLM, messages: readonly Message[], tracer: Tracer | undefined): Promise<readonly WeighedMatter[]> {
-  const latest = messages.filter((message) => message.role === 'user').slice(-MESSAGES_READ);
+  const latest = messages.filter((message) => message.role === 'user' && !onlyAsks(message.content)).slice(-MESSAGES_READ);
   const answers = await Promise.all(latest.map(async (message) => {
     try {
       return await weighedIn(llm, message);
