@@ -1,0 +1,962 @@
+[
+ {
+  "id": "gm-en-00",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder how old the oldest trees on earth really are."
+ },
+ {
+  "id": "gm-en-02",
+  "language": "en",
+  "family": "general-musing",
+  "text": "Does pure water really have any taste at all?"
+ },
+ {
+  "id": "gm-en-04",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder whether robots will ever cook as well as people."
+ },
+ {
+  "id": "gm-en-06",
+  "language": "en",
+  "family": "general-musing",
+  "text": "It seems like fashion just keeps repeating itself every few decades."
+ },
+ {
+  "id": "gm-en-08",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder why certain songs can move people to tears."
+ },
+ {
+  "id": "gm-en-10",
+  "language": "en",
+  "family": "general-musing",
+  "text": "Could anyone ever really travel back through time?"
+ },
+ {
+  "id": "gm-en-12",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder what a long journey through space would feel like."
+ },
+ {
+  "id": "gm-en-14",
+  "language": "en",
+  "family": "general-musing",
+  "text": "Some trees apparently live for thousands of years, which is astonishing."
+ },
+ {
+  "id": "gm-en-16",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder why water tastes different from place to place."
+ },
+ {
+  "id": "gm-en-18",
+  "language": "en",
+  "family": "general-musing",
+  "text": "Maybe robots will be cooking dinner in every kitchen someday."
+ },
+ {
+  "id": "gm-en-20",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder why old fashion trends always seem to come back."
+ },
+ {
+  "id": "gm-en-22",
+  "language": "en",
+  "family": "general-musing",
+  "text": "It is strange how a simple melody can stir such deep emotion."
+ },
+ {
+  "id": "gm-en-24",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder whether time travel could ever actually be possible."
+ },
+ {
+  "id": "gm-en-26",
+  "language": "en",
+  "family": "general-musing",
+  "text": "I wonder how far humans will eventually travel into space."
+ },
+ {
+  "id": "gm-pt-01",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Fico pensando se as cidades do futuro terão mais árvores que carros."
+ },
+ {
+  "id": "gm-pt-03",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Fico pensando em como o oceano é imenso e pouco explorado."
+ },
+ {
+  "id": "gm-pt-05",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "É impressionante como os pássaros se orientam em viagens tão longas."
+ },
+ {
+  "id": "gm-pt-07",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Será que existe vida inteligente em outros planetas?"
+ },
+ {
+  "id": "gm-pt-09",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Será que os sonhos realmente significam alguma coisa?"
+ },
+ {
+  "id": "gm-pt-11",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Por que será que os gatos ronronam?"
+ },
+ {
+  "id": "gm-pt-13",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Será que as línguas mudam mais rápido por causa da internet?"
+ },
+ {
+  "id": "gm-pt-15",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Como será que as cidades vão ser no futuro?"
+ },
+ {
+  "id": "gm-pt-17",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "É curioso como o oceano cobre a maior parte do planeta."
+ },
+ {
+  "id": "gm-pt-19",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Como será que os pássaros sabem o caminho nas migrações?"
+ },
+ {
+  "id": "gm-pt-21",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Fico pensando se alienígenas existem em algum canto do universo."
+ },
+ {
+  "id": "gm-pt-23",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Fico imaginando de onde vêm os sonhos e o que querem dizer."
+ },
+ {
+  "id": "gm-pt-25",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "Fico imaginando o que faz um gato ronronar daquele jeito."
+ },
+ {
+  "id": "gm-pt-27",
+  "language": "pt",
+  "family": "general-musing",
+  "text": "É interessante como as línguas mudam com o passar das gerações."
+ },
+ {
+  "id": "stoq-en-00",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Can you tell me a good joke?"
+ },
+ {
+  "id": "stoq-en-02",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Okay, that makes sense, thanks for explaining."
+ },
+ {
+  "id": "stoq-en-04",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Can you tell me the current time in another city?"
+ },
+ {
+  "id": "stoq-en-06",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Could you give me a simple recipe for tomato soup?"
+ },
+ {
+  "id": "stoq-en-08",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Could you translate one word into another language for me?"
+ },
+ {
+  "id": "stoq-en-10",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "What is another word for happy?"
+ },
+ {
+  "id": "stoq-en-12",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Hi, hope everything is going well."
+ },
+ {
+  "id": "stoq-en-14",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Do you know any funny jokes about cats?"
+ },
+ {
+  "id": "stoq-en-16",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Got it, thank you for the clear answer."
+ },
+ {
+  "id": "stoq-en-18",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "How do I find out what time it is in a faraway city?"
+ },
+ {
+  "id": "stoq-en-20",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "What is a good recipe for banana bread?"
+ },
+ {
+  "id": "stoq-en-22",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "What does the word saudade mean when translated?"
+ },
+ {
+  "id": "stoq-en-24",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Can you suggest a synonym for the word difficult?"
+ },
+ {
+  "id": "stoq-en-26",
+  "language": "en",
+  "family": "small-talk-or-question",
+  "text": "Hey there, how is it going?"
+ },
+ {
+  "id": "stoq-pt-01",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Valeu mesmo, isso ajudou bastante."
+ },
+ {
+  "id": "stoq-pt-03",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Você sabe se vai chover por aqui?"
+ },
+ {
+  "id": "stoq-pt-05",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Você pode resumir esse texto em poucas linhas?"
+ },
+ {
+  "id": "stoq-pt-07",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Qual filme de suspense você recomenda?"
+ },
+ {
+  "id": "stoq-pt-09",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Quantos quilômetros equivalem a uma milha?"
+ },
+ {
+  "id": "stoq-pt-11",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Até logo, obrigado pela conversa."
+ },
+ {
+  "id": "stoq-pt-13",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Como funciona um forno de micro-ondas?"
+ },
+ {
+  "id": "stoq-pt-15",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Muito obrigado pela ajuda, foi ótima."
+ },
+ {
+  "id": "stoq-pt-17",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Como está o tempo lá fora?"
+ },
+ {
+  "id": "stoq-pt-19",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Dá para resumir os pontos principais desse artigo?"
+ },
+ {
+  "id": "stoq-pt-21",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Você pode me indicar um bom filme de comédia?"
+ },
+ {
+  "id": "stoq-pt-23",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Como converto graus de uma escala de temperatura para outra?"
+ },
+ {
+  "id": "stoq-pt-25",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Tchau, até a próxima conversa."
+ },
+ {
+  "id": "stoq-pt-27",
+  "language": "pt",
+  "family": "small-talk-or-question",
+  "text": "Você pode me explicar como funciona uma bússola?"
+ },
+ {
+  "id": "uat-en-00",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might bake some bread tonight, but I'm not sure."
+ },
+ {
+  "id": "uat-en-02",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might pop over to the market tonight, not sure."
+ },
+ {
+  "id": "uat-en-04",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "Not sure if I'll visit my neighbour today."
+ },
+ {
+  "id": "uat-en-06",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "Not sure if I'll take the bike out tonight."
+ },
+ {
+  "id": "uat-en-08",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I can't decide whether to see my friends today."
+ },
+ {
+  "id": "uat-en-10",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "Not sure if I'll stop by the library today."
+ },
+ {
+  "id": "uat-en-12",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I can't decide whether to go for a jog today."
+ },
+ {
+  "id": "uat-en-14",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I can't decide whether to bake something today."
+ },
+ {
+  "id": "uat-en-16",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I can't decide if I'll go to the market today."
+ },
+ {
+  "id": "uat-en-18",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might drop in on my neighbour tonight, not sure."
+ },
+ {
+  "id": "uat-en-20",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might go for a bike ride today, not sure though."
+ },
+ {
+  "id": "uat-en-22",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might meet up with friends tonight, I'm not sure."
+ },
+ {
+  "id": "uat-en-24",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might head to the library tonight, not sure."
+ },
+ {
+  "id": "uat-en-26",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might go jogging tonight, but I'm undecided."
+ },
+ {
+  "id": "uat-pt-01",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu almoce fora hoje, não tenho certeza."
+ },
+ {
+  "id": "uat-pt-03",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu vá ao cinema hoje, mas não decidi."
+ },
+ {
+  "id": "uat-pt-05",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu vá nadar na piscina hoje à noite, não decidi."
+ },
+ {
+  "id": "uat-pt-07",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se vou dormir cedo hoje."
+ },
+ {
+  "id": "uat-pt-09",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se ligo para a minha tia hoje."
+ },
+ {
+  "id": "uat-pt-11",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se passo as camisas hoje ou deixo para lá."
+ },
+ {
+  "id": "uat-pt-13",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu faça hora extra hoje, não decidi."
+ },
+ {
+  "id": "uat-pt-15",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei o que vou almoçar hoje."
+ },
+ {
+  "id": "uat-pt-17",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se vou ao cinema hoje à noite."
+ },
+ {
+  "id": "uat-pt-19",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se vou à piscina hoje."
+ },
+ {
+  "id": "uat-pt-21",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu vá para a cama cedo hoje, não tenho certeza."
+ },
+ {
+  "id": "uat-pt-23",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu telefone para o meu avô hoje à noite, não sei."
+ },
+ {
+  "id": "uat-pt-25",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu passe roupa hoje, mas não tenho certeza."
+ },
+ {
+  "id": "uat-pt-27",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se fico trabalhando até tarde hoje."
+ },
+ {
+  "id": "uatm-en-00",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might pour myself another glass, not sure."
+ },
+ {
+  "id": "uatm-en-02",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might turn on the fan, it feels a little stuffy."
+ },
+ {
+  "id": "uatm-en-04",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll text my friend or just leave it."
+ },
+ {
+  "id": "uatm-en-06",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll step out onto the balcony or stay in."
+ },
+ {
+  "id": "uatm-en-08",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might take a short break from work, not sure."
+ },
+ {
+  "id": "uatm-en-10",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll put a film on or just read."
+ },
+ {
+  "id": "uatm-en-12",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might just order takeout instead of cooking."
+ },
+ {
+  "id": "uatm-en-14",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll have another glass of juice."
+ },
+ {
+  "id": "uatm-en-16",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll switch the fan on or open a window."
+ },
+ {
+  "id": "uatm-en-18",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might send my friend a quick message, not sure."
+ },
+ {
+  "id": "uatm-en-20",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might step outside for a bit of fresh air."
+ },
+ {
+  "id": "uatm-en-22",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I should pause this work and stretch."
+ },
+ {
+  "id": "uatm-en-24",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might put on a film, but I can't decide."
+ },
+ {
+  "id": "uatm-en-26",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll order some takeout or make a sandwich."
+ },
+ {
+  "id": "uatm-pt-01",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu tome um banho, não decidi."
+ },
+ {
+  "id": "uatm-pt-03",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Acho que talvez eu organize a mesa, mas não sei."
+ },
+ {
+  "id": "uatm-pt-05",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Acho que vou trocar essa playlist, mas não sei."
+ },
+ {
+  "id": "uatm-pt-07",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu coma um docinho, não tenho certeza."
+ },
+ {
+  "id": "uatm-pt-09",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu me deite um pouquinho, não sei."
+ },
+ {
+  "id": "uatm-pt-11",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se preparo um chá ou fico só na água."
+ },
+ {
+  "id": "uatm-pt-13",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se fecho as cortinas ou deixo a luz entrar."
+ },
+ {
+  "id": "uatm-pt-15",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se tomo um banho quente ou fico no sofá."
+ },
+ {
+  "id": "uatm-pt-17",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se arrumo a minha mesa ou deixo assim."
+ },
+ {
+  "id": "uatm-pt-19",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se mudo de playlist ou deixo essa tocando."
+ },
+ {
+  "id": "uatm-pt-21",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se como um pedaço de chocolate ou não."
+ },
+ {
+  "id": "uatm-pt-23",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se me deito um pouco ou continuo aqui."
+ },
+ {
+  "id": "uatm-pt-25",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu faça um chá, mas não sei."
+ },
+ {
+  "id": "uatm-pt-27",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu feche as cortinas, o sol está incomodando."
+ },
+ {
+  "id": "up-en-00",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I can't decide whether to start a vegetable patch in the garden."
+ },
+ {
+  "id": "up-en-02",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I can't decide whether to adopt a dog or not."
+ },
+ {
+  "id": "up-en-04",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Part of me wants to go back to university, but I'm torn."
+ },
+ {
+  "id": "up-en-06",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of moving abroad, but I can't make up my mind."
+ },
+ {
+  "id": "up-en-08",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might switch to a different doctor, though I'm undecided."
+ },
+ {
+  "id": "up-en-10",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I can't decide whether to go vegan or not."
+ },
+ {
+  "id": "up-en-12",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm considering learning sign language, but I haven't committed to it."
+ },
+ {
+  "id": "up-en-14",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I can't decide whether to switch to a completely different career."
+ },
+ {
+  "id": "up-en-16",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Part of me wants to buy a motorcycle, but I'm not convinced."
+ },
+ {
+  "id": "up-en-18",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm considering learning to code, but I'm not sure about it."
+ },
+ {
+  "id": "up-en-20",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of moving in with my partner, but I'm unsure."
+ },
+ {
+  "id": "up-en-22",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might get a tattoo, but I haven't decided."
+ },
+ {
+  "id": "up-en-24",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of starting a vegetable patch, but I'm undecided."
+ },
+ {
+  "id": "up-en-26",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of adopting a pet, but I'm undecided."
+ },
+ {
+  "id": "up-en-28",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of going back to university, but I haven't made up my mind."
+ },
+ {
+  "id": "up-en-30",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might move abroad, but I'm honestly torn about it."
+ },
+ {
+  "id": "up-en-32",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Part of me wants to change doctors, but I'm unsure."
+ },
+ {
+  "id": "up-en-34",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might go vegan, but I'm really on the fence."
+ },
+ {
+  "id": "up-en-36",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might learn sign language, though I'm torn about it."
+ },
+ {
+  "id": "up-en-38",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Part of me wants to change careers, but I'm not sure."
+ },
+ {
+  "id": "up-en-40",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of buying a motorcycle, but I'm undecided."
+ },
+ {
+  "id": "up-en-42",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Part of me wants to learn to code, but I'm unsure."
+ },
+ {
+  "id": "up-en-44",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I can't decide whether to move in with my partner."
+ },
+ {
+  "id": "up-en-46",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I keep going back and forth on getting a tattoo."
+ },
+ {
+  "id": "up-pt-01",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se abro um pequeno negócio ou não."
+ },
+ {
+  "id": "up-pt-03",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em vender o carro, mas não bati o martelo."
+ },
+ {
+  "id": "up-pt-05",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em começar a correr, mas não me decidi."
+ },
+ {
+  "id": "up-pt-07",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se reformo o banheiro ou deixo como está."
+ },
+ {
+  "id": "up-pt-09",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em me aposentar mais cedo, mas não decidi."
+ },
+ {
+  "id": "up-pt-11",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não sei se arrumo um segundo emprego ou não."
+ },
+ {
+  "id": "up-pt-13",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Parte de mim quer ter um filho, mas não sei."
+ },
+ {
+  "id": "up-pt-15",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Parte de mim quer tirar um ano de folga, mas não sei."
+ },
+ {
+  "id": "up-pt-17",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em educar as crianças em casa, mas tenho dúvidas."
+ },
+ {
+  "id": "up-pt-19",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu compre um apartamento, mas não tenho certeza."
+ },
+ {
+  "id": "up-pt-21",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em trocar de provedor de internet, mas não decidi."
+ },
+ {
+  "id": "up-pt-23",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em entrar para um coral, mas tenho dúvidas."
+ },
+ {
+  "id": "up-pt-25",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em abrir um pequeno negócio, mas não decidi."
+ },
+ {
+  "id": "up-pt-27",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se vendo o carro ou fico com ele."
+ },
+ {
+  "id": "up-pt-29",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu comece a correr, mas estou em dúvida."
+ },
+ {
+  "id": "up-pt-31",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu reforme o banheiro, mas não me decidi."
+ },
+ {
+  "id": "up-pt-33",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se me aposento antes do previsto."
+ },
+ {
+  "id": "up-pt-35",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou cogitando pegar um segundo emprego, mas não tenho certeza."
+ },
+ {
+  "id": "up-pt-37",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se quero ter um filho."
+ },
+ {
+  "id": "up-pt-39",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou na dúvida se tiro um ano sabático ou não."
+ },
+ {
+  "id": "up-pt-41",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se ensino as crianças em casa ou na escola."
+ },
+ {
+  "id": "up-pt-43",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em comprar um apartamento, mas não tenho certeza."
+ },
+ {
+  "id": "up-pt-45",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu mude de operadora de internet, estou em dúvida."
+ },
+ {
+  "id": "up-pt-47",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não consigo decidir se entro para o coral ou não."
+ }
+]

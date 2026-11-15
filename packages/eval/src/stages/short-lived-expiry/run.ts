@@ -24,6 +24,8 @@ const FAMILIES = [
   'state-with-day-marker', 'state-without-marker', 'habit', 'ongoing-for-weeks',
   // Second set (`cases-undecided.json`): what someone told the person to do, and undecided statements.
   'reported-advice', 'dated-obligation', 'undecided-plan', 'undecided-about-today', 'undecided-about-the-moment',
+  // Third set (`cases-weighing.json`): messages that should store nothing, beside undecided plans.
+  'small-talk-or-question', 'general-musing',
 ] as const;
 const CaseSchema = z.object({ id: z.string().min(1), language: z.enum(['en', 'pt']), family: z.enum(FAMILIES), text: z.string().min(1) }).strict();
 type Case = z.infer<typeof CaseSchema>;
