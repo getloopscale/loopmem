@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 import { createLocalMemory, InMemoryVectorStore } from '@usetheo/memory';
 import { OpenAILLM } from '@usetheo/memory/llms/openai';
 
-interface Sentence { readonly id: string; readonly language: string; readonly opening: string; readonly text: string }
+interface Sentence { readonly id: string; readonly language: string; readonly opening: string; readonly text: string; readonly readerAmbiguous?: boolean }
 interface Row { readonly id: string; readonly language: string; readonly opening: string; readonly repetition: number; readonly identified: string }
 
 function requiredEnv(name: string): string {
@@ -29,7 +29,8 @@ const output = resolve(requiredEnv('INPUT_LANGUAGE_OUTPUT'));
 requiredEnv('OPENAI_API_KEY');
 const repetitions = Number(process.env['INPUT_LANGUAGE_REPETITIONS'] ?? '3');
 const here = dirname(fileURLToPath(import.meta.url));
-const sentences = JSON.parse(readFileSync(resolve(here, process.env['INPUT_LANGUAGE_SENTENCES'] ?? 'sentences.json'), 'utf8')) as Sentence[];
+// A sentence the blind reader could read as two languages has no single right answer and is left out.
+const sentences = (JSON.parse(readFileSync(resolve(here, process.env['INPUT_LANGUAGE_SENTENCES'] ?? 'sentences.json'), 'utf8')) as Sentence[]).filter((sentence) => sentence.readerAmbiguous !== true);
 
 class StopAfterIdentification extends Error {}
 
