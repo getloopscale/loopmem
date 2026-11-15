@@ -31,8 +31,29 @@ export interface SupersessionResult {
   readonly history: readonly HistoryBatchRecord[];
 }
 
+/**
+ * The pairs, by index, that two readings agree are facts of different individuals (#252): the two
+ * notes name different people or things beyond a swapped value, and each note, read on its own,
+ * belongs to a different owner. The owner is asked only where the names differ. An owner that
+ * could not be read counts as no agreement.
+ */
+export async function pairsOfDifferentIndividuals(
+  llm: LLM,
+  pairs: readonly (readonly [string, string])[],
+  tracer: Tracer | undefined,
+): Promise<ReadonlySet<number>> {
+  const suspect = pairs.map(([first, second], index) => ({ first, second, index })).filter(({ first, second }) => nameSetsDiffer(first, second));
+  const texts = [...new Set(suspect.flatMap(({ first, second }) => [first, second]))];
+  const owners = new Map((await inBatches(texts, JUDGE_CONCURRENCY, (text) => ownerOf(llm, text, tracer))).map((owner, index) => [texts[index] as string, owner]));
+  return new Set(suspect.filter(({ first, second }) => {
+    const mine = owners.get(first) ?? null;
+    const theirs = owners.get(second) ?? null;
+    return mine !== null && theirs !== null && !sameOwner(mine, theirs);
+  }).map(({ index }) => index));
+}
+
 /** Judge calls of one write that run at the same time. */
-const JUDGE_CONCURRENCY = 8;
+export const JUDGE_CONCURRENCY = 8;
 
 interface Candidate {
   readonly id: string;
@@ -66,7 +87,7 @@ async function currentCandidates(
   return candidates;
 }
 
-async function inBatches<T, R>(items: readonly T[], size: number, work: (item: T) => Promise<R>): Promise<R[]> {
+export async function inBatches<T, R>(items: readonly T[], size: number, work: (item: T) => Promise<R>): Promise<R[]> {
   const results: R[] = [];
   for (let start = 0; start < items.length; start += size) {
     results.push(...await Promise.all(items.slice(start, start + size).map(work)));
@@ -125,14 +146,8 @@ export async function judgeSupersessions(
   // the two notes name different people or things beyond a swapped value, and each note, read on
   // its own, is the fact of a different individual. The second reading is asked only where the
   // first one fires. An owner that could not be read counts as no agreement, and the note ends.
-  const suspect = judgedReplaced.filter(({ memory, candidate }) => nameSetsDiffer(memory.text, candidate.text));
-  const texts = [...new Set(suspect.flatMap(({ memory, candidate }) => [memory.text, candidate.text]))];
-  const owners = new Map((await inBatches(texts, JUDGE_CONCURRENCY, (text) => ownerOf(llm, text, tracer))).map((owner, index) => [texts[index] as string, owner]));
-  const declined = new Set(suspect.filter(({ memory, candidate }) => {
-    const mine = owners.get(memory.text) ?? null;
-    const theirs = owners.get(candidate.text) ?? null;
-    return mine !== null && theirs !== null && !sameOwner(mine, theirs);
-  }));
+  const declinedAt = await pairsOfDifferentIndividuals(llm, judgedReplaced.map(({ memory, candidate }) => [memory.text, candidate.text] as const), tracer);
+  const declined = new Set(judgedReplaced.filter((_, index) => declinedAt.has(index)));
   if (declined.size > 0) emitEvent(tracer, 'update_declined', { reason: 'different_owner', count: declined.size });
   const replaced = judgedReplaced.filter((pair) => !declined.has(pair));
   emitEvent(tracer, 'update_judged', { pairs: pairs.length, replaced: replaced.length });

@@ -487,6 +487,7 @@ export {
   parseConsolidationResponse,
   type LlmJudgedMergeConflictPolicyOptions,
 } from './conflict-resolution/llm-judged-merge.js';
+export { PairJudgedConflictPolicy, type PairJudgedConflictPolicyOptions } from './conflict-resolution/pair-judged.js';
 
 /**
  * v0.7 distillation merge-prompt template + generator function — the

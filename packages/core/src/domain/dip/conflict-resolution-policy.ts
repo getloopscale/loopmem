@@ -16,6 +16,8 @@
  * `ConsolidationContext`.
  *
  */
+import type { Tracer } from '@opentelemetry/api';
+
 import type { Scope } from '../scope.js';
 
 /**
@@ -57,6 +59,8 @@ export interface ConsolidationCandidate {
 export interface ConsolidationContext {
   readonly scope: Scope;
   readonly observationDate: Date;
+  /** The tracer of the memory running `reflect`, for a policy that reports its own decisions as events. */
+  readonly tracer?: Tracer;
 }
 
 /**
