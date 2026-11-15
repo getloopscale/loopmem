@@ -6,7 +6,8 @@ import { emitEvent } from '../memory-event.js';
 import type { LlmEntity, RelationTriple } from './entity-linking.js';
 
 const SPEAKER_TOKENS = new Set(['user', 'assistant']);
-const USER_WORD = /(?<![\p{L}\p{N}_])user(?![\p{L}\p{N}_])/giu;
+// The token as the subject of the sentence: first word, and not the owner of what follows ("user's sister").
+const USER_SUBJECT = /^\s*user(?![\p{L}\p{N}_'’])/iu;
 
 function names(text: string, name: string): boolean {
   return entityKeysNamedIn(text, [normalizeEntityKey(name)]).length > 0;
@@ -20,7 +21,9 @@ function names(text: string, name: string): boolean {
  * attribute as the user's (#257). The same draft still carries the truth: its relation says
  * Perrine does it. The fact is rewritten only when exactly one PERSON of the draft has a
  * relation whose destination the fact names, and no relation has `user` doing the same; any
- * doubt leaves the fact as the extractor wrote it.
+ * doubt leaves the fact as the extractor wrote it. The token must be the subject of the sentence:
+ * in "la hermana de user vive en Sevilla" it is the owner, and putting the sister's name there
+ * would say that the sister's sister lives in Sevilla.
  */
 export function restoreNamedSubject<T extends { readonly text: string }>(
   facts: readonly T[],
@@ -34,13 +37,13 @@ export function restoreNamedSubject<T extends { readonly text: string }>(
     .map((e) => e.name);
   let restored = 0;
   const result = facts.map((fact) => {
-    if (!names(fact.text, 'user')) return fact;
+    if (!USER_SUBJECT.test(fact.text)) return fact;
     const doneHere = relations.filter((r) => names(fact.text, r.destination));
     if (doneHere.some((r) => SPEAKER_TOKENS.has(r.source.trim().toLowerCase()))) return fact;
     const candidates = people.filter((p) => !names(fact.text, p) && doneHere.some((r) => normalizeEntityKey(r.source) === normalizeEntityKey(p)));
     if (candidates.length !== 1) return fact;
     restored += 1;
-    return { ...fact, text: fact.text.replace(USER_WORD, candidates[0] as string) };
+    return { ...fact, text: fact.text.replace(USER_SUBJECT, candidates[0] as string) };
   });
   if (restored > 0) emitEvent(tracer, 'extraction_subject_restored', { restored });
   return result;

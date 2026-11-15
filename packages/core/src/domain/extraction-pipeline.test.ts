@@ -498,6 +498,38 @@ describe('runExtractionPipeline (8-phase write)', () => {
       expect(mismatch!.attributes['corrected']).toBe(1);
     });
 
+    test('a language rewrite that loses the speaker is discarded and the fact keeps its subject', async () => {
+      const { tracer, exporter } = setupTracer();
+      const store = new StubVectorStore();
+      // The correction call returns the sentence without its subject, as the model does when it
+      // takes the token for an English word to translate away.
+      const llm = languageAwareLlm({ language: 'en' }, (call) => (call === 1
+        ? { memory: [{ id: '0', text: 'user trabalha como cientista de dados e adora escalada em rocha' }] }
+        : { text: 'works as a data scientist and loves rock climbing' }));
+      const result = await runExtractionPipeline(
+        [{ role: 'user', content: 'I work as a data scientist and I love rock climbing' }],
+        { user_id: 'alice' },
+        { vectorStore: store, embedder: makeEmbedder(), llm, tracer },
+      );
+      expect(result.map((item) => item.text)).toEqual(['user trabalha como cientista de dados e adora escalada em rocha']);
+      const mismatch = exporter.getFinishedSpans().find((s) => s.name === 'extraction_language_mismatch');
+      expect(mismatch!.attributes['corrected']).toBe(0);
+      expect(mismatch!.attributes['speaker_lost']).toBe(1);
+    });
+
+    test('a language rewrite that names the speaker with a local word keeps the token', async () => {
+      const store = new StubVectorStore();
+      const llm = languageAwareLlm({ language: 'en' }, (call) => (call === 1
+        ? { memory: [{ id: '0', text: 'user trabalha como cientista de dados e adora escalada em rocha' }] }
+        : { text: 'The user works as a data scientist and loves rock climbing' }));
+      const result = await runExtractionPipeline(
+        [{ role: 'user', content: 'I work as a data scientist and I love rock climbing' }],
+        { user_id: 'alice' },
+        { vectorStore: store, embedder: makeEmbedder(), llm },
+      );
+      expect(result.map((item) => item.text)).toEqual(['user works as a data scientist and loves rock climbing']);
+    });
+
     test('the language guard is fail-soft: a correction error keeps the original fact + emits residual (never fails remember)', async () => {
       const { tracer, exporter } = setupTracer();
       const store = new StubVectorStore();

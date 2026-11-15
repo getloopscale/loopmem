@@ -75,6 +75,11 @@ function repaired(text: string, said: string): string {
   return out;
 }
 
+/** True when the text names the speaker by the token. */
+export function namesSpeaker(text: string): boolean {
+  return new RegExp(`${START}user${END}`, 'u').test(text);
+}
+
 /** `said` is the text of the messages the facts were extracted from. */
 export function restoreSpeakerToken<T extends { readonly text: string }>(facts: readonly T[], said: string, tracer: Tracer | undefined): readonly T[] {
   let restored = 0;

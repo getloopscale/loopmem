@@ -66,6 +66,17 @@ describe('restoreNamedSubject', () => {
     expect(result).toEqual(facts);
   });
 
+  it('leaves the fact alone when the user is the owner in the sentence, not its subject', () => {
+    const people = [{ name: 'Lucía', type: 'PERSON' }, { name: 'user', type: 'PERSON' }, { name: 'Sevilla', type: 'PLACE' }];
+    const relations = [
+      { source: 'user', relationship: 'tiene como hermana', destination: 'Lucía' },
+      { source: 'Lucía', relationship: 'vive en', destination: 'Sevilla' },
+    ];
+    const facts = [{ id: '1', text: 'la hermana de user vive en Sevilla' }, { id: '2', text: "user's sister lives in Sevilla" }];
+
+    expect(restoreNamedSubject(facts, people, relations, undefined).map((r) => r.text)).toEqual(facts.map((f) => f.text));
+  });
+
   it('reports each restored subject', () => {
     const events: Recorded[] = [];
     const relations = [{ source: 'Perrine', relationship: 'travaille comme', destination: 'apicultrice' }];
