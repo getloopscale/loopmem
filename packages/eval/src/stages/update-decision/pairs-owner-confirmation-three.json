@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "correction-en-01",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-03-22",
+  "dateB": "2020-03-30",
+  "textA": "Seu Gumercindo cuts my hair; he's my hairdresser.",
+  "textB": "I misstated my hairdresser earlier; she is Ms. Delacroix."
+ },
+ {
+  "id": "correction-en-02",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-07-04",
+  "dateB": "2021-07-23",
+  "textA": "Mercado Jatobá is my supermarket.",
+  "textB": "Correction to a mistake of mine: my supermarket is Harrow & Finch, not what I wrote."
+ },
+ {
+  "id": "correction-en-03",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-12-25",
+  "dateB": "2021-01-10",
+  "textA": "Stonebridge Electric is the company that supplies my electricity.",
+  "textB": "I made an error about my electricity supplier before; it is Brightmoor Energy."
+ },
+ {
+  "id": "correction-en-04",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2023-04-20",
+  "dateB": "2023-04-29",
+  "textA": "I pick up my prescriptions at Drogaria Sete Lagoas, my pharmacy.",
+  "textB": "I misstated my pharmacy before; the correct one is Corner Remedy."
+ },
+ {
+  "id": "correction-en-05",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-07-13",
+  "dateB": "2019-08-01",
+  "textA": "My physiotherapist is Dr. Evandro.",
+  "textB": "I was mistaken about my physiotherapist earlier; the right name is Dr. Fenwick."
+ },
+ {
+  "id": "correction-en-06",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2023-01-26",
+  "dateB": "2023-02-12",
+  "textA": "I take my driving lessons with Seu Adalberto, my driving instructor.",
+  "textB": "Scratch what I said about my driving instructor, I had it wrong: it's Dona Hermínia."
+ },
+ {
+  "id": "correction-en-07",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-02-13",
+  "dateB": "2019-02-15",
+  "textA": "I get my hair cut by Ms. Delacroix, my hairdresser.",
+  "textB": "Correction: I got my hairdresser's name wrong, it's Mr. Tavish."
+ },
+ {
+  "id": "correction-en-08",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2022-07-23",
+  "dateB": "2022-08-06",
+  "textA": "Empório Buriti is the supermarket where I do my shopping.",
+  "textB": "What I told you about my supermarket was a mistake; it is Tallgrass Foods."
+ },
+ {
+  "id": "correction-en-09",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-10-07",
+  "dateB": "2020-10-15",
+  "textA": "Energia Cerrado is my electricity supplier.",
+  "textB": "What I told you about my electricity supplier was wrong; it is Força Pampa."
+ },
+ {
+  "id": "correction-en-10",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-09-12",
+  "dateB": "2020-09-13",
+  "textA": "My pharmacy is Juniper Chemist.",
+  "textB": "I was wrong about my pharmacy in what I wrote; it's Drogaria Sete Lagoas."
+ },
+ {
+  "id": "correction-en-11",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2020-07-16",
+  "dateB": "2020-07-27",
+  "textA": "For physiotherapy I go to Dr. Fenwick.",
+  "textB": "Sorry, I gave you the wrong name before: my physiotherapist is Dr. Evandro."
+ },
+ {
+  "id": "correction-en-12",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2023-02-22",
+  "dateB": "2023-02-28",
+  "textA": "Seu Adalberto is my driving instructor.",
+  "textB": "My earlier note about my driving instructor was incorrect; she is Dona Hermínia."
+ },
+ {
+  "id": "correction-en-13",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2022-02-09",
+  "dateB": "2022-02-15",
+  "textA": "My hairdresser is Dona Clotilde.",
+  "textB": "I made a mistake earlier: my hairdresser is actually Seu Gumercindo."
+ },
+ {
+  "id": "correction-en-14",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-03-12",
+  "dateB": "2019-03-23",
+  "textA": "I shop at Greenmarrow, my supermarket.",
+  "textB": "Sorry, my earlier note on my supermarket was incorrect: it is Harrow & Finch."
+ },
+ {
+  "id": "correction-en-15",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2021-03-16",
+  "dateB": "2021-03-27",
+  "textA": "Luz do Vale is my electricity supplier.",
+  "textB": "I got my electricity supplier wrong earlier; it's Força Pampa."
+ },
+ {
+  "id": "correction-en-16",
+  "label": "correction",
+  "language": "en",
+  "dateA": "2019-03-02",
+  "dateB": "2019-03-21",
+  "textA": "I use Juniper Chemist as my pharmacy.",
+  "textB": "My earlier message about my pharmacy had a mistake; it is Farmácia Ipanema."
+ },
+ {
+  "id": "correction-pt-01",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-08-25",
+  "dateB": "2021-09-04",
+  "textA": "Corto o cabelo com o Seu Gumercindo, meu cabeleireiro.",
+  "textB": "O que eu disse antes sobre meu cabeleireiro estava errado; ele é o Mr. Tavish."
+ },
+ {
+  "id": "correction-pt-02",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-03-17",
+  "dateB": "2023-03-19",
+  "textA": "Meu supermercado é o Mercado Jatobá.",
+  "textB": "Foi engano meu o que escrevi sobre meu supermercado; é o Greenmarrow."
+ },
+ {
+  "id": "correction-pt-03",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-04-21",
+  "dateB": "2021-05-01",
+  "textA": "A Força Pampa é a minha fornecedora de energia.",
+  "textB": "Dei a informação errada sobre minha fornecedora de energia; o certo é Luz do Vale."
+ },
+ {
+  "id": "correction-pt-04",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2019-09-17",
+  "dateB": "2019-09-30",
+  "textA": "Compro meus remédios na Wellspring Pharmacy, que é a minha farmácia.",
+  "textB": "Errei quando falei da minha farmácia: o certo é Corner Remedy."
+ },
+ {
+  "id": "correction-pt-05",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2019-01-22",
+  "dateB": "2019-02-06",
+  "textA": "Faço fisioterapia com o Dr. Fenwick.",
+  "textB": "Errei quando falei do meu fisioterapeuta: ele é o Dr. Ashworth."
+ },
+ {
+  "id": "correction-pt-06",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-03-06",
+  "dateB": "2021-03-14",
+  "textA": "Meu instrutor de autoescola é o Seu Juvenal.",
+  "textB": "Eu me enganei sobre meu instrutor de autoescola; na verdade é o Mr. Oyelaran."
+ },
+ {
+  "id": "correction-pt-07",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2019-05-30",
+  "dateB": "2019-06-07",
+  "textA": "Ms. Delacroix é a minha cabeleireira.",
+  "textB": "Escrevi errado antes sobre quem cuida do meu cabelo: minha cabeleireira é a Dona Clotilde."
+ },
+ {
+  "id": "correction-pt-08",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-03-02",
+  "dateB": "2023-03-04",
+  "textA": "Super Araucária é o meu supermercado.",
+  "textB": "Dei a informação errada sobre meu supermercado: o correto é Empório Buriti."
+ },
+ {
+  "id": "correction-pt-09",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-01-17",
+  "dateB": "2021-02-03",
+  "textA": "A Força Pampa é a minha fornecedora de energia.",
+  "textB": "O que eu disse sobre minha fornecedora de energia estava errado: é a Northlight Power."
+ },
+ {
+  "id": "correction-pt-10",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-07-26",
+  "dateB": "2021-08-12",
+  "textA": "Minha farmácia é a Wellspring Pharmacy.",
+  "textB": "Informei a farmácia errada antes; a minha é a Drogaria Sete Lagoas."
+ },
+ {
+  "id": "correction-pt-11",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-06-03",
+  "dateB": "2023-06-18",
+  "textA": "Faço minhas sessões com o Dr. Evandro, meu fisioterapeuta.",
+  "textB": "Me enganei no nome: minha fisioterapeuta é a Dra. Graciliana, não quem informei antes."
+ },
+ {
+  "id": "correction-pt-12",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2019-12-24",
+  "dateB": "2020-01-07",
+  "textA": "Tenho aula de direção com o Seu Adalberto, meu instrutor de autoescola.",
+  "textB": "Escrevi errado o nome do meu instrutor de autoescola: é o Mr. Blackwood."
+ },
+ {
+  "id": "correction-pt-13",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2021-09-23",
+  "dateB": "2021-10-03",
+  "textA": "O Seu Ladislau cuida do meu cabelo, é meu cabeleireiro.",
+  "textB": "Informei errado quem é minha cabeleireira: é a Dona Clotilde."
+ },
+ {
+  "id": "correction-pt-14",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-05-01",
+  "dateB": "2023-05-08",
+  "textA": "Faço minhas compras no Empório Buriti, meu supermercado.",
+  "textB": "Corrigindo um engano meu: meu supermercado é o Greenmarrow, não o que escrevi antes."
+ },
+ {
+  "id": "correction-pt-15",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-03-02",
+  "dateB": "2023-03-08",
+  "textA": "Quem fornece minha energia é a Luz do Vale.",
+  "textB": "Corrigindo um erro meu: minha fornecedora de energia é a Northlight Power, eu tinha escrito errado."
+ },
+ {
+  "id": "correction-pt-16",
+  "label": "correction",
+  "language": "pt",
+  "dateA": "2023-03-24",
+  "dateB": "2023-04-12",
+  "textA": "A farmácia que eu uso é a Farmácia Ipanema.",
+  "textB": "Me enganei no que escrevi sobre minha farmácia: ela é a Corner Remedy."
+ },
+ {
+  "id": "other-person-en-01",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2019-03-25",
+  "dateB": "2019-06-28",
+  "textA": "Empório Buriti is where my grandmother Thaddeus shops; it's her supermarket.",
+  "textB": "I buy my groceries at Harrow & Finch, my supermarket."
+ },
+ {
+  "id": "other-person-en-02",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-10-22",
+  "dateB": "2020-11-08",
+  "textA": "Força Pampa is my electricity supplier.",
+  "textB": "My brother-in-law Eufrásia gets his electricity from Luz do Vale."
+ },
+ {
+  "id": "other-person-en-03",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2019-09-12",
+  "dateB": "2019-11-25",
+  "textA": "Wellspring Pharmacy is the pharmacy of my godson Lucian.",
+  "textB": "I fill my prescriptions at Drogaria Sete Lagoas, my pharmacy."
+ },
+ {
+  "id": "other-person-en-04",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2021-03-22",
+  "dateB": "2022-01-12",
+  "textA": "Dr. Evandro is the physiotherapist I see.",
+  "textB": "My great-aunt Hildegard has Dr. Montague as her physiotherapist."
+ },
+ {
+  "id": "other-person-en-05",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2021-01-01",
+  "dateB": "2021-08-17",
+  "textA": "My stepfather Belarmino has Dona Hermínia as his driving instructor.",
+  "textB": "Mr. Oyelaran is my driving instructor."
+ },
+ {
+  "id": "other-person-en-06",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-11-30",
+  "dateB": "2023-12-28",
+  "textA": "Seu Ladislau is my hairdresser.",
+  "textB": "My cousin Philippa has her hair done by Ms. Yamamoto, her hairdresser."
+ },
+ {
+  "id": "other-person-en-07",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-09-18",
+  "dateB": "2021-08-27",
+  "textA": "Greenmarrow is my grandmother Anacleto's supermarket.",
+  "textB": "I shop for groceries at Empório Buriti, my supermarket."
+ },
+ {
+  "id": "other-person-en-08",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2021-10-10",
+  "dateB": "2022-06-25",
+  "textA": "I buy my electricity from Stonebridge Electric.",
+  "textB": "My brother-in-law Rosalind is supplied with electricity by Brightmoor Energy."
+ },
+ {
+  "id": "other-person-en-09",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2021-11-23",
+  "dateB": "2022-07-13",
+  "textA": "My godson Teodoro gets his prescriptions at Drogaria Sete Lagoas.",
+  "textB": "Juniper Chemist is the pharmacy I use."
+ },
+ {
+  "id": "other-person-en-10",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-05-24",
+  "dateB": "2023-07-30",
+  "textA": "For physiotherapy I go to Dr. Fenwick.",
+  "textB": "My great-aunt Isadora's physiotherapist is Dra. Graciliana."
+ },
+ {
+  "id": "other-person-en-11",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2020-11-22",
+  "dateB": "2021-03-28",
+  "textA": "The driving instructor of my stepfather Gottfried is Dona Hermínia.",
+  "textB": "I'm learning to drive with Mr. Blackwood, my driving instructor."
+ },
+ {
+  "id": "other-person-en-12",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2022-03-04",
+  "dateB": "2022-06-19",
+  "textA": "Mr. Tavish cuts my hair; he's my hairdresser.",
+  "textB": "My cousin Marcelina's hairdresser is Ms. Yamamoto."
+ },
+ {
+  "id": "other-person-en-13",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2022-10-26",
+  "dateB": "2023-01-06",
+  "textA": "My grandmother Thaddeus does her shopping at Greenmarrow, her supermarket.",
+  "textB": "Harrow & Finch is my supermarket."
+ },
+ {
+  "id": "other-person-en-14",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2023-05-05",
+  "dateB": "2023-07-12",
+  "textA": "My electricity comes from Stonebridge Electric.",
+  "textB": "Brightmoor Energy is the electricity supplier of my brother-in-law Eufrásia."
+ },
+ {
+  "id": "other-person-en-15",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2024-06-01",
+  "dateB": "2024-06-17",
+  "textA": "My godson Lucian's pharmacy is Farmácia Mantiqueira.",
+  "textB": "Drogaria Sete Lagoas is the pharmacy I go to."
+ },
+ {
+  "id": "other-person-en-16",
+  "label": "other-person",
+  "language": "en",
+  "dateA": "2019-02-23",
+  "dateB": "2019-11-15",
+  "textA": "Dra. Leocádia is the physiotherapist I see.",
+  "textB": "My great-aunt Hildegard is treated by Dr. Montague, her physiotherapist."
+ },
+ {
+  "id": "other-person-pt-01",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-07-23",
+  "dateB": "2021-08-06",
+  "textA": "Minha avó Thaddeus faz compras no Empório Buriti, o supermercado dela.",
+  "textB": "Eu faço minhas compras no supermercado Super Araucária."
+ },
+ {
+  "id": "other-person-pt-02",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-04-07",
+  "dateB": "2019-06-18",
+  "textA": "Stonebridge Electric é a empresa que fornece energia para mim.",
+  "textB": "Meu cunhado Eufrásia é cliente da Northlight Power, a fornecedora de energia dele."
+ },
+ {
+  "id": "other-person-pt-03",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-11-08",
+  "dateB": "2021-05-02",
+  "textA": "Meu afilhado Lucian compra na Drogaria Sete Lagoas, a farmácia dele.",
+  "textB": "A Wellspring Pharmacy é a farmácia que eu frequento."
+ },
+ {
+  "id": "other-person-pt-04",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-08-03",
+  "dateB": "2019-08-15",
+  "textA": "Meu fisioterapeuta é o Dr. Ashworth.",
+  "textB": "O fisioterapeuta da minha tia-avó Hildegard é o Dr. Montague."
+ },
+ {
+  "id": "other-person-pt-05",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2022-10-15",
+  "dateB": "2023-07-25",
+  "textA": "O instrutor de autoescola do meu padrasto Belarmino é o Seu Juvenal.",
+  "textB": "Aprendo a dirigir com o Mr. Oyelaran, meu instrutor de autoescola."
+ },
+ {
+  "id": "other-person-pt-06",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2023-05-13",
+  "dateB": "2023-11-19",
+  "textA": "O Mr. Tavish é meu cabeleireiro.",
+  "textB": "A cabeleireira da minha prima Philippa é a Ms. Yamamoto."
+ },
+ {
+  "id": "other-person-pt-07",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2020-01-08",
+  "dateB": "2020-01-25",
+  "textA": "O supermercado da minha avó Anacleto é o Harrow & Finch.",
+  "textB": "Faço minhas compras no Mercado Jatobá, meu supermercado."
+ },
+ {
+  "id": "other-person-pt-08",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2023-06-15",
+  "dateB": "2023-12-01",
+  "textA": "A energia aqui de casa vem da Energia Cerrado, minha fornecedora.",
+  "textB": "A fornecedora de energia do meu cunhado Rosalind é a Northlight Power."
+ },
+ {
+  "id": "other-person-pt-09",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2024-04-03",
+  "dateB": "2024-12-18",
+  "textA": "Meu afilhado Teodoro compra os remédios dele na Juniper Chemist, a farmácia dele.",
+  "textB": "A farmácia que eu uso é a Wellspring Pharmacy."
+ },
+ {
+  "id": "other-person-pt-10",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2024-03-04",
+  "dateB": "2024-11-03",
+  "textA": "O Dr. Montague é o meu fisioterapeuta.",
+  "textB": "O fisioterapeuta da minha tia-avó Isadora é o Dr. Evandro."
+ },
+ {
+  "id": "other-person-pt-11",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2021-09-07",
+  "dateB": "2022-07-14",
+  "textA": "Mr. Oyelaran é o instrutor de autoescola do meu padrasto Gottfried.",
+  "textB": "Tenho aulas de direção com a Ms. Carrington, minha instrutora de autoescola."
+ },
+ {
+  "id": "other-person-pt-12",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2021-03-25",
+  "dateB": "2021-05-31",
+  "textA": "Quem cuida do meu cabelo é a Ms. Delacroix, minha cabeleireira.",
+  "textB": "O cabeleireiro da minha prima Marcelina é o Seu Gumercindo."
+ },
+ {
+  "id": "other-person-pt-13",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2023-02-14",
+  "dateB": "2023-10-09",
+  "textA": "Tallgrass Foods é o supermercado da minha avó Thaddeus.",
+  "textB": "Costumo fazer compras no Greenmarrow, meu supermercado."
+ },
+ {
+  "id": "other-person-pt-14",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2021-01-27",
+  "dateB": "2021-12-29",
+  "textA": "Minha fornecedora de energia é a Stonebridge Electric.",
+  "textB": "Quem fornece energia para o meu cunhado Eufrásia é a Força Pampa."
+ },
+ {
+  "id": "other-person-pt-15",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2024-03-08",
+  "dateB": "2025-01-23",
+  "textA": "A farmácia do meu afilhado Lucian é a Corner Remedy.",
+  "textB": "Juniper Chemist é a farmácia onde eu compro meus remédios."
+ },
+ {
+  "id": "other-person-pt-16",
+  "label": "other-person",
+  "language": "pt",
+  "dateA": "2019-05-05",
+  "dateB": "2019-12-10",
+  "textA": "Faço fisioterapia com a Dra. Leocádia, minha fisioterapeuta.",
+  "textB": "O Dr. Ashworth é o fisioterapeuta da minha tia-avó Hildegard."
+ },
+ {
+  "id": "switch-en-01",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-07-20",
+  "dateB": "2020-02-12",
+  "textA": "What I collect is postcards.",
+  "textB": "I no longer collect postcards; I collect vinyl records in their place."
+ },
+ {
+  "id": "switch-en-02",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-05-07",
+  "dateB": "2020-05-16",
+  "textA": "The instrument I play is the mandolin.",
+  "textB": "I gave up the mandolin and picked up the oboe in its place."
+ },
+ {
+  "id": "switch-en-03",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2021-04-30",
+  "dateB": "2023-06-24",
+  "textA": "I follow a gluten-free diet.",
+  "textB": "I gave up the gluten-free eating and follow a raw-food diet instead."
+ },
+ {
+  "id": "switch-en-04",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2022-11-01",
+  "dateB": "2023-01-26",
+  "textA": "I'm enrolled in a photography class.",
+  "textB": "I dropped my photography class and joined a tango class in its place."
+ },
+ {
+  "id": "switch-en-05",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-11-02",
+  "dateB": "2024-02-04",
+  "textA": "I have a collection of vinyl records.",
+  "textB": "I gave up collecting vinyl records and took up model trains in their place."
+ },
+ {
+  "id": "switch-en-06",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2022-06-04",
+  "dateB": "2023-09-07",
+  "textA": "The instrument I play is the mandolin.",
+  "textB": "I gave up the mandolin and play the tuba in its place."
+ },
+ {
+  "id": "switch-en-07",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-02-24",
+  "dateB": "2023-02-27",
+  "textA": "I keep to a low-sugar diet.",
+  "textB": "I abandoned the low-sugar eating and follow a pescatarian diet instead."
+ },
+ {
+  "id": "switch-en-08",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2019-10-21",
+  "dateB": "2021-06-09",
+  "textA": "I'm taking a pottery class.",
+  "textB": "I quit pottery and signed up for a tango class instead."
+ },
+ {
+  "id": "switch-en-09",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2020-06-10",
+  "dateB": "2020-10-31",
+  "textA": "I collect stamps as a hobby.",
+  "textB": "I've stopped collecting stamps and started on vinyl records instead."
+ },
+ {
+  "id": "switch-en-10",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2021-06-04",
+  "dateB": "2021-09-01",
+  "textA": "I'm a mandolin player; the mandolin is my instrument.",
+  "textB": "I stopped playing the mandolin and started the oboe instead."
+ },
+ {
+  "id": "switch-en-11",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2020-12-01",
+  "dateB": "2021-05-04",
+  "textA": "I follow a gluten-free diet.",
+  "textB": "I dropped a gluten-free diet and went on a vegan diet instead."
+ },
+ {
+  "id": "switch-en-12",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2024-02-15",
+  "dateB": "2024-06-07",
+  "textA": "The class I take is photography.",
+  "textB": "I dropped the photography class and take woodworking in its place."
+ },
+ {
+  "id": "switch-en-13",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2022-11-25",
+  "dateB": "2023-02-26",
+  "textA": "I collect model trains as a hobby.",
+  "textB": "I stopped collecting model trains and collect vinyl records instead."
+ },
+ {
+  "id": "switch-en-14",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2023-03-14",
+  "dateB": "2025-07-02",
+  "textA": "I play the accordion, that's my instrument.",
+  "textB": "I've quit the accordion and taken up the tuba instead."
+ },
+ {
+  "id": "switch-en-15",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2020-12-07",
+  "dateB": "2022-09-04",
+  "textA": "My eating follows a raw-food diet.",
+  "textB": "I quit eating raw food and went on a gluten-free diet instead."
+ },
+ {
+  "id": "switch-en-16",
+  "label": "switch",
+  "language": "en",
+  "dateA": "2021-12-31",
+  "dateB": "2024-06-06",
+  "textA": "I'm taking a photography class.",
+  "textB": "I quit photography and signed up for a woodworking class in its place."
+ },
+ {
+  "id": "switch-pt-01",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-06-16",
+  "dateB": "2021-12-29",
+  "textA": "Eu coleciono selos por hobby.",
+  "textB": "Desisti dos selos e passei a colecionar tampinhas no lugar deles."
+ },
+ {
+  "id": "switch-pt-02",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-03-24",
+  "dateB": "2019-09-14",
+  "textA": "O instrumento que eu toco é acordeão.",
+  "textB": "Abandonei o acordeão e comecei a tocar oboé no lugar dele."
+ },
+ {
+  "id": "switch-pt-03",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-12-20",
+  "dateB": "2021-12-10",
+  "textA": "Estou seguindo uma dieta com pouco açúcar.",
+  "textB": "Deixei de lado a dieta com pouco açúcar e sigo a crudívora no lugar."
+ },
+ {
+  "id": "switch-pt-04",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-06-03",
+  "dateB": "2022-03-29",
+  "textA": "Estou fazendo aula de marcenaria.",
+  "textB": "Parei com a marcenaria e entrei na aula de bordado no lugar."
+ },
+ {
+  "id": "switch-pt-05",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-03-21",
+  "dateB": "2022-08-28",
+  "textA": "Eu tenho uma coleção de cartões-postais.",
+  "textB": "Desisti dos cartões-postais e coleciono canetas-tinteiro no lugar deles."
+ },
+ {
+  "id": "switch-pt-06",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2020-03-28",
+  "dateB": "2020-07-27",
+  "textA": "O instrumento que eu toco é o oboé.",
+  "textB": "Parei de tocar oboé e toco acordeão no lugar."
+ },
+ {
+  "id": "switch-pt-07",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2020-08-01",
+  "dateB": "2020-09-21",
+  "textA": "A dieta que eu sigo é pescetariana.",
+  "textB": "Abandonei a dieta pescetariana e comecei uma com pouco sal no lugar."
+ },
+ {
+  "id": "switch-pt-08",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-02-13",
+  "dateB": "2025-04-22",
+  "textA": "A aula que eu faço é de bordado.",
+  "textB": "Desisti do bordado e me inscrevi na aula de cerâmica no lugar dele."
+ },
+ {
+  "id": "switch-pt-09",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2022-12-14",
+  "dateB": "2023-11-29",
+  "textA": "Minha coleção é de canetas-tinteiro.",
+  "textB": "Deixei as canetas-tinteiro de lado e coleciono cartões-postais no lugar."
+ },
+ {
+  "id": "switch-pt-10",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-03-10",
+  "dateB": "2023-07-23",
+  "textA": "O instrumento que eu toco é o bandolim.",
+  "textB": "Parei com o bandolim e comecei a tocar banjo no lugar."
+ },
+ {
+  "id": "switch-pt-11",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-01-11",
+  "dateB": "2024-11-23",
+  "textA": "Sigo uma dieta sem glúten.",
+  "textB": "Larguei a dieta sem glúten e hoje sigo a vegana no lugar dela."
+ },
+ {
+  "id": "switch-pt-12",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-03-19",
+  "dateB": "2023-10-06",
+  "textA": "Eu faço aula de cerâmica.",
+  "textB": "Larguei a cerâmica e faço aula de tango no lugar."
+ },
+ {
+  "id": "switch-pt-13",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2019-05-27",
+  "dateB": "2021-06-02",
+  "textA": "Tenho uma coleção de canetas-tinteiro.",
+  "textB": "Parei de colecionar canetas-tinteiro e comecei a juntar discos de vinil no lugar."
+ },
+ {
+  "id": "switch-pt-14",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-01-26",
+  "dateB": "2023-05-19",
+  "textA": "Toco tuba, é o meu instrumento.",
+  "textB": "Larguei a tuba e toco bandolim no lugar dela."
+ },
+ {
+  "id": "switch-pt-15",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2023-01-31",
+  "dateB": "2024-01-26",
+  "textA": "Sigo uma dieta sem glúten.",
+  "textB": "Larguei a dieta sem glúten e adotei a vegana no lugar dela."
+ },
+ {
+  "id": "switch-pt-16",
+  "label": "switch",
+  "language": "pt",
+  "dateA": "2021-09-17",
+  "dateB": "2023-09-20",
+  "textA": "Estou fazendo aula de cerâmica.",
+  "textB": "Larguei a aula de cerâmica e entrei na de marcenaria no lugar."
+ },
+ {
+  "id": "two-relatives-en-01",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-11-28",
+  "dateB": "2021-12-11",
+  "textA": "My stepfather Marcelina pays Brightmoor Energy for his electricity.",
+  "textB": "Stonebridge Electric is the electricity supplier of my great-aunt Teodoro."
+ },
+ {
+  "id": "two-relatives-en-02",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-01-14",
+  "dateB": "2021-02-13",
+  "textA": "My stepfather Thaddeus uses Juniper Chemist as his pharmacy.",
+  "textB": "Farmácia Ipanema is the pharmacy my grandmother Marcelina goes to."
+ },
+ {
+  "id": "two-relatives-en-03",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2024-04-19",
+  "dateB": "2024-08-25",
+  "textA": "My cousin Thaddeus sees Dr. Evandro for physiotherapy.",
+  "textB": "The physiotherapist of my godson Marcelina is Dr. Montague."
+ },
+ {
+  "id": "two-relatives-en-04",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-12-07",
+  "dateB": "2021-07-07",
+  "textA": "Ms. Carrington is the driving instructor my grandmother Anacleto has.",
+  "textB": "My great-aunt Hildegard's driving instructor is Mr. Oyelaran."
+ },
+ {
+  "id": "two-relatives-en-05",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2021-06-26",
+  "dateB": "2022-05-29",
+  "textA": "My grandmother Teodoro gets her hair done by Mr. Tavish, her hairdresser.",
+  "textB": "Seu Ladislau is the hairdresser my stepfather Belarmino goes to."
+ },
+ {
+  "id": "two-relatives-en-06",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-01-07",
+  "dateB": "2020-09-26",
+  "textA": "My godson Isadora shops at Super Araucária, his supermarket.",
+  "textB": "Greenmarrow is the supermarket of my brother-in-law Eufrásia."
+ },
+ {
+  "id": "two-relatives-en-07",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2022-06-27",
+  "dateB": "2022-12-12",
+  "textA": "Northlight Power supplies electricity to my brother-in-law Belarmino.",
+  "textB": "My stepfather Rosalind's electricity supplier is Energia Cerrado."
+ },
+ {
+  "id": "two-relatives-en-08",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-10-05",
+  "dateB": "2020-08-03",
+  "textA": "Farmácia Ipanema is the pharmacy of my cousin Belarmino.",
+  "textB": "My stepfather Rosalind gets his medicine at Farmácia Mantiqueira, his pharmacy."
+ },
+ {
+  "id": "two-relatives-en-09",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2021-12-23",
+  "dateB": "2022-11-28",
+  "textA": "My cousin Lucian's physiotherapist is Dr. Evandro.",
+  "textB": "Dra. Leocádia treats my stepfather Thaddeus as his physiotherapist."
+ },
+ {
+  "id": "two-relatives-en-10",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2022-06-21",
+  "dateB": "2022-08-12",
+  "textA": "My stepfather Anacleto has Mr. Blackwood as his driving instructor.",
+  "textB": "Ms. Carrington is the driving instructor of my brother-in-law Lucian."
+ },
+ {
+  "id": "two-relatives-en-11",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2019-03-30",
+  "dateB": "2020-02-18",
+  "textA": "My great-aunt Gottfried's hairdresser is Ms. Delacroix.",
+  "textB": "Mr. Tavish does my cousin Anacleto's hair; he is his hairdresser."
+ },
+ {
+  "id": "two-relatives-en-12",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2023-10-23",
+  "dateB": "2023-12-24",
+  "textA": "My grandmother Anacleto shops at Mercado Jatobá, her supermarket.",
+  "textB": "The supermarket of my brother-in-law Rosalind is Empório Buriti."
+ },
+ {
+  "id": "two-relatives-en-13",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2021-06-21",
+  "dateB": "2021-07-19",
+  "textA": "Northlight Power supplies the electricity of my cousin Belarmino.",
+  "textB": "My brother-in-law Philippa's electricity supplier is Brightmoor Energy."
+ },
+ {
+  "id": "two-relatives-en-14",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-02-10",
+  "dateB": "2021-02-13",
+  "textA": "Juniper Chemist is where my stepfather Gottfried gets his medicine.",
+  "textB": "My godson Rosalind uses Wellspring Pharmacy as his pharmacy."
+ },
+ {
+  "id": "two-relatives-en-15",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2020-04-30",
+  "dateB": "2020-07-01",
+  "textA": "Dra. Leocádia is the physiotherapist my brother-in-law Isadora sees.",
+  "textB": "My godson Thaddeus does his physiotherapy with Dr. Fenwick."
+ },
+ {
+  "id": "two-relatives-en-16",
+  "label": "two-relatives",
+  "language": "en",
+  "dateA": "2024-02-23",
+  "dateB": "2024-03-15",
+  "textA": "Seu Juvenal teaches my great-aunt Thaddeus to drive; he is her driving instructor.",
+  "textB": "My stepfather Rosalind takes driving lessons from Ms. Carrington, his driving instructor."
+ },
+ {
+  "id": "two-relatives-pt-01",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-10-13",
+  "dateB": "2021-11-04",
+  "textA": "A fornecedora de energia da minha tia-avó Rosalind é a Energia Cerrado.",
+  "textB": "Minha prima Marcelina é atendida pela Luz do Vale, a fornecedora de energia dela."
+ },
+ {
+  "id": "two-relatives-pt-02",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2019-10-27",
+  "dateB": "2020-02-13",
+  "textA": "Minha prima Rosalind compra remédios na Farmácia Ipanema, a farmácia dela.",
+  "textB": "Juniper Chemist é a farmácia do meu cunhado Teodoro."
+ },
+ {
+  "id": "two-relatives-pt-03",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2023-08-26",
+  "dateB": "2024-02-06",
+  "textA": "Dr. Evandro é o fisioterapeuta do meu afilhado Eufrásia.",
+  "textB": "Minha tia-avó Philippa faz fisioterapia com o Dr. Fenwick, fisioterapeuta dela."
+ },
+ {
+  "id": "two-relatives-pt-04",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2023-05-13",
+  "dateB": "2023-10-17",
+  "textA": "A instrutora de autoescola da minha tia-avó Thaddeus é a Ms. Carrington.",
+  "textB": "Meu afilhado Hildegard faz as aulas da autoescola com o Mr. Oyelaran."
+ },
+ {
+  "id": "two-relatives-pt-05",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2019-08-27",
+  "dateB": "2019-10-21",
+  "textA": "O Mr. Tavish é o cabeleireiro do meu afilhado Belarmino.",
+  "textB": "Minha tia-avó Eufrásia arruma o cabelo com a Ms. Yamamoto, cabeleireira dela."
+ },
+ {
+  "id": "two-relatives-pt-06",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2024-04-02",
+  "dateB": "2024-11-10",
+  "textA": "Meu afilhado Hildegard faz compras no Mercado Jatobá, o supermercado dele.",
+  "textB": "O supermercado do meu cunhado Thaddeus é o Greenmarrow."
+ },
+ {
+  "id": "two-relatives-pt-07",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-01-21",
+  "dateB": "2022-01-05",
+  "textA": "Minha tia-avó Philippa tem a Energia Cerrado como fornecedora de energia.",
+  "textB": "Para a minha prima Belarmino, quem fornece energia é a Brightmoor Energy."
+ },
+ {
+  "id": "two-relatives-pt-08",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2019-09-01",
+  "dateB": "2019-12-04",
+  "textA": "A farmácia da minha prima Lucian é a Farmácia Ipanema.",
+  "textB": "Minha tia-avó Rosalind usa a Juniper Chemist como farmácia."
+ },
+ {
+  "id": "two-relatives-pt-09",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-05-03",
+  "dateB": "2021-03-14",
+  "textA": "Dra. Graciliana é a fisioterapeuta que atende a minha prima Lucian.",
+  "textB": "Meu padrasto Eufrásia se trata com o Dr. Ashworth, fisioterapeuta dele."
+ },
+ {
+  "id": "two-relatives-pt-10",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-06-11",
+  "dateB": "2020-12-31",
+  "textA": "Meu padrasto Rosalind aprende a dirigir com o Mr. Blackwood, instrutor de autoescola dele.",
+  "textB": "O instrutor de autoescola da minha tia-avó Belarmino é o Mr. Oyelaran."
+ },
+ {
+  "id": "two-relatives-pt-11",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2021-09-07",
+  "dateB": "2021-12-30",
+  "textA": "Minha prima Philippa faz o cabelo com a Ms. Delacroix.",
+  "textB": "A Dona Clotilde é a cabeleireira da minha avó Isadora."
+ },
+ {
+  "id": "two-relatives-pt-12",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2024-02-24",
+  "dateB": "2024-03-23",
+  "textA": "Minha avó Rosalind faz as compras dela no Harrow & Finch.",
+  "textB": "O Tallgrass Foods é o supermercado da minha prima Anacleto."
+ },
+ {
+  "id": "two-relatives-pt-13",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2020-02-27",
+  "dateB": "2020-04-20",
+  "textA": "A fornecedora de energia da minha tia-avó Hildegard é a Energia Cerrado.",
+  "textB": "Na casa do meu padrasto Philippa, a energia vem da Northlight Power."
+ },
+ {
+  "id": "two-relatives-pt-14",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2023-10-02",
+  "dateB": "2024-03-23",
+  "textA": "Meu cunhado Rosalind compra os remédios dele na Drogaria Sete Lagoas.",
+  "textB": "A farmácia da minha avó Anacleto é a Farmácia Ipanema."
+ },
+ {
+  "id": "two-relatives-pt-15",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2024-02-29",
+  "dateB": "2024-12-02",
+  "textA": "Meu cunhado Eufrásia faz fisioterapia com o Dr. Fenwick.",
+  "textB": "O Dr. Montague é o fisioterapeuta da minha avó Anacleto."
+ },
+ {
+  "id": "two-relatives-pt-16",
+  "label": "two-relatives",
+  "language": "pt",
+  "dateA": "2022-04-17",
+  "dateB": "2023-01-30",
+  "textA": "O instrutor de autoescola do meu afilhado Thaddeus se chama Mr. Blackwood.",
+  "textB": "Minha tia-avó Philippa tem aulas de direção com o Seu Juvenal, instrutor de autoescola dela."
+ },
+ {
+  "id": "update-en-01",
+  "label": "update",
+  "language": "en",
+  "dateA": "2021-03-07",
+  "dateB": "2022-12-19",
+  "textA": "I do my physiotherapy sessions with Dra. Leocádia.",
+  "textB": "Dr. Montague is my physiotherapist."
+ },
+ {
+  "id": "update-en-02",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-02-08",
+  "dateB": "2024-02-09",
+  "textA": "Mr. Blackwood is my driving instructor.",
+  "textB": "I take my driving lessons with Seu Juvenal."
+ },
+ {
+  "id": "update-en-03",
+  "label": "update",
+  "language": "en",
+  "dateA": "2019-11-22",
+  "dateB": "2021-10-06",
+  "textA": "I get my hair done by Ms. Yamamoto, my hairdresser.",
+  "textB": "Seu Gumercindo is the hairdresser who cuts my hair."
+ },
+ {
+  "id": "update-en-04",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-04-10",
+  "dateB": "2023-05-09",
+  "textA": "I do my grocery shopping at Super Araucária, my supermarket.",
+  "textB": "Mercado Jatobá is the supermarket where I shop."
+ },
+ {
+  "id": "update-en-05",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-04-08",
+  "dateB": "2023-08-20",
+  "textA": "My electricity comes from Brightmoor Energy, my supplier.",
+  "textB": "Energia Cerrado is my electricity supplier."
+ },
+ {
+  "id": "update-en-06",
+  "label": "update",
+  "language": "en",
+  "dateA": "2022-09-07",
+  "dateB": "2023-02-04",
+  "textA": "Drogaria Sete Lagoas is my pharmacy.",
+  "textB": "I get my medication from Farmácia Ipanema, my pharmacy."
+ },
+ {
+  "id": "update-en-07",
+  "label": "update",
+  "language": "en",
+  "dateA": "2021-05-13",
+  "dateB": "2023-03-07",
+  "textA": "Dr. Evandro is my physiotherapist.",
+  "textB": "For my physiotherapy I see Dra. Leocádia."
+ },
+ {
+  "id": "update-en-08",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-11-29",
+  "dateB": "2024-11-15",
+  "textA": "Seu Adalberto is teaching me to drive as my instructor.",
+  "textB": "Mr. Oyelaran is my driving instructor."
+ },
+ {
+  "id": "update-en-09",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-12-22",
+  "dateB": "2024-11-27",
+  "textA": "Seu Ladislau is my hairdresser.",
+  "textB": "I have my hair cut by Seu Gumercindo, my hairdresser."
+ },
+ {
+  "id": "update-en-10",
+  "label": "update",
+  "language": "en",
+  "dateA": "2019-09-04",
+  "dateB": "2021-02-23",
+  "textA": "My supermarket is Harrow & Finch.",
+  "textB": "I do my shopping at Greenmarrow, my supermarket."
+ },
+ {
+  "id": "update-en-11",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-05-18",
+  "dateB": "2023-11-09",
+  "textA": "My electricity supplier is Energia Cerrado.",
+  "textB": "I'm a customer of Luz do Vale for my electricity."
+ },
+ {
+  "id": "update-en-12",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-10-25",
+  "dateB": "2025-12-16",
+  "textA": "Corner Remedy is my pharmacy.",
+  "textB": "I get my medicine at Wellspring Pharmacy, my pharmacy."
+ },
+ {
+  "id": "update-en-13",
+  "label": "update",
+  "language": "en",
+  "dateA": "2024-03-15",
+  "dateB": "2025-05-03",
+  "textA": "I see Dr. Evandro, my physiotherapist.",
+  "textB": "Dr. Montague is my physiotherapist."
+ },
+ {
+  "id": "update-en-14",
+  "label": "update",
+  "language": "en",
+  "dateA": "2020-06-11",
+  "dateB": "2022-04-28",
+  "textA": "My driving instructor is Mr. Oyelaran.",
+  "textB": "Dona Hermínia teaches me to drive; she's my instructor."
+ },
+ {
+  "id": "update-en-15",
+  "label": "update",
+  "language": "en",
+  "dateA": "2024-03-31",
+  "dateB": "2024-04-15",
+  "textA": "My hairdresser is Ms. Yamamoto.",
+  "textB": "I go to Seu Gumercindo for my haircuts; he's my hairdresser."
+ },
+ {
+  "id": "update-en-16",
+  "label": "update",
+  "language": "en",
+  "dateA": "2023-07-08",
+  "dateB": "2025-09-30",
+  "textA": "Greenmarrow is the supermarket I use.",
+  "textB": "My supermarket is Empório Buriti."
+ },
+ {
+  "id": "update-of-relative-en-01",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2024-06-19",
+  "dateB": "2025-07-31",
+  "textA": "Ms. Carrington is teaching my cousin Isadora to drive as her driving instructor.",
+  "textB": "My cousin Isadora has Mr. Oyelaran as her driving instructor."
+ },
+ {
+  "id": "update-of-relative-en-02",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-10-29",
+  "dateB": "2023-11-25",
+  "textA": "My grandmother Gottfried gets her hair done by Seu Gumercindo.",
+  "textB": "Ms. Yamamoto is the hairdresser of my grandmother Gottfried."
+ },
+ {
+  "id": "update-of-relative-en-03",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-11-10",
+  "dateB": "2026-01-28",
+  "textA": "Tallgrass Foods is the supermarket of my brother-in-law Marcelina.",
+  "textB": "My brother-in-law Marcelina does his supermarket runs at Greenmarrow."
+ },
+ {
+  "id": "update-of-relative-en-04",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2019-11-25",
+  "dateB": "2022-04-01",
+  "textA": "My godson Thaddeus gets his electricity from Luz do Vale.",
+  "textB": "The electricity supplier of my godson Thaddeus is Brightmoor Energy."
+ },
+ {
+  "id": "update-of-relative-en-05",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2022-04-04",
+  "dateB": "2024-07-05",
+  "textA": "Wellspring Pharmacy is where my great-aunt Eufrásia fills her prescriptions; it's her pharmacy.",
+  "textB": "My great-aunt Eufrásia's pharmacy is Corner Remedy."
+ },
+ {
+  "id": "update-of-relative-en-06",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-01-23",
+  "dateB": "2021-07-24",
+  "textA": "My stepfather Lucian sees Dr. Ashworth for his physiotherapy.",
+  "textB": "Dra. Leocádia is the physiotherapist of my stepfather Lucian."
+ },
+ {
+  "id": "update-of-relative-en-07",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-06-30",
+  "dateB": "2023-07-07",
+  "textA": "My cousin Hildegard is learning to drive with Mr. Blackwood, her driving instructor.",
+  "textB": "Seu Juvenal is the driving instructor of my cousin Hildegard."
+ },
+ {
+  "id": "update-of-relative-en-08",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2022-07-01",
+  "dateB": "2024-07-21",
+  "textA": "My grandmother Belarmino has her hair done by Dona Clotilde, her hairdresser.",
+  "textB": "Ms. Yamamoto is the hairdresser of my grandmother Belarmino."
+ },
+ {
+  "id": "update-of-relative-en-09",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2022-06-14",
+  "dateB": "2024-03-25",
+  "textA": "My brother-in-law Philippa does his grocery shopping at Tallgrass Foods.",
+  "textB": "Mercado Jatobá is the supermarket where my brother-in-law Philippa buys his groceries."
+ },
+ {
+  "id": "update-of-relative-en-10",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2021-11-15",
+  "dateB": "2023-07-13",
+  "textA": "My godson Anacleto gets his electricity from Força Pampa.",
+  "textB": "Brightmoor Energy is the electricity supplier of my godson Anacleto."
+ },
+ {
+  "id": "update-of-relative-en-11",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-07-09",
+  "dateB": "2025-01-16",
+  "textA": "My great-aunt Rosalind picks up her medicine at Wellspring Pharmacy.",
+  "textB": "Farmácia Mantiqueira is the pharmacy my great-aunt Rosalind uses."
+ },
+ {
+  "id": "update-of-relative-en-12",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2019-03-18",
+  "dateB": "2020-11-10",
+  "textA": "Dr. Montague is the physiotherapist treating my stepfather Teodoro.",
+  "textB": "My stepfather Teodoro goes to Dr. Ashworth, his physiotherapist."
+ },
+ {
+  "id": "update-of-relative-en-13",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-05-04",
+  "dateB": "2025-06-12",
+  "textA": "My cousin Isadora takes her driving lessons with Mr. Oyelaran.",
+  "textB": "Dona Hermínia is my cousin Isadora's driving instructor."
+ },
+ {
+  "id": "update-of-relative-en-14",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2023-04-25",
+  "dateB": "2024-07-24",
+  "textA": "The hairdresser my grandmother Gottfried goes to is Ms. Delacroix.",
+  "textB": "My grandmother Gottfried has Seu Ladislau as her hairdresser."
+ },
+ {
+  "id": "update-of-relative-en-15",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2024-04-08",
+  "dateB": "2025-01-19",
+  "textA": "My brother-in-law Marcelina buys his groceries at Tallgrass Foods, that's his supermarket.",
+  "textB": "Super Araucária is the supermarket my brother-in-law Marcelina shops at."
+ },
+ {
+  "id": "update-of-relative-en-16",
+  "label": "update-of-relative",
+  "language": "en",
+  "dateA": "2024-03-12",
+  "dateB": "2026-06-20",
+  "textA": "Brightmoor Energy is who my godson Thaddeus buys his electricity from.",
+  "textB": "My godson Thaddeus has Força Pampa as his electricity supplier."
+ },
+ {
+  "id": "update-of-relative-pt-01",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2024-05-12",
+  "dateB": "2026-01-26",
+  "textA": "A Dona Hermínia é a instrutora de autoescola da minha prima Isadora.",
+  "textB": "Minha prima Isadora aprende a dirigir com o Mr. Blackwood, instrutor de autoescola dela."
+ },
+ {
+  "id": "update-of-relative-pt-02",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2024-01-01",
+  "dateB": "2024-10-21",
+  "textA": "Quem corta o cabelo da minha avó Gottfried é o Mr. Tavish, cabeleireiro dela.",
+  "textB": "Minha avó Gottfried vai à Ms. Yamamoto, a cabeleireira dela."
+ },
+ {
+  "id": "update-of-relative-pt-03",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-01-14",
+  "dateB": "2023-09-10",
+  "textA": "Meu cunhado Marcelina faz as compras dele no Super Araucária.",
+  "textB": "O supermercado do meu cunhado Marcelina é o Harrow & Finch."
+ },
+ {
+  "id": "update-of-relative-pt-04",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-09-28",
+  "dateB": "2025-04-02",
+  "textA": "A Luz do Vale é a fornecedora de energia do meu afilhado Thaddeus.",
+  "textB": "Meu afilhado Thaddeus recebe energia da Brightmoor Energy, a fornecedora dele."
+ },
+ {
+  "id": "update-of-relative-pt-05",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2021-02-20",
+  "dateB": "2023-07-03",
+  "textA": "Minha tia-avó Eufrásia compra na Drogaria Sete Lagoas, a farmácia dela.",
+  "textB": "A farmácia da minha tia-avó Eufrásia é a Corner Remedy."
+ },
+ {
+  "id": "update-of-relative-pt-06",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-03-13",
+  "dateB": "2025-01-24",
+  "textA": "Meu padrasto Lucian se trata com o Dr. Ashworth, o fisioterapeuta dele.",
+  "textB": "O fisioterapeuta do meu padrasto Lucian é o Dr. Montague."
+ },
+ {
+  "id": "update-of-relative-pt-07",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2024-03-25",
+  "dateB": "2026-01-15",
+  "textA": "Minha prima Hildegard tem aulas de autoescola com o Mr. Oyelaran.",
+  "textB": "A Ms. Carrington é a instrutora de autoescola da minha prima Hildegard."
+ },
+ {
+  "id": "update-of-relative-pt-08",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2020-08-28",
+  "dateB": "2021-03-21",
+  "textA": "A Ms. Delacroix é a cabeleireira da minha avó Belarmino.",
+  "textB": "Minha avó Belarmino corta o cabelo com o Seu Gumercindo."
+ },
+ {
+  "id": "update-of-relative-pt-09",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2019-04-07",
+  "dateB": "2020-08-17",
+  "textA": "O Greenmarrow é o supermercado do meu cunhado Philippa.",
+  "textB": "Meu cunhado Philippa faz as compras dele no Mercado Jatobá."
+ },
+ {
+  "id": "update-of-relative-pt-10",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2019-04-17",
+  "dateB": "2020-02-19",
+  "textA": "Meu afilhado Anacleto tem a Stonebridge Electric como fornecedora de energia.",
+  "textB": "A fornecedora de energia do meu afilhado Anacleto é a Luz do Vale."
+ },
+ {
+  "id": "update-of-relative-pt-11",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2022-06-15",
+  "dateB": "2023-07-17",
+  "textA": "A farmácia da minha tia-avó Rosalind é a Corner Remedy.",
+  "textB": "Minha tia-avó Rosalind compra os remédios dela na Juniper Chemist."
+ },
+ {
+  "id": "update-of-relative-pt-12",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2021-09-26",
+  "dateB": "2022-10-15",
+  "textA": "A Dra. Leocádia é a fisioterapeuta do meu padrasto Teodoro.",
+  "textB": "Meu padrasto Teodoro se trata com o Dr. Montague, fisioterapeuta dele."
+ },
+ {
+  "id": "update-of-relative-pt-13",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2019-06-10",
+  "dateB": "2021-11-10",
+  "textA": "Minha prima Isadora tem o Mr. Oyelaran como instrutor de autoescola.",
+  "textB": "A instrutora de autoescola da minha prima Isadora é a Dona Hermínia."
+ },
+ {
+  "id": "update-of-relative-pt-14",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2019-05-19",
+  "dateB": "2020-09-28",
+  "textA": "A cabeleireira da minha avó Gottfried é a Ms. Yamamoto.",
+  "textB": "Mr. Tavish é o cabeleireiro que atende a minha avó Gottfried."
+ },
+ {
+  "id": "update-of-relative-pt-15",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-04-21",
+  "dateB": "2024-12-02",
+  "textA": "Meu cunhado Marcelina faz as compras dele no Empório Buriti, o supermercado dele.",
+  "textB": "O supermercado do meu cunhado Marcelina é o Harrow & Finch."
+ },
+ {
+  "id": "update-of-relative-pt-16",
+  "label": "update-of-relative",
+  "language": "pt",
+  "dateA": "2023-01-14",
+  "dateB": "2024-08-28",
+  "textA": "Quem fornece energia para o meu afilhado Thaddeus é a Luz do Vale.",
+  "textB": "Northlight Power é a fornecedora de energia do meu afilhado Thaddeus."
+ },
+ {
+  "id": "update-pt-01",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-03-03",
+  "dateB": "2023-07-28",
+  "textA": "O Dr. Ashworth é meu fisioterapeuta.",
+  "textB": "Meu fisioterapeuta se chama Dr. Fenwick."
+ },
+ {
+  "id": "update-pt-02",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-09-12",
+  "dateB": "2021-10-30",
+  "textA": "Faço autoescola com o Mr. Blackwood, meu instrutor.",
+  "textB": "A Dona Hermínia é minha instrutora de autoescola."
+ },
+ {
+  "id": "update-pt-03",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-03-18",
+  "dateB": "2023-05-07",
+  "textA": "Minha cabeleireira é a Ms. Delacroix.",
+  "textB": "Quem corta meu cabelo é o Seu Ladislau, meu cabeleireiro."
+ },
+ {
+  "id": "update-pt-04",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-01-18",
+  "dateB": "2023-02-05",
+  "textA": "Faço compras no Tallgrass Foods, meu supermercado.",
+  "textB": "O Mercado Jatobá é o supermercado onde eu compro."
+ },
+ {
+  "id": "update-pt-05",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-10-25",
+  "dateB": "2020-12-05",
+  "textA": "Minha fornecedora de energia é a Stonebridge Electric.",
+  "textB": "A Energia Cerrado fornece a energia da minha casa."
+ },
+ {
+  "id": "update-pt-06",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-09-24",
+  "dateB": "2022-06-24",
+  "textA": "A Drogaria Sete Lagoas é a farmácia onde compro meus remédios.",
+  "textB": "Uso a Corner Remedy como minha farmácia."
+ },
+ {
+  "id": "update-pt-07",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-07-17",
+  "dateB": "2021-02-25",
+  "textA": "Quem cuida da minha fisioterapia é o Dr. Fenwick.",
+  "textB": "Meu fisioterapeuta é o Dr. Montague."
+ },
+ {
+  "id": "update-pt-08",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2024-06-09",
+  "dateB": "2025-12-15",
+  "textA": "Meu instrutor de autoescola é o Mr. Oyelaran.",
+  "textB": "Tenho aulas na autoescola com a Dona Hermínia, minha instrutora."
+ },
+ {
+  "id": "update-pt-09",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-05-31",
+  "dateB": "2023-11-27",
+  "textA": "Meu cabeleireiro é o Seu Gumercindo.",
+  "textB": "O Mr. Tavish é o cabeleireiro que corta o meu cabelo."
+ },
+ {
+  "id": "update-pt-10",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-10-16",
+  "dateB": "2025-04-13",
+  "textA": "Harrow & Finch é o supermercado onde eu compro.",
+  "textB": "Meu supermercado é o Empório Buriti."
+ },
+ {
+  "id": "update-pt-11",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2023-06-25",
+  "dateB": "2024-12-14",
+  "textA": "Recebo energia da Northlight Power, minha fornecedora.",
+  "textB": "Stonebridge Electric é a minha fornecedora de energia."
+ },
+ {
+  "id": "update-pt-12",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-04-12",
+  "dateB": "2020-11-20",
+  "textA": "Compro meus remédios na Corner Remedy, minha farmácia.",
+  "textB": "Minha farmácia é a Wellspring Pharmacy."
+ },
+ {
+  "id": "update-pt-13",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-06-03",
+  "dateB": "2020-09-11",
+  "textA": "Sou paciente do Dr. Fenwick, meu fisioterapeuta.",
+  "textB": "Faço minhas sessões de fisioterapia com o Dr. Evandro."
+ },
+ {
+  "id": "update-pt-14",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2019-04-11",
+  "dateB": "2020-11-18",
+  "textA": "A Ms. Carrington é a minha instrutora de autoescola.",
+  "textB": "Aprendo a dirigir com o Mr. Oyelaran, meu instrutor de autoescola."
+ },
+ {
+  "id": "update-pt-15",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2022-07-05",
+  "dateB": "2024-06-18",
+  "textA": "Corto o cabelo com o Mr. Tavish, meu cabeleireiro.",
+  "textB": "Seu Ladislau é o meu cabeleireiro."
+ },
+ {
+  "id": "update-pt-16",
+  "label": "update",
+  "language": "pt",
+  "dateA": "2020-02-13",
+  "dateB": "2022-03-19",
+  "textA": "Meu supermercado é o Tallgrass Foods.",
+  "textB": "É no Harrow & Finch que eu faço minhas compras de supermercado."
+ }
+]
