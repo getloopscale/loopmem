@@ -10,19 +10,27 @@
 # a few hundred short texts per run. Measured locally: about 0.09 USD for the write run and 0.08 USD
 # for the reflect run.
 #
-# Triggers: nightly on develop and on demand. Not on every push, to keep the recurring cost bounded.
+# Triggers: nightly (a scheduled run starts on the default branch, so it checks out develop), on
+# demand, and on a pull request that changes the gate itself. Not on every push, to keep the recurring
+# cost bounded.
 name: memory-quality
 
 on:
   schedule:
     - cron: '30 4 * * *'
   workflow_dispatch:
+  pull_request:
+    branches: [develop]
+    paths:
+      - '.github/workflows/memory-quality.yml'
+      - 'packages/eval/src/stages/consolidation/quality-gate*'
+      - 'packages/eval/tools/cost-guard-proxy.py'
 
 permissions:
   contents: read
 
 concurrency:
-  group: memory-quality-${{ github.ref_name }}
+  group: memory-quality-${{ github.event.pull_request.head.ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
@@ -55,6 +63,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.event_name == 'schedule' && 'develop' || '' }}
 
       - name: Require the OpenAI key
         run: |
