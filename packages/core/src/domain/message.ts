@@ -15,6 +15,11 @@ export interface Message {
    * The name of the person who wrote the message, when the caller knows it (a group chat, a
    * transcript with several speakers). Facts the author states about themself are then written
    * with this name. Leave it out in a one-to-one chat: the author stays the speaker `user`.
+   *
+   * Use this field and not a `Name: ` prefix typed into `content`. With the field the author is
+   * read by code: of 120 facts authors stated about themselves, none was stored under `user`. With
+   * only the prefix the extractor has to infer who is speaking, and 6 to 16 of the same 120 were
+   * stored under `user`, as if the scope's own user had said them (measured with `gpt-4o-mini`).
    */
   readonly name?: string;
   /**
