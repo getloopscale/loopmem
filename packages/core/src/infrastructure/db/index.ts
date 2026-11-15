@@ -43,6 +43,7 @@ export {
   NoopConflictPolicy,
   LastWriteWinsConflictPolicy,
   LlmJudgedMergeConflictPolicy,
+  PairJudgedConflictPolicy,
 } from '../../domain/index.js';
 export * from './eviction/index.js';
 

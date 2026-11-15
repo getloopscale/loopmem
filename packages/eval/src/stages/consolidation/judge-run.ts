@@ -9,14 +9,15 @@
  *
  * Required env: OPENAI_API_KEY, OPENAI_CHAT_MODEL, CONSOLIDATION_JUDGE_OUT (report path).
  * Optional: THEOMEM_PG_URI (admin URI), CONSOLIDATION_JUDGE_DB, CONSOLIDATION_JUDGE_CASES (case
- * file in this directory, default judge-cases.json).
+ * file in this directory, default judge-cases.json), CONSOLIDATION_JUDGE_POLICY (`pair` for the
+ * pair-judged policy; default the list judge).
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 
 import pg from 'pg';
 
-import { createLocalMemory, LlmJudgedMergeConflictPolicy, PgvectorStore, runMigrations } from '@usetheo/memory';
+import { createLocalMemory, LlmJudgedMergeConflictPolicy, PairJudgedConflictPolicy, PgvectorStore, runMigrations } from '@usetheo/memory';
 import { OpenAICompatibleEmbedder } from '@usetheo/memory/embedders/openai-compatible';
 import { OpenAILLM } from '@usetheo/memory/llms/openai';
 
@@ -64,7 +65,8 @@ try {
     llm,
     embeddingDim: EMBEDDING_DIM,
   });
-  const policy = new LlmJudgedMergeConflictPolicy({ llm });
+  // `pair` runs the policy that puts each pair of a cluster to the update judge; the default is the list judge.
+  const policy = process.env['CONSOLIDATION_JUDGE_POLICY'] === 'pair' ? new PairJudgedConflictPolicy({ llm }) : new LlmJudgedMergeConflictPolicy({ llm });
 
   const facts: { user: string; key: string; role: string; update: string | undefined; outOfOrder: boolean; invalidated: boolean }[] = [];
   const questions: {
@@ -130,7 +132,8 @@ try {
     const old = pair.find((f) => f.role === 'old')!;
     const recent = pair.find((f) => f.role === 'new')!;
     const outcome = recent.invalidated ? 'wrong-direction' : old.invalidated ? 'resolved' : 'missed';
-    return { name, outOfOrder: old.outOfOrder, outcome };
+    // The case file marks whichever fact of the pair was logged first out of order, usually the newer one.
+    return { name, outOfOrder: old.outOfOrder || recent.outOfOrder, outcome };
   });
   const count = (xs: readonly { outcome: string }[], outcome: string) => xs.filter((x) => x.outcome === outcome).length;
   const byKind = (kind: QuestionKind) => {

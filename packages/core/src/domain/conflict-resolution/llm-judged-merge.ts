@@ -49,6 +49,11 @@ function getCounter(name: string): Counter {
   return counter;
 }
 
+/** Counts a cluster a policy left alone because it was larger than the policy reads. */
+export function countClusterTooLarge(policyName: string): void {
+  getCounter(CTR.CLUSTER_TOO_LARGE).add(1, { policy: policyName });
+}
+
 /** @internal Test-only: reset counter cache so the next consolidate() re-resolves metrics.getMeter(). */
 export function __resetCounterCacheForTesting(): void {
   lazyCounters.clear();
@@ -100,7 +105,7 @@ export class LlmJudgedMergeConflictPolicy implements ConflictResolutionPolicy {
   ): Promise<readonly ConflictResolutionResult[]> {
     if (candidates.length < 2) return [];
     if (candidates.length > this.#clusterCap) {
-      getCounter(CTR.CLUSTER_TOO_LARGE).add(1);
+      countClusterTooLarge(this.kind);
       return [];
     }
     const messages = generateConflictMergePrompt(candidates, context);
