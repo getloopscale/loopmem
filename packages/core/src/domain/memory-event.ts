@@ -288,7 +288,8 @@ export const MEMORY_EVENTS = [
   'extraction_speaker_token_restored',
   // A write carried only reference material, so nothing was extracted (ADR-0039).
   'extraction_reference_only',
-  // A fact labeled temporary whose source names no day or moment was stored with no expiry.
+  // A fact labeled temporary or tentative whose source names no day or moment was stored with
+  // no expiry. Attributes `{durability}`.
   'short_lived_kept_without_expiry',
   // The evidence of one fact was malformed and was repaired or dropped; the fact was kept (#277).
   'extraction_evidence_invalid',

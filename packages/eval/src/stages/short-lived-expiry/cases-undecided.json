@@ -1,0 +1,962 @@
+[
+ {
+  "id": "datobl-en-00",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My landlord told me I have to show him my renewed visa in August."
+ },
+ {
+  "id": "datobl-en-02",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My therapist told me I need to play at the recital in July."
+ },
+ {
+  "id": "datobl-en-04",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My doctor told me I need to renew my health plan contract in July."
+ },
+ {
+  "id": "datobl-en-06",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My mechanic told me I need to service the car before the wedding in August."
+ },
+ {
+  "id": "datobl-en-08",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My lawyer said I have to sort out my documents before the trip in June."
+ },
+ {
+  "id": "datobl-en-10",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My physiotherapist said I have to take my car for inspection in August."
+ },
+ {
+  "id": "datobl-en-12",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My doctor told me I must rest my voice before the presentation in August."
+ },
+ {
+  "id": "datobl-en-14",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My accountant said I have to schedule the delivery of the documents in December."
+ },
+ {
+  "id": "datobl-en-16",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My lawyer told me I must renew my visa in February."
+ },
+ {
+  "id": "datobl-en-18",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My physiotherapist said I must finish my hand exercises before the recital in August."
+ },
+ {
+  "id": "datobl-en-20",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My vet said I need to renew the pet insurance contract in November."
+ },
+ {
+  "id": "datobl-en-22",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My landlord told me I need to move my car for a wedding in January."
+ },
+ {
+  "id": "datobl-en-24",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My doctor said I need to get vaccinated before my trip in February."
+ },
+ {
+  "id": "datobl-en-26",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My teacher reminded me that I need to get my car inspected in February."
+ },
+ {
+  "id": "datobl-en-28",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My nutritionist told me I have to attend her presentation on healthy eating in December."
+ },
+ {
+  "id": "datobl-en-30",
+  "language": "en",
+  "family": "dated-obligation",
+  "text": "My dentist said I have to pick up the delivery of my retainer in November."
+ },
+ {
+  "id": "datobl-pt-01",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Meu médico falou que preciso pedir os recibos para o imposto de renda em novembro."
+ },
+ {
+  "id": "datobl-pt-03",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha mãe disse que preciso comprar as passagens para a conferência em maio."
+ },
+ {
+  "id": "datobl-pt-05",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha dentista falou que devo tirar o aparelho antes do torneio de setembro."
+ },
+ {
+  "id": "datobl-pt-07",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha mãe falou que tenho que me matricular no curso de inglês em setembro."
+ },
+ {
+  "id": "datobl-pt-09",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha terapeuta disse que preciso me preparar com calma para o exame de maio."
+ },
+ {
+  "id": "datobl-pt-11",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Meu veterinário avisou que tenho que vacinar a gata em dezembro."
+ },
+ {
+  "id": "datobl-pt-13",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Meu mentor insistiu que eu preciso fazer um check-up médico em janeiro."
+ },
+ {
+  "id": "datobl-pt-15",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "A veterinária disse que preciso atualizar as vacinas do cachorro antes da mudança em abril."
+ },
+ {
+  "id": "datobl-pt-17",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "O proprietário do imóvel avisou que tenho que entregar a declaração de imposto em agosto."
+ },
+ {
+  "id": "datobl-pt-19",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Meu mecânico falou que tenho que revisar o carro antes da conferência em setembro."
+ },
+ {
+  "id": "datobl-pt-21",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Meu dentista avisou que preciso usar protetor bucal no torneio de maio."
+ },
+ {
+  "id": "datobl-pt-23",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha terapeuta disse que preciso começar o curso de meditação em maio."
+ },
+ {
+  "id": "datobl-pt-25",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha mãe disse que eu preciso fazer a prova de direção em dezembro."
+ },
+ {
+  "id": "datobl-pt-27",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Minha mãe lembrou que preciso tomar a vacina da gripe em novembro."
+ },
+ {
+  "id": "datobl-pt-29",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "O veterinário disse que tenho que levar meu gato para um check-up em janeiro."
+ },
+ {
+  "id": "datobl-pt-31",
+  "language": "pt",
+  "family": "dated-obligation",
+  "text": "Meu dentista avisou que preciso terminar o tratamento antes da mudança em janeiro."
+ },
+ {
+  "id": "repadv-en-00",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My coach said I should always review my notes right after each class."
+ },
+ {
+  "id": "repadv-en-02",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My nutritionist said I should keep a backup copy of my meal plans online."
+ },
+ {
+  "id": "repadv-en-04",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My accountant told me I should always get eight hours of sleep."
+ },
+ {
+  "id": "repadv-en-06",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My teacher said I should stretch my wrists before every piano practice."
+ },
+ {
+  "id": "repadv-en-08",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My nutritionist told me to never share my chocolate with the dog."
+ },
+ {
+  "id": "repadv-en-10",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My accountant told me I ought to drink more water and less coffee."
+ },
+ {
+  "id": "repadv-en-12",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My dentist told me to take my medication with food, never on an empty stomach."
+ },
+ {
+  "id": "repadv-en-14",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My mother always told me to eat vegetables with every meal."
+ },
+ {
+  "id": "repadv-en-16",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My mechanic told me I should study in short sessions instead of cramming."
+ },
+ {
+  "id": "repadv-en-18",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My coach recommended that I back up my files to an external drive regularly."
+ },
+ {
+  "id": "repadv-en-20",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My lawyer advised me never to sign anything without a good night's sleep."
+ },
+ {
+  "id": "repadv-en-22",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My older brother recommended that I stretch after every workout to avoid injuries."
+ },
+ {
+  "id": "repadv-en-24",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My lawyer told me I should always keep my dog's vaccination records in order."
+ },
+ {
+  "id": "repadv-en-26",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My accountant suggested I keep a water bottle on my desk and sip often."
+ },
+ {
+  "id": "repadv-en-28",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My boss recommended that I set an alarm so I never miss my medication."
+ },
+ {
+  "id": "repadv-en-30",
+  "language": "en",
+  "family": "reported-advice",
+  "text": "My coach advised me to eat more protein and cut back on sugar."
+ },
+ {
+  "id": "repadv-pt-01",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu treinador recomendou que eu leia algumas páginas antes de dormir."
+ },
+ {
+  "id": "repadv-pt-03",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu mentor me ensinou que devo fazer a revisão do carro com regularidade."
+ },
+ {
+  "id": "repadv-pt-05",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Minha advogada recomendou que eu sempre mantenha uma reserva de emergência na poupança."
+ },
+ {
+  "id": "repadv-pt-07",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu treinador falou que devo manter as costas retas sempre que estiver sentado."
+ },
+ {
+  "id": "repadv-pt-09",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu contador me aconselhou a limitar o tempo de tela antes de dormir."
+ },
+ {
+  "id": "repadv-pt-11",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Minha terapeuta sugeriu que eu faça atividade física para aliviar a ansiedade."
+ },
+ {
+  "id": "repadv-pt-13",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu irmão mais velho me disse para nunca abrir mão das minhas férias."
+ },
+ {
+  "id": "repadv-pt-15",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Minha nutricionista me aconselhou a guardar todos os recibos para o imposto de renda."
+ },
+ {
+  "id": "repadv-pt-17",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu advogado me orientou a ler todo contrato com atenção antes de assinar."
+ },
+ {
+  "id": "repadv-pt-19",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "O proprietário do meu apartamento me falou para trocar o óleo do carro regularmente."
+ },
+ {
+  "id": "repadv-pt-21",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu dentista aconselhou que eu guarde um pouco do salário todo mês."
+ },
+ {
+  "id": "repadv-pt-23",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Minha professora disse que devo ajustar a altura da cadeira para melhorar a postura."
+ },
+ {
+  "id": "repadv-pt-25",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Minha veterinária comentou que eu deveria passar menos tempo no celular durante os passeios."
+ },
+ {
+  "id": "repadv-pt-27",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Minha veterinária recomendou que eu faça exercícios com meu cachorro todos os dias."
+ },
+ {
+  "id": "repadv-pt-29",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu treinador recomendou que eu tire um dia de descanso entre os treinos pesados."
+ },
+ {
+  "id": "repadv-pt-31",
+  "language": "pt",
+  "family": "reported-advice",
+  "text": "Meu professor ensinou que devo declarar o imposto com antecedência para evitar multas."
+ },
+ {
+  "id": "undmom-en-00",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I'm not sure whether to open a window or leave it shut."
+ },
+ {
+  "id": "undmom-en-02",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll go to bed or read another chapter."
+ },
+ {
+  "id": "undmom-en-04",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might make a coffee, though I've had plenty already."
+ },
+ {
+  "id": "undmom-en-06",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I'm not sure if I'll take a shower or just skip it."
+ },
+ {
+  "id": "undmom-en-08",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might take a break, since I can't focus on this report."
+ },
+ {
+  "id": "undmom-en-10",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might call my sister, but she could be busy."
+ },
+ {
+  "id": "undmom-en-12",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might turn on the heater, though I'm not really that cold."
+ },
+ {
+  "id": "undmom-en-14",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might get up and stretch a bit, my back feels stiff."
+ },
+ {
+  "id": "undmom-en-16",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might open a window, it feels a little stuffy in here."
+ },
+ {
+  "id": "undmom-en-18",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I can't decide if I'll go to bed or finish this episode."
+ },
+ {
+  "id": "undmom-en-20",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Can't decide if I'll grab a coffee or stick with water."
+ },
+ {
+  "id": "undmom-en-22",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I might hop in the shower, or maybe just wash my face."
+ },
+ {
+  "id": "undmom-en-24",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll take a break or push through this task."
+ },
+ {
+  "id": "undmom-en-26",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I'm debating whether to call my dad or just send a message."
+ },
+ {
+  "id": "undmom-en-28",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "Not sure if I'll switch the heater on or grab a blanket."
+ },
+ {
+  "id": "undmom-en-30",
+  "language": "en",
+  "family": "undecided-about-the-moment",
+  "text": "I'm wondering whether to do a quick stretch or stay on the couch."
+ },
+ {
+  "id": "undmom-pt-01",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu mude a música, essa está me dando sono."
+ },
+ {
+  "id": "undmom-pt-03",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu saia para dar uma caminhada, mas estou com preguiça."
+ },
+ {
+  "id": "undmom-pt-05",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu peça comida, porque não estou com vontade de cozinhar."
+ },
+ {
+  "id": "undmom-pt-07",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu veja um episódio da série, mas estou com sono."
+ },
+ {
+  "id": "undmom-pt-09",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Estou em dúvida se repito o prato ou paro por aqui."
+ },
+ {
+  "id": "undmom-pt-11",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu jogue uma partida rápida antes de voltar ao trabalho."
+ },
+ {
+  "id": "undmom-pt-13",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Talvez eu saia da mesa um pouco para esticar as pernas."
+ },
+ {
+  "id": "undmom-pt-15",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Estou pensando em comer alguma coisa, mas nem estou com tanta fome."
+ },
+ {
+  "id": "undmom-pt-17",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se troco essa música ou deixo tocando."
+ },
+ {
+  "id": "undmom-pt-19",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se vou caminhar um pouco ou fico no sofá."
+ },
+ {
+  "id": "undmom-pt-21",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Estou indeciso se peço um lanche ou preparo algo em casa."
+ },
+ {
+  "id": "undmom-pt-23",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se assisto a alguma coisa ou vou direto dormir."
+ },
+ {
+  "id": "undmom-pt-25",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se pego mais um pouco de arroz ou fico satisfeito."
+ },
+ {
+  "id": "undmom-pt-27",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se jogo uma partidinha ou continuo estudando."
+ },
+ {
+  "id": "undmom-pt-29",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Estou pensando em levantar da mesa, mas falta pouco para terminar."
+ },
+ {
+  "id": "undmom-pt-31",
+  "language": "pt",
+  "family": "undecided-about-the-moment",
+  "text": "Não sei se faço um lanche ou espero o jantar."
+ },
+ {
+  "id": "undpla-en-00",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm considering renovating the kitchen, but the cost makes me hesitate."
+ },
+ {
+  "id": "undpla-en-02",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of moving to another city, but leaving my friends worries me."
+ },
+ {
+  "id": "undpla-en-04",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might get a cat, although I'm not sure my apartment is big enough."
+ },
+ {
+  "id": "undpla-en-06",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm not sure whether to buy a house or keep renting."
+ },
+ {
+  "id": "undpla-en-08",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking about buying a car, but I'm not convinced I need one."
+ },
+ {
+  "id": "undpla-en-10",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might take a sabbatical from work, but I'm really unsure."
+ },
+ {
+  "id": "undpla-en-12",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of selling the bike since I barely ride it."
+ },
+ {
+  "id": "undpla-en-14",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm considering starting a degree in psychology, but I haven't decided."
+ },
+ {
+  "id": "undpla-en-16",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Not sure whether to redo the whole kitchen or just replace the cabinets."
+ },
+ {
+  "id": "undpla-en-18",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might relocate to a different city, but I haven't made up my mind."
+ },
+ {
+  "id": "undpla-en-20",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm thinking of adopting a dog, but I'm not sure I'm ready."
+ },
+ {
+  "id": "undpla-en-22",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm considering buying a house, but renting might make more sense."
+ },
+ {
+  "id": "undpla-en-24",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "Not sure whether to buy a car or keep relying on the bus."
+ },
+ {
+  "id": "undpla-en-26",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I'm not sure whether to take a sabbatical or keep working."
+ },
+ {
+  "id": "undpla-en-28",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might sell my bike, though part of me wants to keep it."
+ },
+ {
+  "id": "undpla-en-30",
+  "language": "en",
+  "family": "undecided-plan",
+  "text": "I might go back to school for a degree, but I'm torn."
+ },
+ {
+  "id": "undpla-pt-01",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu mude de plano de celular, mas não tenho certeza se compensa."
+ },
+ {
+  "id": "undpla-pt-03",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em aprender piano, mas não sei se vou ter disciplina."
+ },
+ {
+  "id": "undpla-pt-05",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em mudar de banco, mas não sei se vale o esforço."
+ },
+ {
+  "id": "undpla-pt-07",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em adotar uma dieta vegetariana, mas não tenho certeza."
+ },
+ {
+  "id": "undpla-pt-09",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou na dúvida se entro para um clube de corrida."
+ },
+ {
+  "id": "undpla-pt-11",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou em dúvida se estudo espanhol ou italiano."
+ },
+ {
+  "id": "undpla-pt-13",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não sei se troco de emprego ou peço um aumento onde estou."
+ },
+ {
+  "id": "undpla-pt-15",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu monte uma horta na varanda, mas não sei se tenho espaço."
+ },
+ {
+  "id": "undpla-pt-17",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em trocar de plano de celular, mas não tenho certeza."
+ },
+ {
+  "id": "undpla-pt-19",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu aprenda a tocar violão, mas não sei se levo jeito."
+ },
+ {
+  "id": "undpla-pt-21",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou considerando trocar de banco, mas dá preguiça de mudar tudo."
+ },
+ {
+  "id": "undpla-pt-23",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Não sei se começo uma dieta com menos carboidratos ou continuo comendo de tudo."
+ },
+ {
+  "id": "undpla-pt-25",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Talvez eu entre para um clube de leitura, mas sou meio tímido."
+ },
+ {
+  "id": "undpla-pt-27",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em aprender francês, mas não sei se vou conseguir manter o ritmo."
+ },
+ {
+  "id": "undpla-pt-29",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou cogitando mudar de emprego, mas tenho medo de me arrepender."
+ },
+ {
+  "id": "undpla-pt-31",
+  "language": "pt",
+  "family": "undecided-plan",
+  "text": "Estou pensando em começar uma horta no quintal, mas não entendo nada de plantas."
+ },
+ {
+  "id": "undtod-en-00",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might skip the gym today, I'm feeling pretty tired."
+ },
+ {
+  "id": "undtod-en-02",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "Not sure whether I'll go for a run today."
+ },
+ {
+  "id": "undtod-en-04",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I may go for a walk tonight, but I haven't made up my mind."
+ },
+ {
+  "id": "undtod-en-06",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I can't decide whether to finish work early today."
+ },
+ {
+  "id": "undtod-en-08",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I'm not sure what to make for dinner today."
+ },
+ {
+  "id": "undtod-en-10",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I might visit my cousin tonight, but I haven't decided."
+ },
+ {
+  "id": "undtod-en-12",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I'm debating whether to take a nap today."
+ },
+ {
+  "id": "undtod-en-14",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I'm on the fence about going to see a movie today."
+ },
+ {
+  "id": "undtod-en-16",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I'm undecided about hitting the gym tonight after such a long shift."
+ },
+ {
+  "id": "undtod-en-18",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I'm torn about going for a run tonight in this rain."
+ },
+ {
+  "id": "undtod-en-20",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "Not sure if I'll take a walk today or just stay in."
+ },
+ {
+  "id": "undtod-en-22",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I'm unsure whether to work a few extra hours today."
+ },
+ {
+  "id": "undtod-en-24",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "Not sure whether to cook dinner or order in tonight."
+ },
+ {
+  "id": "undtod-en-26",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I haven't decided whether to visit my grandmother today."
+ },
+ {
+  "id": "undtod-en-28",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I may take a nap today, but I'm afraid of oversleeping."
+ },
+ {
+  "id": "undtod-en-30",
+  "language": "en",
+  "family": "undecided-about-today",
+  "text": "I can't decide whether to watch a movie tonight."
+ },
+ {
+  "id": "undtod-pt-01",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu passe no mercado hoje, mas a geladeira nem está vazia."
+ },
+ {
+  "id": "undtod-pt-03",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu leia um pouco hoje à noite, se o cansaço deixar."
+ },
+ {
+  "id": "undtod-pt-05",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Estou na dúvida se pego uma carona hoje ou vou de ônibus."
+ },
+ {
+  "id": "undtod-pt-07",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Estou pensando se lavo a roupa hoje ou espero juntar mais."
+ },
+ {
+  "id": "undtod-pt-09",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se saio hoje ou fico em casa descansando."
+ },
+ {
+  "id": "undtod-pt-11",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Estou em dúvida se cozinho hoje ou esquento as sobras."
+ },
+ {
+  "id": "undtod-pt-13",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se ligo para minha avó hoje."
+ },
+ {
+  "id": "undtod-pt-15",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se faço a faxina hoje ou deixo para o fim de semana."
+ },
+ {
+  "id": "undtod-pt-17",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não decidi se vou fazer compras hoje ou peço pelo aplicativo."
+ },
+ {
+  "id": "undtod-pt-19",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu termine o livro hoje, mas não tenho certeza."
+ },
+ {
+  "id": "undtod-pt-21",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se dou uma volta de bicicleta hoje."
+ },
+ {
+  "id": "undtod-pt-23",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu lave a roupa hoje, mas o tempo está fechado."
+ },
+ {
+  "id": "undtod-pt-25",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Estou na dúvida se saio com os amigos hoje à noite."
+ },
+ {
+  "id": "undtod-pt-27",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não sei se preparo o jantar hoje à noite ou peço uma pizza."
+ },
+ {
+  "id": "undtod-pt-29",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Não decidi se faço aquela ligação para o banco hoje."
+ },
+ {
+  "id": "undtod-pt-31",
+  "language": "pt",
+  "family": "undecided-about-today",
+  "text": "Talvez eu limpe a cozinha hoje, mas estou sem ânimo."
+ }
+]

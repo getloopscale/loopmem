@@ -118,3 +118,42 @@ added statements gave a favourite dish and, three messages later, said the perso
 vegetarian. When the dish had meat or fish the update judge ended it (240 of 240 rows, against 2
 of 240 for the other dishes), and the question had nothing to find (#252). Both sides had the
 same split, so the comparison stands.
+
+## Amendment (2026-11-14, second): a `tentative` fact follows the same rule
+
+The decision above left `tentative` facts ending with their day, with the limit recorded as 9 of
+504 values on a development set. A live sweep of the write path showed a family where the rate is
+far higher: what someone told the person to do. "My therapist suggested I start journaling." was
+stored with an end at the close of the day in 5 of 5 writes, and "My boss told me I need to travel
+to Denver in May." in 2 of 5 (#304). The extractor gives the label to "should" and "need to".
+
+A `tentative` fact now ends with its day only when its source has a word for the day, as a
+`temporary` fact does. `short_lived_kept_without_expiry` reports both and carries `durability`.
+
+Measured on a fresh set of 160 sentences in five families (`short-lived-expiry/cases-undecided.json`,
+written by an agent with no access to the repository, read blind by another, criteria fixed before
+the run), base against this change in one batch, three runs, `gpt-4o-mini`. Observed:
+
+| Family (96 writes each) | Stored, base | Stored, now | Expiring, base | Expiring, now |
+|---|---|---|---|---|
+| Reported advice | 96 | 96 | 24 | 0 |
+| Dated obligation | 96 | 96 | 3 | 0 |
+| Undecided plan | 45 | 43 | 36 | 0 |
+| Undecided about today (day word) | 0 | 0 | 0 | 0 |
+| Undecided about the moment (no day word) | 8 | 9 | 0 | 0 |
+
+- The three families that should stay: 63 of 288 writes expired before and none now; fewer in 26
+  sentences, more in none (p < 0.001).
+- The earlier set (`cases.json`): a state with a day word still expires (94 and 95 of 120), and a
+  habit or an ongoing matter does not (0 and 0, 1 and 0).
+- `memory-semantics`, three runs per side: no forbidden fact on either side, precision 0.92 and 0.91.
+
+What this does not show:
+
+- The control family "undecided about today" stored no fact on either side, so it gave no evidence
+  that an undecided statement with a day word still expires. That branch is covered by a unit test
+  only.
+- Half of the undecided plans ("I'm thinking of moving to another city") are not stored at all, on
+  both sides. That is a separate loss, before this rule.
+- One extractor model, sentences in English and Portuguese.
+
