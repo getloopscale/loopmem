@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixed
 
+- "A médica disse que eu preciso reduzir o sal." is no longer stored as "médica precisa reduzir o sal". The repair that puts a named person back as the subject of a fact counted a relation that ends at the speaker ("médica → disse que → user") as proof that the person is the subject (#300)
 - "Mi hermana Lucía vive en Sevilla." is no longer stored as "la hermana de Lucía vive en Sevilla". The repair that puts a named person back as the subject of a fact replaced the token `user` wherever it stood, including where it is the owner ("la hermana de user"). It now acts only when the token is the subject of the sentence (#297)
 - A fact no longer loses its subject in the language correction after extraction. "Guido una Bianchina." was stored as "guía una Bianchina" because the correction call returned the sentence without the speaker token. Such a rewrite is now discarded and the fact keeps its text; `extraction_language_mismatch` reports the count in `speaker_lost` (#298)
 - **BREAKING**: `createMemory({ postgres, openai })` no longer writes the key to `process.env.OPENAI_API_KEY`. The key is handed to the embedder and the LLM client of that memory, so the host's environment stays as it was and two memories in one process can use two keys. Code that relied on the side effect to configure another OpenAI client must pass the key to that client. `OpenAILLM` and `OpenAIEmbedder` accept `{ apiKey }`; without it they read the environment as before (#218)

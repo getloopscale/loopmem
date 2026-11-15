@@ -38,7 +38,8 @@ export function restoreNamedSubject<T extends { readonly text: string }>(
   let restored = 0;
   const result = facts.map((fact) => {
     if (!USER_SUBJECT.test(fact.text)) return fact;
-    const doneHere = relations.filter((r) => names(fact.text, r.destination));
+    // A relation that ends at the speaker ("the doctor told user") says who spoke to them, not who the fact is about.
+    const doneHere = relations.filter((r) => !SPEAKER_TOKENS.has(r.destination.trim().toLowerCase()) && names(fact.text, r.destination));
     if (doneHere.some((r) => SPEAKER_TOKENS.has(r.source.trim().toLowerCase()))) return fact;
     const candidates = people.filter((p) => !names(fact.text, p) && doneHere.some((r) => normalizeEntityKey(r.source) === normalizeEntityKey(p)));
     if (candidates.length !== 1) return fact;
