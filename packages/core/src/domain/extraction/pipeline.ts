@@ -44,6 +44,7 @@ import { detectInputLanguage, type DetectedLanguage } from './language.js';
 import { coerceExtractionResponse, type InvalidEvidenceReason } from './normalize.js';
 import { applyOntologyToEntities, boundedAutoCategory, buildPayload, embedBatchWithFallback, extractResponseText, patchItemsWithOutcomes, persistWithFallback, runInferFalsePath, scopeFromFilters, toMemoryItem } from './pipeline-helpers.js';
 import type { ExtractionDeps, Payload } from './pipeline-helpers.js';
+import { restorePossessiveOrder } from './possessive-order.js';
 import { AdditiveExtractionSchema, generateAdditiveExtractionPrompt, type AdditiveExtractionResponse } from './prompt.js';
 import { splitReference } from './reference-material.js';
 import { namesSpeaker, restoreSpeakerToken } from './speaker-token.js';
@@ -402,6 +403,8 @@ async function extractAndPersist(
 
   // The speaker written in the message's language ("o usuário") goes back to the token (#258).
   extracted = [...restoreSpeakerToken(extracted, messages.map((message) => message.content).join('\n'), tracer)];
+  // A Portuguese fact about something of the speaker's goes back to Portuguese word order (#307).
+  extracted = [...restorePossessiveOrder(extracted, messages.map((message) => message.content).join('\n'), tracer)];
 
   // A third-person fact sometimes comes back with `user` in place of the person its own
   // relation names, which would record that person's attribute as the user's (#257).

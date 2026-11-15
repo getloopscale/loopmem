@@ -286,6 +286,9 @@ export const MEMORY_EVENTS = [
   // A fact named the speaker with a translated word and got the token `user` back (#258).
   // Attributes `{restored}`.
   'extraction_speaker_token_restored',
+  // A Portuguese fact written as "user pai" got its word order back, "O pai de user" (#307).
+  // Attributes `{restored}`.
+  'extraction_possessive_order_restored',
   // A write carried only reference material, so nothing was extracted (ADR-0039).
   'extraction_reference_only',
   // A fact labeled temporary or tentative whose source names no day or moment was stored with
