@@ -1,4 +1,5 @@
 import * as otel from '@opentelemetry/api';
+import type { Tracer } from '@opentelemetry/api';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import type { ConsolidationCandidate, ConsolidationContext } from '../dip/conflict-resolution-policy.js';
@@ -92,6 +93,27 @@ describe('PairJudgedConflictPolicy', () => {
     const policy = new PairJudgedConflictPolicy({ llm: llm(() => true), clusterCap: 2 });
     await policy.consolidate([fact('a', 'x one', '2024-01-01'), fact('b', 'x two', '2024-01-02'), fact('c', 'x three', '2024-01-03')], CTX);
     expect(add).toHaveBeenCalledWith(1, { policy: 'pair-judged' });
+  });
+
+  it('reports through the context tracer the pairs it judged and the pairs it kept as facts of two individuals', async () => {
+    const events: { event: string; attributes: Record<string, unknown> }[] = [];
+    const tracer = {
+      startActiveSpan(name: string, fn: (span: unknown) => void): void {
+        const attributes: Record<string, unknown> = {};
+        fn({ setAttribute: (k: string, v: unknown) => { attributes[k] = v; }, end: () => undefined });
+        events.push({ event: name, attributes });
+      },
+    } as unknown as Tracer;
+    const stub = llm(() => true, (text) => (text.includes('Ottoline') ? 'Ottoline' : 'user'));
+    const cluster = [fact('a', "user's aunt Ottoline's insurer is Vida Plena", '2024-01-10'), fact('b', "user's insurer is Unimais", '2024-03-10')];
+
+    const results = await new PairJudgedConflictPolicy({ llm: stub }).consolidate(cluster, { ...CTX, tracer });
+
+    expect(results).toEqual([]);
+    expect(events).toEqual([
+      { event: 'update_declined', attributes: { reason: 'different_owner', count: 1 } },
+      { event: 'update_judged', attributes: { pairs: 1, replaced: 0 } },
+    ]);
   });
 
   it('leaves a pair alone when the judge gives no verdict', async () => {

@@ -21,6 +21,7 @@ import type { LLM } from '../dip/llm.js';
 import { differentPeriods } from '../extraction/period-anchor.js';
 import { inBatches, JUDGE_CONCURRENCY, pairsOfDifferentIndividuals } from '../extraction/supersession.js';
 import { judgeUpdate } from '../extraction/update-judge.js';
+import { emitEvent } from '../memory-event.js';
 
 import { countClusterTooLarge, DEFAULT_CLUSTER_CAP } from './llm-judged-merge.js';
 
@@ -48,7 +49,7 @@ export class PairJudgedConflictPolicy implements ConflictResolutionPolicy {
     this.#clusterCap = options.clusterCap ?? DEFAULT_CLUSTER_CAP;
   }
 
-  async consolidate(candidates: readonly ConsolidationCandidate[], _context: ConsolidationContext): Promise<readonly ConflictResolutionResult[]> {
+  async consolidate(candidates: readonly ConsolidationCandidate[], context: ConsolidationContext): Promise<readonly ConflictResolutionResult[]> {
     if (candidates.length < 2) return [];
     if (candidates.length > this.#clusterCap) {
       countClusterTooLarge(this.kind);
@@ -66,9 +67,11 @@ export class PairJudgedConflictPolicy implements ConflictResolutionPolicy {
       }
     }
     const verdicts = await inBatches(pairs, JUDGE_CONCURRENCY, ([earlier, later]) =>
-      judgeUpdate(this.#llm, { text: earlier.text, saidAt: new Date(validFrom(earlier)) }, { text: later.text, saidAt: new Date(validFrom(later)) }, undefined));
+      judgeUpdate(this.#llm, { text: earlier.text, saidAt: new Date(validFrom(earlier)) }, { text: later.text, saidAt: new Date(validFrom(later)) }, context.tracer));
     const judged = pairs.filter((_, index) => verdicts[index] === 'replaces');
-    const declined = await pairsOfDifferentIndividuals(this.#llm, judged.map(([earlier, later]) => [earlier.text, later.text] as const), undefined);
+    const declined = await pairsOfDifferentIndividuals(this.#llm, judged.map(([earlier, later]) => [earlier.text, later.text] as const), context.tracer);
+    if (declined.size > 0) emitEvent(context.tracer, 'update_declined', { reason: 'different_owner', count: declined.size });
+    emitEvent(context.tracer, 'update_judged', { pairs: pairs.length, replaced: judged.length - declined.size });
     // The pairs of an earlier fact come in order of the later note, so the first one kept is the earliest that replaces it.
     const endedBy = new Map<string, ConsolidationCandidate>();
     judged.forEach(([earlier, later], index) => {

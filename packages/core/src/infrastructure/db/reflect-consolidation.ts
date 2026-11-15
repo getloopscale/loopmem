@@ -51,12 +51,13 @@ export async function consolidateInBoundedClusters(args: {
   readonly scope: Scope;
   readonly cap: number;
   readonly isM9Promotion: boolean;
+  readonly tracer?: Tracer | undefined;
 }): Promise<readonly ConflictResolutionResult[]> {
-  const { candidates, conflictPolicy, scope, cap, isM9Promotion } = args;
+  const { candidates, conflictPolicy, scope, cap, isM9Promotion, tracer } = args;
   const clusters = clusterCandidates(candidates, cap, isM9Promotion);
   const results: ConflictResolutionResult[] = [];
   for (const cluster of clusters) {
-    const r = await conflictPolicy.consolidate(cluster, { scope, observationDate: new Date() });
+    const r = await conflictPolicy.consolidate(cluster, { scope, observationDate: new Date(), ...(tracer === undefined ? {} : { tracer }) });
     results.push(...r);
   }
   return results;
@@ -162,6 +163,7 @@ export async function runConsolidationPhase(args: {
     scope,
     cap,
     isM9Promotion,
+    tracer,
   });
   if (isM9Promotion) {
     for (const summary of promotionSkipSummaries(conflictPolicy, candidates, { scope, observationDate: new Date() })) {
