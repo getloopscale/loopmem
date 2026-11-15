@@ -1,0 +1,128 @@
+# Memory quality regression gate.
+#
+# Runs the write path and reflect with the pair-judged policy on versioned case sets against a real
+# Postgres + pgvector and the real OpenAI API, then fails when a number leaves the limits of the last
+# accepted decision (packages/eval/src/stages/consolidation/quality-gate.limits.json). The reports
+# and the cost ledger are kept as artifacts.
+#
+# Chat calls go through packages/eval/tools/cost-guard-proxy.py, which refuses every request once the
+# cap below is reached. Embedding calls go straight to the API (the embedder requires HTTPS); they are
+# a few hundred short texts per run. Measured locally: about 0.09 USD for the write run and 0.08 USD
+# for the reflect run.
+#
+# Triggers: nightly on develop and on demand. Not on every push, to keep the recurring cost bounded.
+name: memory-quality
+
+on:
+  schedule:
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: memory-quality-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: write and reflect quality (pgvector + OpenAI real)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    services:
+      postgres:
+        image: pgvector/pgvector:0.8.7-pg18@sha256:c29f30688a9ad961691bdf0ec1650717cc132a5814619d80f80463d6e4c42e47
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: themem
+        ports:
+          - 5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_CHAT_MODEL: gpt-4o-mini
+      OPENAI_BASE_URL: http://127.0.0.1:8798/v1
+      COST_CAP_USD: '1.00'
+      REPORTS: ${{ github.workspace }}/memory-quality
+
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Require the OpenAI key
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY secret is not set; the gate cannot measure anything." >&2
+            exit 1
+          fi
+
+      - name: Resolve Postgres URI
+        run: echo "THEOMEM_PG_URI=postgres://postgres:postgres@localhost:${{ job.services.postgres.ports['5432'] }}/themem" >> "$GITHUB_ENV"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.4.0
+        with:
+          version: 10.34.1
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Start the cost guard
+        run: |
+          mkdir -p "$REPORTS"
+          python3 -I packages/eval/tools/cost-guard-proxy.py 8798 "$COST_CAP_USD" "$REPORTS/cost-ledger.json" &
+          for _ in $(seq 1 20); do
+            [ -f "$REPORTS/cost-ledger.json" ] && exit 0
+            sleep 0.5
+          done
+          echo "cost guard did not start" >&2
+          exit 1
+
+      - name: Write path on judge-cases-pair-policy.json
+        working-directory: packages/eval
+        env:
+          CONSOLIDATION_JUDGE_CASES: judge-cases-pair-policy.json
+          CONSOLIDATION_WRITE_DB: themem_quality_write
+          CONSOLIDATION_WRITE_OUT: ${{ env.REPORTS }}/write-pair-policy.json
+        run: npx tsx --tsconfig tsconfig.json src/stages/consolidation/write-run.ts
+
+      - name: Reflect with the pair-judged policy on judge-cases-pair-policy.json
+        working-directory: packages/eval
+        env:
+          CONSOLIDATION_JUDGE_CASES: judge-cases-pair-policy.json
+          CONSOLIDATION_JUDGE_POLICY: pair
+          CONSOLIDATION_JUDGE_DB: themem_quality_reflect
+          CONSOLIDATION_JUDGE_OUT: ${{ env.REPORTS }}/reflect-pair-policy.json
+        run: npx tsx --tsconfig tsconfig.json src/stages/consolidation/judge-run.ts
+
+      - name: Cost of the run
+        if: always()
+        run: cat "$REPORTS/cost-ledger.json"
+
+      - name: Gate
+        working-directory: packages/eval
+        run: npx tsx --tsconfig tsconfig.json src/stages/consolidation/quality-gate.ts src/stages/consolidation/quality-gate.limits.json "$REPORTS"
+
+      - name: Keep the reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: memory-quality-reports
+          path: memory-quality/
+          if-no-files-found: warn
