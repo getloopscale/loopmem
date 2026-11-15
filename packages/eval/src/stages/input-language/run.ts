@@ -1,9 +1,9 @@
 /**
  * Which language the write path names for a short message.
  *
- * Each sentence is written through `remember` with an LLM that answers only the language
- * identification call and stops the write there, so the run costs one small call per sentence.
- * The answer of that call is the language the extraction prompt would have been given.
+ * Each sentence is written through `remember` with an LLM that answers the calls before the
+ * extraction and stops the write there, so the run costs only those small calls. The language is
+ * read from the directive the extraction prompt carries.
  *
  * Environment: OPENAI_API_KEY, OPENAI_BASE_URL (e.g. a cost proxy), OPENAI_CHAT_MODEL,
  * INPUT_LANGUAGE_OUTPUT (path), INPUT_LANGUAGE_REPETITIONS (default 3),
@@ -32,21 +32,25 @@ const here = dirname(fileURLToPath(import.meta.url));
 // A sentence the blind reader could read as two languages has no single right answer and is left out.
 const sentences = (JSON.parse(readFileSync(resolve(here, process.env['INPUT_LANGUAGE_SENTENCES'] ?? 'sentences.json'), 'utf8')) as Sentence[]).filter((sentence) => sentence.readerAmbiguous !== true);
 
-class StopAfterIdentification extends Error {}
+class StopAtExtraction extends Error {}
+
+const LANGUAGE_CODES: Readonly<Record<string, string>> = { English: 'en', Portuguese: 'pt', Spanish: 'es', French: 'fr', Italian: 'it', German: 'de' };
 
 async function identify(sentence: Sentence): Promise<string> {
   const real = new OpenAILLM();
   let identified = 'none';
   const llm = {
+    // Every call before the extraction goes to the model. The extraction call is not made: its
+    // prompt already carries the language the write path settled on, which is what is measured.
     async generateResponse(messages: readonly { role: string; content: string }[], format?: { type: 'json' | 'text' }): Promise<unknown> {
-      if (!(messages[0]?.content ?? '').startsWith('Name the language')) throw new StopAfterIdentification();
-      const raw = await real.generateResponse(messages as never, format);
-      const text = typeof raw === 'string' ? raw : JSON.stringify(raw);
-      identified = /"language"\s*:\s*\\?"([A-Za-z-]+)/u.exec(text)?.[1]?.toLowerCase() ?? 'malformed';
-      return raw;
+      const system = messages.map((message) => message.content).join('\n');
+      if (!system.includes('memory extractor')) return real.generateResponse(messages as never, format);
+      const name = /LANGUAGE DIRECTIVE: the input language is ([A-Za-z]+)/u.exec(system)?.[1];
+      identified = name === undefined ? 'none' : (LANGUAGE_CODES[name] ?? name.toLowerCase());
+      throw new StopAtExtraction();
     },
     generateChat(): Promise<never> {
-      return Promise.reject(new StopAfterIdentification());
+      return Promise.reject(new StopAtExtraction());
     },
   };
   const memory = await createLocalMemory({
@@ -59,7 +63,7 @@ async function identify(sentence: Sentence): Promise<string> {
   try {
     await memory.user(`input-language-${sentence.id}`).remember(sentence.text);
   } catch {
-    // The write is stopped on purpose after the identification call.
+    // The write is stopped on purpose at the extraction call.
   } finally {
     await memory.dispose();
   }
