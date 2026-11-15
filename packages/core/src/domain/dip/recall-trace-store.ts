@@ -38,13 +38,16 @@ import { InvalidRecallTraceConfig } from '../errors.js';
  *                        time (only when `RecallOptions.recencyCollapse` is on;
  *                        M22 / #141 most-recent-wins collapse). ADD-only safe:
  *                        the row still persists and is `asOf`-recoverable.
+ *   - `below_top_k`    — survived the threshold and every other stage, but ranked below the
+ *                        `topK` cut. Its breakdown shows what outranked it.
  */
 export type DropReason =
   | 'semantic_gate'
   | 'sub_threshold'
   | 'nan'
   | 'mmr_redundant'
-  | 'superseded_recency';
+  | 'superseded_recency'
+  | 'below_top_k';
 
 /**
  * One persisted trace row — a single dropped candidate of a recall.

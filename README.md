@@ -211,7 +211,7 @@ Built on [Hono](https://hono.dev) with auto-generated [OpenAPI 3.1](https://swag
 
 ### Accountable forgetting (opt-in)
 
-Every recall discards candidates — sub-threshold matches, redundant near-duplicates. The *reason* is normally lost. When you enable tracing (`THEOMEM_RECALL_TRACE=true`), each recall persists one row per **dropped** candidate with its full score breakdown (semantic / bm25 / entity / composite / threshold) and the drop reason (`semantic_gate` / `sub_threshold` / `nan` / `mmr_redundant`), keyed by the `recallId` the recall response returns:
+Every recall discards candidates — sub-threshold matches, redundant near-duplicates. The *reason* is normally lost. When you enable tracing (`THEOMEM_RECALL_TRACE=true`), each recall persists one row per **dropped** candidate with its full score breakdown (semantic / bm25 / entity / composite / threshold) and the drop reason (`semantic_gate` / `sub_threshold` / `nan` / `mmr_redundant` / `superseded_recency` / `below_top_k`), keyed by the `recallId` the recall response returns:
 
 ```bash
 # recall returns a recallId in its envelope …

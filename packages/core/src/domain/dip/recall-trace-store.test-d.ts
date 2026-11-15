@@ -26,9 +26,9 @@ test('RecallTraceStore exposes EXACTLY record + getByRecallId (2 methods, ADR-00
   >();
 });
 
-test('DropReason is the 5-literal union (semantic_gate / sub_threshold / nan / mmr_redundant / superseded_recency)', () => {
+test('DropReason is the 6-literal union (semantic_gate / sub_threshold / nan / mmr_redundant / superseded_recency / below_top_k)', () => {
   expectTypeOf<DropReason>().toEqualTypeOf<
-    'semantic_gate' | 'sub_threshold' | 'nan' | 'mmr_redundant' | 'superseded_recency'
+    'semantic_gate' | 'sub_threshold' | 'nan' | 'mmr_redundant' | 'superseded_recency' | 'below_top_k'
   >();
 });
 

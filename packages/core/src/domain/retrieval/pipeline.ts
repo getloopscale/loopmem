@@ -43,6 +43,7 @@ import { applyRerankStage } from './stages/rerank.js';
 import { makeRowToItem, scopeFromFilters } from './stages/row-mapping.js';
 import {
   filterAtThreshold,
+  recordBelowTopK,
   type DroppedCandidate,
   type Payload,
   type ScoredRow,
@@ -110,6 +111,11 @@ export async function runRetrievalPipeline(
   // threshold pass (the adaptive relax re-filter below passes no collector).
   const recallDrops: DroppedCandidate[] = [];
   let scored: ScoredRow[] = filterAtThreshold(candidates, maxScore, threshold, recallDrops);
+  // Writes the trace for the kept set: the drops collected so far plus the candidates the top-K cut left out.
+  const traceDrops = async (keptIds: ReadonlySet<string>): Promise<void> => {
+    if (deps.recallTrace !== undefined && deps.recallTraceContext !== undefined) recordBelowTopK(recallDrops, scored, candidates, keptIds, threshold);
+    await writeRecallTrace(deps, recallDrops, keptIds);
+  };
   // principles-alignment-hardening T4.1 — emit recall_threshold_filtered ONLY
   // when filtered_count > 0 (no-op observability discipline; do not flood
   // dashboards with zero-filter events). EC-5 absorption: emitEvent is no-op
@@ -224,7 +230,7 @@ export async function runRetrievalPipeline(
       reweighted_count: reweighted.length,
     });
     const selected = reweighted.slice(0, topK);
-    await writeRecallTrace(deps, recallDrops, new Set(selected.map((r) => r.id)));
+    await traceDrops(new Set(selected.map((r) => r.id)));
     return selected;
   }
 
@@ -245,7 +251,7 @@ export async function runRetrievalPipeline(
       rowToItem,
       tracer,
     );
-    await writeRecallTrace(deps, recallDrops, new Set(reranked.map((r) => r.id)));
+    await traceDrops(new Set(reranked.map((r) => r.id)));
     return reranked;
   }
 
@@ -293,7 +299,7 @@ export async function runRetrievalPipeline(
 
   // explainable-recall (S1) — fail-soft trace write (threshold + MMR drops),
   // pruned against the kept set (resurface consistency, SEPA T3.1 MEDIUM).
-  await writeRecallTrace(deps, recallDrops, new Set(top.map((t) => t.id)));
+  await traceDrops(new Set(top.map((t) => t.id)));
   emitEvent(tracer, 'extraction_completed', { results: top.length });
 
   return top.map(rowToItem);

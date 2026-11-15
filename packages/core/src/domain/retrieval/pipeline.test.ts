@@ -182,6 +182,38 @@ describe('runRetrievalPipeline recall trace', () => {
     expect(mmr[0]?.semantic).toBeGreaterThan(0);
   });
 
+  test('a candidate that passed the threshold but ranked below topK is traced as below_top_k, with its breakdown', async () => {
+    const { store, batches } = stubStore();
+    const all: VectorStoreResult[] = [
+      { id: 'a', score: 0.9, payload: { text: 'a' } },
+      { id: 'b', score: 0.85, payload: { text: 'b' } },
+      { id: 'c', score: 0.8, payload: { text: 'c' } },
+    ];
+
+    const kept = await runRetrievalPipeline('q', FILTERS, { vectorStore: vectorStoreReturning(all), embedder, recallTrace: store, recallTraceContext: ctx() }, { threshold: 0.1, topK: 1 });
+
+    expect(kept.map((k) => k.id)).toEqual(['a']);
+    const rows = batches.flatMap((batch) => batch.rows);
+    expect(rows.map((r) => [r.memoryId, r.dropReason])).toEqual([['b', 'below_top_k'], ['c', 'below_top_k']]);
+    expect(rows[0]?.semantic).toBeCloseTo(0.85, 5);
+    expect(rows[0]?.composite).not.toBeNull();
+  });
+
+  test('a candidate MMR left out is traced once, as mmr_redundant, not again as below_top_k', async () => {
+    const { store, batches } = stubStore();
+    const all: VectorStoreResult[] = [
+      { id: 'a', score: 0.9, payload: { text: 'a' } },
+      { id: 'b', score: 0.85, payload: { text: 'b' } },
+      { id: 'c', score: 0.8, payload: { text: 'c' } },
+      { id: 'd', score: 0.75, payload: { text: 'd' } },
+    ];
+
+    await runRetrievalPipeline('q', FILTERS, { vectorStore: vectorStoreReturning(all), embedder, recallTrace: store, recallTraceContext: ctx() }, { threshold: 0.1, topK: 1, diversify: { lambda: 1, topPool: 3 } });
+
+    const rows = batches.flatMap((batch) => batch.rows);
+    expect(rows.map((r) => [r.memoryId, r.dropReason])).toEqual([['b', 'mmr_redundant'], ['c', 'mmr_redundant'], ['d', 'below_top_k']]);
+  });
+
   // NOTE: the 'nan' drop-reason branch is DEFENSIVE — `combineScores` returns 0
   // (not NaN) when maxScore is 0 and never produces NaN from finite inputs, so
   // 'nan' is unreachable in practice from a real scoring pass. Kept for safety.
