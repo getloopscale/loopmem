@@ -8,8 +8,8 @@ import { MEMORY_EVENTS, emitEvent } from './memory-event.js';
 import type { MemoryEvent } from './memory-event.js';
 
 describe('MEMORY_EVENTS', () => {
-  test('has 87 values including evidence drop, downgrade, retry, message log, supersession and importance decisions', () => {
-    expect(MEMORY_EVENTS).toHaveLength(87);
+  test('has 89 values including evidence drop, downgrade, retry, message log, supersession and importance decisions', () => {
+    expect(MEMORY_EVENTS).toHaveLength(89);
     expect(MEMORY_EVENTS).toContain('update_judged');
     expect(MEMORY_EVENTS).toContain('update_judge_failed');
     expect(MEMORY_EVENTS).toContain('memory_ended_on_arrival');
