@@ -127,6 +127,17 @@ export interface MemoryEntityStore {
   }): Promise<ForgetEntityResult>;
 
   /**
+   * Link a memory to the entities its scope already has and its text names (#243). An extraction
+   * call sometimes returns no entity for a fact that names one: the fact is stored, the entity
+   * exists from an earlier write, and nothing ties them. The rule for "names" is the one recall
+   * uses for a query (`entityKeysNamedIn`). The speaker tokens are never linked this way.
+   * Optional: a store without it links only what the call itself extracted.
+   *
+   * @returns the number of links added.
+   */
+  linkNamedExisting?(params: { memoryId: string; text: string; workspaceId: string; filters: Filters }): Promise<number>;
+
+  /**
    * M15 T2.1 (#122) — read side of the recall entity boost: the `normalized_key` values
    * linked to each of the given memories.
    *

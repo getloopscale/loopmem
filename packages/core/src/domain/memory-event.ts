@@ -25,6 +25,9 @@ export const MEMORY_EVENTS = [
   'persist_fallback',
   'history_persisted',
   'entity_linked',
+  // A fact was linked to entities its scope already had and its text names, though the
+  // extraction call returned none for it (#243). Attributes `{links}`.
+  'entity_linked_by_name',
   'messages_saved',
   // principles-alignment-hardening T1.1 — Princípio 3 IGNORE auditability per
   // ADR D2: fires when PgvectorStore.insert's ON CONFLICT branch UPDATEs an

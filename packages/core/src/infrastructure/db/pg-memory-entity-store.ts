@@ -20,6 +20,7 @@ import type {
   UpsertAndLinkParams,
 } from '../../domain/dip/memory-entity-store.js';
 import { EntityForgetScopeError } from '../../domain/dip/memory-entity-store.js';
+import { entityKeysNamedIn, normalizeEntityKey } from '../../domain/entity-key.js';
 import { emitEvent } from '../../domain/memory-event.js';
 import type { Filters } from '../../domain/scope.js';
 
@@ -280,6 +281,34 @@ export class PgMemoryEntityStore implements MemoryEntityStore {
    * {@link queryLinkedKeysForMemories}: it serves the hot READ path that ranks candidates,
    * a different reason to change from the write-path methods above.
    */
+  async linkNamedExisting(params: { memoryId: string; text: string; workspaceId: string; filters: Filters }): Promise<number> {
+    const { memoryId, text, workspaceId, filters } = params;
+    const normalized = normalizeEntityKey(text);
+    if (normalized.length === 0) return 0;
+    const { userId, sessionId, agentId } = scopeIds(filters);
+    // The database narrows to the keys that occur in the text at all; the word rule decides.
+    const { rows } = await this.pool.query<{ id: string; normalized_key: string }>(
+      `SELECT id, normalized_key FROM entities
+        WHERE workspace_id = $1
+          AND user_id IS NOT DISTINCT FROM $2 AND session_id IS NOT DISTINCT FROM $3 AND agent_id IS NOT DISTINCT FROM $4
+          AND superseded_by IS NULL
+          AND char_length(normalized_key) >= 2
+          AND normalized_key NOT IN ('user', 'assistant')
+          AND position(normalized_key in $5) > 0`,
+      [workspaceId, userId, sessionId, agentId, normalized],
+    );
+    const named = new Set(entityKeysNamedIn(text, rows.map((row) => row.normalized_key)));
+    const ids = rows.filter((row) => named.has(row.normalized_key)).map((row) => row.id);
+    if (ids.length === 0) return 0;
+    const inserted = await this.pool.query(
+      `INSERT INTO memory_entities (memory_id, entity_id)
+       SELECT $1::uuid, unnest($2::uuid[])
+       ON CONFLICT (memory_id, entity_id) DO NOTHING`,
+      [memoryId, ids],
+    );
+    return inserted.rowCount ?? 0;
+  }
+
   async linkedKeysForMemories(params: {
     memoryIds: readonly string[];
     filters: Filters;

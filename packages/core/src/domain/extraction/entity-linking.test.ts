@@ -39,6 +39,34 @@ function recordingStore(): { store: MemoryEntityStore; names: string[] } {
 const FILTERS: Filters = { user_id: 'alice', workspace_id: 'default' };
 const ITEMS: readonly MemoryItem[] = [{ id: 'm1', text: 'irrelevant' } as MemoryItem];
 
+describe('linkEntities — entities the scope already has (#243)', () => {
+  it('asks the store to link each fact to the existing entities its text names, and reports the links', async () => {
+    const { store } = recordingStore();
+    const asked: { memoryId: string; text: string }[] = [];
+    const events: { name: string; attributes: Record<string, unknown> }[] = [];
+    const tracer = {
+      startActiveSpan(name: string, fn: (span: unknown) => void): void {
+        const attributes: Record<string, unknown> = {};
+        fn({ setAttribute: (k: string, v: unknown) => { attributes[k] = v; }, end: () => undefined });
+        events.push({ name, attributes });
+      },
+    } as never;
+    const withNamed: MemoryEntityStore = { ...store, linkNamedExisting: async ({ memoryId, text }) => { asked.push({ memoryId, text }); return 2; } };
+    const items = [{ id: 'm1', text: 'Thorvald keeps bees' }, { id: 'm2', text: 'Thorvald drives a Volvo' }] as MemoryItem[];
+
+    await linkEntities(items, FILTERS, { embedder: fakeEmbedder(), memoryEntityStore: withNamed }, tracer, undefined, [{ name: 'Volvo' }]);
+
+    expect(asked).toEqual([{ memoryId: 'm1', text: 'Thorvald keeps bees' }, { memoryId: 'm2', text: 'Thorvald drives a Volvo' }]);
+    expect(events.find((e) => e.name === 'entity_linked_by_name')?.attributes).toEqual({ links: 4 });
+  });
+
+  it('works with a store that cannot link by name', async () => {
+    const { store, names } = recordingStore();
+    await linkEntities(ITEMS, FILTERS, { embedder: fakeEmbedder(), memoryEntityStore: store }, undefined, undefined, [{ name: 'Dune' }]);
+    expect(names).toEqual(['Dune']);
+  });
+});
+
 describe('linkEntities — noise filtering at the chokepoint', () => {
   it('drops noise from the LLM-primary path (store receives real entities only)', async () => {
     const { store, names } = recordingStore();
