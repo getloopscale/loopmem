@@ -46,7 +46,7 @@ import { applyOntologyToEntities, boundedAutoCategory, buildPayload, embedBatchW
 import type { ExtractionDeps, Payload } from './pipeline-helpers.js';
 import { AdditiveExtractionSchema, generateAdditiveExtractionPrompt, type AdditiveExtractionResponse } from './prompt.js';
 import { splitReference } from './reference-material.js';
-import { restoreSpeakerToken } from './speaker-token.js';
+import { namesSpeaker, restoreSpeakerToken } from './speaker-token.js';
 import { recoverStatedFacts } from './stated-check.js';
 import { restoreNamedSubject } from './subject-restore.js';
 import { judgeSupersessions } from './supersession.js';
@@ -309,6 +309,8 @@ async function extractAndPersist(
         if (factsLanguage !== null && factsLanguage.iso6391 !== lang.iso6391) {
           const result: AdditiveExtractionResponse['memory'] = [];
           let correctedCount = 0;
+          let speakerLost = 0;
+          const said = messages.map((message) => message.content).join('\n');
           for (const fact of extracted) {
             let text = fact.text;
             try {
@@ -325,7 +327,11 @@ async function extractAndPersist(
               // The LLM DIP returns a bare string (stubs) OR `{ text }` (OpenAILLM
               // text-mode wraps the content — openai.ts). Extract robustly.
               const candidate = extractResponseText(rewritten).trim();
-              if (candidate.length > 0) {
+              // A rewrite that dropped the speaker is no rewrite of the fact: it has no subject.
+              const [repaired] = restoreSpeakerToken([{ text: candidate }], said, undefined);
+              if (candidate.length > 0 && namesSpeaker(fact.text) && !namesSpeaker(repaired?.text ?? '')) {
+                speakerLost += 1;
+              } else if (candidate.length > 0) {
                 text = candidate;
                 correctedCount += 1;
               }
@@ -342,6 +348,7 @@ async function extractAndPersist(
             facts_language: factsLanguage.iso6391,
             fact_count: extracted.length,
             corrected: correctedCount,
+            speaker_lost: speakerLost,
           });
           if (correctedCount > 0) {
             extracted = result;
