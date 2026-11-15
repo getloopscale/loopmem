@@ -200,9 +200,16 @@ describe('runReextract (unit, stubs)', () => {
     );
     expect(report.processed).toBe(1);
     expect(seenChars).toBeGreaterThan(0);
+    const withBigInput = seenChars;
+    // The same call for a one-word memory gives the size of the prompt around the input. The
+    // bound used to be a fixed 8K allowance for it, which the extraction prompt outgrew.
+    await runReextract(
+      { pool: stubPool(makeTargets(1, 5)), llm, embedder, memoryEntityStore: stubEntityStore(), checkpointPath: freshCheckpoint() },
+      baseOpts(),
+    );
     // Untruncated, the 40K input would appear twice (≥ 80K chars). Truncated to
-    // the 16K cap, the total stays under 2×cap + template slack.
-    expect(seenChars).toBeLessThan(REEXTRACT_INPUT_MAX_CHARS * 2 + 8_000);
+    // the 16K cap, it adds at most 2×cap to the prompt.
+    expect(withBigInput - seenChars).toBeLessThanOrEqual(REEXTRACT_INPUT_MAX_CHARS * 2);
   });
 });
 

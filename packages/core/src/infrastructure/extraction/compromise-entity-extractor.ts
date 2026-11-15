@@ -10,6 +10,8 @@
  * in the write pipeline.
  *
  */
+import { createRequire } from 'node:module';
+
 import type { EntityExtractor, EntityType, ExtractedEntity } from '../../domain/dip/entity-extractor.js';
 import { isEntityNoise } from '../../domain/extraction/entity-noise-filter.js';
 import { detectInputLanguage } from '../../domain/extraction/language.js';
@@ -65,9 +67,10 @@ export interface CompromiseEntityExtractorDeps {
 
 function defaultLoadNlp(): NlpFactory | undefined {
   try {
-    // Lazy, optional: absence degrades to regex-only (no hard dependency).
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod: unknown = require('compromise');
+    // Lazy, optional: absence degrades to regex-only (no hard dependency). The package is
+    // CommonJS and this module is an ES module, which has no `require` of its own: a bare
+    // call threw, was caught, and the extractor ran on word pairs in every published build (#243).
+    const mod: unknown = createRequire(import.meta.url)('compromise');
     const factory = (mod as { default?: unknown }).default ?? mod;
     return typeof factory === 'function' ? (factory as NlpFactory) : undefined;
   } catch {
@@ -195,7 +198,8 @@ function extractNlpDerived(
 /** NLP nouns() with crash isolation — shared by the compound + noun paths (hook: no dup blocks). */
 function safeNouns(text: string, nlp: NlpFactory): string[] {
   try {
-    return nlp(text).nouns().out('array');
+    // A phrase at the end of a sentence comes with its full stop ("wasps.").
+    return nlp(text).nouns().out('array').map((phrase) => phrase.replace(/[.,;:!?]+$/u, ''));
   } catch {
     return [];
   }
