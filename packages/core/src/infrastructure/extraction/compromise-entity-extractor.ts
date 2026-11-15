@@ -82,8 +82,13 @@ function isMeaningful(name: string): boolean {
   return name.trim().length >= MIN_NAME_LENGTH;
 }
 
+/** An English possessive marker at the end of a name: `'s`, `’s`, or the bare apostrophe after s. */
+const TRAILING_POSSESSIVE = /(?:['’]s|(?<=s)['’])$/u;
+
 function pushUnique(acc: Map<string, ExtractedEntity>, type: EntityType, raw: string): void {
   let name = raw.trim();
+  // "Ottoline's" and "Ottoline" are one person; with the marker kept they became two nodes (#323).
+  if (type !== 'QUOTED') name = name.replace(TRAILING_POSSESSIVE, '');
   if (!isMeaningful(name)) return; // EC-2 drop guard
   // Trim function-word edges + drop predicate/clause fragments ("is a", "on the",
   // "project uses", "and commutes", "the machine learning engineer"→"machine learning
@@ -152,8 +157,9 @@ function extractProper(
       const tok = tokens[i] ?? '';
       // Unicode-aware: keep ANY-script letters (don't strip diacritics — "São" must
       // not become "So") and treat any uppercase letter as a capital ("José", "Über").
-      const bare = tok.replace(/[^\p{L}'-]/gu, '');
-      const isCap = /^\p{Lu}[\p{L}'-]+$/u.test(bare);
+      // The typographic apostrophe is kept like the straight one: dropping it turned "Marigold’s" into "Marigolds".
+      const bare = tok.replace(/[^\p{L}'’-]/gu, '');
+      const isCap = /^\p{Lu}[\p{L}'’-]+$/u.test(bare);
       const isGlue = run.length > 0 && PROPER_GLUE.has(bare.toLowerCase());
       if (isCap) {
         if (run.length === 0) runStartIdx = i;
