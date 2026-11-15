@@ -23,6 +23,7 @@ import { MAX_EMBEDDING_DIM } from '@usetheo/memory';
 import type { Embedder, LLM } from '@usetheo/memory';
 import { createLocalMemory, PgvectorStore, PgMemoryEntityStore, runMigrations } from '@usetheo/memory';
 import { createServer } from '@usetheo/memory-api';
+import { ENGLISH, isLanguageIdentification } from '../_helpers/language-identification.js';
 
 const PG_URI = process.env['THEOMEM_PG_URI'];
 
@@ -84,7 +85,9 @@ if (PG_URI === undefined || PG_URI === '') {
       const facts = ['I saw John Smith on Monday', 'I saw John Smith on Friday'];
       let call = 0;
       const seqLlm: LLM = {
-        generateResponse: vi.fn(async () => {
+        generateResponse: vi.fn(async (messages: readonly { readonly content: string }[]) => {
+          // The calls that identify the input language are not part of the sequence.
+          if (isLanguageIdentification(messages)) return ENGLISH;
           const text = facts[call] ?? facts[0];
           call += 1;
           return { memory: [{ id: '0', text }] };

@@ -1,0 +1,2981 @@
+[
+ {
+  "id": "de-s01",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich fahre täglich Bahn."
+ },
+ {
+  "id": "de-s02",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich esse kein Fleisch."
+ },
+ {
+  "id": "de-s03",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich telefoniere ungern."
+ },
+ {
+  "id": "de-s04",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich habe oft Kopfschmerzen."
+ },
+ {
+  "id": "de-s05",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich hasse Krawatten."
+ },
+ {
+  "id": "de-s06",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich spare monatlich."
+ },
+ {
+  "id": "de-s07",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich lerne gerade eine Fremdsprache."
+ },
+ {
+  "id": "de-s08",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich backe gern."
+ },
+ {
+  "id": "de-s09",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich nehme den Bus."
+ },
+ {
+  "id": "de-s10",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich wohne ländlich."
+ },
+ {
+  "id": "de-s11",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich schlafe meistens sehr schlecht."
+ },
+ {
+  "id": "de-s12",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich füttere meinen Hamster."
+ },
+ {
+  "id": "de-s13",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich feiere morgen."
+ },
+ {
+  "id": "de-s14",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich lese Krimis."
+ },
+ {
+  "id": "de-s15",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich schwimme zweimal wöchentlich."
+ },
+ {
+  "id": "de-s16",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich mag meine Nachbarin."
+ },
+ {
+  "id": "de-s17",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich pendle täglich."
+ },
+ {
+  "id": "de-s18",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich lese abends."
+ },
+ {
+  "id": "de-s19",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich brauche neue Reifen."
+ },
+ {
+  "id": "de-s20",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich huste."
+ },
+ {
+  "id": "de-s21",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich fahre ein Elektroauto."
+ },
+ {
+  "id": "de-s22",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich besuche einen Sprachkurs."
+ },
+ {
+  "id": "de-s23",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich pendle täglich."
+ },
+ {
+  "id": "de-s24",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich fürchte Spinnen."
+ },
+ {
+  "id": "de-s25",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich spare für ein Haus."
+ },
+ {
+  "id": "de-s26",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich jogge jeden Morgen."
+ },
+ {
+  "id": "de-s27",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich reagiere allergisch auf Nüsse."
+ },
+ {
+  "id": "de-s28",
+  "language": "de",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ich töpfere sonntags."
+ },
+ {
+  "id": "de-s29",
+  "language": "de",
+  "opening": "negation",
+  "text": "Kein Geld bleibt übrig."
+ },
+ {
+  "id": "de-s30",
+  "language": "de",
+  "opening": "negation",
+  "text": "Keine Sportart gefällt mir."
+ },
+ {
+  "id": "de-s31",
+  "language": "de",
+  "opening": "negation",
+  "text": "Nicht jeder kennt meinen Geburtstag."
+ },
+ {
+  "id": "de-s32",
+  "language": "de",
+  "opening": "negation",
+  "text": "Kein Nachbar grüßt mich morgens."
+ },
+ {
+  "id": "de-s33",
+  "language": "de",
+  "opening": "negation",
+  "text": "Keine Wohnung gefällt mir."
+ },
+ {
+  "id": "de-s34",
+  "language": "de",
+  "opening": "negation",
+  "text": "Kein Baum wächst im Garten."
+ },
+ {
+  "id": "de-s35",
+  "language": "de",
+  "opening": "negation",
+  "text": "Kein Medikament hilft mir."
+ },
+ {
+  "id": "de-s36",
+  "language": "de",
+  "opening": "negation",
+  "text": "Keine Anrufe bitte."
+ },
+ {
+  "id": "de-s37",
+  "language": "de",
+  "opening": "negation",
+  "text": "Kein Käse schmeckt mir wirklich."
+ },
+ {
+  "id": "de-s38",
+  "language": "de",
+  "opening": "negation",
+  "text": "Keine Katze mag mich."
+ },
+ {
+  "id": "de-s39",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Meine Arbeit macht Spaß."
+ },
+ {
+  "id": "de-s40",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Handy ist kaputt."
+ },
+ {
+  "id": "de-s41",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Die Münzen glänzen."
+ },
+ {
+  "id": "de-s42",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Handy ist kaputt."
+ },
+ {
+  "id": "de-s43",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Ehrenamt macht Spaß."
+ },
+ {
+  "id": "de-s44",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Rücken tut weh."
+ },
+ {
+  "id": "de-s45",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Die Bahn streikt."
+ },
+ {
+  "id": "de-s46",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Ehrenamt macht Freude."
+ },
+ {
+  "id": "de-s47",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Arbeitsweg dauert lange."
+ },
+ {
+  "id": "de-s48",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Meine Sammlung wächst."
+ },
+ {
+  "id": "de-s49",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Auto rostet."
+ },
+ {
+  "id": "de-s50",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Meine neue Jacke ist warm."
+ },
+ {
+  "id": "de-s51",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Gehalt steigt."
+ },
+ {
+  "id": "de-s52",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Mein Fahrrad quietscht."
+ },
+ {
+  "id": "de-s53",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Der Akku hält kaum."
+ },
+ {
+  "id": "de-s54",
+  "language": "de",
+  "opening": "possessive-or-article",
+  "text": "Meine Allergie plagt mich sehr."
+ },
+ {
+  "id": "de-s55",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Callum ist mein Nachbar.",
+  "name": "Callum"
+ },
+ {
+  "id": "de-s56",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Guido hilft im Tierheim.",
+  "name": "Guido"
+ },
+ {
+  "id": "de-s57",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Wanjiru trinkt Tee.",
+  "name": "Wanjiru"
+ },
+ {
+  "id": "de-s58",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Zsofia wohnt in einem Hochhaus.",
+  "name": "Zsofia"
+ },
+ {
+  "id": "de-s59",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Guido sammelt seltene Schallplatten.",
+  "name": "Guido"
+ },
+ {
+  "id": "de-s60",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Hamid hat einen alten Kater.",
+  "name": "Hamid"
+ },
+ {
+  "id": "de-s61",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Tariq fährt Motorrad.",
+  "name": "Tariq"
+ },
+ {
+  "id": "de-s62",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Emeka kocht sehr scharf.",
+  "name": "Emeka"
+ },
+ {
+  "id": "de-s63",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Bjorn hat einen kleinen Bruder.",
+  "name": "Bjorn"
+ },
+ {
+  "id": "de-s64",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Tomasz hat große Höhenangst.",
+  "name": "Tomasz"
+ },
+ {
+  "id": "de-s65",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Nadia spart viel.",
+  "name": "Nadia"
+ },
+ {
+  "id": "de-s66",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Viktor studiert jetzt Medizin.",
+  "name": "Viktor"
+ },
+ {
+  "id": "de-s67",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Dario sammelt alte Münzen.",
+  "name": "Dario"
+ },
+ {
+  "id": "de-s68",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Chiara trägt Hüte.",
+  "name": "Chiara"
+ },
+ {
+  "id": "de-s69",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Viktor hat zwei Katzen.",
+  "name": "Viktor"
+ },
+ {
+  "id": "de-s70",
+  "language": "de",
+  "opening": "person-name",
+  "text": "Ines liebt Regen.",
+  "name": "Ines"
+ },
+ {
+  "id": "de-s71",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Gestern verlor ich Geld."
+ },
+ {
+  "id": "de-s72",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Abends lese ich gern Krimis."
+ },
+ {
+  "id": "de-s73",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Nachts fürchte ich mich."
+ },
+ {
+  "id": "de-s74",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Früher sammelte ich Postkarten."
+ },
+ {
+  "id": "de-s75",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Morgen habe ich Geburtstag."
+ },
+ {
+  "id": "de-s76",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Gestern spielte ich lange Klavier."
+ },
+ {
+  "id": "de-s77",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Gestern zog ich um."
+ },
+ {
+  "id": "de-s78",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Heute fuhr ich Rad."
+ },
+ {
+  "id": "de-s79",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Heute gibt's Suppe."
+ },
+ {
+  "id": "de-s80",
+  "language": "de",
+  "opening": "time-or-adverb",
+  "text": "Gestern kaufte ich Schuhe."
+ },
+ {
+  "id": "en-s01",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I get migraines."
+ },
+ {
+  "id": "en-s02",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I grow tomatoes."
+ },
+ {
+  "id": "en-s03",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I avoid my neighbour."
+ },
+ {
+  "id": "en-s04",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I earn commission."
+ },
+ {
+  "id": "en-s05",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I stretch daily."
+ },
+ {
+  "id": "en-s06",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I owe money."
+ },
+ {
+  "id": "en-s07",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I read poetry before bed."
+ },
+ {
+  "id": "en-s08",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I feel ill."
+ },
+ {
+  "id": "en-s09",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I keep rabbits."
+ },
+ {
+  "id": "en-s10",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I take coffee black."
+ },
+ {
+  "id": "en-s11",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I hate calls."
+ },
+ {
+  "id": "en-s12",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I sold my motorbike."
+ },
+ {
+  "id": "en-s13",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I collect stamps."
+ },
+ {
+  "id": "en-s14",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I bake bread."
+ },
+ {
+  "id": "en-s15",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I owe rent."
+ },
+ {
+  "id": "en-s16",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I lost my phone."
+ },
+ {
+  "id": "en-s17",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I adopted a kitten."
+ },
+ {
+  "id": "en-s18",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I volunteer."
+ },
+ {
+  "id": "en-s19",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I play the cello."
+ },
+ {
+  "id": "en-s20",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I overspend."
+ },
+ {
+  "id": "en-s21",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I grow tomatoes."
+ },
+ {
+  "id": "en-s22",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I avoid neighbours."
+ },
+ {
+  "id": "en-s23",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I love rain."
+ },
+ {
+  "id": "en-s24",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I cracked my screen."
+ },
+ {
+  "id": "en-s25",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I started a new job."
+ },
+ {
+  "id": "en-s26",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I planted roses last spring."
+ },
+ {
+  "id": "en-s27",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I hate birthdays."
+ },
+ {
+  "id": "en-s28",
+  "language": "en",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "I wear black every day."
+ },
+ {
+  "id": "en-s29",
+  "language": "en",
+  "opening": "negation",
+  "text": "No kids yet."
+ },
+ {
+  "id": "en-s30",
+  "language": "en",
+  "opening": "negation",
+  "text": "No bus stops nearby."
+ },
+ {
+  "id": "en-s31",
+  "language": "en",
+  "opening": "negation",
+  "text": "No dress fits me anymore."
+ },
+ {
+  "id": "en-s32",
+  "language": "en",
+  "opening": "negation",
+  "text": "Never have I enjoyed flying."
+ },
+ {
+  "id": "en-s33",
+  "language": "en",
+  "opening": "negation",
+  "text": "No coffee for me anymore."
+ },
+ {
+  "id": "en-s34",
+  "language": "en",
+  "opening": "negation",
+  "text": "No pets live here."
+ },
+ {
+  "id": "en-s35",
+  "language": "en",
+  "opening": "negation",
+  "text": "No mushrooms, please."
+ },
+ {
+  "id": "en-s36",
+  "language": "en",
+  "opening": "negation",
+  "text": "Never smoked."
+ },
+ {
+  "id": "en-s37",
+  "language": "en",
+  "opening": "negation",
+  "text": "Never liked tight shoes."
+ },
+ {
+  "id": "en-s38",
+  "language": "en",
+  "opening": "negation",
+  "text": "No hobby suits me."
+ },
+ {
+  "id": "en-s39",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My hayfever returned."
+ },
+ {
+  "id": "en-s40",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My daughter cannot eat nuts."
+ },
+ {
+  "id": "en-s41",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My favourite weather is foggy."
+ },
+ {
+  "id": "en-s42",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My car died."
+ },
+ {
+  "id": "en-s43",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My van needs repairs."
+ },
+ {
+  "id": "en-s44",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My savings shrank."
+ },
+ {
+  "id": "en-s45",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My volunteer shift starts early."
+ },
+ {
+  "id": "en-s46",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My blood pressure runs high."
+ },
+ {
+  "id": "en-s47",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My jeans ripped."
+ },
+ {
+  "id": "en-s48",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My knitting improves."
+ },
+ {
+  "id": "en-s49",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My language class starts tonight."
+ },
+ {
+  "id": "en-s50",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My sleep suffers."
+ },
+ {
+  "id": "en-s51",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My band rehearses weekly."
+ },
+ {
+  "id": "en-s52",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My neighbour snores."
+ },
+ {
+  "id": "en-s53",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My parrot talks."
+ },
+ {
+  "id": "en-s54",
+  "language": "en",
+  "opening": "possessive-or-article",
+  "text": "My language class started."
+ },
+ {
+  "id": "en-s55",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Lucia fears heights.",
+  "name": "Lucia"
+ },
+ {
+  "id": "en-s56",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Dragan turns forty tomorrow.",
+  "name": "Dragan"
+ },
+ {
+  "id": "en-s57",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Guido loves rainy days.",
+  "name": "Guido"
+ },
+ {
+  "id": "en-s58",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Dario lives next door.",
+  "name": "Dario"
+ },
+ {
+  "id": "en-s59",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Viktor wears bright socks.",
+  "name": "Viktor"
+ },
+ {
+  "id": "en-s60",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Mihaela rents a flat.",
+  "name": "Mihaela"
+ },
+ {
+  "id": "en-s61",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Kenji drinks tea without sugar.",
+  "name": "Kenji"
+ },
+ {
+  "id": "en-s62",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Elena teaches maths.",
+  "name": "Elena"
+ },
+ {
+  "id": "en-s63",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Sorin lifts weights every morning.",
+  "name": "Sorin"
+ },
+ {
+  "id": "en-s64",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Dario studies marine biology.",
+  "name": "Dario"
+ },
+ {
+  "id": "en-s65",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Callum lives next door.",
+  "name": "Callum"
+ },
+ {
+  "id": "en-s66",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Mateus has three younger sisters.",
+  "name": "Mateus"
+ },
+ {
+  "id": "en-s67",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Hamid rides motorcycles.",
+  "name": "Hamid"
+ },
+ {
+  "id": "en-s68",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Solveig has asthma.",
+  "name": "Solveig"
+ },
+ {
+  "id": "en-s69",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Mateus paints landscapes.",
+  "name": "Mateus"
+ },
+ {
+  "id": "en-s70",
+  "language": "en",
+  "opening": "person-name",
+  "text": "Priya broke her wrist.",
+  "name": "Priya"
+ },
+ {
+  "id": "en-s71",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Usually I carpool."
+ },
+ {
+  "id": "en-s72",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday my sister called."
+ },
+ {
+  "id": "en-s73",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday I paid rent."
+ },
+ {
+  "id": "en-s74",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Recently I moved."
+ },
+ {
+  "id": "en-s75",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday we moved."
+ },
+ {
+  "id": "en-s76",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday I swam."
+ },
+ {
+  "id": "en-s77",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday my dog escaped."
+ },
+ {
+  "id": "en-s78",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday I bought boots."
+ },
+ {
+  "id": "en-s79",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Yesterday mum called."
+ },
+ {
+  "id": "en-s80",
+  "language": "en",
+  "opening": "time-or-adverb",
+  "text": "Sometimes I walk home."
+ },
+ {
+  "id": "es-s01",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tomo café solo cada mañana."
+ },
+ {
+  "id": "es-s02",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Trabajo en un hospital."
+ },
+ {
+  "id": "es-s03",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Prefiero los días nublados."
+ },
+ {
+  "id": "es-s04",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Trabajo en un hospital."
+ },
+ {
+  "id": "es-s05",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Estudié historia."
+ },
+ {
+  "id": "es-s06",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Corro maratones cada otoño."
+ },
+ {
+  "id": "es-s07",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Viajo cada verano."
+ },
+ {
+  "id": "es-s08",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Visto de negro.",
+  "readerAmbiguous": true
+ },
+ {
+  "id": "es-s09",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tomo café sin azúcar."
+ },
+ {
+  "id": "es-s10",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ahorro poco cada mes."
+ },
+ {
+  "id": "es-s11",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Leo novelas cada noche."
+ },
+ {
+  "id": "es-s12",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tengo una vecina muy amable."
+ },
+ {
+  "id": "es-s13",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Conduzco una furgoneta."
+ },
+ {
+  "id": "es-s14",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tengo dos gatos."
+ },
+ {
+  "id": "es-s15",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Duermo solo seis horas."
+ },
+ {
+  "id": "es-s16",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tengo una moto vieja."
+ },
+ {
+  "id": "es-s17",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Juego al ajedrez semanalmente."
+ },
+ {
+  "id": "es-s18",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Perdí mi móvil."
+ },
+ {
+  "id": "es-s19",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Cocino paella los domingos."
+ },
+ {
+  "id": "es-s20",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Vendí mi camioneta."
+ },
+ {
+  "id": "es-s21",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Colecciono monedas antiguas."
+ },
+ {
+  "id": "es-s22",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tengo alergia primaveral."
+ },
+ {
+  "id": "es-s23",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Temo las alturas."
+ },
+ {
+  "id": "es-s24",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Me acuesto muy tarde."
+ },
+ {
+  "id": "es-s25",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Pinto cuadros pequeños."
+ },
+ {
+  "id": "es-s26",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Vivo en un piso pequeño."
+ },
+ {
+  "id": "es-s27",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Estudio medicina."
+ },
+ {
+  "id": "es-s28",
+  "language": "es",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Toco la guitarra cada tarde."
+ },
+ {
+  "id": "es-s29",
+  "language": "es",
+  "opening": "negation",
+  "text": "No hago voluntariado."
+ },
+ {
+  "id": "es-s30",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo hermanos."
+ },
+ {
+  "id": "es-s31",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo vecinos."
+ },
+ {
+  "id": "es-s32",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo hermanos."
+ },
+ {
+  "id": "es-s33",
+  "language": "es",
+  "opening": "negation",
+  "text": "No trabajo mañana."
+ },
+ {
+  "id": "es-s34",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo móvil."
+ },
+ {
+  "id": "es-s35",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo ascensor."
+ },
+ {
+  "id": "es-s36",
+  "language": "es",
+  "opening": "negation",
+  "text": "No soporto al vecino."
+ },
+ {
+  "id": "es-s37",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo casa."
+ },
+ {
+  "id": "es-s38",
+  "language": "es",
+  "opening": "negation",
+  "text": "No tengo trabajo."
+ },
+ {
+  "id": "es-s39",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi desayuno es fruta."
+ },
+ {
+  "id": "es-s40",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi tren tarda."
+ },
+ {
+  "id": "es-s41",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi sueldo no alcanza nunca."
+ },
+ {
+  "id": "es-s42",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi lectura avanza."
+ },
+ {
+  "id": "es-s43",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi trabajo empieza muy temprano."
+ },
+ {
+  "id": "es-s44",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi voluntariado termina pronto."
+ },
+ {
+  "id": "es-s45",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "El picante me gusta."
+ },
+ {
+  "id": "es-s46",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi colección de sellos crece."
+ },
+ {
+  "id": "es-s47",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi coche necesita frenos nuevos."
+ },
+ {
+  "id": "es-s48",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi trayecto cansa."
+ },
+ {
+  "id": "es-s49",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "El yoga me relaja."
+ },
+ {
+  "id": "es-s50",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi insomnio empeora."
+ },
+ {
+  "id": "es-s51",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi trayecto dura poco."
+ },
+ {
+  "id": "es-s52",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi fiebre bajó."
+ },
+ {
+  "id": "es-s53",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "Mi rutina incluye pesas."
+ },
+ {
+  "id": "es-s54",
+  "language": "es",
+  "opening": "possessive-or-article",
+  "text": "El calor me agota."
+ },
+ {
+  "id": "es-s55",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Pierre vive al lado.",
+  "name": "Pierre"
+ },
+ {
+  "id": "es-s56",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Priya come picante.",
+  "name": "Priya",
+  "readerAmbiguous": true
+ },
+ {
+  "id": "es-s57",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Emeka vive enfrente.",
+  "name": "Emeka"
+ },
+ {
+  "id": "es-s58",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Leila toca la guitarra clásica.",
+  "name": "Leila"
+ },
+ {
+  "id": "es-s59",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Matteo alquila un ático.",
+  "name": "Matteo"
+ },
+ {
+  "id": "es-s60",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Nadia viaja mañana.",
+  "name": "Nadia"
+ },
+ {
+  "id": "es-s61",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Rosa siempre lleva botas.",
+  "name": "Rosa"
+ },
+ {
+  "id": "es-s62",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Dragan teme volar.",
+  "name": "Dragan"
+ },
+ {
+  "id": "es-s63",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Guido es mi vecino.",
+  "name": "Guido"
+ },
+ {
+  "id": "es-s64",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Sorin tiene tres hermanas.",
+  "name": "Sorin"
+ },
+ {
+  "id": "es-s65",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Tomasz trabaja en una panadería.",
+  "name": "Tomasz"
+ },
+ {
+  "id": "es-s66",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Thandiwe evita el gluten.",
+  "name": "Thandiwe"
+ },
+ {
+  "id": "es-s67",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Joao tiene la gripe.",
+  "name": "Joao"
+ },
+ {
+  "id": "es-s68",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Hamid gasta demasiado.",
+  "name": "Hamid",
+  "readerAmbiguous": true
+ },
+ {
+  "id": "es-s69",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Nadia debe mucho dinero.",
+  "name": "Nadia"
+ },
+ {
+  "id": "es-s70",
+  "language": "es",
+  "opening": "person-name",
+  "text": "Zsofia ahorra para un coche.",
+  "name": "Zsofia"
+ },
+ {
+  "id": "es-s71",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer me mudé."
+ },
+ {
+  "id": "es-s72",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Anoche dormí muy poco."
+ },
+ {
+  "id": "es-s73",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Hoy preparé sopa casera."
+ },
+ {
+  "id": "es-s74",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer terminé una novela."
+ },
+ {
+  "id": "es-s75",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Hoy vine en bicicleta."
+ },
+ {
+  "id": "es-s76",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer escuché música clásica."
+ },
+ {
+  "id": "es-s77",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer corrí diez kilómetros seguidos."
+ },
+ {
+  "id": "es-s78",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer planté tomates."
+ },
+ {
+  "id": "es-s79",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer cené pescado asado."
+ },
+ {
+  "id": "es-s80",
+  "language": "es",
+  "opening": "time-or-adverb",
+  "text": "Ayer adopté gatitos."
+ },
+ {
+  "id": "fr-s01",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je dépense trop."
+ },
+ {
+  "id": "fr-s02",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'ai cassé mon téléphone."
+ },
+ {
+  "id": "fr-s03",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je dors mal."
+ },
+ {
+  "id": "fr-s04",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je porte des jeans."
+ },
+ {
+  "id": "fr-s05",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'ai un jumeau."
+ },
+ {
+  "id": "fr-s06",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je lis des polars."
+ },
+ {
+  "id": "fr-s07",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je covoiture souvent."
+ },
+ {
+  "id": "fr-s08",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je covoiture souvent."
+ },
+ {
+  "id": "fr-s09",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'ai deux grandes sœurs."
+ },
+ {
+  "id": "fr-s10",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je joue du violoncelle."
+ },
+ {
+  "id": "fr-s11",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je prends le métro."
+ },
+ {
+  "id": "fr-s12",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je joue au tennis."
+ },
+ {
+  "id": "fr-s13",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je déteste mon anniversaire."
+ },
+ {
+  "id": "fr-s14",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'adore l'automne."
+ },
+ {
+  "id": "fr-s15",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je dessine beaucoup."
+ },
+ {
+  "id": "fr-s16",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je bois du thé vert."
+ },
+ {
+  "id": "fr-s17",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je joue aux échecs souvent."
+ },
+ {
+  "id": "fr-s18",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je fais du bénévolat."
+ },
+ {
+  "id": "fr-s19",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'évite les arachides."
+ },
+ {
+  "id": "fr-s20",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'aide ma voisine."
+ },
+ {
+  "id": "fr-s21",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'adore la neige."
+ },
+ {
+  "id": "fr-s22",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je change de téléphone demain."
+ },
+ {
+  "id": "fr-s23",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'ai vendu ma voiture."
+ },
+ {
+  "id": "fr-s24",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "J'adore le rugby."
+ },
+ {
+  "id": "fr-s25",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je collectionne des timbres."
+ },
+ {
+  "id": "fr-s26",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je voyage rarement."
+ },
+ {
+  "id": "fr-s27",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je conduis jusqu'au bureau."
+ },
+ {
+  "id": "fr-s28",
+  "language": "fr",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Je peins le dimanche."
+ },
+ {
+  "id": "fr-s29",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne voyage jamais seul."
+ },
+ {
+  "id": "fr-s30",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je n'aide plus bénévolement."
+ },
+ {
+  "id": "fr-s31",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne travaille plus."
+ },
+ {
+  "id": "fr-s32",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne supporte pas l'obscurité."
+ },
+ {
+  "id": "fr-s33",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne téléphone jamais."
+ },
+ {
+  "id": "fr-s34",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Jamais de romans."
+ },
+ {
+  "id": "fr-s35",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne fume pas."
+ },
+ {
+  "id": "fr-s36",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je n'aime pas lire."
+ },
+ {
+  "id": "fr-s37",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne traduis jamais."
+ },
+ {
+  "id": "fr-s38",
+  "language": "fr",
+  "opening": "negation",
+  "text": "Je ne chante jamais."
+ },
+ {
+  "id": "fr-s39",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon téléphone surchauffe."
+ },
+ {
+  "id": "fr-s40",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Ma voiture consomme trop."
+ },
+ {
+  "id": "fr-s41",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon allergie s'aggrave vite."
+ },
+ {
+  "id": "fr-s42",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Ma soupe brûle."
+ },
+ {
+  "id": "fr-s43",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon travail m'ennuie."
+ },
+ {
+  "id": "fr-s44",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "La pluie m'apaise."
+ },
+ {
+  "id": "fr-s45",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Ma collection s'agrandit encore."
+ },
+ {
+  "id": "fr-s46",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon appartement est très lumineux."
+ },
+ {
+  "id": "fr-s47",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon voyage approche."
+ },
+ {
+  "id": "fr-s48",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon dos me fait mal."
+ },
+ {
+  "id": "fr-s49",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Le jazz m'apaise."
+ },
+ {
+  "id": "fr-s50",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon chat dort beaucoup."
+ },
+ {
+  "id": "fr-s51",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Ma collection grandit."
+ },
+ {
+  "id": "fr-s52",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Mon trajet s'allonge."
+ },
+ {
+  "id": "fr-s53",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Ma sœur habite loin."
+ },
+ {
+  "id": "fr-s54",
+  "language": "fr",
+  "opening": "possessive-or-article",
+  "text": "Ma veste est déchirée."
+ },
+ {
+  "id": "fr-s55",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Thandiwe mange épicé.",
+  "name": "Thandiwe"
+ },
+ {
+  "id": "fr-s56",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Leila chante très bien.",
+  "name": "Leila"
+ },
+ {
+  "id": "fr-s57",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Tariq a mal au dos.",
+  "name": "Tariq"
+ },
+ {
+  "id": "fr-s58",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Leila a des jumeaux.",
+  "name": "Leila"
+ },
+ {
+  "id": "fr-s59",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Pierre économise chaque mois.",
+  "name": "Pierre"
+ },
+ {
+  "id": "fr-s60",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Greta économise beaucoup.",
+  "name": "Greta"
+ },
+ {
+  "id": "fr-s61",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Priya a deux petites sœurs.",
+  "name": "Priya"
+ },
+ {
+  "id": "fr-s62",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Wanjiru fait du bénévolat.",
+  "name": "Wanjiru"
+ },
+ {
+  "id": "fr-s63",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Arjun promène son chien.",
+  "name": "Arjun"
+ },
+ {
+  "id": "fr-s64",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Matteo ronfle beaucoup.",
+  "name": "Matteo"
+ },
+ {
+  "id": "fr-s65",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Yusuf habite en face.",
+  "name": "Yusuf"
+ },
+ {
+  "id": "fr-s66",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Tomasz dort mal.",
+  "name": "Tomasz"
+ },
+ {
+  "id": "fr-s67",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Priya vend sa moto.",
+  "name": "Priya"
+ },
+ {
+  "id": "fr-s68",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Arjun boit du thé.",
+  "name": "Arjun"
+ },
+ {
+  "id": "fr-s69",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Rosa évite les arachides.",
+  "name": "Rosa"
+ },
+ {
+  "id": "fr-s70",
+  "language": "fr",
+  "opening": "person-name",
+  "text": "Greta a divorcé.",
+  "name": "Greta"
+ },
+ {
+  "id": "fr-s71",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Aujourd'hui je jeûne."
+ },
+ {
+  "id": "fr-s72",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Hier, j'ai tondu la pelouse."
+ },
+ {
+  "id": "fr-s73",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Demain je révise."
+ },
+ {
+  "id": "fr-s74",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Hier j'ai déménagé."
+ },
+ {
+  "id": "fr-s75",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Hier j'ai révisé longtemps."
+ },
+ {
+  "id": "fr-s76",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Hier j'ai nagé."
+ },
+ {
+  "id": "fr-s77",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Parfois j'aide bénévolement."
+ },
+ {
+  "id": "fr-s78",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Hier j'ai couru."
+ },
+ {
+  "id": "fr-s79",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Demain je travaille tard."
+ },
+ {
+  "id": "fr-s80",
+  "language": "fr",
+  "opening": "time-or-adverb",
+  "text": "Demain j'arrête le café."
+ },
+ {
+  "id": "it-s01",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Gioco a calcio spesso."
+ },
+ {
+  "id": "it-s02",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Faccio volontariato in una mensa."
+ },
+ {
+  "id": "it-s03",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Leggo gialli."
+ },
+ {
+  "id": "it-s04",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Aiuto ogni sabato al canile."
+ },
+ {
+  "id": "it-s05",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ho la febbre."
+ },
+ {
+  "id": "it-s06",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Preferisco il freddo secco."
+ },
+ {
+  "id": "it-s07",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ho paura dei ragni."
+ },
+ {
+  "id": "it-s08",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Coltivo molte rose."
+ },
+ {
+  "id": "it-s09",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Soffro di emicrania cronica."
+ },
+ {
+  "id": "it-s10",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ho una bicicletta."
+ },
+ {
+  "id": "it-s11",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Corro ogni mattina."
+ },
+ {
+  "id": "it-s12",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Dormo poco ultimamente."
+ },
+ {
+  "id": "it-s13",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Cucino pasta ogni domenica."
+ },
+ {
+  "id": "it-s14",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Saluto sempre i vicini."
+ },
+ {
+  "id": "it-s15",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Sono volontario in ospedale."
+ },
+ {
+  "id": "it-s16",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Compio gli anni domani."
+ },
+ {
+  "id": "it-s17",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Coltivo erbe aromatiche."
+ },
+ {
+  "id": "it-s18",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ascolto spesso musica classica."
+ },
+ {
+  "id": "it-s19",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Indosso sempre maglioni larghi."
+ },
+ {
+  "id": "it-s20",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ho un'allergia stagionale."
+ },
+ {
+  "id": "it-s21",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ho piantato rose in giardino."
+ },
+ {
+  "id": "it-s22",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ho tre fratelli maggiori."
+ },
+ {
+  "id": "it-s23",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Parto domani per le vacanze."
+ },
+ {
+  "id": "it-s24",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Spendo troppo in libri."
+ },
+ {
+  "id": "it-s25",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Risparmio ogni mese."
+ },
+ {
+  "id": "it-s26",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Innaffio le piante ogni sera."
+ },
+ {
+  "id": "it-s27",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Studio francese."
+ },
+ {
+  "id": "it-s28",
+  "language": "it",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ascolto jazz ogni sera."
+ },
+ {
+  "id": "it-s29",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non leggo romanzi da mesi."
+ },
+ {
+  "id": "it-s30",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non porto mai la cravatta."
+ },
+ {
+  "id": "it-s31",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non lavoro più in ufficio."
+ },
+ {
+  "id": "it-s32",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non ho tempo per dipingere."
+ },
+ {
+  "id": "it-s33",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non so cucinare bene."
+ },
+ {
+  "id": "it-s34",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non tollero il lattosio."
+ },
+ {
+  "id": "it-s35",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non bevo caffè dopo cena."
+ },
+ {
+  "id": "it-s36",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non ho un giardino."
+ },
+ {
+  "id": "it-s37",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non leggo romanzi."
+ },
+ {
+  "id": "it-s38",
+  "language": "it",
+  "opening": "negation",
+  "text": "Non vado in palestra."
+ },
+ {
+  "id": "it-s39",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il mio spagnolo migliora."
+ },
+ {
+  "id": "it-s40",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "La moto perde olio."
+ },
+ {
+  "id": "it-s41",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "La pioggia mi mette tristezza."
+ },
+ {
+  "id": "it-s42",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il vicino urla."
+ },
+ {
+  "id": "it-s43",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il tè mi rilassa."
+ },
+ {
+  "id": "it-s44",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il mio cane abbaia."
+ },
+ {
+  "id": "it-s45",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "La rinite torna."
+ },
+ {
+  "id": "it-s46",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il cellulare non carica."
+ },
+ {
+  "id": "it-s47",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il lavoro mi stressa."
+ },
+ {
+  "id": "it-s48",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il jazz mi rilassa."
+ },
+ {
+  "id": "it-s49",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "La mia vicina è gentile."
+ },
+ {
+  "id": "it-s50",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il tetto perde."
+ },
+ {
+  "id": "it-s51",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "La vicina cucina benissimo."
+ },
+ {
+  "id": "it-s52",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il mio tragitto è lungo."
+ },
+ {
+  "id": "it-s53",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il viaggio stanca."
+ },
+ {
+  "id": "it-s54",
+  "language": "it",
+  "opening": "possessive-or-article",
+  "text": "Il mio francese migliora."
+ },
+ {
+  "id": "it-s55",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Bjorn guida un vecchio furgone.",
+  "name": "Bjorn"
+ },
+ {
+  "id": "it-s56",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Priya cuce vestiti.",
+  "name": "Priya"
+ },
+ {
+  "id": "it-s57",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Dragan prende il tram.",
+  "name": "Dragan"
+ },
+ {
+  "id": "it-s58",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Bjorn cambia spesso cellulare.",
+  "name": "Bjorn"
+ },
+ {
+  "id": "it-s59",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Marta teme l'acqua.",
+  "name": "Marta"
+ },
+ {
+  "id": "it-s60",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Oluwaseun cerca un'auto.",
+  "name": "Oluwaseun"
+ },
+ {
+  "id": "it-s61",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Siobhan fa l'infermiera.",
+  "name": "Siobhan"
+ },
+ {
+  "id": "it-s62",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Pierre prende il tram.",
+  "name": "Pierre"
+ },
+ {
+  "id": "it-s63",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Matteo beve solo caffè amaro.",
+  "name": "Matteo"
+ },
+ {
+  "id": "it-s64",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Hamid suona il sassofono benissimo.",
+  "name": "Hamid"
+ },
+ {
+  "id": "it-s65",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Hyun fa l'infermiere.",
+  "name": "Hyun"
+ },
+ {
+  "id": "it-s66",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Lucia divora romanzi storici.",
+  "name": "Lucia"
+ },
+ {
+  "id": "it-s67",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Ingrid dirige un'officina.",
+  "name": "Ingrid"
+ },
+ {
+  "id": "it-s68",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Priya legge gialli.",
+  "name": "Priya"
+ },
+ {
+  "id": "it-s69",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Kenji indossa sempre camicie.",
+  "name": "Kenji"
+ },
+ {
+  "id": "it-s70",
+  "language": "it",
+  "opening": "person-name",
+  "text": "Viktor pedala fino all'ufficio.",
+  "name": "Viktor"
+ },
+ {
+  "id": "it-s71",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Oggi prendo l'autobus."
+ },
+ {
+  "id": "it-s72",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Stamattina c'era traffico."
+ },
+ {
+  "id": "it-s73",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ultimamente dormo male."
+ },
+ {
+  "id": "it-s74",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ieri ho stirato."
+ },
+ {
+  "id": "it-s75",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ieri nevicava finalmente."
+ },
+ {
+  "id": "it-s76",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ieri ho venduto la moto."
+ },
+ {
+  "id": "it-s77",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ormai preferisco l'inverno."
+ },
+ {
+  "id": "it-s78",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Oggi starnutisco."
+ },
+ {
+  "id": "it-s79",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ieri ho studiato tedesco."
+ },
+ {
+  "id": "it-s80",
+  "language": "it",
+  "opening": "time-or-adverb",
+  "text": "Ieri ho preparato il risotto."
+ },
+ {
+  "id": "pt-s01",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Perdi meu celular ontem."
+ },
+ {
+  "id": "pt-s02",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Trabalho como enfermeiro."
+ },
+ {
+  "id": "pt-s03",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Toco violão mal."
+ },
+ {
+  "id": "pt-s04",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Canto no coral."
+ },
+ {
+  "id": "pt-s05",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Eu toco violão clássico."
+ },
+ {
+  "id": "pt-s06",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Estudo italiano sozinho."
+ },
+ {
+  "id": "pt-s07",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tenho alergia forte a camarão."
+ },
+ {
+  "id": "pt-s08",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tenho rinite alérgica."
+ },
+ {
+  "id": "pt-s09",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Sou enfermeira."
+ },
+ {
+  "id": "pt-s10",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Gosto de pescar."
+ },
+ {
+  "id": "pt-s11",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Estou com dor de cabeça."
+ },
+ {
+  "id": "pt-s12",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Pratico natação desde criança."
+ },
+ {
+  "id": "pt-s13",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Guardo dinheiro todo mês."
+ },
+ {
+  "id": "pt-s14",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Corro cinco quilômetros toda manhã."
+ },
+ {
+  "id": "pt-s15",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Aprendo japonês online."
+ },
+ {
+  "id": "pt-s16",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Vendi o carro."
+ },
+ {
+  "id": "pt-s17",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Cozinho todo domingo."
+ },
+ {
+  "id": "pt-s18",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tenho dois gatos em casa."
+ },
+ {
+  "id": "pt-s19",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Dirijo um caminhão."
+ },
+ {
+  "id": "pt-s20",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tenho pavor de baratas."
+ },
+ {
+  "id": "pt-s21",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Jogo futebol amador."
+ },
+ {
+  "id": "pt-s22",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Conheço meu vizinho."
+ },
+ {
+  "id": "pt-s23",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Jogo vôlei."
+ },
+ {
+  "id": "pt-s24",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tomo chá toda noite."
+ },
+ {
+  "id": "pt-s25",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Moro com meus avós."
+ },
+ {
+  "id": "pt-s26",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Adoro comida apimentada."
+ },
+ {
+  "id": "pt-s27",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Tenho medo de altura."
+ },
+ {
+  "id": "pt-s28",
+  "language": "pt",
+  "opening": "first-person-verb-or-pronoun",
+  "text": "Ouço samba no trabalho."
+ },
+ {
+  "id": "pt-s29",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não tenho dinheiro sobrando."
+ },
+ {
+  "id": "pt-s30",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não vejo meus primos."
+ },
+ {
+  "id": "pt-s31",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não falo alemão ainda."
+ },
+ {
+  "id": "pt-s32",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não tenho gato."
+ },
+ {
+  "id": "pt-s33",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não coleciono mais selos."
+ },
+ {
+  "id": "pt-s34",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não suporto calor."
+ },
+ {
+  "id": "pt-s35",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não gosto do meu emprego."
+ },
+ {
+  "id": "pt-s36",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não posso ter cachorro."
+ },
+ {
+  "id": "pt-s37",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não estudei hoje."
+ },
+ {
+  "id": "pt-s38",
+  "language": "pt",
+  "opening": "negation",
+  "text": "Não viajei."
+ },
+ {
+  "id": "pt-s39",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha horta cresceu."
+ },
+ {
+  "id": "pt-s40",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Meu curso acabou."
+ },
+ {
+  "id": "pt-s41",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Meu pai mora longe."
+ },
+ {
+  "id": "pt-s42",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha pressão está alta."
+ },
+ {
+  "id": "pt-s43",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha banda ensaia hoje."
+ },
+ {
+  "id": "pt-s44",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "O meu papagaio fala demais."
+ },
+ {
+  "id": "pt-s45",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Meu café esfriou."
+ },
+ {
+  "id": "pt-s46",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha leitura noturna me acalma."
+ },
+ {
+  "id": "pt-s47",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "O calor incomoda."
+ },
+ {
+  "id": "pt-s48",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "O bolo queimou."
+ },
+ {
+  "id": "pt-s49",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "O calor me cansa."
+ },
+ {
+  "id": "pt-s50",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Meu jardim tem roseiras."
+ },
+ {
+  "id": "pt-s51",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha irmã casou."
+ },
+ {
+  "id": "pt-s52",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Meu salário atrasou."
+ },
+ {
+  "id": "pt-s53",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha blusa favorita rasgou."
+ },
+ {
+  "id": "pt-s54",
+  "language": "pt",
+  "opening": "possessive-or-article",
+  "text": "Minha gata dorme na sala."
+ },
+ {
+  "id": "pt-s55",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Thandiwe cozinha bem.",
+  "name": "Thandiwe"
+ },
+ {
+  "id": "pt-s56",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Rosa prefere chá.",
+  "name": "Rosa"
+ },
+ {
+  "id": "pt-s57",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Hamid prefere chá.",
+  "name": "Hamid"
+ },
+ {
+  "id": "pt-s58",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Callum estuda medicina veterinária.",
+  "name": "Callum"
+ },
+ {
+  "id": "pt-s59",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Joao é meu vizinho.",
+  "name": "Joao"
+ },
+ {
+  "id": "pt-s60",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Paul dirige uma caminhonete velha.",
+  "name": "Paul"
+ },
+ {
+  "id": "pt-s61",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Bjorn adotou um cachorro idoso.",
+  "name": "Bjorn"
+ },
+ {
+  "id": "pt-s62",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Leila planta ervas aromáticas.",
+  "name": "Leila"
+ },
+ {
+  "id": "pt-s63",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Rosa trocou de celular.",
+  "name": "Rosa"
+ },
+ {
+  "id": "pt-s64",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Priya cuida das orquídeas.",
+  "name": "Priya"
+ },
+ {
+  "id": "pt-s65",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Greta prefere dias nublados.",
+  "name": "Greta"
+ },
+ {
+  "id": "pt-s66",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Tomasz estuda engenharia.",
+  "name": "Tomasz"
+ },
+ {
+  "id": "pt-s67",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Anna adora comer feijão preto.",
+  "name": "Anna"
+ },
+ {
+  "id": "pt-s68",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Callum faz voluntariado.",
+  "name": "Callum"
+ },
+ {
+  "id": "pt-s69",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Siobhan faz pão.",
+  "name": "Siobhan"
+ },
+ {
+  "id": "pt-s70",
+  "language": "pt",
+  "opening": "person-name",
+  "text": "Elena mora sozinha.",
+  "name": "Elena"
+ },
+ {
+  "id": "pt-s71",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Ontem choveu, adorei."
+ },
+ {
+  "id": "pt-s72",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Hoje estudei química orgânica."
+ },
+ {
+  "id": "pt-s73",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Hoje a vizinha mudou."
+ },
+ {
+  "id": "pt-s74",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Sempre pego ônibus."
+ },
+ {
+  "id": "pt-s75",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Sempre preferi dias frios."
+ },
+ {
+  "id": "pt-s76",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Ontem comi feijão com arroz."
+ },
+ {
+  "id": "pt-s77",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Hoje comprei pneus."
+ },
+ {
+  "id": "pt-s78",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Hoje vim de metrô."
+ },
+ {
+  "id": "pt-s79",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Ontem visitei vizinhos."
+ },
+ {
+  "id": "pt-s80",
+  "language": "pt",
+  "opening": "time-or-adverb",
+  "text": "Ontem comprei um casaco."
+ }
+]

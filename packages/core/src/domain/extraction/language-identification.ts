@@ -77,14 +77,93 @@ function parseAnswer(raw: unknown): string | null {
   return parsed.success ? parsed.data.language.trim().toLowerCase() : null;
 }
 
-/** Identify the language of `text`. Never throws; a failure is returned with its reason. */
+/** System prompt of the call that says whether the opening word is a person's name. */
+export const FIRST_WORD_NAME_PROMPT = 'Is the word a given name of a person? Answer JSON {"name": true|false}.';
+
+const nameAnswerSchema = z.object({ name: z.boolean() });
+const OPENING_QUOTE = /^[("'“‘]/u;
+
+/**
+ * The first word of the text when only its position explains its capital: no digit, no
+ * possessive, no capitalised word right after it (name particles skipped) and no second
+ * occurrence. Null when there is no such word.
+ */
+export function openingWord(text: string): string | null {
+  const words = text.split(/\s+/u).filter((word) => word.length > 0);
+  const first = words[0];
+  if (first === undefined || !CAPITALISED.test(first) || /\d/u.test(first) || POSSESSIVE.test(first)) return null;
+  const bare = (word: string): string => word.replace(TRAILING_PUNCTUATION, '').replace(/['’]s$/u, '').replace(OPENING_QUOTE, '');
+  let after = 1;
+  while (after < words.length && NAME_PARTICLES.has(words[after] as string)) after += 1;
+  const next = words[after];
+  if (next !== undefined && CAPITALISED.test(next) && !/\d/u.test(next) && !TRAILING_PUNCTUATION.test(first)) return null;
+  if (words.some((other, index) => index > 0 && bare(other) === bare(first))) return null;
+  return bare(first);
+}
+
+/** The masked text with the opening word left in, in lower case. */
+function maskKeepingOpeningWord(text: string, word: string): string {
+  const start = text.indexOf(word);
+  const rest = text.slice(start + word.length);
+  const maskedRest = maskNamesAndNumbers(rest);
+  const gap = /^\s/u.test(rest) && maskedRest.length > 0 ? ' ' : '';
+  return `${text.slice(0, start)}${word.toLowerCase()}${gap}${maskedRest}`;
+}
+
+/** True, false, or null when the call fails or the answer is unusable. */
+async function isGivenName(llm: LLM, word: string): Promise<boolean | null> {
+  let raw: unknown;
+  try {
+    raw = await llm.generateResponse(
+      [
+        { role: 'system', content: FIRST_WORD_NAME_PROMPT },
+        { role: 'user', content: word },
+      ],
+      { type: 'json' },
+    );
+  } catch {
+    return null;
+  }
+  let value: unknown = raw;
+  if (typeof raw === 'string') {
+    try {
+      value = JSON.parse(raw);
+    } catch {
+      return null;
+    }
+  }
+  const parsed = nameAnswerSchema.safeParse(value);
+  return parsed.success ? parsed.data.name : null;
+}
+
+/**
+ * Identify the language of `text`. Never throws; a failure is returned with its reason.
+ *
+ * The first word of a sentence has a capital whatever it is, so the mask hides it, and in a short
+ * first-person message it is often the one word that tells two close languages apart: "Não como
+ * carne desde 2019." masked is "X como carne desde N", which reads as Spanish (#302). When the
+ * text opens with such a word, three calls run together: whether the word is a person's name, the
+ * language of the fully masked text, and the language of the text with the word left in. A name,
+ * or no usable answer about it, keeps the fully masked reading.
+ */
 export async function identifyInputLanguage(llm: LLM, text: string): Promise<LanguageIdentification> {
+  const word = openingWord(text);
+  if (word === null) return identifyMasked(llm, maskNamesAndNumbers(text));
+  const [isName, masked, kept] = await Promise.all([
+    isGivenName(llm, word),
+    identifyMasked(llm, maskNamesAndNumbers(text)),
+    identifyMasked(llm, maskKeepingOpeningWord(text, word)),
+  ]);
+  return isName === false && kept.ok ? kept : masked;
+}
+
+async function identifyMasked(llm: LLM, masked: string): Promise<LanguageIdentification> {
   let raw: unknown;
   try {
     raw = await llm.generateResponse(
       [
         { role: 'system', content: LANGUAGE_IDENTIFICATION_PROMPT },
-        { role: 'user', content: maskNamesAndNumbers(text) },
+        { role: 'user', content: masked },
       ],
       { type: 'json' },
     );
