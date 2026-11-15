@@ -2,20 +2,20 @@
  * Regression gate over the reports of `write-run.ts` and `judge-run.ts`.
  *
  * Each check in the limits file names a report and the metrics to hold in it, by dotted path into
- * the report JSON (a path ending in `length` reads the length of an array). The limits are the
- * values of the last accepted decision on that case set, with the margin written next to them. A
- * metric the report does not carry fails the gate: a renamed field must not pass silently.
+ * the report JSON (a path ending in `length` reads the length of an array), or by a label over the
+ * sum of several paths. The limits are the values of the last accepted decision on that case set,
+ * with the margin written next to them. A metric the report does not carry fails the gate: a renamed
+ * field must not pass silently.
  *
  * Usage: quality-gate.ts <limits.json> <reports directory>. Exits 1 and lists every violation.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-export interface MetricLimit {
-  readonly path: string;
-  readonly max?: number;
-  readonly min?: number;
-}
+/** One number of a report, or the sum of several under a label, with its limits. */
+export type MetricLimit =
+  | { readonly path: string; readonly max?: number; readonly min?: number }
+  | { readonly label: string; readonly sum: readonly string[]; readonly max?: number; readonly min?: number };
 
 export interface ReportCheck {
   readonly name: string;
@@ -37,14 +37,29 @@ export function readMetric(report: unknown, path: string): number | undefined {
 /** One line per metric outside its limit; empty when the report holds every limit. */
 export function evaluateReport(report: unknown, metrics: readonly MetricLimit[]): string[] {
   const violations: string[] = [];
-  for (const { path, max, min } of metrics) {
-    const value = readMetric(report, path);
-    if (value === undefined) {
-      violations.push(`${path} is missing from the report`);
-      continue;
+  for (const metric of metrics) {
+    const { max, min } = metric;
+    let name: string;
+    let value = 0;
+    if ('sum' in metric) {
+      name = metric.label;
+      const missing = metric.sum.filter((path) => readMetric(report, path) === undefined);
+      if (missing.length > 0) {
+        violations.push(`${name} is missing from the report (${missing.join(', ')})`);
+        continue;
+      }
+      for (const path of metric.sum) value += readMetric(report, path) ?? 0;
+    } else {
+      name = metric.path;
+      const read = readMetric(report, metric.path);
+      if (read === undefined) {
+        violations.push(`${name} is missing from the report`);
+        continue;
+      }
+      value = read;
     }
-    if (max !== undefined && value > max) violations.push(`${path} is ${String(value)}, above the maximum of ${String(max)}`);
-    if (min !== undefined && value < min) violations.push(`${path} is ${String(value)}, below the minimum of ${String(min)}`);
+    if (max !== undefined && value > max) violations.push(`${name} is ${String(value)}, above the maximum of ${String(max)}`);
+    if (min !== undefined && value < min) violations.push(`${name} is ${String(value)}, below the minimum of ${String(min)}`);
   }
   return violations;
 }
