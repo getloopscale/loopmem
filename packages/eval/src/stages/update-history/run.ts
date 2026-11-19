@@ -11,7 +11,7 @@
  * `UPDATE_HISTORY_SUPERSEDE=0` turns supersession on write off, which leaves every value current.
  *
  * Environment: OPENAI_API_KEY, OPENAI_BASE_URL (chat calls, e.g. a cost proxy), THEOMEM_PG_URI,
- * UPDATE_HISTORY_OUTPUT (path), UPDATE_HISTORY_DB (default themem_update_history; dropped and
+ * UPDATE_HISTORY_OUTPUT (path), UPDATE_HISTORY_CASES (file name in this directory, default histories.json), UPDATE_HISTORY_DB (default themem_update_history; dropped and
  * recreated), UPDATE_HISTORY_SUPERSEDE (default 1), UPDATE_HISTORY_PEOPLE (optional cap, for a
  * smoke run), UPDATE_HISTORY_REPETITIONS (default 3).
  */
@@ -37,10 +37,11 @@ const HistorySchema = z
     language: z.enum(['en', 'pt']),
     messages: z.array(z.object({ id: z.string().min(1), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/u), kind: z.string().min(1), text: z.string().min(1) }).strict()).min(1),
     questions: z.array(z.object({
-      kind: z.enum(['own-current', 'relative-same-attribute', 'relative-current', 'stable']),
+      kind: z.enum(['own-current', 'relative-same-attribute', 'relative-current', 'stable', 'both-people', 'relative-only']),
       chain: z.number().int().positive().optional(),
       question: z.string().min(1),
       expected: z.string().min(1),
+      expectedAll: z.array(z.string().min(1)).min(2).optional(),
       notExpected: z.array(z.string().min(1)),
     }).strict()).min(1),
   })
@@ -61,7 +62,9 @@ if (!/^[a-z_][a-z0-9_]*$/u.test(dbName)) throw new Error(`UPDATE_HISTORY_DB must
 const supersede = process.env['UPDATE_HISTORY_SUPERSEDE'] !== '0';
 const repetitions = Number(process.env['UPDATE_HISTORY_REPETITIONS'] ?? '3');
 const cap = process.env['UPDATE_HISTORY_PEOPLE'];
-const all = z.array(HistorySchema).parse(JSON.parse(readFileSync(resolve(here, 'histories.json'), 'utf8')));
+const casesFile = process.env['UPDATE_HISTORY_CASES'] ?? 'histories.json';
+if (!/^[a-z0-9-]+\.json$/u.test(casesFile)) throw new Error(`UPDATE_HISTORY_CASES must be a file name in this directory, got '${casesFile}'`);
+const all = z.array(HistorySchema).parse(JSON.parse(readFileSync(resolve(here, casesFile), 'utf8')));
 const histories = cap === undefined || cap === '' ? all : all.slice(0, Number(cap));
 
 interface Row {

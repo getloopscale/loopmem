@@ -158,3 +158,30 @@ describe('#111 — corpus PT/técnico quality gates (graph noise post-M12 import
     expect(out).toContain('módulo guardrails');
   });
 });
+
+describe('possessive marker on a name', () => {
+  test('names the person without the possessive marker, so it matches the same person said without it', () => {
+    expect(names("My aunt Ottoline's phone carrier is Movil.")).toContain('Ottoline');
+    expect(names("My aunt Ottoline's phone carrier is Movil.")).not.toContain("Ottoline's");
+  });
+
+  test('drops a typographic possessive marker as well', () => {
+    expect(names('I borrowed Marigold’s bike.')).toContain('Marigold');
+    expect(names('I borrowed Marigold’s bike.')).not.toContain('Marigold’s');
+  });
+
+  test('drops the bare apostrophe of a name that ends in s', () => {
+    expect(names("I fixed Thomas' fence yesterday.")).toContain('Thomas');
+    expect(names("I fixed Thomas' fence yesterday.")).not.toContain("Thomas'");
+  });
+
+  test('keeps an apostrophe that belongs to the name', () => {
+    expect(names("We had dinner with Sinéad O'Brien last week.")).toContain("Sinéad O'Brien");
+  });
+});
+
+describe('typographic apostrophe inside a name', () => {
+  test('keeps it, so the name is not merged into one word', () => {
+    expect(names('We had dinner with Sinéad O’Brien last week.')).toContain('Sinéad O’Brien');
+  });
+});

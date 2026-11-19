@@ -24,7 +24,7 @@ permissions:
   contents: read
   # Trusted publishing (OIDC): o npm troca este token de identidade efemera por
   # autorizacao de publish. Nao ha segredo armazenado no caminho — o trusted
-  # publisher esta registrado no npmjs.com para usetheoai/theo-memory +
+  # publisher esta registrado no npmjs.com para getloopscale/loopmem +
   # publish-npm.yml, sem environment. Sem esta permissao nao existe token OIDC
   # para trocar, e o publish falha na autenticacao.
   id-token: write
@@ -163,7 +163,7 @@ jobs:
         if: steps.version.outputs.published == 'false' && inputs.dry_run != true
         working-directory: packages/core
         # SEM NODE_AUTH_TOKEN — de proposito. O trusted publisher esta registrado
-        # no npmjs.com (usetheoai/theo-memory, publish-npm.yml, sem environment),
+        # no npmjs.com (getloopscale/loopmem, publish-npm.yml, sem environment),
         # entao a autorizacao vem do OIDC deste run.
         #
         # POR QUE NAO DEIXAR O TOKEN COMO REDE: porque ele nao seria rede, seria

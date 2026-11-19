@@ -1,6 +1,6 @@
 # Gate de sintaxe/semântica dos próprios workflows.
 #
-# O DEFEITO QUE ISTO PREVINE, medido no theo-db em 2026-07-27 (usetheodev/theo-db#211): quatro
+# O DEFEITO QUE ISTO PREVINE, medido no theo-db em 2026-07-27 (getloopscale/db#211): quatro
 # gates — incluindo o de licença, a regra mais inegociável daquele projeto — passaram TRÊS DIAS
 # sem executar um único step. Cada um declarava `paths` e `paths-ignore` no mesmo evento, o que o
 # GitHub rejeita no parse, então os runs morriam em `startup_failure` com zero jobs. Na lista de

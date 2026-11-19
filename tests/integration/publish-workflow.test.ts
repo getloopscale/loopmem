@@ -37,15 +37,15 @@ describe('publish workflow (caller of the reusable build-publish) + .trivyignore
     expect(readFileSync(WORKFLOW_PATH, 'utf-8')).toMatch(/id-token:\s*write/);
   });
 
-  test('delegates to the shared usetheoai reusable pinned by commit SHA, requesting the Trivy gate (EC-43)', () => {
+  test('delegates to the shared getloopscale reusable pinned by commit SHA, requesting the Trivy gate (EC-43)', () => {
     const yaml = readFileSync(WORKFLOW_PATH, 'utf-8');
     // Pinned by a full commit SHA, not by a branch: a moving `@develop` would change how this
     // image is built without a commit in this repository.
     expect(yaml).toMatch(
-      /uses:\s*usetheoai\/\.github\/\.github\/workflows\/build-publish\.yml@[0-9a-f]{40}\b/,
+      /uses:\s*getloopscale\/\.github\/\.github\/workflows\/build-publish\.yml@[0-9a-f]{40}\b/,
     );
-    expect(yaml, 'a public repository cannot call the reusable in the private usetheoai/theo').not.toMatch(
-      /uses:\s*usetheoai\/theo\/\.github\/workflows\//,
+    expect(yaml, 'a public repository cannot call the reusable in the private getloopscale/engine').not.toMatch(
+      /uses:\s*getloopscale\/engine\/\.github\/workflows\//,
     );
     expect(yaml, 'the vendored copy must not come back as the reference').not.toMatch(
       /uses:\s*\.\/\.github\/workflows\/build-publish\.yml/,

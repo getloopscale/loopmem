@@ -1,0 +1,4850 @@
+[
+ {
+  "id": "c01",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c01-m01",
+    "date": "2023-02-22",
+    "kind": "stable-1",
+    "text": "For a craft hobby, I do knitting."
+   },
+   {
+    "id": "c01-m02",
+    "date": "2023-03-01",
+    "kind": "stable-10",
+    "text": "I drive a Toyota Yaris."
+   },
+   {
+    "id": "c01-m03",
+    "date": "2023-03-06",
+    "kind": "relative-2",
+    "text": "My mother-in-law Philippa rents her place from Mrs. Pemberton."
+   },
+   {
+    "id": "c01-m04",
+    "date": "2023-03-23",
+    "kind": "relative-0",
+    "text": "My mother-in-law Philippa sees Dr. Adeyemi as her dentist."
+   },
+   {
+    "id": "c01-m05",
+    "date": "2023-04-10",
+    "kind": "own-1-0",
+    "text": "I live in Bergen."
+   },
+   {
+    "id": "c01-m06",
+    "date": "2023-04-19",
+    "kind": "stable-0",
+    "text": "I play xiangqi."
+   },
+   {
+    "id": "c01-m07",
+    "date": "2023-04-27",
+    "kind": "stable-4",
+    "text": "My middle name is Aurelius."
+   },
+   {
+    "id": "c01-m08",
+    "date": "2023-05-07",
+    "kind": "own-0-0",
+    "text": "Dra. Krüger is my dentist."
+   },
+   {
+    "id": "c01-m09",
+    "date": "2023-05-17",
+    "kind": "stable-8",
+    "text": "I take an evening class in sign language."
+   },
+   {
+    "id": "c01-m10",
+    "date": "2023-06-07",
+    "kind": "stable-9",
+    "text": "I play the bassoon."
+   },
+   {
+    "id": "c01-m11",
+    "date": "2023-06-19",
+    "kind": "stable-11",
+    "text": "I have a gecko as a pet."
+   },
+   {
+    "id": "c01-m12",
+    "date": "2023-07-06",
+    "kind": "relative-only",
+    "text": "My mother-in-law Philippa works at Fenwick Press."
+   },
+   {
+    "id": "c01-m13",
+    "date": "2023-07-10",
+    "kind": "own-2-0",
+    "text": "My landlord is Dona Benedita."
+   },
+   {
+    "id": "c01-m14",
+    "date": "2023-07-27",
+    "kind": "relative-only",
+    "text": "My mother-in-law Philippa works out at Academia Força Viva."
+   },
+   {
+    "id": "c01-m15",
+    "date": "2023-08-03",
+    "kind": "stable-12",
+    "text": "I support Kilmory Albion."
+   },
+   {
+    "id": "c01-m16",
+    "date": "2023-08-15",
+    "kind": "stable-7",
+    "text": "My sport is kayaking."
+   },
+   {
+    "id": "c01-m17",
+    "date": "2023-08-25",
+    "kind": "relative-stable",
+    "text": "My mother-in-law Philippa studied architecture at university."
+   },
+   {
+    "id": "c01-m18",
+    "date": "2023-09-10",
+    "kind": "own-1-1",
+    "text": "I live in Linz."
+   },
+   {
+    "id": "c01-m19",
+    "date": "2023-09-14",
+    "kind": "stable-3",
+    "text": "Namur is where I was born."
+   },
+   {
+    "id": "c01-m20",
+    "date": "2023-09-21",
+    "kind": "own-0-1",
+    "text": "My dentist is Dra. Lacerda."
+   },
+   {
+    "id": "c01-m21",
+    "date": "2023-10-12",
+    "kind": "stable-13",
+    "text": "I'm learning Icelandic."
+   },
+   {
+    "id": "c01-m22",
+    "date": "2023-10-18",
+    "kind": "own-3-0",
+    "text": "My manager at work is Dona Iracema."
+   },
+   {
+    "id": "c01-m23",
+    "date": "2023-11-08",
+    "kind": "stable-2",
+    "text": "I collect seashells."
+   },
+   {
+    "id": "c01-m24",
+    "date": "2023-11-18",
+    "kind": "relative-1",
+    "text": "My mother-in-law Philippa lives in Antofagasta."
+   },
+   {
+    "id": "c01-m25",
+    "date": "2023-11-29",
+    "kind": "stable-6",
+    "text": "I have a sesame allergy, so please keep that in mind."
+   },
+   {
+    "id": "c01-m26",
+    "date": "2023-12-03",
+    "kind": "own-0-2",
+    "text": "My dentist is Dr. Whitcombe."
+   },
+   {
+    "id": "c01-m27",
+    "date": "2023-12-15",
+    "kind": "stable-5",
+    "text": "I grow parsnips in the garden."
+   },
+   {
+    "id": "c01-m28",
+    "date": "2023-12-23",
+    "kind": "relative-stable",
+    "text": "My mother-in-law Philippa's favourite tea is hibiscus."
+   },
+   {
+    "id": "c01-m29",
+    "date": "2024-01-09",
+    "kind": "own-2-1",
+    "text": "My landlord is Ms. Lockhart."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my dentist? Give the name.",
+    "expected": "Dr. Whitcombe",
+    "notExpected": [
+     "Dra. Krüger",
+     "Dra. Lacerda",
+     "Dr. Adeyemi"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the dentist of my mother-in-law Philippa? Give the name.",
+    "expected": "Dr. Adeyemi",
+    "notExpected": [
+     "Dra. Krüger",
+     "Dra. Lacerda",
+     "Dr. Whitcombe"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my dentist, and what is the dentist of my mother-in-law Philippa? Give both names.",
+    "expected": "Dr. Whitcombe",
+    "expectedAll": [
+     "Dr. Whitcombe",
+     "Dr. Adeyemi"
+    ],
+    "notExpected": [
+     "Dra. Krüger",
+     "Dra. Lacerda"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my home city? Give the name.",
+    "expected": "Linz",
+    "notExpected": [
+     "Bergen",
+     "Antofagasta"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the home city of my mother-in-law Philippa? Give the name.",
+    "expected": "Antofagasta",
+    "notExpected": [
+     "Bergen",
+     "Linz"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my home city, and what is the home city of my mother-in-law Philippa? Give both names.",
+    "expected": "Linz",
+    "expectedAll": [
+     "Linz",
+     "Antofagasta"
+    ],
+    "notExpected": [
+     "Bergen"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my landlord? Give the name.",
+    "expected": "Ms. Lockhart",
+    "notExpected": [
+     "Dona Benedita",
+     "Mrs. Pemberton"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the landlord of my mother-in-law Philippa? Give the name.",
+    "expected": "Mrs. Pemberton",
+    "notExpected": [
+     "Dona Benedita",
+     "Ms. Lockhart"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my manager at work? Give the name.",
+    "expected": "Dona Iracema",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the gym of my mother-in-law Philippa? Give the name.",
+    "expected": "Academia Força Viva",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the employer of my mother-in-law Philippa? Give the name.",
+    "expected": "Fenwick Press",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which board game do I play?",
+    "expected": "xiangqi",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What is my craft hobby?",
+    "expected": "knitting",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What do I collect?",
+    "expected": "seashells",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c02",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c02-m01",
+    "date": "2023-02-26",
+    "kind": "own-0-0",
+    "text": "My landlord is Mr. Hollingsworth."
+   },
+   {
+    "id": "c02-m02",
+    "date": "2023-03-11",
+    "kind": "stable-10",
+    "text": "I play xiangqi."
+   },
+   {
+    "id": "c02-m03",
+    "date": "2023-03-22",
+    "kind": "stable-5",
+    "text": "I studied agronomy at university."
+   },
+   {
+    "id": "c02-m04",
+    "date": "2023-04-11",
+    "kind": "relative-stable",
+    "text": "My mother-in-law Gervásio grows parsnips in the garden."
+   },
+   {
+    "id": "c02-m05",
+    "date": "2023-04-20",
+    "kind": "relative-2",
+    "text": "My mother-in-law Gervásio gets internet from Starline Fibre."
+   },
+   {
+    "id": "c02-m06",
+    "date": "2023-04-26",
+    "kind": "relative-only",
+    "text": "My mother-in-law Gervásio uses a Redmi Note 13."
+   },
+   {
+    "id": "c02-m07",
+    "date": "2023-05-12",
+    "kind": "stable-9",
+    "text": "I was born in Arequipa."
+   },
+   {
+    "id": "c02-m08",
+    "date": "2023-05-27",
+    "kind": "stable-12",
+    "text": "I support Esporte Clube Ribeira."
+   },
+   {
+    "id": "c02-m09",
+    "date": "2023-06-01",
+    "kind": "stable-8",
+    "text": "Basque is the language I'm learning."
+   },
+   {
+    "id": "c02-m10",
+    "date": "2023-06-07",
+    "kind": "stable-0",
+    "text": "I have a hedgehog as a pet."
+   },
+   {
+    "id": "c02-m11",
+    "date": "2023-06-18",
+    "kind": "stable-4",
+    "text": "I play the accordion."
+   },
+   {
+    "id": "c02-m12",
+    "date": "2023-06-27",
+    "kind": "stable-6",
+    "text": "I have a collection of vintage cameras."
+   },
+   {
+    "id": "c02-m13",
+    "date": "2023-07-12",
+    "kind": "stable-3",
+    "text": "I'm allergic to bee stings."
+   },
+   {
+    "id": "c02-m14",
+    "date": "2023-07-17",
+    "kind": "relative-1",
+    "text": "My mother-in-law Gervásio goes to Academia Força Viva."
+   },
+   {
+    "id": "c02-m15",
+    "date": "2023-07-28",
+    "kind": "stable-7",
+    "text": "My middle name is Casimir."
+   },
+   {
+    "id": "c02-m16",
+    "date": "2023-08-07",
+    "kind": "own-3-0",
+    "text": "I work for Oakmoor Analytics."
+   },
+   {
+    "id": "c02-m17",
+    "date": "2023-08-21",
+    "kind": "own-0-1",
+    "text": "I rent my flat from Mrs. Pemberton."
+   },
+   {
+    "id": "c02-m18",
+    "date": "2023-08-26",
+    "kind": "own-1-0",
+    "text": "I train at Studio Equilíbrio."
+   },
+   {
+    "id": "c02-m19",
+    "date": "2023-09-03",
+    "kind": "relative-only",
+    "text": "My mother-in-law Gervásio reports to Dr. Sørensen at work."
+   },
+   {
+    "id": "c02-m20",
+    "date": "2023-09-13",
+    "kind": "own-2-0",
+    "text": "My internet provider is Fibra Litoral."
+   },
+   {
+    "id": "c02-m21",
+    "date": "2023-09-21",
+    "kind": "stable-13",
+    "text": "I'm taking an evening class in photography."
+   },
+   {
+    "id": "c02-m22",
+    "date": "2023-10-09",
+    "kind": "own-1-1",
+    "text": "I go to Osprey Gym."
+   },
+   {
+    "id": "c02-m23",
+    "date": "2023-10-27",
+    "kind": "stable-2",
+    "text": "My craft hobby is stained glass."
+   },
+   {
+    "id": "c02-m24",
+    "date": "2023-11-17",
+    "kind": "stable-11",
+    "text": "My favourite tea is hibiscus."
+   },
+   {
+    "id": "c02-m25",
+    "date": "2023-11-24",
+    "kind": "own-0-2",
+    "text": "My landlord is Dona Eulina."
+   },
+   {
+    "id": "c02-m26",
+    "date": "2023-12-04",
+    "kind": "stable-1",
+    "text": "I drive a Peugeot 208."
+   },
+   {
+    "id": "c02-m27",
+    "date": "2023-12-17",
+    "kind": "own-2-1",
+    "text": "RápidaNet is my internet provider."
+   },
+   {
+    "id": "c02-m28",
+    "date": "2023-12-27",
+    "kind": "relative-0",
+    "text": "My mother-in-law Gervásio rents her place from Ms. Lockhart."
+   },
+   {
+    "id": "c02-m29",
+    "date": "2024-01-03",
+    "kind": "relative-stable",
+    "text": "My mother-in-law Gervásio goes kayaking."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my landlord? Give the name.",
+    "expected": "Dona Eulina",
+    "notExpected": [
+     "Mr. Hollingsworth",
+     "Mrs. Pemberton",
+     "Ms. Lockhart"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the landlord of my mother-in-law Gervásio? Give the name.",
+    "expected": "Ms. Lockhart",
+    "notExpected": [
+     "Mr. Hollingsworth",
+     "Mrs. Pemberton",
+     "Dona Eulina"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my landlord, and what is the landlord of my mother-in-law Gervásio? Give both names.",
+    "expected": "Dona Eulina",
+    "expectedAll": [
+     "Dona Eulina",
+     "Ms. Lockhart"
+    ],
+    "notExpected": [
+     "Mr. Hollingsworth",
+     "Mrs. Pemberton"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my gym? Give the name.",
+    "expected": "Osprey Gym",
+    "notExpected": [
+     "Studio Equilíbrio",
+     "Academia Força Viva"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the gym of my mother-in-law Gervásio? Give the name.",
+    "expected": "Academia Força Viva",
+    "notExpected": [
+     "Studio Equilíbrio",
+     "Osprey Gym"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my gym, and what is the gym of my mother-in-law Gervásio? Give both names.",
+    "expected": "Osprey Gym",
+    "expectedAll": [
+     "Osprey Gym",
+     "Academia Força Viva"
+    ],
+    "notExpected": [
+     "Studio Equilíbrio"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my internet provider? Give the name.",
+    "expected": "RápidaNet",
+    "notExpected": [
+     "Fibra Litoral",
+     "Starline Fibre"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the internet provider of my mother-in-law Gervásio? Give the name.",
+    "expected": "Starline Fibre",
+    "notExpected": [
+     "Fibra Litoral",
+     "RápidaNet"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my employer? Give the name.",
+    "expected": "Oakmoor Analytics",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the manager at work of my mother-in-law Gervásio? Give the name.",
+    "expected": "Dr. Sørensen",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the phone model of my mother-in-law Gervásio? Give the name.",
+    "expected": "Redmi Note 13",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What pet do I have?",
+    "expected": "a hedgehog",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What car do I drive?",
+    "expected": "Peugeot 208",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What is my craft hobby?",
+    "expected": "stained glass",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c03",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c03-m01",
+    "date": "2023-02-12",
+    "kind": "stable-12",
+    "text": "Aurelius is my middle name."
+   },
+   {
+    "id": "c03-m02",
+    "date": "2023-02-21",
+    "kind": "relative-0",
+    "text": "My niece Isadora works at Papelaria Ventura."
+   },
+   {
+    "id": "c03-m03",
+    "date": "2023-03-05",
+    "kind": "own-3-0",
+    "text": "My internet provider is Starline Fibre."
+   },
+   {
+    "id": "c03-m04",
+    "date": "2023-03-26",
+    "kind": "relative-only",
+    "text": "My niece Isadora has her health insurance with Harrowgate Mutual."
+   },
+   {
+    "id": "c03-m05",
+    "date": "2023-04-13",
+    "kind": "stable-10",
+    "text": "I play Catan."
+   },
+   {
+    "id": "c03-m06",
+    "date": "2023-04-28",
+    "kind": "relative-stable",
+    "text": "My niece Isadora has a chinchilla as a pet."
+   },
+   {
+    "id": "c03-m07",
+    "date": "2023-05-12",
+    "kind": "stable-9",
+    "text": "I grow okra in the garden."
+   },
+   {
+    "id": "c03-m08",
+    "date": "2023-05-29",
+    "kind": "stable-13",
+    "text": "My go-to craft hobby is leatherwork."
+   },
+   {
+    "id": "c03-m09",
+    "date": "2023-06-17",
+    "kind": "own-2-0",
+    "text": "My dentist is Dra. Krüger."
+   },
+   {
+    "id": "c03-m10",
+    "date": "2023-07-04",
+    "kind": "stable-8",
+    "text": "I support Ashbourne Town."
+   },
+   {
+    "id": "c03-m11",
+    "date": "2023-07-14",
+    "kind": "own-0-0",
+    "text": "I work for Larchwood Foods."
+   },
+   {
+    "id": "c03-m12",
+    "date": "2023-07-22",
+    "kind": "relative-2",
+    "text": "My niece Isadora's dentist is Dr. Adeyemi."
+   },
+   {
+    "id": "c03-m13",
+    "date": "2023-08-11",
+    "kind": "relative-only",
+    "text": "My niece Isadora's vet is Dr. Juvenal."
+   },
+   {
+    "id": "c03-m14",
+    "date": "2023-08-15",
+    "kind": "stable-7",
+    "text": "My favourite tea is oolong."
+   },
+   {
+    "id": "c03-m15",
+    "date": "2023-08-22",
+    "kind": "stable-5",
+    "text": "I'm allergic to peanuts."
+   },
+   {
+    "id": "c03-m16",
+    "date": "2023-09-10",
+    "kind": "relative-stable",
+    "text": "My niece Isadora takes an evening class in astronomy."
+   },
+   {
+    "id": "c03-m17",
+    "date": "2023-09-28",
+    "kind": "own-1-0",
+    "text": "My accountant is Mr. Pryce."
+   },
+   {
+    "id": "c03-m18",
+    "date": "2023-10-05",
+    "kind": "own-0-1",
+    "text": "I work at Oakmoor Analytics."
+   },
+   {
+    "id": "c03-m19",
+    "date": "2023-10-16",
+    "kind": "own-1-1",
+    "text": "Sr. Policarpo is my accountant, he handles all my taxes."
+   },
+   {
+    "id": "c03-m20",
+    "date": "2023-11-01",
+    "kind": "own-2-1",
+    "text": "Dr. Ballantyne is my dentist."
+   },
+   {
+    "id": "c03-m21",
+    "date": "2023-11-12",
+    "kind": "stable-3",
+    "text": "I play squash."
+   },
+   {
+    "id": "c03-m22",
+    "date": "2023-11-20",
+    "kind": "stable-6",
+    "text": "I play the bassoon."
+   },
+   {
+    "id": "c03-m23",
+    "date": "2023-11-30",
+    "kind": "stable-1",
+    "text": "I collect vintage cameras."
+   },
+   {
+    "id": "c03-m24",
+    "date": "2023-12-12",
+    "kind": "stable-11",
+    "text": "I was born in Évora."
+   },
+   {
+    "id": "c03-m25",
+    "date": "2023-12-30",
+    "kind": "own-0-2",
+    "text": "I work at Vidraria Santa Luzia."
+   },
+   {
+    "id": "c03-m26",
+    "date": "2024-01-07",
+    "kind": "stable-4",
+    "text": "I'm studying Icelandic, learning it bit by bit."
+   },
+   {
+    "id": "c03-m27",
+    "date": "2024-01-14",
+    "kind": "relative-1",
+    "text": "My niece Isadora's accountant is Dra. Conceição."
+   },
+   {
+    "id": "c03-m28",
+    "date": "2024-02-01",
+    "kind": "stable-2",
+    "text": "I did architecture at university."
+   },
+   {
+    "id": "c03-m29",
+    "date": "2024-02-16",
+    "kind": "stable-0",
+    "text": "My car is a Toyota Yaris."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my employer? Give the name.",
+    "expected": "Vidraria Santa Luzia",
+    "notExpected": [
+     "Larchwood Foods",
+     "Oakmoor Analytics",
+     "Papelaria Ventura"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the employer of my niece Isadora? Give the name.",
+    "expected": "Papelaria Ventura",
+    "notExpected": [
+     "Larchwood Foods",
+     "Oakmoor Analytics",
+     "Vidraria Santa Luzia"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my employer, and what is the employer of my niece Isadora? Give both names.",
+    "expected": "Vidraria Santa Luzia",
+    "expectedAll": [
+     "Vidraria Santa Luzia",
+     "Papelaria Ventura"
+    ],
+    "notExpected": [
+     "Larchwood Foods",
+     "Oakmoor Analytics"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my accountant? Give the name.",
+    "expected": "Sr. Policarpo",
+    "notExpected": [
+     "Mr. Pryce",
+     "Dra. Conceição"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the accountant of my niece Isadora? Give the name.",
+    "expected": "Dra. Conceição",
+    "notExpected": [
+     "Mr. Pryce",
+     "Sr. Policarpo"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my accountant, and what is the accountant of my niece Isadora? Give both names.",
+    "expected": "Sr. Policarpo",
+    "expectedAll": [
+     "Sr. Policarpo",
+     "Dra. Conceição"
+    ],
+    "notExpected": [
+     "Mr. Pryce"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my dentist? Give the name.",
+    "expected": "Dr. Ballantyne",
+    "notExpected": [
+     "Dra. Krüger",
+     "Dr. Adeyemi"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the dentist of my niece Isadora? Give the name.",
+    "expected": "Dr. Adeyemi",
+    "notExpected": [
+     "Dra. Krüger",
+     "Dr. Ballantyne"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my internet provider? Give the name.",
+    "expected": "Starline Fibre",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the health insurer of my niece Isadora? Give the name.",
+    "expected": "Harrowgate Mutual",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the veterinarian of my niece Isadora? Give the name.",
+    "expected": "Dr. Juvenal",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What car do I drive?",
+    "expected": "Toyota Yaris",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What do I collect?",
+    "expected": "vintage cameras",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What did I study at university?",
+    "expected": "architecture",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c04",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c04-m01",
+    "date": "2023-02-11",
+    "kind": "relative-2",
+    "text": "My grandmother Bartholomew lives in Tartu."
+   },
+   {
+    "id": "c04-m02",
+    "date": "2023-02-16",
+    "kind": "own-0-0",
+    "text": "My mobile carrier is Sinal Forte."
+   },
+   {
+    "id": "c04-m03",
+    "date": "2023-02-25",
+    "kind": "stable-3",
+    "text": "My middle name is Rosário."
+   },
+   {
+    "id": "c04-m04",
+    "date": "2023-03-06",
+    "kind": "own-0-1",
+    "text": "I'm with Polaris Wireless for my mobile service."
+   },
+   {
+    "id": "c04-m05",
+    "date": "2023-03-24",
+    "kind": "stable-5",
+    "text": "I practise judo."
+   },
+   {
+    "id": "c04-m06",
+    "date": "2023-04-01",
+    "kind": "stable-9",
+    "text": "I collect vinyl records."
+   },
+   {
+    "id": "c04-m07",
+    "date": "2023-04-18",
+    "kind": "relative-1",
+    "text": "My grandmother Bartholomew's dentist is Dr. Ballantyne."
+   },
+   {
+    "id": "c04-m08",
+    "date": "2023-05-01",
+    "kind": "own-1-0",
+    "text": "My dentist is Dr. Adeyemi."
+   },
+   {
+    "id": "c04-m09",
+    "date": "2023-05-11",
+    "kind": "stable-1",
+    "text": "I was born in Namur."
+   },
+   {
+    "id": "c04-m10",
+    "date": "2023-05-30",
+    "kind": "stable-7",
+    "text": "I play the accordion."
+   },
+   {
+    "id": "c04-m11",
+    "date": "2023-06-07",
+    "kind": "stable-2",
+    "text": "I have a hedgehog as a pet."
+   },
+   {
+    "id": "c04-m12",
+    "date": "2023-06-22",
+    "kind": "own-2-0",
+    "text": "Linz is the city I live in."
+   },
+   {
+    "id": "c04-m13",
+    "date": "2023-06-26",
+    "kind": "stable-11",
+    "text": "I studied architecture at university."
+   },
+   {
+    "id": "c04-m14",
+    "date": "2023-07-13",
+    "kind": "relative-only",
+    "text": "My grandmother Bartholomew's vet is Dra. Rosalba."
+   },
+   {
+    "id": "c04-m15",
+    "date": "2023-07-28",
+    "kind": "stable-13",
+    "text": "My favorite craft hobby is leatherwork."
+   },
+   {
+    "id": "c04-m16",
+    "date": "2023-08-10",
+    "kind": "stable-10",
+    "text": "I grow kale in my garden."
+   },
+   {
+    "id": "c04-m17",
+    "date": "2023-08-26",
+    "kind": "stable-8",
+    "text": "I drive a Toyota Yaris."
+   },
+   {
+    "id": "c04-m18",
+    "date": "2023-09-04",
+    "kind": "stable-4",
+    "text": "I always reach for oolong, my favourite tea."
+   },
+   {
+    "id": "c04-m19",
+    "date": "2023-09-11",
+    "kind": "relative-only",
+    "text": "My grandmother Bartholomew has a OnePlus 12."
+   },
+   {
+    "id": "c04-m20",
+    "date": "2023-09-17",
+    "kind": "own-1-1",
+    "text": "I go to Dra. Krüger for anything dental."
+   },
+   {
+    "id": "c04-m21",
+    "date": "2023-09-24",
+    "kind": "relative-stable",
+    "text": "My grandmother Bartholomew supports Ashbourne Town."
+   },
+   {
+    "id": "c04-m22",
+    "date": "2023-10-10",
+    "kind": "own-0-2",
+    "text": "My mobile carrier is Corvus Mobile."
+   },
+   {
+    "id": "c04-m23",
+    "date": "2023-10-29",
+    "kind": "stable-0",
+    "text": "I have to avoid peanuts because I am allergic to them."
+   },
+   {
+    "id": "c04-m24",
+    "date": "2023-11-14",
+    "kind": "own-2-1",
+    "text": "I live in Antofagasta."
+   },
+   {
+    "id": "c04-m25",
+    "date": "2023-11-20",
+    "kind": "relative-stable",
+    "text": "My grandmother Bartholomew takes an evening class in astronomy."
+   },
+   {
+    "id": "c04-m26",
+    "date": "2023-12-11",
+    "kind": "relative-0",
+    "text": "My grandmother Bartholomew's phone is on Conecta Móvel."
+   },
+   {
+    "id": "c04-m27",
+    "date": "2023-12-17",
+    "kind": "own-3-0",
+    "text": "Mr. Thistlewood handles my accounts, he's my accountant."
+   },
+   {
+    "id": "c04-m28",
+    "date": "2024-01-01",
+    "kind": "stable-6",
+    "text": "I'm learning Icelandic."
+   },
+   {
+    "id": "c04-m29",
+    "date": "2024-01-19",
+    "kind": "stable-12",
+    "text": "I play Catan."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my mobile carrier? Give the name.",
+    "expected": "Corvus Mobile",
+    "notExpected": [
+     "Sinal Forte",
+     "Polaris Wireless",
+     "Conecta Móvel"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the mobile carrier of my grandmother Bartholomew? Give the name.",
+    "expected": "Conecta Móvel",
+    "notExpected": [
+     "Sinal Forte",
+     "Polaris Wireless",
+     "Corvus Mobile"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my mobile carrier, and what is the mobile carrier of my grandmother Bartholomew? Give both names.",
+    "expected": "Corvus Mobile",
+    "expectedAll": [
+     "Corvus Mobile",
+     "Conecta Móvel"
+    ],
+    "notExpected": [
+     "Sinal Forte",
+     "Polaris Wireless"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my dentist? Give the name.",
+    "expected": "Dra. Krüger",
+    "notExpected": [
+     "Dr. Adeyemi",
+     "Dr. Ballantyne"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the dentist of my grandmother Bartholomew? Give the name.",
+    "expected": "Dr. Ballantyne",
+    "notExpected": [
+     "Dr. Adeyemi",
+     "Dra. Krüger"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my dentist, and what is the dentist of my grandmother Bartholomew? Give both names.",
+    "expected": "Dra. Krüger",
+    "expectedAll": [
+     "Dra. Krüger",
+     "Dr. Ballantyne"
+    ],
+    "notExpected": [
+     "Dr. Adeyemi"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my home city? Give the name.",
+    "expected": "Antofagasta",
+    "notExpected": [
+     "Linz",
+     "Tartu"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the home city of my grandmother Bartholomew? Give the name.",
+    "expected": "Tartu",
+    "notExpected": [
+     "Linz",
+     "Antofagasta"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my accountant? Give the name.",
+    "expected": "Mr. Thistlewood",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the phone model of my grandmother Bartholomew? Give the name.",
+    "expected": "OnePlus 12",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the veterinarian of my grandmother Bartholomew? Give the name.",
+    "expected": "Dra. Rosalba",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What am I allergic to?",
+    "expected": "peanuts",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Where was I born?",
+    "expected": "Namur",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What pet do I have?",
+    "expected": "a hedgehog",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c05",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c05-m01",
+    "date": "2023-02-16",
+    "kind": "relative-1",
+    "text": "My aunt Leocádia reports to Mr. Vandersloot at work."
+   },
+   {
+    "id": "c05-m02",
+    "date": "2023-03-08",
+    "kind": "relative-stable",
+    "text": "My aunt Leocádia was born in Odense."
+   },
+   {
+    "id": "c05-m03",
+    "date": "2023-03-26",
+    "kind": "relative-stable",
+    "text": "My aunt Leocádia drives a VW Polo."
+   },
+   {
+    "id": "c05-m04",
+    "date": "2023-04-04",
+    "kind": "relative-2",
+    "text": "My aunt Leocádia is insured with Vida Nova."
+   },
+   {
+    "id": "c05-m05",
+    "date": "2023-04-09",
+    "kind": "stable-0",
+    "text": "I play cribbage."
+   },
+   {
+    "id": "c05-m06",
+    "date": "2023-04-17",
+    "kind": "own-0-0",
+    "text": "My phone is a Moto Edge 50."
+   },
+   {
+    "id": "c05-m07",
+    "date": "2023-04-22",
+    "kind": "own-2-0",
+    "text": "My health insurance is with Albion Care."
+   },
+   {
+    "id": "c05-m08",
+    "date": "2023-05-05",
+    "kind": "stable-9",
+    "text": "I grow artichokes in the garden."
+   },
+   {
+    "id": "c05-m09",
+    "date": "2023-05-19",
+    "kind": "stable-5",
+    "text": "I take an evening class in astronomy."
+   },
+   {
+    "id": "c05-m10",
+    "date": "2023-06-07",
+    "kind": "relative-only",
+    "text": "My aunt Leocádia trains at Granite Fitness."
+   },
+   {
+    "id": "c05-m11",
+    "date": "2023-06-21",
+    "kind": "own-1-0",
+    "text": "My manager at work is Sr. Cavalcanti."
+   },
+   {
+    "id": "c05-m12",
+    "date": "2023-06-29",
+    "kind": "stable-13",
+    "text": "My favourite tea is oolong."
+   },
+   {
+    "id": "c05-m13",
+    "date": "2023-07-06",
+    "kind": "stable-7",
+    "text": "At university I studied architecture."
+   },
+   {
+    "id": "c05-m14",
+    "date": "2023-07-16",
+    "kind": "stable-1",
+    "text": "I'm learning Basque."
+   },
+   {
+    "id": "c05-m15",
+    "date": "2023-08-06",
+    "kind": "stable-10",
+    "text": "I do stained glass as a hobby."
+   },
+   {
+    "id": "c05-m16",
+    "date": "2023-08-22",
+    "kind": "stable-11",
+    "text": "I'm an Ashbourne Town supporter."
+   },
+   {
+    "id": "c05-m17",
+    "date": "2023-09-09",
+    "kind": "own-2-1",
+    "text": "My health insurer is Saúde Plena."
+   },
+   {
+    "id": "c05-m18",
+    "date": "2023-09-16",
+    "kind": "stable-8",
+    "text": "My middle name is Aurelius."
+   },
+   {
+    "id": "c05-m19",
+    "date": "2023-09-22",
+    "kind": "stable-6",
+    "text": "I collect vinyl records."
+   },
+   {
+    "id": "c05-m20",
+    "date": "2023-10-01",
+    "kind": "own-0-1",
+    "text": "My phone is an Xperia 5."
+   },
+   {
+    "id": "c05-m21",
+    "date": "2023-10-21",
+    "kind": "relative-only",
+    "text": "My aunt Leocádia takes her pets to Dr. Hartigan, her vet."
+   },
+   {
+    "id": "c05-m22",
+    "date": "2023-11-06",
+    "kind": "stable-12",
+    "text": "In my spare time I play the ukulele."
+   },
+   {
+    "id": "c05-m23",
+    "date": "2023-11-22",
+    "kind": "own-3-0",
+    "text": "My employer is Vidraria Santa Luzia."
+   },
+   {
+    "id": "c05-m24",
+    "date": "2023-12-05",
+    "kind": "own-1-1",
+    "text": "Dona Iracema is my boss at work."
+   },
+   {
+    "id": "c05-m25",
+    "date": "2023-12-15",
+    "kind": "own-0-2",
+    "text": "My phone is a Redmi Note 13."
+   },
+   {
+    "id": "c05-m26",
+    "date": "2023-12-24",
+    "kind": "relative-0",
+    "text": "My aunt Leocádia has an iPhone 15."
+   },
+   {
+    "id": "c05-m27",
+    "date": "2024-01-11",
+    "kind": "stable-2",
+    "text": "Just so you know, I'm allergic to bee stings."
+   },
+   {
+    "id": "c05-m28",
+    "date": "2024-01-26",
+    "kind": "stable-3",
+    "text": "I play squash."
+   },
+   {
+    "id": "c05-m29",
+    "date": "2024-02-11",
+    "kind": "stable-4",
+    "text": "I keep a canary as a pet."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my phone model? Give the name.",
+    "expected": "Redmi Note 13",
+    "notExpected": [
+     "Moto Edge 50",
+     "Xperia 5",
+     "iPhone 15"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the phone model of my aunt Leocádia? Give the name.",
+    "expected": "iPhone 15",
+    "notExpected": [
+     "Moto Edge 50",
+     "Xperia 5",
+     "Redmi Note 13"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my phone model, and what is the phone model of my aunt Leocádia? Give both names.",
+    "expected": "Redmi Note 13",
+    "expectedAll": [
+     "Redmi Note 13",
+     "iPhone 15"
+    ],
+    "notExpected": [
+     "Moto Edge 50",
+     "Xperia 5"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my manager at work? Give the name.",
+    "expected": "Dona Iracema",
+    "notExpected": [
+     "Sr. Cavalcanti",
+     "Mr. Vandersloot"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the manager at work of my aunt Leocádia? Give the name.",
+    "expected": "Mr. Vandersloot",
+    "notExpected": [
+     "Sr. Cavalcanti",
+     "Dona Iracema"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my manager at work, and what is the manager at work of my aunt Leocádia? Give both names.",
+    "expected": "Dona Iracema",
+    "expectedAll": [
+     "Dona Iracema",
+     "Mr. Vandersloot"
+    ],
+    "notExpected": [
+     "Sr. Cavalcanti"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my health insurer? Give the name.",
+    "expected": "Saúde Plena",
+    "notExpected": [
+     "Albion Care",
+     "Vida Nova"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the health insurer of my aunt Leocádia? Give the name.",
+    "expected": "Vida Nova",
+    "notExpected": [
+     "Albion Care",
+     "Saúde Plena"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my employer? Give the name.",
+    "expected": "Vidraria Santa Luzia",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the veterinarian of my aunt Leocádia? Give the name.",
+    "expected": "Dr. Hartigan",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the gym of my aunt Leocádia? Give the name.",
+    "expected": "Granite Fitness",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which board game do I play?",
+    "expected": "cribbage",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which language am I learning?",
+    "expected": "Basque",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What am I allergic to?",
+    "expected": "bee stings",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c06",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c06-m01",
+    "date": "2023-02-21",
+    "kind": "stable-5",
+    "text": "I play curling."
+   },
+   {
+    "id": "c06-m02",
+    "date": "2023-03-04",
+    "kind": "stable-13",
+    "text": "Heads up: I have an allergy to peanuts."
+   },
+   {
+    "id": "c06-m03",
+    "date": "2023-03-14",
+    "kind": "stable-3",
+    "text": "I collect vintage cameras."
+   },
+   {
+    "id": "c06-m04",
+    "date": "2023-03-19",
+    "kind": "own-3-0",
+    "text": "I live in Antofagasta."
+   },
+   {
+    "id": "c06-m05",
+    "date": "2023-03-28",
+    "kind": "relative-only",
+    "text": "My cousin Thaddeus's accountant is Sr. Wenceslau."
+   },
+   {
+    "id": "c06-m06",
+    "date": "2023-04-03",
+    "kind": "stable-0",
+    "text": "My pet is a hedgehog, and he's adorable."
+   },
+   {
+    "id": "c06-m07",
+    "date": "2023-04-14",
+    "kind": "relative-0",
+    "text": "My cousin Thaddeus has his health insurance with Northcott Health."
+   },
+   {
+    "id": "c06-m08",
+    "date": "2023-04-21",
+    "kind": "own-1-0",
+    "text": "I see Dra. Esteves as my dentist."
+   },
+   {
+    "id": "c06-m09",
+    "date": "2023-05-07",
+    "kind": "stable-1",
+    "text": "I drive a Toyota Yaris."
+   },
+   {
+    "id": "c06-m10",
+    "date": "2023-05-16",
+    "kind": "own-2-0",
+    "text": "My mobile carrier is Corvus Mobile."
+   },
+   {
+    "id": "c06-m11",
+    "date": "2023-05-31",
+    "kind": "stable-2",
+    "text": "I play the ukulele."
+   },
+   {
+    "id": "c06-m12",
+    "date": "2023-06-05",
+    "kind": "stable-11",
+    "text": "My favourite tea is earl grey."
+   },
+   {
+    "id": "c06-m13",
+    "date": "2023-06-10",
+    "kind": "own-1-1",
+    "text": "My dentist is Dr. Adeyemi."
+   },
+   {
+    "id": "c06-m14",
+    "date": "2023-06-29",
+    "kind": "stable-10",
+    "text": "I'm taking an evening class in astronomy."
+   },
+   {
+    "id": "c06-m15",
+    "date": "2023-07-10",
+    "kind": "relative-stable",
+    "text": "My cousin Thaddeus has Rosário as his middle name."
+   },
+   {
+    "id": "c06-m16",
+    "date": "2023-07-30",
+    "kind": "relative-only",
+    "text": "My cousin Thaddeus works at Fenwick Press."
+   },
+   {
+    "id": "c06-m17",
+    "date": "2023-08-20",
+    "kind": "relative-1",
+    "text": "My cousin Thaddeus goes to Dr. Navarro for his teeth."
+   },
+   {
+    "id": "c06-m18",
+    "date": "2023-08-27",
+    "kind": "own-0-0",
+    "text": "My health insurer is Wexford Health."
+   },
+   {
+    "id": "c06-m19",
+    "date": "2023-09-01",
+    "kind": "stable-12",
+    "text": "I support Kilmory Albion."
+   },
+   {
+    "id": "c06-m20",
+    "date": "2023-09-07",
+    "kind": "own-2-1",
+    "text": "I use Teia Sul as my mobile carrier."
+   },
+   {
+    "id": "c06-m21",
+    "date": "2023-09-16",
+    "kind": "relative-stable",
+    "text": "My cousin Thaddeus studied agronomy at university."
+   },
+   {
+    "id": "c06-m22",
+    "date": "2023-09-28",
+    "kind": "stable-9",
+    "text": "I'm learning Tagalog."
+   },
+   {
+    "id": "c06-m23",
+    "date": "2023-10-17",
+    "kind": "own-0-1",
+    "text": "I have health insurance with Harrowgate Mutual."
+   },
+   {
+    "id": "c06-m24",
+    "date": "2023-10-26",
+    "kind": "own-0-2",
+    "text": "I'm insured with Medsul for health."
+   },
+   {
+    "id": "c06-m25",
+    "date": "2023-11-09",
+    "kind": "stable-4",
+    "text": "I was born in Namur."
+   },
+   {
+    "id": "c06-m26",
+    "date": "2023-11-30",
+    "kind": "stable-6",
+    "text": "I do leatherwork as a hobby."
+   },
+   {
+    "id": "c06-m27",
+    "date": "2023-12-15",
+    "kind": "relative-2",
+    "text": "My cousin Thaddeus is on Echo Mobile for his phone."
+   },
+   {
+    "id": "c06-m28",
+    "date": "2023-12-21",
+    "kind": "stable-7",
+    "text": "One board game I play often is cribbage."
+   },
+   {
+    "id": "c06-m29",
+    "date": "2024-01-09",
+    "kind": "stable-8",
+    "text": "I grow okra in my garden."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my health insurer? Give the name.",
+    "expected": "Medsul",
+    "notExpected": [
+     "Wexford Health",
+     "Harrowgate Mutual",
+     "Northcott Health"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the health insurer of my cousin Thaddeus? Give the name.",
+    "expected": "Northcott Health",
+    "notExpected": [
+     "Wexford Health",
+     "Harrowgate Mutual",
+     "Medsul"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my health insurer, and what is the health insurer of my cousin Thaddeus? Give both names.",
+    "expected": "Medsul",
+    "expectedAll": [
+     "Medsul",
+     "Northcott Health"
+    ],
+    "notExpected": [
+     "Wexford Health",
+     "Harrowgate Mutual"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my dentist? Give the name.",
+    "expected": "Dr. Adeyemi",
+    "notExpected": [
+     "Dra. Esteves",
+     "Dr. Navarro"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the dentist of my cousin Thaddeus? Give the name.",
+    "expected": "Dr. Navarro",
+    "notExpected": [
+     "Dra. Esteves",
+     "Dr. Adeyemi"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my dentist, and what is the dentist of my cousin Thaddeus? Give both names.",
+    "expected": "Dr. Adeyemi",
+    "expectedAll": [
+     "Dr. Adeyemi",
+     "Dr. Navarro"
+    ],
+    "notExpected": [
+     "Dra. Esteves"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my mobile carrier? Give the name.",
+    "expected": "Teia Sul",
+    "notExpected": [
+     "Corvus Mobile",
+     "Echo Mobile"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the mobile carrier of my cousin Thaddeus? Give the name.",
+    "expected": "Echo Mobile",
+    "notExpected": [
+     "Corvus Mobile",
+     "Teia Sul"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my home city? Give the name.",
+    "expected": "Antofagasta",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the employer of my cousin Thaddeus? Give the name.",
+    "expected": "Fenwick Press",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the accountant of my cousin Thaddeus? Give the name.",
+    "expected": "Sr. Wenceslau",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What pet do I have?",
+    "expected": "a hedgehog",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What car do I drive?",
+    "expected": "Toyota Yaris",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which instrument do I play?",
+    "expected": "the ukulele",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c07",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c07-m01",
+    "date": "2023-02-25",
+    "kind": "own-0-0",
+    "text": "My internet provider is Meridian Broadband."
+   },
+   {
+    "id": "c07-m02",
+    "date": "2023-03-01",
+    "kind": "own-0-1",
+    "text": "I get my internet from Fibra Litoral."
+   },
+   {
+    "id": "c07-m03",
+    "date": "2023-03-14",
+    "kind": "relative-stable",
+    "text": "My grandmother Genoveva's middle name is Henrietta."
+   },
+   {
+    "id": "c07-m04",
+    "date": "2023-03-24",
+    "kind": "relative-stable",
+    "text": "My grandmother Genoveva takes an evening class in sign language."
+   },
+   {
+    "id": "c07-m05",
+    "date": "2023-04-09",
+    "kind": "own-1-0",
+    "text": "My vet is Dr. Featherstone."
+   },
+   {
+    "id": "c07-m06",
+    "date": "2023-04-24",
+    "kind": "relative-only",
+    "text": "My grandmother Genoveva works at Papelaria Ventura."
+   },
+   {
+    "id": "c07-m07",
+    "date": "2023-05-04",
+    "kind": "stable-7",
+    "text": "My pet is a gecko."
+   },
+   {
+    "id": "c07-m08",
+    "date": "2023-05-08",
+    "kind": "stable-11",
+    "text": "I studied architecture at university."
+   },
+   {
+    "id": "c07-m09",
+    "date": "2023-05-16",
+    "kind": "stable-10",
+    "text": "I support União Serrana."
+   },
+   {
+    "id": "c07-m10",
+    "date": "2023-06-05",
+    "kind": "own-2-0",
+    "text": "I use Echo Mobile as my carrier."
+   },
+   {
+    "id": "c07-m11",
+    "date": "2023-06-23",
+    "kind": "stable-8",
+    "text": "I've been learning Basque."
+   },
+   {
+    "id": "c07-m12",
+    "date": "2023-06-27",
+    "kind": "stable-3",
+    "text": "I get around in a Toyota Yaris."
+   },
+   {
+    "id": "c07-m13",
+    "date": "2023-07-04",
+    "kind": "stable-2",
+    "text": "I'm allergic to dust mites."
+   },
+   {
+    "id": "c07-m14",
+    "date": "2023-07-24",
+    "kind": "stable-12",
+    "text": "I play cribbage."
+   },
+   {
+    "id": "c07-m15",
+    "date": "2023-08-03",
+    "kind": "stable-4",
+    "text": "My thing is collecting vinyl records."
+   },
+   {
+    "id": "c07-m16",
+    "date": "2023-08-07",
+    "kind": "own-0-2",
+    "text": "I use Greenwave for my internet."
+   },
+   {
+    "id": "c07-m17",
+    "date": "2023-08-20",
+    "kind": "stable-1",
+    "text": "My favourite tea is hibiscus."
+   },
+   {
+    "id": "c07-m18",
+    "date": "2023-08-26",
+    "kind": "relative-only",
+    "text": "My grandmother Genoveva's dentist is Dr. Ballantyne."
+   },
+   {
+    "id": "c07-m19",
+    "date": "2023-09-11",
+    "kind": "stable-13",
+    "text": "I was born in Évora."
+   },
+   {
+    "id": "c07-m20",
+    "date": "2023-09-16",
+    "kind": "relative-1",
+    "text": "My grandmother Genoveva takes her pets to Dr. Oduya, her vet."
+   },
+   {
+    "id": "c07-m21",
+    "date": "2023-09-22",
+    "kind": "relative-2",
+    "text": "My grandmother Genoveva's mobile carrier is Brightcall."
+   },
+   {
+    "id": "c07-m22",
+    "date": "2023-10-03",
+    "kind": "stable-5",
+    "text": "I go kayaking."
+   },
+   {
+    "id": "c07-m23",
+    "date": "2023-10-12",
+    "kind": "stable-0",
+    "text": "I play the ukulele."
+   },
+   {
+    "id": "c07-m24",
+    "date": "2023-10-31",
+    "kind": "stable-9",
+    "text": "My craft hobby is stained glass."
+   },
+   {
+    "id": "c07-m25",
+    "date": "2023-11-11",
+    "kind": "own-2-1",
+    "text": "I'm on Conecta Móvel for my phone plan."
+   },
+   {
+    "id": "c07-m26",
+    "date": "2023-11-27",
+    "kind": "own-3-0",
+    "text": "My accountant is Mr. Thistlewood."
+   },
+   {
+    "id": "c07-m27",
+    "date": "2023-12-01",
+    "kind": "relative-0",
+    "text": "My grandmother Genoveva gets her internet from NetVale."
+   },
+   {
+    "id": "c07-m28",
+    "date": "2023-12-12",
+    "kind": "own-1-1",
+    "text": "My vet is Dra. Clotilde."
+   },
+   {
+    "id": "c07-m29",
+    "date": "2023-12-19",
+    "kind": "stable-6",
+    "text": "I grow parsnips in my garden."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my internet provider? Give the name.",
+    "expected": "Greenwave",
+    "notExpected": [
+     "Meridian Broadband",
+     "Fibra Litoral",
+     "NetVale"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the internet provider of my grandmother Genoveva? Give the name.",
+    "expected": "NetVale",
+    "notExpected": [
+     "Meridian Broadband",
+     "Fibra Litoral",
+     "Greenwave"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my internet provider, and what is the internet provider of my grandmother Genoveva? Give both names.",
+    "expected": "Greenwave",
+    "expectedAll": [
+     "Greenwave",
+     "NetVale"
+    ],
+    "notExpected": [
+     "Meridian Broadband",
+     "Fibra Litoral"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my veterinarian? Give the name.",
+    "expected": "Dra. Clotilde",
+    "notExpected": [
+     "Dr. Featherstone",
+     "Dr. Oduya"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the veterinarian of my grandmother Genoveva? Give the name.",
+    "expected": "Dr. Oduya",
+    "notExpected": [
+     "Dr. Featherstone",
+     "Dra. Clotilde"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my veterinarian, and what is the veterinarian of my grandmother Genoveva? Give both names.",
+    "expected": "Dra. Clotilde",
+    "expectedAll": [
+     "Dra. Clotilde",
+     "Dr. Oduya"
+    ],
+    "notExpected": [
+     "Dr. Featherstone"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my mobile carrier? Give the name.",
+    "expected": "Conecta Móvel",
+    "notExpected": [
+     "Echo Mobile",
+     "Brightcall"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the mobile carrier of my grandmother Genoveva? Give the name.",
+    "expected": "Brightcall",
+    "notExpected": [
+     "Echo Mobile",
+     "Conecta Móvel"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my accountant? Give the name.",
+    "expected": "Mr. Thistlewood",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the employer of my grandmother Genoveva? Give the name.",
+    "expected": "Papelaria Ventura",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the dentist of my grandmother Genoveva? Give the name.",
+    "expected": "Dr. Ballantyne",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which instrument do I play?",
+    "expected": "the ukulele",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What is my favourite tea?",
+    "expected": "hibiscus",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What am I allergic to?",
+    "expected": "dust mites",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c08",
+  "language": "en",
+  "messages": [
+   {
+    "id": "c08-m01",
+    "date": "2023-02-11",
+    "kind": "own-0-0",
+    "text": "My home city is Tartu."
+   },
+   {
+    "id": "c08-m02",
+    "date": "2023-02-17",
+    "kind": "stable-7",
+    "text": "I studied philosophy at university."
+   },
+   {
+    "id": "c08-m03",
+    "date": "2023-02-23",
+    "kind": "own-1-0",
+    "text": "Brightcall is my mobile carrier."
+   },
+   {
+    "id": "c08-m04",
+    "date": "2023-03-04",
+    "kind": "stable-8",
+    "text": "My middle name is Henrietta."
+   },
+   {
+    "id": "c08-m05",
+    "date": "2023-03-13",
+    "kind": "stable-9",
+    "text": "Just so you know, I'm allergic to sesame."
+   },
+   {
+    "id": "c08-m06",
+    "date": "2023-04-02",
+    "kind": "stable-3",
+    "text": "I take an evening class in astronomy."
+   },
+   {
+    "id": "c08-m07",
+    "date": "2023-04-10",
+    "kind": "stable-10",
+    "text": "I've got parsnips growing in my garden."
+   },
+   {
+    "id": "c08-m08",
+    "date": "2023-04-23",
+    "kind": "stable-2",
+    "text": "Catan is a board game I play."
+   },
+   {
+    "id": "c08-m09",
+    "date": "2023-04-30",
+    "kind": "stable-11",
+    "text": "I'm a União Serrana supporter."
+   },
+   {
+    "id": "c08-m10",
+    "date": "2023-05-08",
+    "kind": "relative-stable",
+    "text": "My mother-in-law Crispin plays the bassoon."
+   },
+   {
+    "id": "c08-m11",
+    "date": "2023-05-13",
+    "kind": "relative-0",
+    "text": "My mother-in-law Crispin lives in Bruges."
+   },
+   {
+    "id": "c08-m12",
+    "date": "2023-05-20",
+    "kind": "stable-4",
+    "text": "I have a canary as a pet."
+   },
+   {
+    "id": "c08-m13",
+    "date": "2023-06-05",
+    "kind": "stable-12",
+    "text": "I collect enamel pins."
+   },
+   {
+    "id": "c08-m14",
+    "date": "2023-06-24",
+    "kind": "stable-5",
+    "text": "I drive a Kia Picanto."
+   },
+   {
+    "id": "c08-m15",
+    "date": "2023-07-11",
+    "kind": "own-3-0",
+    "text": "Dr. Merriweather is my vet."
+   },
+   {
+    "id": "c08-m16",
+    "date": "2023-07-18",
+    "kind": "relative-1",
+    "text": "My mother-in-law Crispin uses Teia Sul as her mobile carrier."
+   },
+   {
+    "id": "c08-m17",
+    "date": "2023-08-06",
+    "kind": "own-1-1",
+    "text": "My phone carrier is Sinal Forte."
+   },
+   {
+    "id": "c08-m18",
+    "date": "2023-08-11",
+    "kind": "relative-stable",
+    "text": "My mother-in-law Crispin does stained glass as her craft hobby."
+   },
+   {
+    "id": "c08-m19",
+    "date": "2023-08-30",
+    "kind": "stable-0",
+    "text": "My favourite tea is chamomile."
+   },
+   {
+    "id": "c08-m20",
+    "date": "2023-09-18",
+    "kind": "relative-2",
+    "text": "My mother-in-law Crispin has her internet with Greenwave."
+   },
+   {
+    "id": "c08-m21",
+    "date": "2023-09-22",
+    "kind": "stable-13",
+    "text": "I'm from Évora, that's where I was born."
+   },
+   {
+    "id": "c08-m22",
+    "date": "2023-10-06",
+    "kind": "stable-6",
+    "text": "I'm learning Hungarian."
+   },
+   {
+    "id": "c08-m23",
+    "date": "2023-10-21",
+    "kind": "own-0-1",
+    "text": "I live in Londrina."
+   },
+   {
+    "id": "c08-m24",
+    "date": "2023-10-30",
+    "kind": "own-2-0",
+    "text": "I get my internet through Meridian Broadband."
+   },
+   {
+    "id": "c08-m25",
+    "date": "2023-11-18",
+    "kind": "relative-only",
+    "text": "Mr. Pryce is the accountant for my mother-in-law Crispin."
+   },
+   {
+    "id": "c08-m26",
+    "date": "2023-11-22",
+    "kind": "own-0-2",
+    "text": "I live in Ourense."
+   },
+   {
+    "id": "c08-m27",
+    "date": "2023-12-11",
+    "kind": "own-2-1",
+    "text": "My internet provider is NetVale."
+   },
+   {
+    "id": "c08-m28",
+    "date": "2023-12-25",
+    "kind": "stable-1",
+    "text": "I practise curling."
+   },
+   {
+    "id": "c08-m29",
+    "date": "2024-01-08",
+    "kind": "relative-only",
+    "text": "My mother-in-law Crispin's manager at work is Sr. Cavalcanti."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "What is my home city? Give the name.",
+    "expected": "Ourense",
+    "notExpected": [
+     "Tartu",
+     "Londrina",
+     "Bruges"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the home city of my mother-in-law Crispin? Give the name.",
+    "expected": "Bruges",
+    "notExpected": [
+     "Tartu",
+     "Londrina",
+     "Ourense"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my home city, and what is the home city of my mother-in-law Crispin? Give both names.",
+    "expected": "Ourense",
+    "expectedAll": [
+     "Ourense",
+     "Bruges"
+    ],
+    "notExpected": [
+     "Tartu",
+     "Londrina"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my mobile carrier? Give the name.",
+    "expected": "Sinal Forte",
+    "notExpected": [
+     "Brightcall",
+     "Teia Sul"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the mobile carrier of my mother-in-law Crispin? Give the name.",
+    "expected": "Teia Sul",
+    "notExpected": [
+     "Brightcall",
+     "Sinal Forte"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "What is my mobile carrier, and what is the mobile carrier of my mother-in-law Crispin? Give both names.",
+    "expected": "Sinal Forte",
+    "expectedAll": [
+     "Sinal Forte",
+     "Teia Sul"
+    ],
+    "notExpected": [
+     "Brightcall"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "What is my internet provider? Give the name.",
+    "expected": "NetVale",
+    "notExpected": [
+     "Meridian Broadband",
+     "Greenwave"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "What is the internet provider of my mother-in-law Crispin? Give the name.",
+    "expected": "Greenwave",
+    "notExpected": [
+     "Meridian Broadband",
+     "NetVale"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "What is my veterinarian? Give the name.",
+    "expected": "Dr. Merriweather",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the accountant of my mother-in-law Crispin? Give the name.",
+    "expected": "Mr. Pryce",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "What is the manager at work of my mother-in-law Crispin? Give the name.",
+    "expected": "Sr. Cavalcanti",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "What is my favourite tea?",
+    "expected": "chamomile",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which sport do I practise?",
+    "expected": "curling",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Which board game do I play?",
+    "expected": "Catan",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c09",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c09-m01",
+    "date": "2023-02-20",
+    "kind": "own-1-0",
+    "text": "A proprietária do imóvel onde moro é a Mrs. Pemberton."
+   },
+   {
+    "id": "c09-m02",
+    "date": "2023-03-13",
+    "kind": "stable-1",
+    "text": "Fiz faculdade de agronomia."
+   },
+   {
+    "id": "c09-m03",
+    "date": "2023-03-23",
+    "kind": "relative-stable",
+    "text": "Minha sobrinha Albertina dirige um Toyota Yaris."
+   },
+   {
+    "id": "c09-m04",
+    "date": "2023-04-10",
+    "kind": "own-0-0",
+    "text": "Eu treino na Academia Força Viva."
+   },
+   {
+    "id": "c09-m05",
+    "date": "2023-04-30",
+    "kind": "relative-only",
+    "text": "O veterinário da minha sobrinha Albertina é o Dr. Juvenal."
+   },
+   {
+    "id": "c09-m06",
+    "date": "2023-05-18",
+    "kind": "stable-10",
+    "text": "Meu nome do meio é Henrietta."
+   },
+   {
+    "id": "c09-m07",
+    "date": "2023-05-29",
+    "kind": "stable-13",
+    "text": "Nasci em Évora."
+   },
+   {
+    "id": "c09-m08",
+    "date": "2023-06-12",
+    "kind": "relative-1",
+    "text": "Minha sobrinha Albertina aluga o imóvel onde mora do Sr. Anselmo."
+   },
+   {
+    "id": "c09-m09",
+    "date": "2023-06-16",
+    "kind": "own-0-1",
+    "text": "Minha academia é a Granite Fitness."
+   },
+   {
+    "id": "c09-m10",
+    "date": "2023-06-24",
+    "kind": "stable-0",
+    "text": "Cultivo mandioquinha na horta."
+   },
+   {
+    "id": "c09-m11",
+    "date": "2023-06-30",
+    "kind": "stable-5",
+    "text": "Estou aprendendo tagalo."
+   },
+   {
+    "id": "c09-m12",
+    "date": "2023-07-04",
+    "kind": "relative-only",
+    "text": "A operadora de celular da minha sobrinha Albertina é a Polaris Wireless."
+   },
+   {
+    "id": "c09-m13",
+    "date": "2023-07-16",
+    "kind": "stable-9",
+    "text": "Eu jogo squash regularmente."
+   },
+   {
+    "id": "c09-m14",
+    "date": "2023-08-04",
+    "kind": "relative-0",
+    "text": "Minha sobrinha Albertina treina no Summit Health Club."
+   },
+   {
+    "id": "c09-m15",
+    "date": "2023-08-08",
+    "kind": "stable-8",
+    "text": "Sou torcedor do Kilmory Albion."
+   },
+   {
+    "id": "c09-m16",
+    "date": "2023-08-17",
+    "kind": "stable-3",
+    "text": "Chá de hibisco é o meu preferido."
+   },
+   {
+    "id": "c09-m17",
+    "date": "2023-09-02",
+    "kind": "relative-2",
+    "text": "O celular da minha sobrinha Albertina é um Pixel 9."
+   },
+   {
+    "id": "c09-m18",
+    "date": "2023-09-09",
+    "kind": "stable-11",
+    "text": "Eu coleciono câmeras antigas."
+   },
+   {
+    "id": "c09-m19",
+    "date": "2023-09-13",
+    "kind": "stable-7",
+    "text": "Tenho alergia a gergelim."
+   },
+   {
+    "id": "c09-m20",
+    "date": "2023-10-03",
+    "kind": "own-2-0",
+    "text": "Uso um Galaxy S24 como celular."
+   },
+   {
+    "id": "c09-m21",
+    "date": "2023-10-12",
+    "kind": "stable-2",
+    "text": "Eu jogo Carcassonne."
+   },
+   {
+    "id": "c09-m22",
+    "date": "2023-10-21",
+    "kind": "stable-4",
+    "text": "Eu toco ukulele."
+   },
+   {
+    "id": "c09-m23",
+    "date": "2023-11-05",
+    "kind": "relative-stable",
+    "text": "Minha sobrinha Albertina faz um curso noturno de língua de sinais."
+   },
+   {
+    "id": "c09-m24",
+    "date": "2023-11-12",
+    "kind": "own-1-1",
+    "text": "Quem me aluga o apartamento onde moro é o Mr. Adebayo."
+   },
+   {
+    "id": "c09-m25",
+    "date": "2023-11-30",
+    "kind": "own-3-0",
+    "text": "Trabalho na Papelaria Ventura."
+   },
+   {
+    "id": "c09-m26",
+    "date": "2023-12-15",
+    "kind": "stable-12",
+    "text": "Meu passatempo é trabalho em couro, adoro fazer carteiras e cintos."
+   },
+   {
+    "id": "c09-m27",
+    "date": "2024-01-03",
+    "kind": "own-0-2",
+    "text": "Eu treino na Osprey Gym."
+   },
+   {
+    "id": "c09-m28",
+    "date": "2024-01-16",
+    "kind": "stable-6",
+    "text": "Tenho um canário de estimação."
+   },
+   {
+    "id": "c09-m29",
+    "date": "2024-02-03",
+    "kind": "own-2-1",
+    "text": "Uso um Moto Edge 50 como celular."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é a minha academia? Dê o nome.",
+    "expected": "Osprey Gym",
+    "notExpected": [
+     "Academia Força Viva",
+     "Granite Fitness",
+     "Summit Health Club"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a academia da minha sobrinha Albertina? Dê o nome.",
+    "expected": "Summit Health Club",
+    "notExpected": [
+     "Academia Força Viva",
+     "Granite Fitness",
+     "Osprey Gym"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é a minha academia, e qual é a academia da minha sobrinha Albertina? Dê os dois nomes.",
+    "expected": "Osprey Gym",
+    "expectedAll": [
+     "Osprey Gym",
+     "Summit Health Club"
+    ],
+    "notExpected": [
+     "Academia Força Viva",
+     "Granite Fitness"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu proprietário do imóvel onde moro? Dê o nome.",
+    "expected": "Mr. Adebayo",
+    "notExpected": [
+     "Mrs. Pemberton",
+     "Sr. Anselmo"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o proprietário do imóvel onde mora da minha sobrinha Albertina? Dê o nome.",
+    "expected": "Sr. Anselmo",
+    "notExpected": [
+     "Mrs. Pemberton",
+     "Mr. Adebayo"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu proprietário do imóvel onde moro, e qual é o proprietário do imóvel onde mora da minha sobrinha Albertina? Dê os dois nomes.",
+    "expected": "Mr. Adebayo",
+    "expectedAll": [
+     "Mr. Adebayo",
+     "Sr. Anselmo"
+    ],
+    "notExpected": [
+     "Mrs. Pemberton"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu modelo de celular? Dê o nome.",
+    "expected": "Moto Edge 50",
+    "notExpected": [
+     "Galaxy S24",
+     "Pixel 9"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o modelo de celular da minha sobrinha Albertina? Dê o nome.",
+    "expected": "Pixel 9",
+    "notExpected": [
+     "Galaxy S24",
+     "Moto Edge 50"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é a minha empresa onde trabalho? Dê o nome.",
+    "expected": "Papelaria Ventura",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o veterinário da minha sobrinha Albertina? Dê o nome.",
+    "expected": "Dr. Juvenal",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a operadora de celular da minha sobrinha Albertina? Dê o nome.",
+    "expected": "Polaris Wireless",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "O que eu cultivo na horta?",
+    "expected": "mandioquinha",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "O que eu estudei na faculdade?",
+    "expected": "agronomia",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual jogo de tabuleiro eu jogo?",
+    "expected": "Carcassonne",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c10",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c10-m01",
+    "date": "2023-02-16",
+    "kind": "stable-13",
+    "text": "Tenho Henrietta como nome do meio."
+   },
+   {
+    "id": "c10-m02",
+    "date": "2023-03-03",
+    "kind": "relative-only",
+    "text": "Minha sogra Peregrine treina no Studio Equilíbrio."
+   },
+   {
+    "id": "c10-m03",
+    "date": "2023-03-20",
+    "kind": "own-0-0",
+    "text": "Minha internet é da Starline Fibre."
+   },
+   {
+    "id": "c10-m04",
+    "date": "2023-03-25",
+    "kind": "stable-3",
+    "text": "Eu jogo xiangqi, o xadrez chinês."
+   },
+   {
+    "id": "c10-m05",
+    "date": "2023-04-05",
+    "kind": "stable-12",
+    "text": "Sou alérgico a picada de abelha."
+   },
+   {
+    "id": "c10-m06",
+    "date": "2023-04-20",
+    "kind": "own-1-0",
+    "text": "Meu chefe no trabalho é o Dr. Sørensen."
+   },
+   {
+    "id": "c10-m07",
+    "date": "2023-04-28",
+    "kind": "stable-6",
+    "text": "Gosto mais de chá de camomila do que de qualquer outro."
+   },
+   {
+    "id": "c10-m08",
+    "date": "2023-05-08",
+    "kind": "stable-0",
+    "text": "Sou torcedor do Kilmory Albion."
+   },
+   {
+    "id": "c10-m09",
+    "date": "2023-05-24",
+    "kind": "stable-9",
+    "text": "Faço um curso noturno de astronomia."
+   },
+   {
+    "id": "c10-m10",
+    "date": "2023-06-13",
+    "kind": "stable-4",
+    "text": "Eu jogo squash."
+   },
+   {
+    "id": "c10-m11",
+    "date": "2023-06-24",
+    "kind": "own-0-1",
+    "text": "Meu provedor de internet é a RápidaNet."
+   },
+   {
+    "id": "c10-m12",
+    "date": "2023-07-07",
+    "kind": "relative-stable",
+    "text": "Minha sogra Peregrine cultiva quiabo na horta."
+   },
+   {
+    "id": "c10-m13",
+    "date": "2023-07-28",
+    "kind": "relative-1",
+    "text": "A chefe da minha sogra Peregrine no trabalho é a Mrs. Abernethy."
+   },
+   {
+    "id": "c10-m14",
+    "date": "2023-08-15",
+    "kind": "stable-10",
+    "text": "Coleciono broches esmaltados."
+   },
+   {
+    "id": "c10-m15",
+    "date": "2023-08-29",
+    "kind": "stable-5",
+    "text": "Eu tenho um ouriço de estimação."
+   },
+   {
+    "id": "c10-m16",
+    "date": "2023-09-04",
+    "kind": "own-2-0",
+    "text": "Minha operadora de celular é a Brightcall."
+   },
+   {
+    "id": "c10-m17",
+    "date": "2023-09-25",
+    "kind": "relative-0",
+    "text": "Minha sogra Peregrine tem internet da Fibra Litoral."
+   },
+   {
+    "id": "c10-m18",
+    "date": "2023-10-09",
+    "kind": "stable-2",
+    "text": "Eu estou aprendendo tagalo."
+   },
+   {
+    "id": "c10-m19",
+    "date": "2023-10-22",
+    "kind": "relative-2",
+    "text": "Minha sogra Peregrine usa a Teia Sul como operadora de celular."
+   },
+   {
+    "id": "c10-m20",
+    "date": "2023-10-31",
+    "kind": "own-0-2",
+    "text": "Meu provedor de internet é a Meridian Broadband."
+   },
+   {
+    "id": "c10-m21",
+    "date": "2023-11-04",
+    "kind": "own-1-1",
+    "text": "Quem é minha chefe no trabalho é a Sra. Albuquerque."
+   },
+   {
+    "id": "c10-m22",
+    "date": "2023-11-20",
+    "kind": "stable-8",
+    "text": "Estudei arquitetura na faculdade."
+   },
+   {
+    "id": "c10-m23",
+    "date": "2023-11-25",
+    "kind": "relative-only",
+    "text": "O dentista da minha sogra Peregrine é o Dr. Whitcombe."
+   },
+   {
+    "id": "c10-m24",
+    "date": "2023-12-03",
+    "kind": "relative-stable",
+    "text": "Minha sogra Peregrine toca ukulele."
+   },
+   {
+    "id": "c10-m25",
+    "date": "2023-12-07",
+    "kind": "stable-11",
+    "text": "Nas horas vagas eu me dedico ao trabalho em couro."
+   },
+   {
+    "id": "c10-m26",
+    "date": "2023-12-13",
+    "kind": "stable-7",
+    "text": "Arequipa é a cidade onde eu nasci."
+   },
+   {
+    "id": "c10-m27",
+    "date": "2023-12-22",
+    "kind": "own-2-1",
+    "text": "Minha operadora de celular é a Sinal Forte."
+   },
+   {
+    "id": "c10-m28",
+    "date": "2023-12-27",
+    "kind": "own-3-0",
+    "text": "A proprietária do imóvel onde eu moro é a Ms. Lockhart."
+   },
+   {
+    "id": "c10-m29",
+    "date": "2024-01-13",
+    "kind": "stable-1",
+    "text": "Meu carro é um Toyota Yaris."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é o meu provedor de internet? Dê o nome.",
+    "expected": "Meridian Broadband",
+    "notExpected": [
+     "Starline Fibre",
+     "RápidaNet",
+     "Fibra Litoral"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o provedor de internet da minha sogra Peregrine? Dê o nome.",
+    "expected": "Fibra Litoral",
+    "notExpected": [
+     "Starline Fibre",
+     "RápidaNet",
+     "Meridian Broadband"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu provedor de internet, e qual é o provedor de internet da minha sogra Peregrine? Dê os dois nomes.",
+    "expected": "Meridian Broadband",
+    "expectedAll": [
+     "Meridian Broadband",
+     "Fibra Litoral"
+    ],
+    "notExpected": [
+     "Starline Fibre",
+     "RápidaNet"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu chefe no trabalho? Dê o nome.",
+    "expected": "Sra. Albuquerque",
+    "notExpected": [
+     "Dr. Sørensen",
+     "Mrs. Abernethy"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o chefe no trabalho da minha sogra Peregrine? Dê o nome.",
+    "expected": "Mrs. Abernethy",
+    "notExpected": [
+     "Dr. Sørensen",
+     "Sra. Albuquerque"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu chefe no trabalho, e qual é o chefe no trabalho da minha sogra Peregrine? Dê os dois nomes.",
+    "expected": "Sra. Albuquerque",
+    "expectedAll": [
+     "Sra. Albuquerque",
+     "Mrs. Abernethy"
+    ],
+    "notExpected": [
+     "Dr. Sørensen"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha operadora de celular? Dê o nome.",
+    "expected": "Sinal Forte",
+    "notExpected": [
+     "Brightcall",
+     "Teia Sul"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a operadora de celular da minha sogra Peregrine? Dê o nome.",
+    "expected": "Teia Sul",
+    "notExpected": [
+     "Brightcall",
+     "Sinal Forte"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é o meu proprietário do imóvel onde moro? Dê o nome.",
+    "expected": "Ms. Lockhart",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o dentista da minha sogra Peregrine? Dê o nome.",
+    "expected": "Dr. Whitcombe",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a academia da minha sogra Peregrine? Dê o nome.",
+    "expected": "Studio Equilíbrio",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Para qual time eu torço?",
+    "expected": "Kilmory Albion",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que carro eu dirijo?",
+    "expected": "Toyota Yaris",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual idioma estou aprendendo?",
+    "expected": "tagalo",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c11",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c11-m01",
+    "date": "2023-02-11",
+    "kind": "own-3-0",
+    "text": "Meu contador é o Mr. Pryce."
+   },
+   {
+    "id": "c11-m02",
+    "date": "2023-03-03",
+    "kind": "stable-12",
+    "text": "Planto couve na minha horta."
+   },
+   {
+    "id": "c11-m03",
+    "date": "2023-03-19",
+    "kind": "stable-6",
+    "text": "Tenho uma coleção de discos de vinil."
+   },
+   {
+    "id": "c11-m04",
+    "date": "2023-03-31",
+    "kind": "own-2-0",
+    "text": "A veterinária dos meus bichos é a Dra. Clotilde."
+   },
+   {
+    "id": "c11-m05",
+    "date": "2023-04-12",
+    "kind": "own-0-0",
+    "text": "Minha internet é da Greenwave."
+   },
+   {
+    "id": "c11-m06",
+    "date": "2023-04-26",
+    "kind": "own-1-0",
+    "text": "A dona do imóvel onde eu moro é a Dona Eulina."
+   },
+   {
+    "id": "c11-m07",
+    "date": "2023-05-09",
+    "kind": "own-2-1",
+    "text": "Meu veterinário é o Dr. Featherstone."
+   },
+   {
+    "id": "c11-m08",
+    "date": "2023-05-17",
+    "kind": "stable-9",
+    "text": "Estou estudando islandês."
+   },
+   {
+    "id": "c11-m09",
+    "date": "2023-05-30",
+    "kind": "stable-4",
+    "text": "Gosto de jogar Carcassonne."
+   },
+   {
+    "id": "c11-m10",
+    "date": "2023-06-11",
+    "kind": "relative-1",
+    "text": "A proprietária do imóvel onde minha cunhada Severina mora é a Ms. Lockhart."
+   },
+   {
+    "id": "c11-m11",
+    "date": "2023-06-22",
+    "kind": "relative-stable",
+    "text": "Minha cunhada Severina dirige um Kia Picanto."
+   },
+   {
+    "id": "c11-m12",
+    "date": "2023-06-29",
+    "kind": "stable-2",
+    "text": "Tenho uma lagartixa como bicho de estimação."
+   },
+   {
+    "id": "c11-m13",
+    "date": "2023-07-11",
+    "kind": "stable-13",
+    "text": "Nasci em Odense."
+   },
+   {
+    "id": "c11-m14",
+    "date": "2023-07-19",
+    "kind": "relative-2",
+    "text": "O veterinário da minha cunhada Severina é o Dr. Merriweather."
+   },
+   {
+    "id": "c11-m15",
+    "date": "2023-08-01",
+    "kind": "stable-8",
+    "text": "Meu passatempo manual é vitral."
+   },
+   {
+    "id": "c11-m16",
+    "date": "2023-08-21",
+    "kind": "relative-0",
+    "text": "Minha cunhada Severina tem internet da RápidaNet."
+   },
+   {
+    "id": "c11-m17",
+    "date": "2023-09-03",
+    "kind": "own-1-1",
+    "text": "O proprietário da casa onde moro é o Mr. Adebayo."
+   },
+   {
+    "id": "c11-m18",
+    "date": "2023-09-09",
+    "kind": "stable-7",
+    "text": "Eu toco violoncelo."
+   },
+   {
+    "id": "c11-m19",
+    "date": "2023-09-25",
+    "kind": "relative-stable",
+    "text": "Minha cunhada Severina torce para o União Serrana."
+   },
+   {
+    "id": "c11-m20",
+    "date": "2023-10-08",
+    "kind": "relative-only",
+    "text": "Minha cunhada Severina frequenta a Osprey Gym."
+   },
+   {
+    "id": "c11-m21",
+    "date": "2023-10-15",
+    "kind": "stable-10",
+    "text": "Minha formação na faculdade foi em agronomia."
+   },
+   {
+    "id": "c11-m22",
+    "date": "2023-10-31",
+    "kind": "own-0-1",
+    "text": "Meu provedor de internet é a Kingfisher Telecom."
+   },
+   {
+    "id": "c11-m23",
+    "date": "2023-11-12",
+    "kind": "stable-11",
+    "text": "Tenho alergia a picada de abelha, então preciso tomar cuidado."
+   },
+   {
+    "id": "c11-m24",
+    "date": "2023-11-22",
+    "kind": "stable-0",
+    "text": "Faço um curso noturno de joalheria."
+   },
+   {
+    "id": "c11-m25",
+    "date": "2023-11-29",
+    "kind": "own-0-2",
+    "text": "Meu provedor de internet é a Fibra Litoral."
+   },
+   {
+    "id": "c11-m26",
+    "date": "2023-12-11",
+    "kind": "stable-1",
+    "text": "Meu chá favorito é o de hibisco."
+   },
+   {
+    "id": "c11-m27",
+    "date": "2023-12-19",
+    "kind": "stable-3",
+    "text": "Meu nome do meio é Aurelius."
+   },
+   {
+    "id": "c11-m28",
+    "date": "2023-12-25",
+    "kind": "stable-5",
+    "text": "Pratico squash."
+   },
+   {
+    "id": "c11-m29",
+    "date": "2024-01-03",
+    "kind": "relative-only",
+    "text": "A operadora de celular da minha cunhada Severina é a Conecta Móvel."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é o meu provedor de internet? Dê o nome.",
+    "expected": "Fibra Litoral",
+    "notExpected": [
+     "Greenwave",
+     "Kingfisher Telecom",
+     "RápidaNet"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o provedor de internet da minha cunhada Severina? Dê o nome.",
+    "expected": "RápidaNet",
+    "notExpected": [
+     "Greenwave",
+     "Kingfisher Telecom",
+     "Fibra Litoral"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu provedor de internet, e qual é o provedor de internet da minha cunhada Severina? Dê os dois nomes.",
+    "expected": "Fibra Litoral",
+    "expectedAll": [
+     "Fibra Litoral",
+     "RápidaNet"
+    ],
+    "notExpected": [
+     "Greenwave",
+     "Kingfisher Telecom"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu proprietário do imóvel onde moro? Dê o nome.",
+    "expected": "Mr. Adebayo",
+    "notExpected": [
+     "Dona Eulina",
+     "Ms. Lockhart"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o proprietário do imóvel onde mora da minha cunhada Severina? Dê o nome.",
+    "expected": "Ms. Lockhart",
+    "notExpected": [
+     "Dona Eulina",
+     "Mr. Adebayo"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu proprietário do imóvel onde moro, e qual é o proprietário do imóvel onde mora da minha cunhada Severina? Dê os dois nomes.",
+    "expected": "Mr. Adebayo",
+    "expectedAll": [
+     "Mr. Adebayo",
+     "Ms. Lockhart"
+    ],
+    "notExpected": [
+     "Dona Eulina"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu veterinário? Dê o nome.",
+    "expected": "Dr. Featherstone",
+    "notExpected": [
+     "Dra. Clotilde",
+     "Dr. Merriweather"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o veterinário da minha cunhada Severina? Dê o nome.",
+    "expected": "Dr. Merriweather",
+    "notExpected": [
+     "Dra. Clotilde",
+     "Dr. Featherstone"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é o meu contador? Dê o nome.",
+    "expected": "Mr. Pryce",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a operadora de celular da minha cunhada Severina? Dê o nome.",
+    "expected": "Conecta Móvel",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a academia da minha cunhada Severina? Dê o nome.",
+    "expected": "Osprey Gym",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que curso noturno eu faço?",
+    "expected": "joalheria",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual é o meu chá preferido?",
+    "expected": "hibisco",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que animal de estimação eu tenho?",
+    "expected": "uma lagartixa",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c12",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c12-m01",
+    "date": "2023-02-20",
+    "kind": "stable-9",
+    "text": "Eu torço para o União Serrana."
+   },
+   {
+    "id": "c12-m02",
+    "date": "2023-03-08",
+    "kind": "own-3-0",
+    "text": "Meu veterinário é o Dr. Oduya."
+   },
+   {
+    "id": "c12-m03",
+    "date": "2023-03-15",
+    "kind": "relative-2",
+    "text": "Minha tia Ambrose usa a Brightcall como operadora de celular."
+   },
+   {
+    "id": "c12-m04",
+    "date": "2023-03-22",
+    "kind": "own-1-0",
+    "text": "Meu celular é um Moto Edge 50."
+   },
+   {
+    "id": "c12-m05",
+    "date": "2023-04-04",
+    "kind": "relative-only",
+    "text": "Minha tia Ambrose trabalha na Transportes Alvorada."
+   },
+   {
+    "id": "c12-m06",
+    "date": "2023-04-10",
+    "kind": "own-2-0",
+    "text": "Minha operadora de celular é a Corvus Mobile."
+   },
+   {
+    "id": "c12-m07",
+    "date": "2023-04-23",
+    "kind": "stable-4",
+    "text": "Eu toco violoncelo."
+   },
+   {
+    "id": "c12-m08",
+    "date": "2023-04-28",
+    "kind": "stable-10",
+    "text": "Estou fazendo um curso noturno de fotografia."
+   },
+   {
+    "id": "c12-m09",
+    "date": "2023-05-16",
+    "kind": "stable-5",
+    "text": "Estou aprendendo islandês."
+   },
+   {
+    "id": "c12-m10",
+    "date": "2023-05-22",
+    "kind": "stable-6",
+    "text": "Coleciono discos de vinil."
+   },
+   {
+    "id": "c12-m11",
+    "date": "2023-06-08",
+    "kind": "stable-12",
+    "text": "Estudei agronomia na faculdade."
+   },
+   {
+    "id": "c12-m12",
+    "date": "2023-06-24",
+    "kind": "own-0-0",
+    "text": "Uso a Greenwave como provedor de internet."
+   },
+   {
+    "id": "c12-m13",
+    "date": "2023-07-05",
+    "kind": "relative-stable",
+    "text": "Minha tia Ambrose dirige um Toyota Yaris."
+   },
+   {
+    "id": "c12-m14",
+    "date": "2023-07-16",
+    "kind": "own-1-1",
+    "text": "Meu celular é um Galaxy S24."
+   },
+   {
+    "id": "c12-m15",
+    "date": "2023-07-30",
+    "kind": "own-0-1",
+    "text": "A internet aqui de casa é da Starline Fibre."
+   },
+   {
+    "id": "c12-m16",
+    "date": "2023-08-19",
+    "kind": "stable-2",
+    "text": "Tenho uma lagartixa de estimação lá em casa."
+   },
+   {
+    "id": "c12-m17",
+    "date": "2023-09-09",
+    "kind": "stable-0",
+    "text": "Meu chá favorito é de hibisco."
+   },
+   {
+    "id": "c12-m18",
+    "date": "2023-09-29",
+    "kind": "relative-1",
+    "text": "Minha tia Ambrose tem um Pixel 9."
+   },
+   {
+    "id": "c12-m19",
+    "date": "2023-10-10",
+    "kind": "stable-1",
+    "text": "Tenho alergia a ácaros."
+   },
+   {
+    "id": "c12-m20",
+    "date": "2023-10-22",
+    "kind": "own-2-1",
+    "text": "Minha operadora de celular é a Sinal Forte."
+   },
+   {
+    "id": "c12-m21",
+    "date": "2023-11-12",
+    "kind": "stable-11",
+    "text": "Cultivo couve na minha horta."
+   },
+   {
+    "id": "c12-m22",
+    "date": "2023-12-01",
+    "kind": "stable-13",
+    "text": "Meu nome do meio é Casimir."
+   },
+   {
+    "id": "c12-m23",
+    "date": "2023-12-14",
+    "kind": "relative-stable",
+    "text": "Minha tia Ambrose joga Catan."
+   },
+   {
+    "id": "c12-m24",
+    "date": "2024-01-04",
+    "kind": "relative-0",
+    "text": "O provedor de internet da minha tia Ambrose é a Kingfisher Telecom."
+   },
+   {
+    "id": "c12-m25",
+    "date": "2024-01-23",
+    "kind": "own-0-2",
+    "text": "Meu provedor de internet é a NetVale."
+   },
+   {
+    "id": "c12-m26",
+    "date": "2024-02-01",
+    "kind": "stable-3",
+    "text": "Meu passatempo manual é fazer vitral."
+   },
+   {
+    "id": "c12-m27",
+    "date": "2024-02-11",
+    "kind": "stable-7",
+    "text": "O esporte que eu pratico é squash."
+   },
+   {
+    "id": "c12-m28",
+    "date": "2024-02-22",
+    "kind": "relative-only",
+    "text": "O proprietário do imóvel onde minha tia Ambrose mora é o Mr. Adebayo."
+   },
+   {
+    "id": "c12-m29",
+    "date": "2024-03-11",
+    "kind": "stable-8",
+    "text": "Nasci em Namur."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é o meu provedor de internet? Dê o nome.",
+    "expected": "NetVale",
+    "notExpected": [
+     "Greenwave",
+     "Starline Fibre",
+     "Kingfisher Telecom"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o provedor de internet da minha tia Ambrose? Dê o nome.",
+    "expected": "Kingfisher Telecom",
+    "notExpected": [
+     "Greenwave",
+     "Starline Fibre",
+     "NetVale"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu provedor de internet, e qual é o provedor de internet da minha tia Ambrose? Dê os dois nomes.",
+    "expected": "NetVale",
+    "expectedAll": [
+     "NetVale",
+     "Kingfisher Telecom"
+    ],
+    "notExpected": [
+     "Greenwave",
+     "Starline Fibre"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu modelo de celular? Dê o nome.",
+    "expected": "Galaxy S24",
+    "notExpected": [
+     "Moto Edge 50",
+     "Pixel 9"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o modelo de celular da minha tia Ambrose? Dê o nome.",
+    "expected": "Pixel 9",
+    "notExpected": [
+     "Moto Edge 50",
+     "Galaxy S24"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu modelo de celular, e qual é o modelo de celular da minha tia Ambrose? Dê os dois nomes.",
+    "expected": "Galaxy S24",
+    "expectedAll": [
+     "Galaxy S24",
+     "Pixel 9"
+    ],
+    "notExpected": [
+     "Moto Edge 50"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha operadora de celular? Dê o nome.",
+    "expected": "Sinal Forte",
+    "notExpected": [
+     "Corvus Mobile",
+     "Brightcall"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a operadora de celular da minha tia Ambrose? Dê o nome.",
+    "expected": "Brightcall",
+    "notExpected": [
+     "Corvus Mobile",
+     "Sinal Forte"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é o meu veterinário? Dê o nome.",
+    "expected": "Dr. Oduya",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o proprietário do imóvel onde mora da minha tia Ambrose? Dê o nome.",
+    "expected": "Mr. Adebayo",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a empresa onde trabalha da minha tia Ambrose? Dê o nome.",
+    "expected": "Transportes Alvorada",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual é o meu chá preferido?",
+    "expected": "hibisco",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "A que eu tenho alergia?",
+    "expected": "ácaros",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que animal de estimação eu tenho?",
+    "expected": "uma lagartixa",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c13",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c13-m01",
+    "date": "2023-02-14",
+    "kind": "own-1-0",
+    "text": "Uso a Teia Sul no celular."
+   },
+   {
+    "id": "c13-m02",
+    "date": "2023-02-22",
+    "kind": "stable-7",
+    "text": "O chá que eu mais gosto é oolong."
+   },
+   {
+    "id": "c13-m03",
+    "date": "2023-03-15",
+    "kind": "relative-2",
+    "text": "Meu meio-irmão Iolanda mora em Antofagasta."
+   },
+   {
+    "id": "c13-m04",
+    "date": "2023-03-19",
+    "kind": "relative-0",
+    "text": "Meu meio-irmão Iolanda se consulta com a Dra. Krüger, que é a dentista dele."
+   },
+   {
+    "id": "c13-m05",
+    "date": "2023-03-27",
+    "kind": "own-2-0",
+    "text": "Eu moro em Bruges."
+   },
+   {
+    "id": "c13-m06",
+    "date": "2023-04-10",
+    "kind": "stable-1",
+    "text": "Eu pratico judô."
+   },
+   {
+    "id": "c13-m07",
+    "date": "2023-04-25",
+    "kind": "relative-only",
+    "text": "O celular do meu meio-irmão Iolanda é um Moto Edge 50."
+   },
+   {
+    "id": "c13-m08",
+    "date": "2023-05-08",
+    "kind": "stable-6",
+    "text": "Tenho estudado tagalo, estou aprendendo o idioma aos poucos."
+   },
+   {
+    "id": "c13-m09",
+    "date": "2023-05-29",
+    "kind": "own-0-0",
+    "text": "Minha dentista é a Dra. Lacerda."
+   },
+   {
+    "id": "c13-m10",
+    "date": "2023-06-02",
+    "kind": "stable-12",
+    "text": "Faço vitral como passatempo."
+   },
+   {
+    "id": "c13-m11",
+    "date": "2023-06-12",
+    "kind": "own-0-1",
+    "text": "Quem cuida dos meus dentes é a Dra. Esteves."
+   },
+   {
+    "id": "c13-m12",
+    "date": "2023-06-27",
+    "kind": "own-3-0",
+    "text": "Eu trabalho na Oakmoor Analytics."
+   },
+   {
+    "id": "c13-m13",
+    "date": "2023-07-05",
+    "kind": "stable-3",
+    "text": "Cultivo alcachofra na horta de casa."
+   },
+   {
+    "id": "c13-m14",
+    "date": "2023-07-11",
+    "kind": "stable-4",
+    "text": "Torço para o Ashbourne Town."
+   },
+   {
+    "id": "c13-m15",
+    "date": "2023-07-23",
+    "kind": "stable-9",
+    "text": "Eu dirijo um Peugeot 208."
+   },
+   {
+    "id": "c13-m16",
+    "date": "2023-08-13",
+    "kind": "stable-5",
+    "text": "Faço um curso noturno de fotografia."
+   },
+   {
+    "id": "c13-m17",
+    "date": "2023-09-01",
+    "kind": "own-0-2",
+    "text": "Meu dentista é o Dr. Ballantyne."
+   },
+   {
+    "id": "c13-m18",
+    "date": "2023-09-13",
+    "kind": "relative-stable",
+    "text": "Meu meio-irmão Iolanda tem alergia a picada de abelha."
+   },
+   {
+    "id": "c13-m19",
+    "date": "2023-10-03",
+    "kind": "relative-stable",
+    "text": "O nome do meio do meu meio-irmão Iolanda é Henrietta."
+   },
+   {
+    "id": "c13-m20",
+    "date": "2023-10-22",
+    "kind": "relative-only",
+    "text": "Quem faz a contabilidade do meu meio-irmão Iolanda é a Ms. Haldane."
+   },
+   {
+    "id": "c13-m21",
+    "date": "2023-11-02",
+    "kind": "own-2-1",
+    "text": "Eu moro em Ourense."
+   },
+   {
+    "id": "c13-m22",
+    "date": "2023-11-23",
+    "kind": "stable-2",
+    "text": "Carcassonne é um jogo de tabuleiro que eu jogo."
+   },
+   {
+    "id": "c13-m23",
+    "date": "2023-12-06",
+    "kind": "relative-1",
+    "text": "A operadora de celular do meu meio-irmão Iolanda é a Polaris Wireless."
+   },
+   {
+    "id": "c13-m24",
+    "date": "2023-12-27",
+    "kind": "stable-11",
+    "text": "O instrumento que eu toco é o violoncelo."
+   },
+   {
+    "id": "c13-m25",
+    "date": "2024-01-08",
+    "kind": "stable-8",
+    "text": "Eu nasci em Arequipa."
+   },
+   {
+    "id": "c13-m26",
+    "date": "2024-01-16",
+    "kind": "own-1-1",
+    "text": "Minha operadora de celular é a Echo Mobile."
+   },
+   {
+    "id": "c13-m27",
+    "date": "2024-02-05",
+    "kind": "stable-13",
+    "text": "Estudei arquitetura na faculdade."
+   },
+   {
+    "id": "c13-m28",
+    "date": "2024-02-11",
+    "kind": "stable-0",
+    "text": "Meu animal de estimação é uma lagartixa."
+   },
+   {
+    "id": "c13-m29",
+    "date": "2024-02-15",
+    "kind": "stable-10",
+    "text": "Eu coleciono broches esmaltados."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é o meu dentista? Dê o nome.",
+    "expected": "Dr. Ballantyne",
+    "notExpected": [
+     "Dra. Lacerda",
+     "Dra. Esteves",
+     "Dra. Krüger"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o dentista do meu meio-irmão Iolanda? Dê o nome.",
+    "expected": "Dra. Krüger",
+    "notExpected": [
+     "Dra. Lacerda",
+     "Dra. Esteves",
+     "Dr. Ballantyne"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu dentista, e qual é o dentista do meu meio-irmão Iolanda? Dê os dois nomes.",
+    "expected": "Dr. Ballantyne",
+    "expectedAll": [
+     "Dr. Ballantyne",
+     "Dra. Krüger"
+    ],
+    "notExpected": [
+     "Dra. Lacerda",
+     "Dra. Esteves"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha operadora de celular? Dê o nome.",
+    "expected": "Echo Mobile",
+    "notExpected": [
+     "Teia Sul",
+     "Polaris Wireless"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a operadora de celular do meu meio-irmão Iolanda? Dê o nome.",
+    "expected": "Polaris Wireless",
+    "notExpected": [
+     "Teia Sul",
+     "Echo Mobile"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é a minha operadora de celular, e qual é a operadora de celular do meu meio-irmão Iolanda? Dê os dois nomes.",
+    "expected": "Echo Mobile",
+    "expectedAll": [
+     "Echo Mobile",
+     "Polaris Wireless"
+    ],
+    "notExpected": [
+     "Teia Sul"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha cidade onde moro? Dê o nome.",
+    "expected": "Ourense",
+    "notExpected": [
+     "Bruges",
+     "Antofagasta"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a cidade onde mora do meu meio-irmão Iolanda? Dê o nome.",
+    "expected": "Antofagasta",
+    "notExpected": [
+     "Bruges",
+     "Ourense"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é a minha empresa onde trabalho? Dê o nome.",
+    "expected": "Oakmoor Analytics",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o modelo de celular do meu meio-irmão Iolanda? Dê o nome.",
+    "expected": "Moto Edge 50",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o contador do meu meio-irmão Iolanda? Dê o nome.",
+    "expected": "Ms. Haldane",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que animal de estimação eu tenho?",
+    "expected": "uma lagartixa",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual esporte eu pratico?",
+    "expected": "judô",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual jogo de tabuleiro eu jogo?",
+    "expected": "Carcassonne",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c14",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c14-m01",
+    "date": "2023-02-27",
+    "kind": "stable-9",
+    "text": "Tenho Aurelius como nome do meio."
+   },
+   {
+    "id": "c14-m02",
+    "date": "2023-03-06",
+    "kind": "relative-only",
+    "text": "Minha sobrinha Fortunato trabalha na Transportes Alvorada."
+   },
+   {
+    "id": "c14-m03",
+    "date": "2023-03-12",
+    "kind": "stable-3",
+    "text": "Eu faço um curso noturno de astronomia."
+   },
+   {
+    "id": "c14-m04",
+    "date": "2023-03-24",
+    "kind": "own-1-0",
+    "text": "Faço academia no Studio Equilíbrio."
+   },
+   {
+    "id": "c14-m05",
+    "date": "2023-04-08",
+    "kind": "stable-8",
+    "text": "Eu jogo Carcassonne."
+   },
+   {
+    "id": "c14-m06",
+    "date": "2023-04-18",
+    "kind": "stable-1",
+    "text": "Estou aprendendo tagalo."
+   },
+   {
+    "id": "c14-m07",
+    "date": "2023-04-27",
+    "kind": "relative-stable",
+    "text": "Minha sobrinha Fortunato faz tricô como passatempo."
+   },
+   {
+    "id": "c14-m08",
+    "date": "2023-05-11",
+    "kind": "stable-12",
+    "text": "Eu jogo squash."
+   },
+   {
+    "id": "c14-m09",
+    "date": "2023-05-25",
+    "kind": "relative-only",
+    "text": "A dentista da minha sobrinha Fortunato é a Dra. Lacerda."
+   },
+   {
+    "id": "c14-m10",
+    "date": "2023-06-14",
+    "kind": "stable-5",
+    "text": "Tenho couve plantada na minha horta."
+   },
+   {
+    "id": "c14-m11",
+    "date": "2023-06-23",
+    "kind": "stable-11",
+    "text": "Toco violoncelo nas horas livres."
+   },
+   {
+    "id": "c14-m12",
+    "date": "2023-06-29",
+    "kind": "stable-0",
+    "text": "Sou natural de Arequipa, nasci lá."
+   },
+   {
+    "id": "c14-m13",
+    "date": "2023-07-10",
+    "kind": "own-0-0",
+    "text": "Minha chefe no trabalho é a Sra. Albuquerque."
+   },
+   {
+    "id": "c14-m14",
+    "date": "2023-07-23",
+    "kind": "own-2-0",
+    "text": "O proprietário do imóvel onde moro é o Mr. Adebayo."
+   },
+   {
+    "id": "c14-m15",
+    "date": "2023-08-06",
+    "kind": "own-0-1",
+    "text": "Meu chefe no trabalho é o Mr. Vandersloot."
+   },
+   {
+    "id": "c14-m16",
+    "date": "2023-08-10",
+    "kind": "stable-4",
+    "text": "Eu torço para o Kilmory Albion."
+   },
+   {
+    "id": "c14-m17",
+    "date": "2023-08-19",
+    "kind": "stable-2",
+    "text": "Tenho uma lagartixa como bichinho de estimação."
+   },
+   {
+    "id": "c14-m18",
+    "date": "2023-09-09",
+    "kind": "own-1-1",
+    "text": "Minha academia é a Quayside Athletic."
+   },
+   {
+    "id": "c14-m19",
+    "date": "2023-09-18",
+    "kind": "own-2-1",
+    "text": "O proprietário do imóvel onde eu moro é o Mr. Hollingsworth."
+   },
+   {
+    "id": "c14-m20",
+    "date": "2023-10-02",
+    "kind": "relative-1",
+    "text": "Minha sobrinha Fortunato treina na Osprey Gym."
+   },
+   {
+    "id": "c14-m21",
+    "date": "2023-10-23",
+    "kind": "relative-2",
+    "text": "O proprietário do imóvel onde minha sobrinha Fortunato mora é o Sr. Anselmo."
+   },
+   {
+    "id": "c14-m22",
+    "date": "2023-11-12",
+    "kind": "stable-13",
+    "text": "Meu chá preferido é camomila."
+   },
+   {
+    "id": "c14-m23",
+    "date": "2023-11-17",
+    "kind": "stable-10",
+    "text": "Meu carro é um Peugeot 208."
+   },
+   {
+    "id": "c14-m24",
+    "date": "2023-11-28",
+    "kind": "own-3-0",
+    "text": "Tenho um Pixel 9 como celular."
+   },
+   {
+    "id": "c14-m25",
+    "date": "2023-12-19",
+    "kind": "own-0-2",
+    "text": "Meu chefe no trabalho é o Sr. Cavalcanti."
+   },
+   {
+    "id": "c14-m26",
+    "date": "2024-01-08",
+    "kind": "relative-stable",
+    "text": "Minha sobrinha Fortunato tem alergia a picada de abelha."
+   },
+   {
+    "id": "c14-m27",
+    "date": "2024-01-29",
+    "kind": "stable-6",
+    "text": "Sou colecionador de discos de vinil."
+   },
+   {
+    "id": "c14-m28",
+    "date": "2024-02-17",
+    "kind": "stable-7",
+    "text": "Eu me formei em agronomia na faculdade."
+   },
+   {
+    "id": "c14-m29",
+    "date": "2024-03-05",
+    "kind": "relative-0",
+    "text": "O chefe da minha sobrinha Fortunato no trabalho é o Dr. Sørensen."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é o meu chefe no trabalho? Dê o nome.",
+    "expected": "Sr. Cavalcanti",
+    "notExpected": [
+     "Sra. Albuquerque",
+     "Mr. Vandersloot",
+     "Dr. Sørensen"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o chefe no trabalho da minha sobrinha Fortunato? Dê o nome.",
+    "expected": "Dr. Sørensen",
+    "notExpected": [
+     "Sra. Albuquerque",
+     "Mr. Vandersloot",
+     "Sr. Cavalcanti"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu chefe no trabalho, e qual é o chefe no trabalho da minha sobrinha Fortunato? Dê os dois nomes.",
+    "expected": "Sr. Cavalcanti",
+    "expectedAll": [
+     "Sr. Cavalcanti",
+     "Dr. Sørensen"
+    ],
+    "notExpected": [
+     "Sra. Albuquerque",
+     "Mr. Vandersloot"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha academia? Dê o nome.",
+    "expected": "Quayside Athletic",
+    "notExpected": [
+     "Studio Equilíbrio",
+     "Osprey Gym"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a academia da minha sobrinha Fortunato? Dê o nome.",
+    "expected": "Osprey Gym",
+    "notExpected": [
+     "Studio Equilíbrio",
+     "Quayside Athletic"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é a minha academia, e qual é a academia da minha sobrinha Fortunato? Dê os dois nomes.",
+    "expected": "Quayside Athletic",
+    "expectedAll": [
+     "Quayside Athletic",
+     "Osprey Gym"
+    ],
+    "notExpected": [
+     "Studio Equilíbrio"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu proprietário do imóvel onde moro? Dê o nome.",
+    "expected": "Mr. Hollingsworth",
+    "notExpected": [
+     "Mr. Adebayo",
+     "Sr. Anselmo"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o proprietário do imóvel onde mora da minha sobrinha Fortunato? Dê o nome.",
+    "expected": "Sr. Anselmo",
+    "notExpected": [
+     "Mr. Adebayo",
+     "Mr. Hollingsworth"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é o meu modelo de celular? Dê o nome.",
+    "expected": "Pixel 9",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o dentista da minha sobrinha Fortunato? Dê o nome.",
+    "expected": "Dra. Lacerda",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a empresa onde trabalha da minha sobrinha Fortunato? Dê o nome.",
+    "expected": "Transportes Alvorada",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Onde eu nasci?",
+    "expected": "Arequipa",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual idioma estou aprendendo?",
+    "expected": "tagalo",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que animal de estimação eu tenho?",
+    "expected": "uma lagartixa",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c15",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c15-m01",
+    "date": "2023-02-21",
+    "kind": "stable-0",
+    "text": "Meu chá preferido é oolong."
+   },
+   {
+    "id": "c15-m02",
+    "date": "2023-03-02",
+    "kind": "own-3-0",
+    "text": "Trabalho na Larchwood Foods."
+   },
+   {
+    "id": "c15-m03",
+    "date": "2023-03-06",
+    "kind": "stable-3",
+    "text": "Eu dirijo um VW Polo."
+   },
+   {
+    "id": "c15-m04",
+    "date": "2023-03-11",
+    "kind": "stable-10",
+    "text": "Eu pratico canoagem."
+   },
+   {
+    "id": "c15-m05",
+    "date": "2023-03-15",
+    "kind": "stable-8",
+    "text": "Gosto de passar o tempo com trabalho em couro."
+   },
+   {
+    "id": "c15-m06",
+    "date": "2023-03-28",
+    "kind": "stable-1",
+    "text": "Tenho um canário em casa."
+   },
+   {
+    "id": "c15-m07",
+    "date": "2023-04-09",
+    "kind": "stable-12",
+    "text": "Nasci em Namur."
+   },
+   {
+    "id": "c15-m08",
+    "date": "2023-04-18",
+    "kind": "relative-2",
+    "text": "A internet da minha avó Marigold é da Meridian Broadband."
+   },
+   {
+    "id": "c15-m09",
+    "date": "2023-05-04",
+    "kind": "own-0-0",
+    "text": "Meu dentista é o Dr. Whitcombe."
+   },
+   {
+    "id": "c15-m10",
+    "date": "2023-05-12",
+    "kind": "stable-13",
+    "text": "Eu estou aprendendo o idioma islandês."
+   },
+   {
+    "id": "c15-m11",
+    "date": "2023-05-16",
+    "kind": "relative-0",
+    "text": "A dentista da minha avó Marigold é a Dra. Esteves."
+   },
+   {
+    "id": "c15-m12",
+    "date": "2023-05-23",
+    "kind": "relative-stable",
+    "text": "Minha avó Marigold torce para o Esporte Clube Ribeira."
+   },
+   {
+    "id": "c15-m13",
+    "date": "2023-06-09",
+    "kind": "stable-2",
+    "text": "Faço um curso noturno de língua de sinais."
+   },
+   {
+    "id": "c15-m14",
+    "date": "2023-06-16",
+    "kind": "relative-only",
+    "text": "A chefe da minha avó Marigold no trabalho é a Mrs. Abernethy."
+   },
+   {
+    "id": "c15-m15",
+    "date": "2023-07-01",
+    "kind": "stable-6",
+    "text": "Sou alérgico a gergelim."
+   },
+   {
+    "id": "c15-m16",
+    "date": "2023-07-07",
+    "kind": "stable-9",
+    "text": "Eu jogo cribbage, aquele jogo de tabuleiro com pinos."
+   },
+   {
+    "id": "c15-m17",
+    "date": "2023-07-23",
+    "kind": "stable-5",
+    "text": "Meu nome do meio é Henrietta."
+   },
+   {
+    "id": "c15-m18",
+    "date": "2023-08-10",
+    "kind": "stable-11",
+    "text": "Estudei oceanografia na faculdade."
+   },
+   {
+    "id": "c15-m19",
+    "date": "2023-08-26",
+    "kind": "own-2-0",
+    "text": "Minha internet é da NetVale."
+   },
+   {
+    "id": "c15-m20",
+    "date": "2023-09-01",
+    "kind": "own-1-0",
+    "text": "Meu celular é um Pixel 9."
+   },
+   {
+    "id": "c15-m21",
+    "date": "2023-09-08",
+    "kind": "own-0-1",
+    "text": "Meu dentista é o Dr. Ballantyne."
+   },
+   {
+    "id": "c15-m22",
+    "date": "2023-09-17",
+    "kind": "relative-only",
+    "text": "Minha avó Marigold treina na Academia Força Viva."
+   },
+   {
+    "id": "c15-m23",
+    "date": "2023-09-29",
+    "kind": "relative-stable",
+    "text": "Minha avó Marigold toca violoncelo."
+   },
+   {
+    "id": "c15-m24",
+    "date": "2023-10-18",
+    "kind": "stable-7",
+    "text": "Cultivo alcachofra na horta."
+   },
+   {
+    "id": "c15-m25",
+    "date": "2023-10-24",
+    "kind": "relative-1",
+    "text": "O celular da minha avó Marigold é um Moto Edge 50."
+   },
+   {
+    "id": "c15-m26",
+    "date": "2023-11-02",
+    "kind": "own-1-1",
+    "text": "Meu celular é um Xperia 5."
+   },
+   {
+    "id": "c15-m27",
+    "date": "2023-11-06",
+    "kind": "own-2-1",
+    "text": "Minha internet é da Kingfisher Telecom."
+   },
+   {
+    "id": "c15-m28",
+    "date": "2023-11-20",
+    "kind": "stable-4",
+    "text": "Coleciono câmeras antigas."
+   },
+   {
+    "id": "c15-m29",
+    "date": "2023-12-04",
+    "kind": "own-0-2",
+    "text": "Minha dentista é a Dra. Krüger."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é o meu dentista? Dê o nome.",
+    "expected": "Dra. Krüger",
+    "notExpected": [
+     "Dr. Whitcombe",
+     "Dr. Ballantyne",
+     "Dra. Esteves"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o dentista da minha avó Marigold? Dê o nome.",
+    "expected": "Dra. Esteves",
+    "notExpected": [
+     "Dr. Whitcombe",
+     "Dr. Ballantyne",
+     "Dra. Krüger"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu dentista, e qual é o dentista da minha avó Marigold? Dê os dois nomes.",
+    "expected": "Dra. Krüger",
+    "expectedAll": [
+     "Dra. Krüger",
+     "Dra. Esteves"
+    ],
+    "notExpected": [
+     "Dr. Whitcombe",
+     "Dr. Ballantyne"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu modelo de celular? Dê o nome.",
+    "expected": "Xperia 5",
+    "notExpected": [
+     "Pixel 9",
+     "Moto Edge 50"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o modelo de celular da minha avó Marigold? Dê o nome.",
+    "expected": "Moto Edge 50",
+    "notExpected": [
+     "Pixel 9",
+     "Xperia 5"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é o meu modelo de celular, e qual é o modelo de celular da minha avó Marigold? Dê os dois nomes.",
+    "expected": "Xperia 5",
+    "expectedAll": [
+     "Xperia 5",
+     "Moto Edge 50"
+    ],
+    "notExpected": [
+     "Pixel 9"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é o meu provedor de internet? Dê o nome.",
+    "expected": "Kingfisher Telecom",
+    "notExpected": [
+     "NetVale",
+     "Meridian Broadband"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é o provedor de internet da minha avó Marigold? Dê o nome.",
+    "expected": "Meridian Broadband",
+    "notExpected": [
+     "NetVale",
+     "Kingfisher Telecom"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é a minha empresa onde trabalho? Dê o nome.",
+    "expected": "Larchwood Foods",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a academia da minha avó Marigold? Dê o nome.",
+    "expected": "Academia Força Viva",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o chefe no trabalho da minha avó Marigold? Dê o nome.",
+    "expected": "Mrs. Abernethy",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual é o meu chá preferido?",
+    "expected": "oolong",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que animal de estimação eu tenho?",
+    "expected": "um canário",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Que curso noturno eu faço?",
+    "expected": "língua de sinais",
+    "notExpected": []
+   }
+  ]
+ },
+ {
+  "id": "c16",
+  "language": "pt",
+  "messages": [
+   {
+    "id": "c16-m01",
+    "date": "2023-02-25",
+    "kind": "relative-stable",
+    "text": "Meu padrinho Ezequiel dirige um Peugeot 208."
+   },
+   {
+    "id": "c16-m02",
+    "date": "2023-03-12",
+    "kind": "stable-9",
+    "text": "Estudei filosofia na faculdade."
+   },
+   {
+    "id": "c16-m03",
+    "date": "2023-03-28",
+    "kind": "stable-8",
+    "text": "Eu jogo Catan."
+   },
+   {
+    "id": "c16-m04",
+    "date": "2023-04-12",
+    "kind": "stable-3",
+    "text": "Eu tenho uma lagartixa de estimação."
+   },
+   {
+    "id": "c16-m05",
+    "date": "2023-04-28",
+    "kind": "own-0-0",
+    "text": "Eu malho na Quayside Athletic."
+   },
+   {
+    "id": "c16-m06",
+    "date": "2023-05-17",
+    "kind": "relative-2",
+    "text": "Meu padrinho Ezequiel usa a Echo Mobile como operadora de celular."
+   },
+   {
+    "id": "c16-m07",
+    "date": "2023-05-30",
+    "kind": "stable-5",
+    "text": "Faço um curso noturno de astronomia."
+   },
+   {
+    "id": "c16-m08",
+    "date": "2023-06-10",
+    "kind": "stable-11",
+    "text": "Estou aprendendo basco."
+   },
+   {
+    "id": "c16-m09",
+    "date": "2023-07-01",
+    "kind": "relative-only",
+    "text": "Meu padrinho Ezequiel mora em Antofagasta."
+   },
+   {
+    "id": "c16-m10",
+    "date": "2023-07-17",
+    "kind": "own-3-0",
+    "text": "Meu celular é um iPhone 15."
+   },
+   {
+    "id": "c16-m11",
+    "date": "2023-08-06",
+    "kind": "stable-4",
+    "text": "Meu chá preferido é earl grey."
+   },
+   {
+    "id": "c16-m12",
+    "date": "2023-08-26",
+    "kind": "relative-0",
+    "text": "Meu padrinho Ezequiel malha no Studio Equilíbrio."
+   },
+   {
+    "id": "c16-m13",
+    "date": "2023-09-12",
+    "kind": "stable-0",
+    "text": "Eu torço para o Ashbourne Town."
+   },
+   {
+    "id": "c16-m14",
+    "date": "2023-09-27",
+    "kind": "relative-1",
+    "text": "Meu padrinho Ezequiel trabalha na Transportes Alvorada."
+   },
+   {
+    "id": "c16-m15",
+    "date": "2023-10-07",
+    "kind": "own-1-0",
+    "text": "Eu trabalho na Papelaria Ventura."
+   },
+   {
+    "id": "c16-m16",
+    "date": "2023-10-26",
+    "kind": "stable-1",
+    "text": "Eu toco acordeão."
+   },
+   {
+    "id": "c16-m17",
+    "date": "2023-11-08",
+    "kind": "own-0-1",
+    "text": "Eu treino na Granite Fitness."
+   },
+   {
+    "id": "c16-m18",
+    "date": "2023-11-29",
+    "kind": "relative-only",
+    "text": "O veterinário do meu padrinho Ezequiel é o Dr. Merriweather."
+   },
+   {
+    "id": "c16-m19",
+    "date": "2023-12-07",
+    "kind": "stable-2",
+    "text": "Henrietta é o meu nome do meio."
+   },
+   {
+    "id": "c16-m20",
+    "date": "2023-12-20",
+    "kind": "own-2-0",
+    "text": "Uso a Sinal Forte como operadora de celular."
+   },
+   {
+    "id": "c16-m21",
+    "date": "2023-12-29",
+    "kind": "stable-10",
+    "text": "Tenho alergia a ácaros."
+   },
+   {
+    "id": "c16-m22",
+    "date": "2024-01-12",
+    "kind": "stable-6",
+    "text": "Cultivo mandioquinha na horta."
+   },
+   {
+    "id": "c16-m23",
+    "date": "2024-01-18",
+    "kind": "relative-stable",
+    "text": "Meu padrinho Ezequiel pratica canoagem."
+   },
+   {
+    "id": "c16-m24",
+    "date": "2024-01-31",
+    "kind": "stable-7",
+    "text": "Eu nasci em Odense."
+   },
+   {
+    "id": "c16-m25",
+    "date": "2024-02-16",
+    "kind": "own-2-1",
+    "text": "Uso a Conecta Móvel como operadora de celular."
+   },
+   {
+    "id": "c16-m26",
+    "date": "2024-02-21",
+    "kind": "own-0-2",
+    "text": "Minha academia é a Academia Impulso."
+   },
+   {
+    "id": "c16-m27",
+    "date": "2024-02-28",
+    "kind": "stable-13",
+    "text": "Meu passatempo manual é o tricô."
+   },
+   {
+    "id": "c16-m28",
+    "date": "2024-03-13",
+    "kind": "own-1-1",
+    "text": "Eu trabalho na Kestrel Logistics."
+   },
+   {
+    "id": "c16-m29",
+    "date": "2024-03-24",
+    "kind": "stable-12",
+    "text": "Eu coleciono conchas."
+   }
+  ],
+  "questions": [
+   {
+    "kind": "own-current",
+    "chain": 3,
+    "question": "Qual é a minha academia? Dê o nome.",
+    "expected": "Academia Impulso",
+    "notExpected": [
+     "Quayside Athletic",
+     "Granite Fitness",
+     "Studio Equilíbrio"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a academia do meu padrinho Ezequiel? Dê o nome.",
+    "expected": "Studio Equilíbrio",
+    "notExpected": [
+     "Quayside Athletic",
+     "Granite Fitness",
+     "Academia Impulso"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é a minha academia, e qual é a academia do meu padrinho Ezequiel? Dê os dois nomes.",
+    "expected": "Academia Impulso",
+    "expectedAll": [
+     "Academia Impulso",
+     "Studio Equilíbrio"
+    ],
+    "notExpected": [
+     "Quayside Athletic",
+     "Granite Fitness"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha empresa onde trabalho? Dê o nome.",
+    "expected": "Kestrel Logistics",
+    "notExpected": [
+     "Papelaria Ventura",
+     "Transportes Alvorada"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a empresa onde trabalha do meu padrinho Ezequiel? Dê o nome.",
+    "expected": "Transportes Alvorada",
+    "notExpected": [
+     "Papelaria Ventura",
+     "Kestrel Logistics"
+    ]
+   },
+   {
+    "kind": "both-people",
+    "question": "Qual é a minha empresa onde trabalho, e qual é a empresa onde trabalha do meu padrinho Ezequiel? Dê os dois nomes.",
+    "expected": "Kestrel Logistics",
+    "expectedAll": [
+     "Kestrel Logistics",
+     "Transportes Alvorada"
+    ],
+    "notExpected": [
+     "Papelaria Ventura"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 2,
+    "question": "Qual é a minha operadora de celular? Dê o nome.",
+    "expected": "Conecta Móvel",
+    "notExpected": [
+     "Sinal Forte",
+     "Echo Mobile"
+    ]
+   },
+   {
+    "kind": "relative-same-attribute",
+    "question": "Qual é a operadora de celular do meu padrinho Ezequiel? Dê o nome.",
+    "expected": "Echo Mobile",
+    "notExpected": [
+     "Sinal Forte",
+     "Conecta Móvel"
+    ]
+   },
+   {
+    "kind": "own-current",
+    "chain": 1,
+    "question": "Qual é o meu modelo de celular? Dê o nome.",
+    "expected": "iPhone 15",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é o veterinário do meu padrinho Ezequiel? Dê o nome.",
+    "expected": "Dr. Merriweather",
+    "notExpected": []
+   },
+   {
+    "kind": "relative-only",
+    "question": "Qual é a cidade onde mora do meu padrinho Ezequiel? Dê o nome.",
+    "expected": "Antofagasta",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Para qual time eu torço?",
+    "expected": "Ashbourne Town",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual instrumento eu toco?",
+    "expected": "acordeão",
+    "notExpected": []
+   },
+   {
+    "kind": "stable",
+    "question": "Qual é o meu nome do meio?",
+    "expected": "Henrietta",
+    "notExpected": []
+   }
+  ]
+ }
+]
